@@ -1,0 +1,12 @@
+https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell     200
+https://huggingface.co/api/spaces/black-forest-labs/FLUX.1-schnell     200
+https://black-forest-labs-flux-1-schnell.hf.space/                     200
+https://huggingface.co/api/spaces/Lightricks/ltx-video-distilled       200
+https://huggingface.co/api/models/Lightricks/LTX-Video                 200
+https://huggingface.co/api/models/stabilityai/sd-turbo                 200
+https://huggingface.co/api/models/SimianLuo/LCM_Dreamshaper_v7         200
+https://huggingface.co/api/models/facebook/musicgen-small              200
+https://huggingface.co/api/models/stabilityai/stable-audio-open-1.0    200
+https://www.kaggle.com/api/v1/kernels/list                             401
+https://freesound.org/apiv2/search/text/?query=wind                    401
+https://pixabay.com/api/                                               400

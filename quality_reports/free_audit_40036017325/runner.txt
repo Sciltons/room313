@@ -1,0 +1,7 @@
+## runner
+4
+Mem:              15           1          12           0           2          14
+/dev/root       145G   57G   88G  40% /
+Model name:                              AMD EPYC 9V45 96-Core Processor
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush
+/home/runner/work/_temp/f0a6af43-7bb6-4274-8936-bee328fa0302.sh: line 1: nvidia-smi: command not found

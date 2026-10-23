@@ -1,0 +1,2 @@
+result: ('/tmp/gradio/415a3a3f9fbb5968de11dfa123ca1cf2c718e1f79679fa7854eb1d9ac170a7ea/image.webp', 1085963772) elapsed 6.8s
+saved audit/space_flux_sample.png

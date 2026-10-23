@@ -1,0 +1,538 @@
+=== SPACE black-forest-labs/FLUX.1-schnell OK
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 1
+
+ - predict(prompt, seed, randomize_seed, width, height, num_inference_steps, api_name="/infer") -> (result, seed)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Slider] seed: float (not required, defaults to:   0)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+     - [Slider] width: float (not required, defaults to:   1024)  
+     - [Slider] height: float (not required, defaults to:   1024)  
+     - [Slider] num_inference_steps: float (not required, defaults to:   4)  
+    Returns:
+     - [Image] result: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Slider] seed: float (numeric value between 0 and 2147483647) 
+
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 1
+
+ - predict(prompt, seed, randomize_seed, width, height, num_inference_steps, api_name="/infer") -> (result, seed)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Slider] seed: float (not required, defaults to:   0)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+     - [Slider] width: float (not required, defaults to:   1024)  
+     - [Slider] height: float (not required, defaults to:   1024)  
+     - [Slider] num_inference_steps: float (not required, defaults to:   4)  
+    Returns:
+     - [Image] result: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Slider] seed: float (numeric value between 0 and 2147483647) 
+
+=== SPACE Lightricks/ltx-video-distilled OK
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 7
+
+ - predict(image_filepath, current_h, current_w, api_name="/handle_image_upload_for_dims") -> (height, width)
+    Parameters:
+     - [Image] image_filepath: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Slider] current_h: float (not required, defaults to:   512)  
+     - [Slider] current_w: float (not required, defaults to:   704)  
+    Returns:
+     - [Slider] height: float (numeric value between 256 and 1280) 
+     - [Slider] width: float (numeric value between 256 and 1280) 
+
+ - predict(video_filepath, current_h, current_w, api_name="/handle_video_upload_for_dims") -> (height, width)
+    Parameters:
+     - [Video] video_filepath: dict(video: filepath, subtitles: filepath | None) (required)  
+     - [Slider] current_h: float (not required, defaults to:   512)  
+     - [Slider] current_w: float (not required, defaults to:   704)  
+    Returns:
+     - [Slider] height: float (numeric value between 256 and 1280) 
+     - [Slider] width: float (numeric value between 256 and 1280) 
+
+ - predict(api_name="/update_task_image") -> task
+    Parameters:
+     - None
+    Returns:
+     - [Dropdown] task: Literal['text-to-video', 'image-to-video', 'video-to-video'] 
+
+ - predict(api_name="/update_task_text") -> task
+    Parameters:
+     - None
+    Returns:
+     - [Dropdown] task: Literal['text-to-video', 'image-to-video', 'video-to-video'] 
+
+ - predict(prompt, negative_prompt, input_image_filepath, input_video_filepath, height_ui, width_ui, mode, duration_ui, ui_frames_to_use, seed_ui, randomize_seed, ui_guidance_scale, improve_texture_flag, api_name="/text_to_video") -> (generated_video, seed)
+    Parameters:
+     - [Textbox] prompt: str (not required, defaults to:   A majestic dragon flying over a medieval castle)  
+     - [Textbox] negative_prompt: str (not required, defaults to:   worst quality, inconsistent motion, blurry, jittery, distorted)  
+     - [Textbox] input_image_filepath: str | None (not required, defaults to:   None)  
+     - [Textbox] input_video_filepath: str | None (not required, defaults to:   None)  
+     - [Slider] height_ui: float (not required, defaults to:   512)  
+     - [Slider] width_ui: float (not required, defaults to:   704)  
+     - [Dropdown] mode: Literal['text-to-video', 'image-to-video', 'video-to-video'] (not required, defaults to:   image-to-video)  
+     - [Slider] duration_ui: float (not required, defaults to:   2)  
+     - [Slider] ui_frames_to_use: float (not required, defaults to:   9)  
+     - [Number] seed_ui: int (not required, defaults to:   42)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+     - [Slider] ui_guidance_scale: float (not required, defaults to:   1)  
+     - [Checkbox] improve_texture_flag: bool (not required, defaults to:   True)  
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+     - [Number] seed: int 
+
+ - predict(prompt, negative_prompt, input_image_filepath, input_video_filepath, height_ui, width_ui, mode, duration_ui, ui_frames_to_use, seed_ui, randomize_seed, ui_guidance_scale, improve_texture_flag, api_name="/image_to_video") -> (generated_video, seed)
+    Parameters:
+     - [Textbox] prompt: str (not required, defaults to:   The creature from the image starts to move)  
+     - [Textbox] negative_prompt: str (not required, defaults to:   worst quality, inconsistent motion, blurry, jittery, distorted)  
+     - [Image] input_image_filepath: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) | None (not required, defaults to:   None)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Textbox] input_video_filepath: str | None (not required, defaults to:   None)  
+     - [Slider] height_ui: float (not required, defaults to:   512)  
+     - [Slider] width_ui: float (not required, defaults to:   704)  
+     - [Dropdown] mode: Literal['text-to-video', 'image-to-video', 'video-to-video'] (not required, defaults to:   image-to-video)  
+     - [Slider] duration_ui: float (not required, defaults to:   2)  
+     - [Slider] ui_frames_to_use: float (not required, defaults to:   9)  
+     - [Number] seed_ui: int (not required, defaults to:   42)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+     - [Slider] ui_guidance_scale: float (not required, defaults to:   1)  
+     - [Checkbox] improve_texture_flag: bool (not required, defaults to:   True)  
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+     - [Number] seed: int 
+
+ - predict(prompt, negative_prompt, input_image_filepath, input_video_filepath, height_ui, width_ui, mode, duration_ui, ui_frames_to_use, seed_ui, randomize_seed, ui_guidance_scale, improve_texture_flag, api_name="/video_to_video") -> (generated_video, seed)
+    Parameters:
+     - [Textbox] prompt: str (not required, defaults to:   Change the style to cinematic anime)  
+     - [Textbox] negative_prompt: str (not required, defaults to:   worst quality, inconsistent motion, blurry, jittery, distorted)  
+     - [Textbox] input_image_filepath: str | None (not required, defaults to:   None)  
+     - [Video] input_video_filepath: dict(video: filepath, subtitles: filepath | None) | None (not required, defaults to:   None)  
+     - [Slider] height_ui: float (not required, defaults to:   512)  
+     - [Slider] width_ui: float (not required, defaults to:   704)  
+     - [Dropdown] mode: Literal['text-to-video', 'image-to-video', 'video-to-video'] (not required, defaults to:   image-to-video)  
+     - [Slider] duration_ui: float (not required, defaults to:   2)  
+     - [Slider] ui_frames_to_use: float (not required, defaults to:   9)  
+     - [Number] seed_ui: int (not required, defaults to:   42)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+     - [Slider] ui_guidance_scale: float (not required, defaults to:   1)  
+     - [Checkbox] improve_texture_flag: bool (not required, defaults to:   True)  
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+     - [Number] seed: int 
+
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 7
+
+ - predict(image_filepath, current_h, current_w, api_name="/handle_image_upload_for_dims") -> (height, width)
+    Parameters:
+     - [Image] image_filepath: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Slider] current_h: float (not required, defaults to:   512)  
+     - [Slider] current_w: float (not required, defaults to:   704)  
+    Returns:
+     - [Slider] height: float (numeric value between 256 and 1280) 
+     - [Slider] width: float (numeric value between 256 and 1280) 
+
+ - predict(video_filepath, current_h, current_w, api_name="/handle_video_upload_for_dims") -> (height, width)
+    Parameters:
+     - [Video] video_filepath: dict(video: filepath, subtitles: filepath | None) (required)  
+     - [Slider] current_h: float (not required, defaults to:   512)  
+     - [Slider] current_w: float (not required, defaults to:   704)  
+    Returns:
+     - [Slider] height: float (numeric value between 256 and 1280) 
+     - [Slider] width: float (numeric value between 256 and 1280) 
+
+ - predict(api_name="/update_task_image") -> task
+    Parameters:
+     - None
+    Returns:
+     - [Dropdown] task: Literal['text-to-video', 'image-to-video', 'video-to-video'] 
+
+ - predict(api_name="/update_task_text") -> task
+    Parameters:
+     - None
+    Returns:
+     - [Dropdown] task: Literal['text-to-video', 'image-to-video', 'video-to-video'] 
+
+ - predict(prompt, negative_prompt, input_image_filepath, input_video_filepath, height_ui, width_ui, mode, duration_ui, ui_frames_to_use, seed_ui, randomize_seed, ui_guidance_scale, improve_texture_flag, api_name="/text_to_video") -> (generated_video, seed)
+    Parameters:
+     - [Textbox] prompt: str (not required, defaults to:   A majestic dragon flying over a medieval castle)  
+     - [Textbox] negative_prompt: str (not required, defaults to:   worst quality, inconsistent motion, blurry, jittery, distorted)  
+     - [Textbox] input_image_filepath: str | None (not required, defaults to:   None)  
+     - [Textbox] input_video_filepath: str | None (not required, defaults to:   None)  
+     -
+=== SPACE multimodalart/wan2-1-fast OK
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 3
+
+ - predict(uploaded_pil_image, current_h_val, current_w_val, api_name="/handle_image_upload_for_dims_wan") -> (output_height_multiple_of_32, output_width_multiple_of_32)
+    Parameters:
+     - [Image] uploaded_pil_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Slider] current_h_val: float (not required, defaults to:   512)  
+     - [Slider] current_w_val: float (not required, defaults to:   896)  
+    Returns:
+     - [Slider] output_height_multiple_of_32: float (numeric value between 128 and 896) 
+     - [Slider] output_width_multiple_of_32: float (numeric value between 128 and 896) 
+
+ - predict(uploaded_pil_image, current_h_val, current_w_val, api_name="/handle_image_upload_for_dims_wan_1") -> (output_height_multiple_of_32, output_width_multiple_of_32)
+    Parameters:
+     - [Image] uploaded_pil_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Slider] current_h_val: float (not required, defaults to:   512)  
+     - [Slider] current_w_val: float (not required, defaults to:   896)  
+    Returns:
+     - [Slider] output_height_multiple_of_32: float (numeric value between 128 and 896) 
+     - [Slider] output_width_multiple_of_32: float (numeric value between 128 and 896) 
+
+ - predict(input_image, prompt, height, width, negative_prompt, duration_seconds, guidance_scale, steps, seed, randomize_seed, api_name="/generate_video") -> (generated_video, seed)
+    Parameters:
+     - [Image] input_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Textbox] prompt: str (not required, defaults to:   make this image come alive, cinematic motion, smooth animation)  
+     - [Slider] height: float (not required, defaults to:   512)  
+     - [Slider] width: float (not required, defaults to:   896)  
+     - [Textbox] negative_prompt: str (not required, defaults to:   Bright tones, overexposed, static, blurred details, subtitles, style, works, paintings, images, static, overall gray, worst quality, low quality, JPEG compression residue, ugly, incomplete, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, misshapen limbs, fused fingers, still picture, messy background, three legs, many people in the background, walking backwards, watermark, text, signature)  
+     - [Slider] duration_seconds: float (not required, defaults to:   2)  
+     - [Slider] guidance_scale: float (not required, defaults to:   1.0)  
+     - [Slider] steps: float (not required, defaults to:   4)  
+     - [Slider] seed: float (not required, defaults to:   42)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+     - [Slider] seed: float (numeric value between 0 and 2147483647) 
+
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 3
+
+ - predict(uploaded_pil_image, current_h_val, current_w_val, api_name="/handle_image_upload_for_dims_wan") -> (output_height_multiple_of_32, output_width_multiple_of_32)
+    Parameters:
+     - [Image] uploaded_pil_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Slider] current_h_val: float (not required, defaults to:   512)  
+     - [Slider] current_w_val: float (not required, defaults to:   896)  
+    Returns:
+     - [Slider] output_height_multiple_of_32: float (numeric value between 128 and 896) 
+     - [Slider] output_width_multiple_of_32: float (numeric value between 128 and 896) 
+
+ - predict(uploaded_pil_image, current_h_val, current_w_val, api_name="/handle_image_upload_for_dims_wan_1") -> (output_height_multiple_of_32, output_width_multiple_of_32)
+    Parameters:
+     - [Image] uploaded_pil_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Slider] current_h_val: float (not required, defaults to:   512)  
+     - [Slider] current_w_val: float (not required, defaults to:   896)  
+    Returns:
+     - [Slider] output_height_multiple_of_32: float (numeric value between 128 and 896) 
+     - [Slider] output_width_multiple_of_32: float (numeric value between 128 and 896) 
+
+ - predict(input_image, prompt, height, width, negative_prompt, duration_seconds, guidance_scale, steps, seed, randomize_seed, api_name="/generate_video") -> (generated_video, seed)
+    Parameters:
+     - [Image] input_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream:
+=== SPACE facebook/MusicGen OK
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 1
+
+ - predict(texts, melodies, api_name="/predict_batched") -> generated_music
+    Parameters:
+     - [Textbox] texts: str (required)  
+     - [Audio] melodies: filepath (required)  (The FileData class is a subclass of the GradioModel class that represents a file object within a Gradio interface. It is used to store file data and metadata when a file is uploaded.
+
+Attributes:
+    path: The server file path where the file is stored.
+    url: The normalized server URL pointing to the file.
+    size: The size of the file in bytes.
+    orig_name: The original filename before upload.
+    mime_type: The MIME type of the file.
+    is_stream: Indicates whether the file is a stream.
+    meta: Additional metadata used internally (should not be changed).) 
+    Returns:
+     - [Audio] generated_music: filepath 
+
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 1
+
+ - predict(texts, melodies, api_name="/predict_batched") -> generated_music
+    Parameters:
+     - [Textbox] texts: str (required)  
+     - [Audio] melodies: filepath (required)  (The FileData class is a subclass of the GradioModel class that represents a file object within a Gradio interface. It is used to store file data and metadata when a file is uploaded.
+
+Attributes:
+    path: The server file path where the file is stored.
+    url: The normalized server URL pointing to the file.
+    size: The size of the file in bytes.
+    orig_name: The original filename before upload.
+    mime_type: The MIME type of the file.
+    is_stream: Indicates whether the file is a stream.
+    meta: Additional metadata used internally (should not be changed).) 
+    Returns:
+     - [Audio] generated_music: filepath 
+
+=== SPACE stabilityai/stable-audio-open-1.0 FAILED: 401 Client Error. (Request ID: Root=1-6adbe494-15b79e5f521dad5f46fb2579;047f9820-ced8-46cc-ae35-6e1a5e8821d6)
+
+Repository Not Found for url: https://huggingface.co/api/spaces/stabilityai/stable-audio-open-1.0.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to
+=== SPACE Wan-AI/Wan2.1 OK
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 7
+
+ - predict(api_name="/online_process_change") -> generated_video
+    Parameters:
+     - None
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+
+ - predict(api_name="/switch_i2v_tab") -> 
+    Parameters:
+     - None
+    Returns:
+     - None
+
+ - predict(api_name="/switch_t2v_tab") -> 
+    Parameters:
+     - None
+    Returns:
+     - None
+
+ - predict(prompt, size, watermark_wan, seed, api_name="/t2v_generation_async") -> (cost_timesecs, estimated_waiting_timesecs)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Dropdown] size: Literal['1280*720', '960*960', '720*1280', '1088*832', '832*1088'] (not required, defaults to:   1280*720)  
+     - [Checkbox] watermark_wan: bool (not required, defaults to:   True)  
+     - [Number] seed: float (not required, defaults to:   -1)  
+    Returns:
+     - [Number] cost_timesecs: float 
+     - [Number] estimated_waiting_timesecs: float 
+
+ - predict(prompt, image, watermark_wan, seed, api_name="/i2v_generation_async") -> (cost_timesecs, estimated_waiting_timesecs)
+    Parameters:
+     - [Textbox] prompt: str (not required, defaults to:   )  
+     - [Image] image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict()) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Checkbox] watermark_wan: bool (not required, defaults to:   True)  
+     - [Number] seed: float (not required, defaults to:   -1)  
+    Returns:
+     - [Number] cost_timesecs: float 
+     - [Number] estimated_waiting_timesecs: float 
+
+ - predict(api_name="/status_refresh") -> (generated_video, cost_timesecs, estimated_waiting_timesecs, )
+    Parameters:
+     - None
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+     - [Number] cost_timesecs: float 
+     - [Number] estimated_waiting_timesecs: float 
+     - [Slider] : float (numeric value between 0 and 100) 
+
+ - predict(api_name="/status_refresh_1") -> (generated_video, cost_timesecs, estimated_waiting_timesecs, )
+    Parameters:
+     - None
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+     - [Number] cost_timesecs: float 
+     - [Number] estimated_waiting_timesecs: float 
+     - [Slider] : float (numeric value between 0 and 100) 
+
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 7
+
+ - predict(api_name="/online_process_change") -> generated_video
+    Parameters:
+     - None
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+
+ - predict(api_name="/switch_i2v_tab") -> 
+    Parameters:
+     - None
+    Returns:
+     - None
+
+ - predict(api_name="/switch_t2v_tab") -> 
+    Parameters:
+     - None
+    Returns:
+     - None
+
+ - predict(prompt, size, watermark_wan, seed, api_name="/t2v_generation_async") -> (cost_timesecs, estimated_waiting_timesecs)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Dropdown] size: Literal['1280*720', '960*960', '720*1280', '1088*832', '832*1088'] (not required, defaults to:   1280*720)  
+     - [Checkbox] watermark_wan: bool (not required, defaults to:   True)  
+     - [Number] seed: float (not required, defaults to:   -1)  
+    Returns:
+     - [Number] cost_timesecs: float 
+     - [Number] estimated_waiting_timesecs: float 
+
+ - predict(prompt, image, watermark_wan, seed, api_name="/i2v_generation_async") -> (cost_timesecs, estimated_waiting_timesecs)
+    Parameters:
+     - [Textbox] prompt: str (not required, defaults to:   )  
+     - [Image] image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict()) (required)  (For input, either path or url must be provided. For output, path is always provided.) 
+     - [Checkbox] watermark_wan: bool (not required, defaults to:   True)  
+     - [Number] seed: float (not required, defaults to:   -1)  
+    Returns:
+     - [Number] cost_timesecs: float 
+     - [Number] estimated_waiting_timesecs: float 
+
+ - predict(api_name="/status_refresh") -> (generated_video, cost_timesecs, estimated_waiting_timesecs, )
+    Parameters:
+     - None
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath | None) 
+     - [Number] cost_timesecs: float 
+     - [Number] estimated_waiting_timesecs: float 
+     - [Slider] : float (numeric value between 0 and 100) 
+
+ - predict(api_name="/status_refresh_1") -> (generated_video, cost_timesecs, estimated_waiting_timesecs, )
+    Parameters:
+     - None
+    Returns:
+     - [Video] generated_video: dict(video: filepath, subtitles: filepath |
+=== SPACE KingNish/Realtime-FLUX OK
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 8
+
+ - predict(prompt, seed, width, height, api_name="/generate_image") -> (generated_image, seed, latency)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Number] seed: float (not required, defaults to:   42)  
+     - [Slider] width: float (not required, defaults to:   1024)  
+     - [Slider] height: float (not required, defaults to:   1024)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+ - predict(prompt, seed, width, height, randomize_seed, num_inference_steps, api_name="/RealtimeFlux") -> (generated_image, seed, latency)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Number] seed: float (not required, defaults to:   42)  
+     - [Slider] width: float (not required, defaults to:   1024)  
+     - [Slider] height: float (not required, defaults to:   1024)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+     - [Slider] num_inference_steps: float (not required, defaults to:   1)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+ - predict(realtime_enabled, api_name="/update_ui") -> prompt
+    Parameters:
+     - [Checkbox] realtime_enabled: bool (not required, defaults to:   False)  
+    Returns:
+     - [Textbox] prompt: str 
+
+ - predict(prompt, seed, width, height, randomize_seed, num_inference_steps, api_name="/generate_image_1") -> (generated_image, seed, latency)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Number] seed: float (not required, defaults to:   42)  
+     - [Slider] width: float (not required, defaults to:   1024)  
+     - [Slider] height: float (not required, defaults to:   1024)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+     - [Slider] num_inference_steps: float (not required, defaults to:   1)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+ - predict(param_0, param_1, param_2, param_3, param_4, param_5, param_6, api_name="/realtime_generation") -> (generated_image, seed, latency)
+    Parameters:
+     - [Checkbox] param_0: bool (not required, defaults to:   False)  
+     - [Textbox] param_1: str (required)  
+     - [Number] param_2: float (not required, defaults to:   42)  
+     - [Slider] param_3: float (not required, defaults to:   1024)  
+     - [Slider] param_4: float (not required, defaults to:   1024)  
+     - [Checkbox] param_5: bool (not required, defaults to:   True)  
+     - [Slider] param_6: float (not required, defaults to:   1)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+ - predict(param_0, param_1, param_2, param_3, param_4, param_5, param_6, api_name="/realtime_generation_1") -> (generated_image, seed, latency)
+    Parameters:
+     - [Checkbox] param_0: bool (not required, defaults to:   False)  
+     - [Textbox] param_1: str (required)  
+     - [Number] param_2: float (not required, defaults to:   42)  
+     - [Slider] param_3: float (not required, defaults to:   1024)  
+     - [Slider] param_4: float (not required, defaults to:   1024)  
+     - [Checkbox] param_5: bool (not required, defaults to:   True)  
+     - [Slider] param_6: float (not required, defaults to:   1)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+ - predict(param_0, param_1, param_2, param_3, param_4, param_5, param_6, api_name="/realtime_generation_2") -> (generated_image, seed, latency)
+    Parameters:
+     - [Checkbox] param_0: bool (not required, defaults to:   False)  
+     - [Textbox] param_1: str (required)  
+     - [Number] param_2: float (not required, defaults to:   42)  
+     - [Slider] param_3: float (not required, defaults to:   1024)  
+     - [Slider] param_4: float (not required, defaults to:   1024)  
+     - [Checkbox] param_5: bool (not required, defaults to:   True)  
+     - [Slider] param_6: float (not required, defaults to:   1)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+ - predict(param_0, param_1, param_2, param_3, param_4, param_5, param_6, api_name="/realtime_generation_3") -> (generated_image, seed, latency)
+    Parameters:
+     - [Checkbox] param_0: bool (not required, defaults to:   False)  
+     - [Textbox] param_1: str (required)  
+     - [Number] param_2: float (not required, defaults to:   42)  
+     - [Slider] param_3: float (not required, defaults to:   1024)  
+     - [Slider] param_4: float (not required, defaults to:   1024)  
+     - [Checkbox] param_5: bool (not required, defaults to:   True)  
+     - [Slider] param_6: float (not required, defaults to:   1)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+Client.predict() Usage Info
+---------------------------
+Named API endpoints: 8
+
+ - predict(prompt, seed, width, height, api_name="/generate_image") -> (generated_image, seed, latency)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Number] seed: float (not required, defaults to:   42)  
+     - [Slider] width: float (not required, defaults to:   1024)  
+     - [Slider] height: float (not required, defaults to:   1024)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+ - predict(prompt, seed, width, height, randomize_seed, num_inference_steps, api_name="/RealtimeFlux") -> (generated_image, seed, latency)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Number] seed: float (not required, defaults to:   42)  
+     - [Slider] width: float (not required, defaults to:   1024)  
+     - [Slider] height: float (not required, defaults to:   1024)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   True)  
+     - [Slider] num_inference_steps: float (not required, defaults to:   1)  
+    Returns:
+     - [Image] generated_image: dict(path: str | None (Path to a local file), url: str | None (Publicly available url or base64 encoded image), size: int | None (Size of image in bytes), orig_name: str | None (Original filename), mime_type: str | None (mime type of image), is_stream: bool (Can always be set to False), meta: dict(str, Any)) 
+     - [Number] seed: float 
+     - [Textbox] latency: str 
+
+ - predict(realtime_enabled, api_name="/update_ui") -> prompt
+    Parameters:
+     - [Checkbox] realtime_enabled: bool (not required, defaults to:   False)  
+    Returns:
+     - [Textbox] prompt: str 
+
+ - predict(prompt, seed, width, height, randomize_seed, num_inference_steps, api_name="/generate_image_1") -> (generated_image, seed, latency)
+    Parameters:
+     - [Textbox] prompt: str (required)  
+     - [Number] seed: float (not required, defaults to:   42)  
+     - [Slider] width: float (not required, defaults to:   1024)  
+     - [Slider] height: float (not required, defaults to:   1024)  
+     - [Checkbox] randomize_seed: bool (not required, defaults to:   Tru
