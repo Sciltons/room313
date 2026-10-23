@@ -1,19 +1,20 @@
 name: generate-assets
-# External AI generation worker. Secrets live ONLY in GitHub Secrets:
-#   REPLICATE_API_TOKEN   (images + video + audio)
-#   ELEVENLABS_API_KEY    (optional, sound effects)
-# Paid calls happen only when dry_run=false AND authorize=YES, and never beyond budget_usd.
+# Zero-cost AI generation worker. Only FREE credentials are read (all optional, from GitHub Secrets):
+#   HF_TOKEN             free Hugging Face account -> bigger Space quota
+#   FREESOUND_API_KEY    free freesound.org account -> CC0 sound effects
+#   KAGGLE_USERNAME/KEY  optional free GPU kernels
+# Paid providers are hard-disabled in worker/generate.py (ALLOW_PAID is never set here). budget_usd stays 0.
 on:
   workflow_dispatch:
     inputs:
       project:    {description: "projects/<name>", required: true, default: "ep1_hinterkaifeck"}
-      stage:      {description: "all | image | video | audio | <stage tag>", required: true, default: "all"}
-      dry_run:    {description: "true = plan only, spend nothing", required: true, default: "true"}
-      authorize:  {description: "type YES to allow paid generation", required: false, default: ""}
-      budget_usd: {description: "hard cap for this run (cumulative with ledger)", required: true, default: "0"}
+      stage:      {description: "milestone | all | character | image | video | audio", required: true, default: "milestone"}
+      dry_run:    {description: "true = plan only", required: true, default: "true"}
       only:       {description: "comma-separated job ids (optional)", required: false, default: ""}
 
-concurrency: {group: gen-${{ inputs.project }}, cancel-in-progress: false}
+concurrency:
+  group: "gen-${{ inputs.project }}"
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -25,25 +26,39 @@ jobs:
         with: {fetch-depth: 1}
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
-      - run: pip install -q requests pillow gradio_client huggingface_hub && sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
-      - name: Generate (resumable)
+      - name: Deps (CPU)
+        run: |
+          pip install -q requests pillow gradio_client huggingface_hub
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
+          if [ "${{ inputs.stage }}" = "audio" ] || [ "${{ inputs.stage }}" = "all" ]; then
+            pip install -q "torch==2.4.1" --index-url https://download.pytorch.org/whl/cpu
+            pip install -q transformers accelerate safetensors scipy
+          fi
+      - name: Fetch Arabic caption font (Cairo, OFL) once
+        run: |
+          if [ ! -f orchestrator/fonts/Cairo-Bold.ttf ]; then
+            mkdir -p orchestrator/fonts
+            curl -sSL -o orchestrator/fonts/Cairo-Bold.ttf "https://github.com/google/fonts/raw/main/ofl/cairo/static/Cairo-Bold.ttf" \
+            || curl -sSL -o orchestrator/fonts/Cairo-Bold.ttf "https://raw.githubusercontent.com/google/fonts/main/ofl/cairo/Cairo%5Bslnt%2Cwght%5D.ttf" || true
+            file orchestrator/fonts/Cairo-Bold.ttf | grep -qi "font" || rm -f orchestrator/fonts/Cairo-Bold.ttf
+          fi
+      - name: Generate (resumable, $0)
         id: gen
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-          
         run: |
+          set -o pipefail
           python3 worker/generate.py --project "${{ inputs.project }}" --stage "${{ inputs.stage }}" \
-            --dry-run "${{ inputs.dry_run }}" --authorize "${{ inputs.authorize }}" \
-            --budget-usd "${{ inputs.budget_usd }}" --only "${{ inputs.only }}" | tee run.log
+            --dry-run "${{ inputs.dry_run }}" --budget-usd 0 --only "${{ inputs.only }}" | tee run.log
           echo "exit=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
-      - name: Commit generated assets + ledger (resume point)
+      - name: Commit generated assets + ledger + font (resume point)
         if: always()
         run: |
           git config user.name "studio-worker"; git config user.email "studio-worker@users.noreply.github.com"
-          git add -A projects/${{ inputs.project }}/generated projects/${{ inputs.project }}/ledger.json projects/${{ inputs.project }}/status.json 2>/dev/null || true
+          git add -A projects/${{ inputs.project }}/generated projects/${{ inputs.project }}/ledger.json projects/${{ inputs.project }}/status.json orchestrator/fonts 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "assets: ${{ inputs.project }} ${{ inputs.stage }} [skip ci]" && git pull --rebase && git push)
       - uses: actions/upload-artifact@v4
         if: always()

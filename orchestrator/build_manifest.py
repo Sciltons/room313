@@ -21,13 +21,21 @@ def fill(txt, sb):
 
 FREE = {
     "image_space": {"space": "black-forest-labs/FLUX.1-schnell", "api_name": "/infer"},          # Apache-2.0 weights, free Space quota
-    "video_space": {"space": "Lightricks/ltx-video-distilled", "api_name": "/image_to_video"},   # verified/adjusted by free-audit (spaces_api.txt)
+    "video_space": {"space": "Lightricks/ltx-video-distilled", "api_name": "/image_to_video", "api_hint": "video"},   # verified/adjusted by free-audit (spaces_api.txt)
 }
+# Freesound text search works best with 2-3 plain keywords; long prompts return nothing.
+def fs_query(sid, x):
+    if x.get("fs_query"): return x["fs_query"]
+    words = [w for w in re.sub(r"[^a-z ]", " ", x["prompt"].split(",")[0].lower()).split()
+             if w not in {"a","an","the","with","on","from","of","in","at","and","to","by","under","very","close","distant","steady","slow","heavy","huge","old","small","fine","gentle","four","two","night","cinematic","horror","trailer","suspense","eerie"}]
+    return " ".join(words[:3]) or sid.replace("_", " ")
+MILESTONE_SHOT = "s07"   # first shot with a character
 def build_free(project):
     proj = ROOT/"projects"/project; sb = json.loads((proj/"storyboard.json").read_text()); st = sb["style"]; jobs = []
     seed_base = 313
+    ms_shot = next((x for x in sb["shots"] if x["id"] == MILESTONE_SHOT), sb["shots"][0]); ms_char = (ms_shot["chars"] or [None])[0]
     for i, (cid, c) in enumerate(sb["characters"].items()):
-        jobs.append({"id": f"char_{cid}", "type": "image", "stage": "character", "provider": "hf_space", "model": "FLUX.1-schnell@space", "est_usd": 0,
+        jobs.append({"id": f"char_{cid}", "type": "image", "stage": "character", "provider": "hf_space", "model": "FLUX.1-schnell@space", "est_usd": 0, "tags": ["milestone"] if cid == ms_char else [],
             "input": {**FREE["image_space"], "args": {"prompt": f"character reference sheet, front view and three-quarter view side by side, full body, neutral dark grey background, {c['prompt']}, {st['positive']}",
                       "seed": seed_base + i, "randomize_seed": False, "width": 1024, "height": 576, "num_inference_steps": 4}},
             "out": f"characters/{cid}.png"})
@@ -35,11 +43,11 @@ def build_free(project):
         prompt = fill(s_["image"], sb) + ", " + st["positive"]
         # consistency without a paid reference model: identical character description block + per-character fixed seed
         seed = seed_base + (list(sb["characters"]).index(s_["chars"][0]) if s_["chars"] else 99)
-        jobs.append({"id": f"kf_{s_['id']}", "type": "image", "stage": "image", "provider": "hf_space", "model": "FLUX.1-schnell@space", "est_usd": 0,
+        jobs.append({"id": f"kf_{s_['id']}", "type": "image", "stage": "image", "provider": "hf_space", "model": "FLUX.1-schnell@space", "est_usd": 0, "tags": ["milestone"] if s_["id"] == ms_shot["id"] else [],
             "input": {**FREE["image_space"], "args": {"prompt": prompt, "seed": seed, "randomize_seed": False, "width": 1024, "height": 576, "num_inference_steps": 4}},
             "out": f"keyframes/{s_['id']}.png"})
     for s_ in sb["shots"]:
-        jobs.append({"id": f"vid_{s_['id']}", "type": "video", "stage": "video", "provider": "hf_space", "model": "LTX-Video-distilled@space", "est_usd": 0, "expect_duration": 3,
+        jobs.append({"id": f"vid_{s_['id']}", "type": "video", "stage": "video", "provider": "hf_space", "model": "LTX-Video-distilled@space", "est_usd": 0, "expect_duration": 3, "tags": ["milestone"] if s_["id"] == ms_shot["id"] else [],
             "input": {**FREE["video_space"], "args": {"prompt": fill(s_["motion"], sb) + ", " + st["motion_default"], "negative_prompt": st["negative"], "image": f"asset:keyframes/{s_['id']}.png"}},
             "out": f"animated_shots/{s_['id']}.mp4"})
     for mid, m in sb["audio_assets"]["music"].items():
@@ -47,9 +55,11 @@ def build_free(project):
             "input": {"kind": "musicgen", "prompt": m["prompt"], "duration": min(30, m["duration"])}, "out": f"audio/music/{mid}.wav"})
     for sid, x in sb["audio_assets"]["sfx"].items():
         jobs.append({"id": f"sfx_{sid}", "type": "audio", "stage": "audio", "provider": "freesound", "model": "freesound-cc0", "est_usd": 0,
-            "input": {"query": x["prompt"].split(",")[0], "min_dur": 0.5, "max_dur": max(8, x["duration"] * 3)}, "out": f"audio/sfx/{sid}.mp3"})
+            "input": {"query": fs_query(sid, x), "min_dur": 0.5, "max_dur": max(8, x["duration"] * 3)}, "out": f"audio/sfx/{sid}.mp3"})
     (proj/"manifest.json").write_text(json.dumps({"project": project, "mode": "zero-cost", "jobs": jobs}, indent=1, ensure_ascii=False))
-    print(f"{len(jobs)} zero-cost jobs written (paid providers: none)")
+    ms = [j["id"] for j in jobs if "milestone" in j.get("tags", [])]
+    print(f"{len(jobs)} zero-cost jobs written (paid providers: none); milestone jobs: {ms}")
+    print("freesound queries:", {j["id"]: j["input"]["query"] for j in jobs if j.get("provider") == "freesound"})
 
 def build(project, sfx_provider="replicate"):
     proj = ROOT/"projects"/project; sb = json.loads((proj/"storyboard.json").read_text())

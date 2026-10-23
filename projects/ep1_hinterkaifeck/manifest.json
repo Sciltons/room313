@@ -9,6 +9,9 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [
+    "milestone"
+   ],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -30,6 +33,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -51,6 +55,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -72,6 +77,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -93,6 +99,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -114,6 +121,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -135,6 +143,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -156,6 +165,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -177,6 +187,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -198,6 +209,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -219,6 +231,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -240,6 +253,9 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [
+    "milestone"
+   ],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -261,6 +277,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -282,6 +299,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -303,6 +321,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -324,6 +343,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -345,6 +365,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -366,6 +387,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -387,6 +409,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -408,6 +431,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -429,6 +453,7 @@
    "provider": "hf_space",
    "model": "FLUX.1-schnell@space",
    "est_usd": 0,
+   "tags": [],
    "input": {
     "space": "black-forest-labs/FLUX.1-schnell",
     "api_name": "/infer",
@@ -451,9 +476,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "snow falling gently, slow push-in toward the glowing window, moonlit clouds drifting, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -470,9 +497,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "oil lamp swaying slightly, dust floating, very slow push-in toward the hatch, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -489,9 +518,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "red lamp light flickering violently, the hatch creaking open a little more, eyes glinting in the dark, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -508,9 +539,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "slow aerial drift forward over the forest, mist moving, snow falling, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -527,9 +560,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "very slow dolly forward along the road, snow drifting across the ground, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -546,9 +581,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "camera settles slowly, snow falling, light flicker, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -565,9 +602,13 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [
+    "milestone"
+   ],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "he slowly lifts his eyes toward the camera, lamp flame flickering, breathing, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -584,9 +625,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "she turns her head slightly toward the camera, steam rising from the pot, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -603,9 +646,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "she gently rocks the child, looks out of the window, snow falling outside, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -622,9 +667,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "the girl looks up slowly, hugs the doll tighter, the lamp flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -641,9 +688,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "she rummages through the drawer, candle flame trembling, shadows moving on the wall, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -660,9 +709,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "slow push-in on the empty nail, candlelight flicker, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -679,9 +730,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "he turns the newspaper slowly, frowns, the lamp flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -698,9 +751,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "his eyes slowly move across the ceiling, dust drifts down, candle flame flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -717,9 +772,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "he climbs one rung, raises the lamp, light sweeping across the attic beams, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -736,9 +793,11 @@
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
    "expect_duration": 3,
+   "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
     "api_name": "/image_to_video",
+    "api_hint": "video",
     "args": {
      "prompt": "lantern light slowly sweeping over the hay hollow, dust in the beam, held still, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
@@ -845,7 +904,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "cold winter wind blowing through a pine forest at night",
+    "query": "cold winter wind",
     "min_dur": 0.5,
     "max_dur": 60
    },
@@ -859,7 +918,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "quiet old wooden house interior room tone at night",
+    "query": "room tone house",
     "min_dur": 0.5,
     "max_dur": 45
    },
@@ -873,7 +932,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "huge cinematic sub bass impact hit with a sharp crack",
+    "query": "sub bass hit",
     "min_dur": 0.5,
     "max_dur": 9
    },
@@ -887,7 +946,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "slow wooden attic hatch creaking open",
+    "query": "wooden attic hatch",
     "min_dur": 0.5,
     "max_dur": 9
    },
@@ -901,7 +960,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "distorted sub bass pulse hits",
+    "query": "bass pulse",
     "min_dur": 0.5,
     "max_dur": 8
    },
@@ -915,7 +974,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "heavy rubber stamp slammed on paper",
+    "query": "stamp slam",
     "min_dur": 0.5,
     "max_dur": 8
    },
@@ -929,7 +988,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "old wooden chair creaking under weight",
+    "query": "wooden chair creaking",
     "min_dur": 0.5,
     "max_dur": 8
    },
@@ -943,7 +1002,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "pot simmering on a stove",
+    "query": "pot simmering stove",
     "min_dur": 0.5,
     "max_dur": 12
    },
@@ -957,7 +1016,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "wooden drawer pulled open and rummaging through small objects",
+    "query": "wooden drawer open",
     "min_dur": 0.5,
     "max_dur": 9
    },
@@ -971,7 +1030,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "small metallic tick with a soft reverse swell",
+    "query": "metal tick",
     "min_dur": 0.5,
     "max_dur": 8
    },
@@ -985,7 +1044,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "unfolding and turning a large newspaper",
+    "query": "newspaper rustle",
     "min_dur": 0.5,
     "max_dur": 9
    },
@@ -999,7 +1058,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "slow heavy footsteps on wooden floorboards heard from the room below",
+    "query": "footsteps wooden floor",
     "min_dur": 0.5,
     "max_dur": 12
    },
@@ -1013,7 +1072,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "fine dust and grit trickling down onto wood",
+    "query": "dust falling",
     "min_dur": 0.5,
     "max_dur": 8
    },
@@ -1027,7 +1086,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "climbing an old wooden ladder",
+    "query": "climbing wooden ladder",
     "min_dur": 0.5,
     "max_dur": 9
    },
@@ -1041,7 +1100,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "oil lantern handle creaking while swinging",
+    "query": "lantern creak",
     "min_dur": 0.5,
     "max_dur": 8
    },
@@ -1055,7 +1114,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "near-silent attic with a faint high ringing tone and dust settling",
+    "query": "high ringing tone",
     "min_dur": 0.5,
     "max_dur": 15
    },

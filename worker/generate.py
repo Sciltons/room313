@@ -10,7 +10,8 @@ Safety:
   * authorize must equal "YES" for any paid call.
   * hard budget cap: stops before a job that would exceed `budget_usd` (cumulative ledger).
   * resume: a job whose output file already exists is skipped.
-  * retries: `max_retries` per job with backoff; failures recorded, never fabricated.
+  * retries: `max_retries` per job with backoff (3 min+ on Space quota errors); failures recorded, never fabricated.
+  * stage selection: `all` | job type | job stage | any tag (e.g. `milestone` = 1 character + 1 keyframe + 1 shot).
 Providers (ZERO-COST mode, default): hf_space (public Hugging Face Spaces via gradio_client, free quota),
   local_cpu (open-source diffusers / audiocraft models on the runner CPU), kaggle (free GPU kernel via the official Kaggle API),
   freesound (CC0/CC-BY library). Paid providers (replicate, elevenlabs_sfx, fal) are hard-disabled unless ALLOW_PAID=1 — never set.
@@ -93,18 +94,35 @@ def elevenlabs_sfx(inp, key):
     if r.status_code >= 400: raise RuntimeError(f"elevenlabs {r.status_code}: {r.text[:300]}")
     return r.content
 
+QUOTA_WORDS = ("quota", "gpu", "rate limit", "too many", "429", "queue is full", "exceeded")
+def is_quota_error(e): return any(w in str(e).lower() for w in QUOTA_WORDS)
+
 def hf_space_run(inp, token, out):
-    """inp: {space, api_name, args:{...}, result_index}. Returns local file path produced by the Space."""
+    """inp: {space, api_name, args:{...}, result_index, api_hint}. Returns local file path produced by the Space.
+    Tolerant: if api_name is not exposed, picks the endpoint whose name contains api_hint (or the first one);
+    args not accepted by the endpoint are dropped (reported in metrics) instead of crashing."""
     from gradio_client import Client, handle_file
-    args = {}
-    for k, v in inp.get("args", {}).items():
-        args[k] = handle_file(v) if isinstance(v, str) and (v.startswith("/") or v.startswith("data:")) else v
     c = Client(inp["space"], hf_token=token or None, verbose=False)
-    r = c.predict(**args, api_name=inp["api_name"])
+    api = c.view_api(return_format="dict", print_info=False) or {}
+    named = api.get("named_endpoints", {})
+    api_name = inp["api_name"]; note = {}
+    if named and api_name not in named:
+        hint = inp.get("api_hint", "").lower()
+        cands = [n for n in named if hint and hint in n.lower()] or list(named)
+        note["api_name_fallback"] = f"{api_name} -> {cands[0]}"; api_name = cands[0]
+    accepted = {p.get("parameter_name") for p in named.get(api_name, {}).get("parameters", [])} if named else None
+    args = {}; dropped = []
+    for k, v in inp.get("args", {}).items():
+        if accepted is not None and k not in accepted: dropped.append(k); continue
+        args[k] = handle_file(v) if isinstance(v, str) and (v.startswith("/") or v.startswith("data:") or v.startswith("http")) else v
+    if dropped: note["dropped_args"] = dropped
+    r = c.predict(**args, api_name=api_name)
     idx = inp.get("result_index", 0)
     if isinstance(r, (list, tuple)): r = r[idx]
     if isinstance(r, dict): r = r.get("video") or r.get("path") or r.get("url") or r
-    out.parent.mkdir(parents=True, exist_ok=True); shutil.copy(r, out); return {"space": inp["space"]}
+    if isinstance(r, str) and r.startswith("http"): download(r, out)
+    else: out.parent.mkdir(parents=True, exist_ok=True); shutil.copy(r, out)
+    return {"space": inp["space"], "api_name": api_name, **note}
 
 def local_cpu_run(inp, out):
     """open-source models on the runner CPU. kind: lcm_image | musicgen"""
@@ -182,7 +200,9 @@ def main():
         a.budget_usd = 0.0
     only = set(x for x in a.only.split(",") if x)
 
-    jobs = [j for j in man["jobs"] if (a.stage == "all" or j["type"] == a.stage or j.get("stage") == a.stage) and (not only or j["id"] in only)]
+    def in_stage(j): return a.stage == "all" or j["type"] == a.stage or j.get("stage") == a.stage or a.stage in j.get("tags", [])
+    jobs = [j for j in man["jobs"] if in_stage(j) and (not only or j["id"] in only)]
+    if not jobs: log(f"no jobs match stage={a.stage!r} only={a.only!r}"); return 1
     pending = [j for j in jobs if not (gen / j["out"]).exists()]
     est_total = sum(COST.get(j["model"], j.get("est_usd", 0.1)) * j.get("units", 1) for j in pending)
     log(f"project={a.project} jobs={len(jobs)} done={len(jobs)-len(pending)} pending={len(pending)} est=${est_total:.2f} spent=${budget.spent:.2f} cap=${a.budget_usd:.2f} dry_run={dry}")
@@ -220,8 +240,10 @@ def main():
                 if not ok and attempt <= a.max_retries: out.unlink(missing_ok=True); continue
                 break
             except Exception as e:
-                log(f"[{j['id']}] ERROR: {e}"); status[j["id"]] = {"state": "error", "error": str(e)[:300], "attempt": attempt}
-                if attempt <= a.max_retries: time.sleep(10 * attempt); continue
+                quota = is_quota_error(e)
+                log(f"[{j['id']}] ERROR{' (quota/GPU limit)' if quota else ''}: {str(e)[:500]}")
+                status[j["id"]] = {"state": "quota" if quota else "error", "error": str(e)[:300], "attempt": attempt}
+                if attempt <= a.max_retries: time.sleep((180 if quota else 10) * attempt); continue
                 failures += 1
         (proj / "status.json").write_text(json.dumps(status, indent=2))
     (proj / "status.json").write_text(json.dumps(status, indent=2))

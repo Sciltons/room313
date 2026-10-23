@@ -16,5 +16,10 @@
 - أسرار مجانية اختيارية في GitHub Secrets: HF_TOKEN, KAGGLE_USERNAME/KAGGLE_KEY, FREESOUND_API_KEY.
 - الترتيب: dispatch connectivity/free-audit → راجع المخرجات → generate stage=character → image → video → audio → assemble.py → renders/final.mp4.
 
+## حالة 2026-10-24 (جلسة الإصلاحات)
+- اتصلّح: README (كان بيوصف Replicate المدفوع)، `generate.yml` (YAML كان غلط في `concurrency` + تعليقات مدفوعة + بيجيب خط Cairo تلقائيًا ويعمله commit)، `dispatch.py` (بقى فيه `free-audit` وبينزّل artifacts في `quality_reports/`)، `worker/generate.py` (بيتحمل اختلاف api_name في الـ Space، بيسقّط args مش مقبولة، backoff 3 دقايق على quota)، `build_manifest.py` (tag `milestone` = char_andreas + kf_s07 + vid_s07، وqueries قصيرة لـ Freesound).
+- اتأكدنا محليًا: narration.py ✓، build_manifest.py (59 مهمة، $0) ✓، worker dry-run ✓، assemble --placeholders ✓ (37.47s، الكابشن العربي شغال).
+- **لسه ما اتولّدش أي asset حقيقي.** الجلسة دي ماكانش عندها وصول لـ GitHub ولا Hugging Face.
+
 ## تعليمات للجلسة الجديدة
-ابدأ بـ: "هذا ريبو Sciltons/room313. اقرأ CONTEXT.md وREADME.md، ادفع الكود لو ناقص، وشغّل free-audit ثم الـ milestone الأول."
+ابدأ بـ: "هذا ريبو Sciltons/room313. اقرأ CONTEXT.md وREADME.md، ادفع الكود لو ناقص، شغّل `dispatch.py free-audit`، اقرأ `spaces_api.txt` وعدّل `FREE[\"video_space\"]` لو لازم، ثم `dispatch.py generate ep1_hinterkaifeck milestone --dry-run false`."
