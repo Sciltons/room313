@@ -12,6 +12,7 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    permissions: {contents: write}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -90,3 +91,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with: {name: free-audit, path: audit/}
+      - name: Commit report into repo (artifact storage is not reachable from every client)
+        if: always()
+        run: |
+          d=quality_reports/free_audit_${{ github.run_id }}; mkdir -p "$d"; cp -r audit/* "$d"/ 2>/dev/null || true
+          git config user.name "studio-worker"; git config user.email "studio-worker@users.noreply.github.com"
+          git add -A "$d"; git diff --cached --quiet || (git commit -m "free-audit report ${{ github.run_id }} [skip ci]" && git pull --rebase && git push)
