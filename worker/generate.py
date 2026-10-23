@@ -227,7 +227,15 @@ def main():
                 log(f"[{j['id']}] attempt {attempt} model={j['model']}")
                 prov = j.get("provider", "replicate")
                 inp = resolve_inputs(j["input"], gen, as_path=(prov == "hf_space"))
-                if prov == "hf_space": metrics = hf_space_run(inp, tokens["hf"], out)
+                if prov == "hf_space":
+                    try: metrics = hf_space_run(inp, tokens["hf"], out)
+                    except Exception as e:
+                        if j["type"] == "image" and is_quota_error(e):
+                            log(f"[{j['id']}] Space quota hit -> local CPU fallback (LCM)")
+                            args = inp.get("args", {})
+                            metrics = local_cpu_run({"kind": "lcm_image", "prompt": args.get("prompt", ""), "width": 768, "height": 432, "steps": 8}, out)
+                            metrics["fallback"] = "local_cpu_lcm"
+                        else: raise
                 elif prov == "local_cpu": metrics = local_cpu_run(inp, out)
                 elif prov == "freesound": metrics = freesound_run(inp, tokens["freesound"], out)
                 elif prov == "replicate":

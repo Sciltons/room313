@@ -30,10 +30,9 @@ jobs:
         run: |
           pip install -q requests pillow gradio_client huggingface_hub static-ffmpeg
           command -v ffprobe || (timeout 240 sudo apt-get install -y -qq ffmpeg || echo "apt failed -> static-ffmpeg fallback")
-          if [ "${{ inputs.stage }}" = "audio" ] || [ "${{ inputs.stage }}" = "all" ]; then
-            pip install -q "torch==2.6.0" --index-url https://download.pytorch.org/whl/cpu
-            pip install -q transformers accelerate safetensors scipy
-          fi
+          # torch stack: audio (musicgen) + CPU fallback for images when the Space quota is exhausted
+          pip install -q "torch==2.6.0" --index-url https://download.pytorch.org/whl/cpu
+          pip install -q diffusers transformers accelerate safetensors scipy
       - name: Fetch Arabic caption font (Cairo, OFL) once
         run: |
           if [ ! -f orchestrator/fonts/Cairo-Bold.ttf ]; then
