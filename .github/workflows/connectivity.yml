@@ -1,0 +1,42 @@
+name: connectivity-test
+# Verifies that the GitHub-hosted runner can reach the generation APIs.
+# No secrets, no paid calls: unauthenticated requests only (401/403 = reachable, auth required).
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe API hosts
+        run: |
+          set +e
+          probe () {
+            code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 20 "$1")
+            case "$code" in
+              2*|401|403|404|405) status="REACHABLE" ;;
+              000) status="UNREACHABLE" ;;
+              *) status="REACHABLE(http $code)" ;;
+            esac
+            printf "%-50s %s (%s)\n" "$1" "$status" "$code"
+            echo "$1,$code,$status" >> probe.csv
+          }
+          probe https://api.replicate.com/v1/models
+          probe https://replicate.delivery/
+          probe https://fal.run/
+          probe https://queue.fal.run/
+          probe https://api.elevenlabs.io/v1/models
+          probe https://api.openai.com/v1/models
+          probe https://api.stability.ai/v2beta/stable-image/generate/core
+          probe https://api.klingai.com/
+          probe https://api.minimax.chat/
+          probe https://generativelanguage.googleapis.com/
+          probe https://huggingface.co/api/models/black-forest-labs/FLUX.1-dev
+          probe https://freesound.org/apiv2/
+      - name: Runner facts
+        run: |
+          nproc; free -g | sed -n 2p; df -h / | tail -1; ffmpeg -version | head -1 || true; python3 --version
+      - uses: actions/upload-artifact@v4
+        with:
+          name: connectivity-report
+          path: probe.csv

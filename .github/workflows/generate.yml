@@ -1,0 +1,54 @@
+name: generate-assets
+# External AI generation worker. Secrets live ONLY in GitHub Secrets:
+#   REPLICATE_API_TOKEN   (images + video + audio)
+#   ELEVENLABS_API_KEY    (optional, sound effects)
+# Paid calls happen only when dry_run=false AND authorize=YES, and never beyond budget_usd.
+on:
+  workflow_dispatch:
+    inputs:
+      project:    {description: "projects/<name>", required: true, default: "ep1_hinterkaifeck"}
+      stage:      {description: "all | image | video | audio | <stage tag>", required: true, default: "all"}
+      dry_run:    {description: "true = plan only, spend nothing", required: true, default: "true"}
+      authorize:  {description: "type YES to allow paid generation", required: false, default: ""}
+      budget_usd: {description: "hard cap for this run (cumulative with ledger)", required: true, default: "0"}
+      only:       {description: "comma-separated job ids (optional)", required: false, default: ""}
+
+concurrency: {group: gen-${{ inputs.project }}, cancel-in-progress: false}
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q requests pillow gradio_client huggingface_hub && sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
+      - name: Generate (resumable)
+        id: gen
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          
+        run: |
+          python3 worker/generate.py --project "${{ inputs.project }}" --stage "${{ inputs.stage }}" \
+            --dry-run "${{ inputs.dry_run }}" --authorize "${{ inputs.authorize }}" \
+            --budget-usd "${{ inputs.budget_usd }}" --only "${{ inputs.only }}" | tee run.log
+          echo "exit=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
+      - name: Commit generated assets + ledger (resume point)
+        if: always()
+        run: |
+          git config user.name "studio-worker"; git config user.email "studio-worker@users.noreply.github.com"
+          git add -A projects/${{ inputs.project }}/generated projects/${{ inputs.project }}/ledger.json projects/${{ inputs.project }}/status.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "assets: ${{ inputs.project }} ${{ inputs.stage }} [skip ci]" && git pull --rebase && git push)
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: "run-log-${{ inputs.project }}-${{ github.run_id }}", path: run.log}
+      - name: Result
+        run: |
+          echo "worker exit code: ${{ steps.gen.outputs.exit }}"
+          test "${{ steps.gen.outputs.exit }}" = "0"

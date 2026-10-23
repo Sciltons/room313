@@ -1,0 +1,3 @@
+projects/*/renders/
+quality_reports/*.log
+__pycache__/

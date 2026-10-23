@@ -1,0 +1,92 @@
+name: free-audit
+# Zero-cost infrastructure audit. No paid services, no payment details, no trial credits.
+# Optional free credentials (GitHub Secrets): HF_TOKEN (free Hugging Face account), KAGGLE_USERNAME/KAGGLE_KEY (free Kaggle account),
+# FREESOUND_API_KEY (free freesound.org account). Each step records whether it works WITHOUT them too.
+on:
+  workflow_dispatch:
+    inputs:
+      run_cpu_image_test: {description: "run a real CPU image generation sample (~5-10 min)", default: "true"}
+      run_space_tests:    {description: "call public HF Spaces via gradio_client (free quota)", default: "true"}
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Runner hardware
+        run: |
+          mkdir -p audit; { echo "## runner"; nproc; free -g | sed -n 2p; df -h / | tail -1; lscpu | grep -E "Model name|Flags" | cut -c1-120; nvidia-smi 2>&1 | head -2 || true; } | tee audit/runner.txt
+      - name: Connectivity (free endpoints only)
+        run: |
+          probe(){ code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 20 "$1"); printf "%-70s %s\n" "$1" "$code"; }
+          { probe https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell
+            probe https://huggingface.co/api/spaces/black-forest-labs/FLUX.1-schnell
+            probe https://black-forest-labs-flux-1-schnell.hf.space/
+            probe https://huggingface.co/api/spaces/Lightricks/ltx-video-distilled
+            probe https://huggingface.co/api/models/Lightricks/LTX-Video
+            probe https://huggingface.co/api/models/stabilityai/sd-turbo
+            probe https://huggingface.co/api/models/SimianLuo/LCM_Dreamshaper_v7
+            probe https://huggingface.co/api/models/facebook/musicgen-small
+            probe https://huggingface.co/api/models/stabilityai/stable-audio-open-1.0
+            probe https://www.kaggle.com/api/v1/kernels/list
+            probe https://freesound.org/apiv2/search/text/?query=wind
+            probe https://pixabay.com/api/
+          } | tee audit/connectivity.txt
+      - name: Install inference deps (CPU)
+        run: pip install -q "torch==2.4.1" --index-url https://download.pytorch.org/whl/cpu && pip install -q diffusers transformers accelerate safetensors pillow gradio_client huggingface_hub kaggle requests
+      - name: Public Space API discovery (what the free Spaces actually expose)
+        if: inputs.run_space_tests == 'true'
+        env: {HF_TOKEN: "${{ secrets.HF_TOKEN }}"}
+        continue-on-error: true
+        run: |
+          python3 - <<'EOF' 2>&1 | tee audit/spaces_api.txt
+          import os
+          from gradio_client import Client
+          tok=os.environ.get("HF_TOKEN") or None
+          for s in ["black-forest-labs/FLUX.1-schnell","Lightricks/ltx-video-distilled","multimodalart/wan2-1-fast","facebook/MusicGen","stabilityai/stable-audio-open-1.0","Wan-AI/Wan2.1","KingNish/Realtime-FLUX"]:
+              try:
+                  c=Client(s, hf_token=tok, verbose=False); print("=== SPACE",s,"OK"); print(c.view_api(return_format="str")[:2500])
+              except Exception as e: print("=== SPACE",s,"FAILED:",str(e)[:300])
+          EOF
+      - name: Real sample — image via public FLUX.1-schnell Space (free quota)
+        if: inputs.run_space_tests == 'true'
+        env: {HF_TOKEN: "${{ secrets.HF_TOKEN }}"}
+        continue-on-error: true
+        run: |
+          python3 - <<'EOF' 2>&1 | tee audit/space_flux_sample.txt
+          import os, time, shutil
+          from gradio_client import Client
+          t0=time.time(); c=Client("black-forest-labs/FLUX.1-schnell", hf_token=os.environ.get("HF_TOKEN") or None, verbose=False)
+          r=c.predict(prompt="2D anime illustration, cel-shaded, a 63-year-old Bavarian farmer with grey beard and flat cap, dark wool coat, 1922, dim oil lamp light, muted cold palette, character portrait", seed=0, randomize_seed=True, width=1024, height=576, num_inference_steps=4, api_name="/infer")
+          print("result:", r, "elapsed %.1fs"%(time.time()-t0))
+          p=r[0] if isinstance(r,(list,tuple)) else r
+          shutil.copy(p, "audit/space_flux_sample.png"); print("saved audit/space_flux_sample.png")
+          EOF
+      - name: Real sample — image on CPU (LCM Dreamshaper, 512px, 6 steps)
+        if: inputs.run_cpu_image_test == 'true'
+        continue-on-error: true
+        run: |
+          python3 - <<'EOF' 2>&1 | tee audit/cpu_image_sample.txt
+          import time, torch
+          from diffusers import DiffusionPipeline
+          t0=time.time(); pipe=DiffusionPipeline.from_pretrained("SimianLuo/LCM_Dreamshaper_v7", torch_dtype=torch.float32); pipe.to("cpu")
+          print("load %.1fs"%(time.time()-t0)); t1=time.time()
+          im=pipe(prompt="anime illustration, cel-shaded, old Bavarian farmer, grey beard, flat cap, dark wool coat, oil lamp light, 1922, muted cold palette, detailed", num_inference_steps=6, guidance_scale=1.5, width=512, height=512).images[0]
+          im.save("audit/cpu_image_sample.png"); print("gen %.1fs"%(time.time()-t1))
+          EOF
+      - name: Kaggle API (free GPU worker candidate)
+        env: {KAGGLE_USERNAME: "${{ secrets.KAGGLE_USERNAME }}", KAGGLE_KEY: "${{ secrets.KAGGLE_KEY }}"}
+        continue-on-error: true
+        run: |
+          { if [ -z "$KAGGLE_KEY" ]; then echo "KAGGLE secrets not set -> skipped (free account needed: kaggle.com -> Settings -> API token; GPU needs phone verification)"; else kaggle kernels list --mine --page-size 3; fi; } 2>&1 | tee audit/kaggle.txt
+      - name: Freesound API (CC0/CC-BY sound library)
+        env: {FREESOUND_API_KEY: "${{ secrets.FREESOUND_API_KEY }}"}
+        continue-on-error: true
+        run: |
+          { if [ -z "$FREESOUND_API_KEY" ]; then echo "FREESOUND_API_KEY not set -> skipped (free account: freesound.org/apiv2/apply)"; else curl -sS "https://freesound.org/apiv2/search/text/?query=winter+wind+forest&filter=license:%22Creative+Commons+0%22&fields=id,name,duration,license&token=$FREESOUND_API_KEY" | head -c 800; fi; } 2>&1 | tee audit/freesound.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: free-audit, path: audit/}

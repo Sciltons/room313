@@ -1,0 +1,136 @@
+{
+ "shots": {
+  "s01": {
+   "mode": "PLACEHOLDER",
+   "target": 3.5,
+   "got": 3.5
+  },
+  "s02": {
+   "mode": "PLACEHOLDER",
+   "target": 1.1,
+   "got": 1.1
+  },
+  "s03": {
+   "mode": "PLACEHOLDER",
+   "target": 4.3,
+   "got": 4.3
+  },
+  "s04": {
+   "mode": "PLACEHOLDER",
+   "target": 2.1,
+   "got": 2.1
+  },
+  "s05": {
+   "mode": "PLACEHOLDER",
+   "target": 2.5,
+   "got": 2.5
+  },
+  "s06": {
+   "mode": "PLACEHOLDER",
+   "target": 1.9,
+   "got": 1.9
+  },
+  "s07": {
+   "mode": "PLACEHOLDER",
+   "target": 1.9,
+   "got": 1.9
+  },
+  "s08": {
+   "mode": "PLACEHOLDER",
+   "target": 1.4,
+   "got": 1.367
+  },
+  "s09": {
+   "mode": "PLACEHOLDER",
+   "target": 2.5,
+   "got": 2.5
+  },
+  "s10": {
+   "mode": "PLACEHOLDER",
+   "target": 2.2,
+   "got": 2.167
+  },
+  "s11": {
+   "mode": "PLACEHOLDER",
+   "target": 2.7,
+   "got": 2.7
+  },
+  "s12": {
+   "mode": "PLACEHOLDER",
+   "target": 1.9,
+   "got": 1.9
+  },
+  "s13": {
+   "mode": "PLACEHOLDER",
+   "target": 2.5,
+   "got": 2.5
+  },
+  "s14": {
+   "mode": "PLACEHOLDER",
+   "target": 2.0,
+   "got": 1.967
+  },
+  "s15": {
+   "mode": "PLACEHOLDER",
+   "target": 1.9,
+   "got": 1.9
+  },
+  "s16": {
+   "mode": "PLACEHOLDER",
+   "target": 3.2,
+   "got": 3.167
+  }
+ },
+ "audio": {
+  "music_dread_drone": "missing",
+  "music_drop": "missing",
+  "music_family_theme": "missing",
+  "music_unease": "missing",
+  "music_unease_rise": "missing",
+  "music_sting_soft": "missing",
+  "sfx_wind_valley": "missing",
+  "sfx_room_tone": "missing",
+  "sfx_impact_sub": "missing",
+  "sfx_hatch_creak": "missing",
+  "sfx_drop_pulse": "missing",
+  "sfx_stamp_hit": "missing",
+  "sfx_chair_creak": "missing",
+  "sfx_pot_simmer": "missing",
+  "sfx_drawer_wood": "missing",
+  "sfx_key_tick": "missing",
+  "sfx_paper_rustle": "missing",
+  "sfx_footsteps_above": "missing",
+  "sfx_dust_trickle": "missing",
+  "sfx_ladder_creak": "missing",
+  "sfx_lamp_creak": "missing",
+  "sfx_attic_silence_ring": "missing"
+ },
+ "placeholders": [
+  "s01: PLACEHOLDER test clip",
+  "s02: PLACEHOLDER test clip",
+  "s03: PLACEHOLDER test clip",
+  "s04: PLACEHOLDER test clip",
+  "s05: PLACEHOLDER test clip",
+  "s06: PLACEHOLDER test clip",
+  "s07: PLACEHOLDER test clip",
+  "s08: PLACEHOLDER test clip",
+  "s09: PLACEHOLDER test clip",
+  "s10: PLACEHOLDER test clip",
+  "s11: PLACEHOLDER test clip",
+  "s12: PLACEHOLDER test clip",
+  "s13: PLACEHOLDER test clip",
+  "s14: PLACEHOLDER test clip",
+  "s15: PLACEHOLDER test clip",
+  "s16: PLACEHOLDER test clip"
+ ],
+ "final": {
+  "path": "/home/claude/studio/projects/ep1_hinterkaifeck/renders/final.mp4",
+  "duration": 37.467,
+  "expected": 37.64,
+  "streams": [
+   "h264,video,1080,1920",
+   "aac,audio"
+  ],
+  "black_segments": []
+ }
+}

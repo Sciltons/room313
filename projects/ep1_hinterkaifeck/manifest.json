@@ -1,0 +1,1065 @@
+{
+ "project": "ep1_hinterkaifeck",
+ "mode": "zero-cost",
+ "jobs": [
+  {
+   "id": "char_andreas",
+   "type": "image",
+   "stage": "character",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "character reference sheet, front view and three-quarter view side by side, full body, neutral dark grey background, a 63-year-old Bavarian farmer, weathered stern face, grey short beard and moustache, deep wrinkles, small tired eyes, flat dark wool cap, heavy dark-brown wool coat over a grey shirt, broad shoulders, slightly hunched, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 313,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "characters/andreas.png"
+  },
+  {
+   "id": "char_cazilia",
+   "type": "image",
+   "stage": "character",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "character reference sheet, front view and three-quarter view side by side, full body, neutral dark grey background, a 72-year-old Bavarian farm woman, thin lined face, grey hair under a dark headscarf, black long dress with a grey apron, small and frail, hard worried eyes, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 314,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "characters/cazilia.png"
+  },
+  {
+   "id": "char_viktoria",
+   "type": "image",
+   "stage": "character",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "character reference sheet, front view and three-quarter view side by side, full body, neutral dark grey background, a 35-year-old Bavarian farm woman, pale serious face, dark brown hair in a tight braid, plain dark-blue dress with a wool shawl, holding her 2-year-old son Josef on her hip, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 315,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "characters/viktoria.png"
+  },
+  {
+   "id": "char_girl",
+   "type": "image",
+   "stage": "character",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "character reference sheet, front view and three-quarter view side by side, full body, neutral dark grey background, a 7-year-old Bavarian farm girl, two blonde braids, simple grey dress and knitted cardigan, quiet wide eyes, holding a rag doll, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 316,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "characters/girl.png"
+  },
+  {
+   "id": "char_maria",
+   "type": "image",
+   "stage": "character",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "character reference sheet, front view and three-quarter view side by side, full body, neutral dark grey background, a 44-year-old Bavarian maid, round tired face, dark hair pinned back under a white kerchief, brown dress with a white apron, carrying a small cloth bundle, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 317,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "characters/maria.png"
+  },
+  {
+   "id": "kf_s01",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "wide establishing shot at night, an isolated 1920s Bavarian farmhouse with an attached barn, buried in heavy snow at night, dark pine forest behind, one small window glowing warm orange, pale moon behind thin clouds, a single line of footprints in the snow coming from the forest to the front door, snow falling, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 412,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s01.png"
+  },
+  {
+   "id": "kf_s02",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "dark interior hallway of a 1920s farmhouse, rough wooden plank walls, a hanging oil lamp, a wooden ladder leading up to a closed attic hatch in the ceiling, low angle looking up at the closed attic hatch, the lamp giving a weak warm light, dust in the air, nobody there, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 412,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s02.png"
+  },
+  {
+   "id": "kf_s03",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "dark interior hallway of a 1920s farmhouse, rough wooden plank walls, a hanging oil lamp, a wooden ladder leading up to a closed attic hatch in the ceiling, the oil lamp glowing blood red, the attic hatch open a crack with pure black darkness behind it and two faint eyes barely visible in the gap, red light bleeding across the wooden ceiling, horror, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 412,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s03.png"
+  },
+  {
+   "id": "kf_s04",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "aerial wide shot, an isolated 1920s Bavarian farmhouse with an attached barn, buried in heavy snow at night, dark pine forest behind, one small window glowing warm orange, pale moon behind thin clouds, the farm tiny in the middle of an endless dark pine forest, mist between the trees, moonlight, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 412,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s04.png"
+  },
+  {
+   "id": "kf_s05",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "ground-level wide shot in deep snow, an isolated 1920s Bavarian farmhouse with an attached barn, buried in heavy snow at night, dark pine forest behind, one small window glowing warm orange, pale moon behind thin clouds, a frozen dirt road leading to the farm, bare black trees along the road, no footprints, dead silence, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 412,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s05.png"
+  },
+  {
+   "id": "kf_s06",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "close shot of a weathered wooden farm sign nailed to a fence post in the snow, hand-painted faded letters 'HINTERKAIFECK', frost on the wood, dark farm out of focus behind, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 412,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s06.png"
+  },
+  {
+   "id": "kf_s07",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "medium shot, a 63-year-old Bavarian farmer, weathered stern face, grey short beard and moustache, deep wrinkles, small tired eyes, flat dark wool cap, heavy dark-brown wool coat over a grey shirt, broad shoulders, slightly hunched sitting at the head of the kitchen table, dim 1920s Bavarian farmhouse kitchen, wooden plank walls, a long wooden table, a tiled stove, an oil lamp on the table, a small window with snow outside, lamp light on his face, looking down at his hands, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 313,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s07.png"
+  },
+  {
+   "id": "kf_s08",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "medium shot, a 72-year-old Bavarian farm woman, thin lined face, grey hair under a dark headscarf, black long dress with a grey apron, small and frail, hard worried eyes standing by the tiled stove, dim 1920s Bavarian farmhouse kitchen, wooden plank walls, a long wooden table, a tiled stove, an oil lamp on the table, a small window with snow outside, holding a wooden spoon, half her face in shadow, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 314,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s08.png"
+  },
+  {
+   "id": "kf_s09",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "medium shot, a 35-year-old Bavarian farm woman, pale serious face, dark brown hair in a tight braid, plain dark-blue dress with a wool shawl, holding her 2-year-old son Josef on her hip by the kitchen window with snow outside, dim 1920s Bavarian farmhouse kitchen, wooden plank walls, a long wooden table, a tiled stove, an oil lamp on the table, a small window with snow outside, rocking the toddler on her hip, tired gentle expression, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 315,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s09.png"
+  },
+  {
+   "id": "kf_s10",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "medium close shot, a 7-year-old Bavarian farm girl, two blonde braids, simple grey dress and knitted cardigan, quiet wide eyes, holding a rag doll sitting on the kitchen bench hugging her rag doll, dim 1920s Bavarian farmhouse kitchen, wooden plank walls, a long wooden table, a tiled stove, an oil lamp on the table, a small window with snow outside, the toddler's small hand reaching into frame, lamp light, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 316,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s10.png"
+  },
+  {
+   "id": "kf_s11",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "medium shot, a 72-year-old Bavarian farm woman, thin lined face, grey hair under a dark headscarf, black long dress with a grey apron, small and frail, hard worried eyes alone in the kitchen at night searching through a wooden drawer by candlelight, dim 1920s Bavarian farmhouse kitchen, wooden plank walls, a long wooden table, a tiled stove, an oil lamp on the table, a small window with snow outside, drawer pulled open, worried face, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 314,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s11.png"
+  },
+  {
+   "id": "kf_s12",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "extreme close-up of an empty iron nail on a wooden plank wall where a house key used to hang, a faint pale outline of the missing key on the wood, candlelight, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 412,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s12.png"
+  },
+  {
+   "id": "kf_s13",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "over-the-shoulder shot, a 63-year-old Bavarian farmer, weathered stern face, grey short beard and moustache, deep wrinkles, small tired eyes, flat dark wool cap, heavy dark-brown wool coat over a grey shirt, broad shoulders, slightly hunched holding an unfolded 1920s German newspaper at the kitchen table, dim 1920s Bavarian farmhouse kitchen, wooden plank walls, a long wooden table, a tiled stove, an oil lamp on the table, a small window with snow outside, staring at it with a suspicious frown, lamp light on the paper, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 313,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s13.png"
+  },
+  {
+   "id": "kf_s14",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "close-up, a 63-year-old Bavarian farmer, weathered stern face, grey short beard and moustache, deep wrinkles, small tired eyes, flat dark wool cap, heavy dark-brown wool coat over a grey shirt, broad shoulders, slightly hunched lying in bed at night, small 1920s farmhouse bedroom at night, a wooden bed with a thick quilt, a crucifix on the wall, a candle on the nightstand, wooden ceiling planks above, eyes wide open staring up at the wooden ceiling, candle almost out, dust falling from the planks above, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 313,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s14.png"
+  },
+  {
+   "id": "kf_s15",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "low angle, a 63-year-old Bavarian farmer, weathered stern face, grey short beard and moustache, deep wrinkles, small tired eyes, flat dark wool cap, heavy dark-brown wool coat over a grey shirt, broad shoulders, slightly hunched climbing a wooden ladder up through the attic hatch holding an oil lamp above his head, dark wooden attic of a 1920s farmhouse seen by lantern light, hay on the floor, thin light leaking between the roof planks, his face lit from below, fear and anger, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 313,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s15.png"
+  },
+  {
+   "id": "kf_s16",
+   "type": "image",
+   "stage": "image",
+   "provider": "hf_space",
+   "model": "FLUX.1-schnell@space",
+   "est_usd": 0,
+   "input": {
+    "space": "black-forest-labs/FLUX.1-schnell",
+    "api_name": "/infer",
+    "args": {
+     "prompt": "wide shot, dark wooden attic of a 1920s farmhouse seen by lantern light, hay on the floor, thin light leaking between the roof planks, empty, lantern light revealing a human-shaped hollow pressed into the hay where someone has been lying, nobody there, 2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
+     "seed": 412,
+     "randomize_seed": false,
+     "width": 1024,
+     "height": 576,
+     "num_inference_steps": 4
+    }
+   },
+   "out": "keyframes/s16.png"
+  },
+  {
+   "id": "vid_s01",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "snow falling gently, slow push-in toward the glowing window, moonlit clouds drifting, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s01.png"
+    }
+   },
+   "out": "animated_shots/s01.mp4"
+  },
+  {
+   "id": "vid_s02",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "oil lamp swaying slightly, dust floating, very slow push-in toward the hatch, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s02.png"
+    }
+   },
+   "out": "animated_shots/s02.mp4"
+  },
+  {
+   "id": "vid_s03",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "red lamp light flickering violently, the hatch creaking open a little more, eyes glinting in the dark, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s03.png"
+    }
+   },
+   "out": "animated_shots/s03.mp4"
+  },
+  {
+   "id": "vid_s04",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "slow aerial drift forward over the forest, mist moving, snow falling, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s04.png"
+    }
+   },
+   "out": "animated_shots/s04.mp4"
+  },
+  {
+   "id": "vid_s05",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "very slow dolly forward along the road, snow drifting across the ground, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s05.png"
+    }
+   },
+   "out": "animated_shots/s05.mp4"
+  },
+  {
+   "id": "vid_s06",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "camera settles slowly, snow falling, light flicker, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s06.png"
+    }
+   },
+   "out": "animated_shots/s06.mp4"
+  },
+  {
+   "id": "vid_s07",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "he slowly lifts his eyes toward the camera, lamp flame flickering, breathing, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s07.png"
+    }
+   },
+   "out": "animated_shots/s07.mp4"
+  },
+  {
+   "id": "vid_s08",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "she turns her head slightly toward the camera, steam rising from the pot, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s08.png"
+    }
+   },
+   "out": "animated_shots/s08.mp4"
+  },
+  {
+   "id": "vid_s09",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "she gently rocks the child, looks out of the window, snow falling outside, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s09.png"
+    }
+   },
+   "out": "animated_shots/s09.mp4"
+  },
+  {
+   "id": "vid_s10",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "the girl looks up slowly, hugs the doll tighter, the lamp flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s10.png"
+    }
+   },
+   "out": "animated_shots/s10.mp4"
+  },
+  {
+   "id": "vid_s11",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "she rummages through the drawer, candle flame trembling, shadows moving on the wall, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s11.png"
+    }
+   },
+   "out": "animated_shots/s11.mp4"
+  },
+  {
+   "id": "vid_s12",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "slow push-in on the empty nail, candlelight flicker, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s12.png"
+    }
+   },
+   "out": "animated_shots/s12.mp4"
+  },
+  {
+   "id": "vid_s13",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "he turns the newspaper slowly, frowns, the lamp flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s13.png"
+    }
+   },
+   "out": "animated_shots/s13.mp4"
+  },
+  {
+   "id": "vid_s14",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "his eyes slowly move across the ceiling, dust drifts down, candle flame flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s14.png"
+    }
+   },
+   "out": "animated_shots/s14.mp4"
+  },
+  {
+   "id": "vid_s15",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "he climbs one rung, raises the lamp, light sweeping across the attic beams, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s15.png"
+    }
+   },
+   "out": "animated_shots/s15.mp4"
+  },
+  {
+   "id": "vid_s16",
+   "type": "video",
+   "stage": "video",
+   "provider": "hf_space",
+   "model": "LTX-Video-distilled@space",
+   "est_usd": 0,
+   "expect_duration": 3,
+   "input": {
+    "space": "Lightricks/ltx-video-distilled",
+    "api_name": "/image_to_video",
+    "args": {
+     "prompt": "lantern light slowly sweeping over the hay hollow, dust in the beam, held still, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
+     "image": "asset:keyframes/s16.png"
+    }
+   },
+   "out": "animated_shots/s16.mp4"
+  },
+  {
+   "id": "music_dread_drone",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "local_cpu",
+   "model": "musicgen-small@cpu",
+   "est_usd": 0,
+   "expect_duration": 30,
+   "input": {
+    "kind": "musicgen",
+    "prompt": "dark cinematic horror drone, low sustained strings and sub bass, slow tremolo, no melody, no drums, unsettling, 60 seconds",
+    "duration": 30
+   },
+   "out": "audio/music/dread_drone.wav"
+  },
+  {
+   "id": "music_drop",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "local_cpu",
+   "model": "musicgen-small@cpu",
+   "est_usd": 0,
+   "expect_duration": 10,
+   "input": {
+    "kind": "musicgen",
+    "prompt": "aggressive dark phonk horror trap drop, distorted screaming synth lead with vibrato, pounding sub bass pulse at 207 bpm, cinematic wall of distortion, 10 seconds",
+    "duration": 10
+   },
+   "out": "audio/music/drop.wav"
+  },
+  {
+   "id": "music_family_theme",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "local_cpu",
+   "model": "musicgen-small@cpu",
+   "est_usd": 0,
+   "expect_duration": 20,
+   "input": {
+    "kind": "musicgen",
+    "prompt": "melancholic solo music box melody over a quiet dark string pad, minor key, slow, cinematic, 20 seconds",
+    "duration": 20
+   },
+   "out": "audio/music/family_theme.wav"
+  },
+  {
+   "id": "music_unease",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "local_cpu",
+   "model": "musicgen-small@cpu",
+   "est_usd": 0,
+   "expect_duration": 25,
+   "input": {
+    "kind": "musicgen",
+    "prompt": "suspenseful horror underscore, low piano notes with long reverb, creeping string swells, sub rumble, no drums, 25 seconds",
+    "duration": 25
+   },
+   "out": "audio/music/unease.wav"
+  },
+  {
+   "id": "music_unease_rise",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "local_cpu",
+   "model": "musicgen-small@cpu",
+   "est_usd": 0,
+   "expect_duration": 10,
+   "input": {
+    "kind": "musicgen",
+    "prompt": "rising horror tension riser, strings crescendo with a heartbeat pulse building to a peak, 10 seconds",
+    "duration": 10
+   },
+   "out": "audio/music/unease_rise.wav"
+  },
+  {
+   "id": "music_sting_soft",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "local_cpu",
+   "model": "musicgen-small@cpu",
+   "est_usd": 0,
+   "expect_duration": 6,
+   "input": {
+    "kind": "musicgen",
+    "prompt": "a single soft eerie high violin note with long reverb fading into silence, 6 seconds",
+    "duration": 6
+   },
+   "out": "audio/music/sting_soft.wav"
+  },
+  {
+   "id": "sfx_wind_valley",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "cold winter wind blowing through a pine forest at night",
+    "min_dur": 0.5,
+    "max_dur": 60
+   },
+   "out": "audio/sfx/wind_valley.mp3"
+  },
+  {
+   "id": "sfx_room_tone",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "quiet old wooden house interior room tone at night",
+    "min_dur": 0.5,
+    "max_dur": 45
+   },
+   "out": "audio/sfx/room_tone.mp3"
+  },
+  {
+   "id": "sfx_impact_sub",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "huge cinematic sub bass impact hit with a sharp crack",
+    "min_dur": 0.5,
+    "max_dur": 9
+   },
+   "out": "audio/sfx/impact_sub.mp3"
+  },
+  {
+   "id": "sfx_hatch_creak",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "slow wooden attic hatch creaking open",
+    "min_dur": 0.5,
+    "max_dur": 9
+   },
+   "out": "audio/sfx/hatch_creak.mp3"
+  },
+  {
+   "id": "sfx_drop_pulse",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "distorted sub bass pulse hits",
+    "min_dur": 0.5,
+    "max_dur": 8
+   },
+   "out": "audio/sfx/drop_pulse.mp3"
+  },
+  {
+   "id": "sfx_stamp_hit",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "heavy rubber stamp slammed on paper",
+    "min_dur": 0.5,
+    "max_dur": 8
+   },
+   "out": "audio/sfx/stamp_hit.mp3"
+  },
+  {
+   "id": "sfx_chair_creak",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "old wooden chair creaking under weight",
+    "min_dur": 0.5,
+    "max_dur": 8
+   },
+   "out": "audio/sfx/chair_creak.mp3"
+  },
+  {
+   "id": "sfx_pot_simmer",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "pot simmering on a stove",
+    "min_dur": 0.5,
+    "max_dur": 12
+   },
+   "out": "audio/sfx/pot_simmer.mp3"
+  },
+  {
+   "id": "sfx_drawer_wood",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "wooden drawer pulled open and rummaging through small objects",
+    "min_dur": 0.5,
+    "max_dur": 9
+   },
+   "out": "audio/sfx/drawer_wood.mp3"
+  },
+  {
+   "id": "sfx_key_tick",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "small metallic tick with a soft reverse swell",
+    "min_dur": 0.5,
+    "max_dur": 8
+   },
+   "out": "audio/sfx/key_tick.mp3"
+  },
+  {
+   "id": "sfx_paper_rustle",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "unfolding and turning a large newspaper",
+    "min_dur": 0.5,
+    "max_dur": 9
+   },
+   "out": "audio/sfx/paper_rustle.mp3"
+  },
+  {
+   "id": "sfx_footsteps_above",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "slow heavy footsteps on wooden floorboards heard from the room below",
+    "min_dur": 0.5,
+    "max_dur": 12
+   },
+   "out": "audio/sfx/footsteps_above.mp3"
+  },
+  {
+   "id": "sfx_dust_trickle",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "fine dust and grit trickling down onto wood",
+    "min_dur": 0.5,
+    "max_dur": 8
+   },
+   "out": "audio/sfx/dust_trickle.mp3"
+  },
+  {
+   "id": "sfx_ladder_creak",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "climbing an old wooden ladder",
+    "min_dur": 0.5,
+    "max_dur": 9
+   },
+   "out": "audio/sfx/ladder_creak.mp3"
+  },
+  {
+   "id": "sfx_lamp_creak",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "oil lantern handle creaking while swinging",
+    "min_dur": 0.5,
+    "max_dur": 8
+   },
+   "out": "audio/sfx/lamp_creak.mp3"
+  },
+  {
+   "id": "sfx_attic_silence_ring",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "near-silent attic with a faint high ringing tone and dust settling",
+    "min_dur": 0.5,
+    "max_dur": 15
+   },
+   "out": "audio/sfx/attic_silence_ring.mp3"
+  }
+ ]
+}
