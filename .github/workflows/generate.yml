@@ -29,7 +29,7 @@ jobs:
       - name: Deps (CPU)
         run: |
           pip install -q requests pillow gradio_client huggingface_hub
-          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
+          ffmpeg -version | head -1   # preinstalled on ubuntu-latest
           if [ "${{ inputs.stage }}" = "audio" ] || [ "${{ inputs.stage }}" = "all" ]; then
             pip install -q "torch==2.6.0" --index-url https://download.pytorch.org/whl/cpu
             pip install -q transformers accelerate safetensors scipy
