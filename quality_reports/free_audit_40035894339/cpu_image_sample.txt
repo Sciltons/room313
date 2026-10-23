@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/diffusers/__init__.py", line 5, in <module>
+    from .utils import (
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/diffusers/utils/__init__.py", line 139, in <module>
+    from .peft_utils import (
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/diffusers/utils/peft_utils.py", line 26, in <module>
+    from .torch_utils import empty_device_cache
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/diffusers/utils/torch_utils.py", line 413, in <module>
+    torch_device = get_device()
+                   ^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/diffusers/utils/torch_utils.py", line 319, in get_device
+    return TorchDeviceBackend._detect_device_type()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/diffusers/utils/torch_utils.py", line 245, in _detect_device_type
+    if torch.accelerator.is_available():
+       ^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/torch/__init__.py", line 2216, in __getattr__
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+AttributeError: module 'torch' has no attribute 'accelerator'

@@ -1,0 +1,7 @@
+=== SPACE black-forest-labs/FLUX.1-schnell FAILED: Client.__init__() got an unexpected keyword argument 'hf_token'
+=== SPACE Lightricks/ltx-video-distilled FAILED: Client.__init__() got an unexpected keyword argument 'hf_token'
+=== SPACE multimodalart/wan2-1-fast FAILED: Client.__init__() got an unexpected keyword argument 'hf_token'
+=== SPACE facebook/MusicGen FAILED: Client.__init__() got an unexpected keyword argument 'hf_token'
+=== SPACE stabilityai/stable-audio-open-1.0 FAILED: Client.__init__() got an unexpected keyword argument 'hf_token'
+=== SPACE Wan-AI/Wan2.1 FAILED: Client.__init__() got an unexpected keyword argument 'hf_token'
+=== SPACE KingNish/Realtime-FLUX FAILED: Client.__init__() got an unexpected keyword argument 'hf_token'
