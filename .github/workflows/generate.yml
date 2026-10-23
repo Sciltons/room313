@@ -31,7 +31,7 @@ jobs:
           pip install -q requests pillow gradio_client huggingface_hub
           sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg
           if [ "${{ inputs.stage }}" = "audio" ] || [ "${{ inputs.stage }}" = "all" ]; then
-            pip install -q "torch==2.4.1" --index-url https://download.pytorch.org/whl/cpu
+            pip install -q "torch==2.6.0" --index-url https://download.pytorch.org/whl/cpu
             pip install -q transformers accelerate safetensors scipy
           fi
       - name: Fetch Arabic caption font (Cairo, OFL) once

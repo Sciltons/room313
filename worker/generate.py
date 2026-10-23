@@ -102,7 +102,8 @@ def hf_space_run(inp, token, out):
     Tolerant: if api_name is not exposed, picks the endpoint whose name contains api_hint (or the first one);
     args not accepted by the endpoint are dropped (reported in metrics) instead of crashing."""
     from gradio_client import Client, handle_file
-    c = Client(inp["space"], hf_token=token or None, verbose=False)
+    try: c = Client(inp["space"], token=token or None, verbose=False)
+    except TypeError: c = Client(inp["space"], hf_token=token or None, verbose=False)   # older gradio_client
     api = c.view_api(return_format="dict", print_info=False) or {}
     named = api.get("named_endpoints", {})
     api_name = inp["api_name"]; note = {}

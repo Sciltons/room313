@@ -37,7 +37,7 @@ jobs:
             probe https://pixabay.com/api/
           } | tee audit/connectivity.txt
       - name: Install inference deps (CPU)
-        run: pip install -q "torch==2.4.1" --index-url https://download.pytorch.org/whl/cpu && pip install -q diffusers transformers accelerate safetensors pillow gradio_client huggingface_hub kaggle requests
+        run: pip install -q "torch==2.6.0" --index-url https://download.pytorch.org/whl/cpu && pip install -q diffusers transformers accelerate safetensors pillow gradio_client huggingface_hub kaggle requests
       - name: Public Space API discovery (what the free Spaces actually expose)
         if: inputs.run_space_tests == 'true'
         env: {HF_TOKEN: "${{ secrets.HF_TOKEN }}"}
@@ -49,7 +49,7 @@ jobs:
           tok=os.environ.get("HF_TOKEN") or None
           for s in ["black-forest-labs/FLUX.1-schnell","Lightricks/ltx-video-distilled","multimodalart/wan2-1-fast","facebook/MusicGen","stabilityai/stable-audio-open-1.0","Wan-AI/Wan2.1","KingNish/Realtime-FLUX"]:
               try:
-                  c=Client(s, hf_token=tok, verbose=False); print("=== SPACE",s,"OK"); print(c.view_api(return_format="str")[:2500])
+                  c=Client(s, token=tok, verbose=False); print("=== SPACE",s,"OK"); print(c.view_api(return_format="str")[:2500])
               except Exception as e: print("=== SPACE",s,"FAILED:",str(e)[:300])
           EOF
       - name: Real sample — image via public FLUX.1-schnell Space (free quota)
@@ -60,7 +60,7 @@ jobs:
           python3 - <<'EOF' 2>&1 | tee audit/space_flux_sample.txt
           import os, time, shutil
           from gradio_client import Client
-          t0=time.time(); c=Client("black-forest-labs/FLUX.1-schnell", hf_token=os.environ.get("HF_TOKEN") or None, verbose=False)
+          t0=time.time(); c=Client("black-forest-labs/FLUX.1-schnell", token=os.environ.get("HF_TOKEN") or None, verbose=False)
           r=c.predict(prompt="2D anime illustration, cel-shaded, a 63-year-old Bavarian farmer with grey beard and flat cap, dark wool coat, 1922, dim oil lamp light, muted cold palette, character portrait", seed=0, randomize_seed=True, width=1024, height=576, num_inference_steps=4, api_name="/infer")
           print("result:", r, "elapsed %.1fs"%(time.time()-t0))
           p=r[0] if isinstance(r,(list,tuple)) else r
