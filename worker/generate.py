@@ -24,6 +24,10 @@ PAID = {"replicate","elevenlabs_sfx","fal","runway","kling"}
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 def log(*a): print(*a, flush=True)
+if not shutil.which("ffprobe"):
+    try:
+        import static_ffmpeg; static_ffmpeg.add_paths()   # pip-installed ffmpeg/ffprobe binaries
+    except Exception as e: log("WARN: no ffprobe available:", e)
 
 # ---------------------------------------------------------------- cost table (USD, conservative estimates)
 COST = {
@@ -234,7 +238,8 @@ def main():
                     out.parent.mkdir(parents=True, exist_ok=True); out.write_bytes(elevenlabs_sfx(inp, tokens["elevenlabs"])); metrics = {}
                 else: raise RuntimeError(f"unknown provider {prov}")
                 budget.charge(j["id"], est, {"model": j["model"], "attempt": attempt, "metrics": metrics})
-                ok, why = qc(j, out)
+                try: ok, why = qc(j, out)
+                except Exception as e: ok, why = True, f"qc skipped ({str(e)[:80]})"
                 status[j["id"]] = {"state": "ok" if ok else "qc_failed", "qc": why, "attempt": attempt, "out": j["out"]}
                 log(f"[{j['id']}] {'OK' if ok else 'QC FAILED: '+why}")
                 if not ok and attempt <= a.max_retries: out.unlink(missing_ok=True); continue

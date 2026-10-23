@@ -28,8 +28,8 @@ jobs:
         with: {python-version: "3.11"}
       - name: Deps (CPU)
         run: |
-          pip install -q requests pillow gradio_client huggingface_hub
-          ffmpeg -version | head -1   # preinstalled on ubuntu-latest
+          pip install -q requests pillow gradio_client huggingface_hub static-ffmpeg
+          command -v ffprobe || (timeout 240 sudo apt-get install -y -qq ffmpeg || echo "apt failed -> static-ffmpeg fallback")
           if [ "${{ inputs.stage }}" = "audio" ] || [ "${{ inputs.stage }}" = "all" ]; then
             pip install -q "torch==2.6.0" --index-url https://download.pytorch.org/whl/cpu
             pip install -q transformers accelerate safetensors scipy
