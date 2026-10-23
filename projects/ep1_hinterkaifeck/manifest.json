@@ -475,7 +475,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 4,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -484,7 +484,15 @@
     "args": {
      "prompt": "snow falling gently, slow push-in toward the glowing window, moonlit clouds drifting, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s01.png"
+     "input_image_filepath": "asset:keyframes/s01.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 4,
+     "seed_ui": 314,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s01.mp4"
@@ -496,7 +504,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 2,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -505,7 +513,15 @@
     "args": {
      "prompt": "oil lamp swaying slightly, dust floating, very slow push-in toward the hatch, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s02.png"
+     "input_image_filepath": "asset:keyframes/s02.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 2,
+     "seed_ui": 315,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s02.mp4"
@@ -517,7 +533,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 5,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -526,7 +542,15 @@
     "args": {
      "prompt": "red lamp light flickering violently, the hatch creaking open a little more, eyes glinting in the dark, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s03.png"
+     "input_image_filepath": "asset:keyframes/s03.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 5,
+     "seed_ui": 316,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s03.mp4"
@@ -547,7 +571,15 @@
     "args": {
      "prompt": "slow aerial drift forward over the forest, mist moving, snow falling, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s04.png"
+     "input_image_filepath": "asset:keyframes/s04.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 3,
+     "seed_ui": 317,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s04.mp4"
@@ -568,7 +600,15 @@
     "args": {
      "prompt": "very slow dolly forward along the road, snow drifting across the ground, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s05.png"
+     "input_image_filepath": "asset:keyframes/s05.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 3,
+     "seed_ui": 318,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s05.mp4"
@@ -580,7 +620,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 2,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -589,7 +629,15 @@
     "args": {
      "prompt": "camera settles slowly, snow falling, light flicker, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s06.png"
+     "input_image_filepath": "asset:keyframes/s06.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 2,
+     "seed_ui": 319,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s06.mp4"
@@ -601,7 +649,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 2,
    "tags": [
     "milestone"
    ],
@@ -612,7 +660,15 @@
     "args": {
      "prompt": "he slowly lifts his eyes toward the camera, lamp flame flickering, breathing, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s07.png"
+     "input_image_filepath": "asset:keyframes/s07.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 2,
+     "seed_ui": 320,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s07.mp4"
@@ -624,7 +680,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 2,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -633,7 +689,15 @@
     "args": {
      "prompt": "she turns her head slightly toward the camera, steam rising from the pot, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s08.png"
+     "input_image_filepath": "asset:keyframes/s08.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 2,
+     "seed_ui": 321,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s08.mp4"
@@ -654,7 +718,15 @@
     "args": {
      "prompt": "she gently rocks the child, looks out of the window, snow falling outside, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s09.png"
+     "input_image_filepath": "asset:keyframes/s09.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 3,
+     "seed_ui": 322,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s09.mp4"
@@ -675,7 +747,15 @@
     "args": {
      "prompt": "the girl looks up slowly, hugs the doll tighter, the lamp flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s10.png"
+     "input_image_filepath": "asset:keyframes/s10.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 3,
+     "seed_ui": 323,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s10.mp4"
@@ -696,7 +776,15 @@
     "args": {
      "prompt": "she rummages through the drawer, candle flame trembling, shadows moving on the wall, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s11.png"
+     "input_image_filepath": "asset:keyframes/s11.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 3,
+     "seed_ui": 324,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s11.mp4"
@@ -708,7 +796,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 2,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -717,7 +805,15 @@
     "args": {
      "prompt": "slow push-in on the empty nail, candlelight flicker, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s12.png"
+     "input_image_filepath": "asset:keyframes/s12.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 2,
+     "seed_ui": 325,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s12.mp4"
@@ -738,7 +834,15 @@
     "args": {
      "prompt": "he turns the newspaper slowly, frowns, the lamp flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s13.png"
+     "input_image_filepath": "asset:keyframes/s13.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 3,
+     "seed_ui": 326,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s13.mp4"
@@ -750,7 +854,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 2,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -759,7 +863,15 @@
     "args": {
      "prompt": "his eyes slowly move across the ceiling, dust drifts down, candle flame flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s14.png"
+     "input_image_filepath": "asset:keyframes/s14.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 2,
+     "seed_ui": 327,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s14.mp4"
@@ -771,7 +883,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 2,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -780,7 +892,15 @@
     "args": {
      "prompt": "he climbs one rung, raises the lamp, light sweeping across the attic beams, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s15.png"
+     "input_image_filepath": "asset:keyframes/s15.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 2,
+     "seed_ui": 328,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s15.mp4"
@@ -792,7 +912,7 @@
    "provider": "hf_space",
    "model": "LTX-Video-distilled@space",
    "est_usd": 0,
-   "expect_duration": 3,
+   "expect_duration": 4,
    "tags": [],
    "input": {
     "space": "Lightricks/ltx-video-distilled",
@@ -801,7 +921,15 @@
     "args": {
      "prompt": "lantern light slowly sweeping over the hay hollow, dust in the beam, held still, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-     "image": "asset:keyframes/s16.png"
+     "input_image_filepath": "asset:keyframes/s16.png",
+     "mode": "image-to-video",
+     "height_ui": 512,
+     "width_ui": 896,
+     "duration_ui": 4,
+     "seed_ui": 329,
+     "randomize_seed": false,
+     "ui_guidance_scale": 1,
+     "improve_texture_flag": true
     }
    },
    "out": "animated_shots/s16.mp4"

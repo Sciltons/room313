@@ -58,18 +58,17 @@ def file_to_data_url(p):
     mt = mimetypes.guess_type(str(p))[0] or "application/octet-stream"
     return f"data:{mt};base64," + base64.b64encode(pathlib.Path(p).read_bytes()).decode()
 
-def resolve_inputs(inp, gen_dir):
-    """replace 'asset:<relpath>' strings with data URLs of already generated assets"""
-    out = {}
-    for k, v in inp.items():
+def resolve_inputs(inp, gen_dir, as_path=False):
+    """replace 'asset:<relpath>' strings (at any depth) with data URLs — or absolute paths for hf_space (gradio handle_file)"""
+    def conv(v):
         if isinstance(v, str) and v.startswith("asset:"):
             p = gen_dir / v[6:]
             if not p.exists(): raise FileNotFoundError(f"dependency missing: {v}")
-            out[k] = file_to_data_url(p)
-        elif isinstance(v, list):
-            out[k] = [file_to_data_url(gen_dir / x[6:]) if isinstance(x, str) and x.startswith("asset:") else x for x in v]
-        else: out[k] = v
-    return out
+            return str(p.resolve()) if as_path else file_to_data_url(p)
+        if isinstance(v, dict): return {k: conv(x) for k, x in v.items()}
+        if isinstance(v, list): return [conv(x) for x in v]
+        return v
+    return conv(inp)
 
 def replicate_run(model, inp, token, timeout=1800):
     h = {"Authorization": f"Bearer {token}", "Content-Type": "application/json", "Prefer": "wait=60"}
@@ -222,8 +221,8 @@ def main():
         for attempt in range(1, a.max_retries + 2):
             try:
                 log(f"[{j['id']}] attempt {attempt} model={j['model']}")
-                inp = resolve_inputs(j["input"], gen)
                 prov = j.get("provider", "replicate")
+                inp = resolve_inputs(j["input"], gen, as_path=(prov == "hf_space"))
                 if prov == "hf_space": metrics = hf_space_run(inp, tokens["hf"], out)
                 elif prov == "local_cpu": metrics = local_cpu_run(inp, out)
                 elif prov == "freesound": metrics = freesound_run(inp, tokens["freesound"], out)
