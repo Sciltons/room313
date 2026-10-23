@@ -1,0 +1,60 @@
+{
+  "spent_usd": 0.0,
+  "entries": [
+    {
+      "job": "char_andreas",
+      "usd": 0.0,
+      "ts": 1792797038.7686267,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "space": "black-forest-labs/FLUX.1-schnell",
+        "api_name": "/infer"
+      }
+    },
+    {
+      "job": "kf_s07",
+      "usd": 0.0,
+      "ts": 1792797041.8498938,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "space": "black-forest-labs/FLUX.1-schnell",
+        "api_name": "/infer"
+      }
+    },
+    {
+      "job": "vid_s07",
+      "usd": 0.0,
+      "ts": 1792797047.6749918,
+      "model": "LTX-Video-distilled@space",
+      "attempt": 1,
+      "metrics": {
+        "space": "Lightricks/ltx-video-distilled",
+        "api_name": "/image_to_video"
+      }
+    },
+    {
+      "job": "vid_s07",
+      "usd": 0.0,
+      "ts": 1792797069.306782,
+      "model": "LTX-Video-distilled@space",
+      "attempt": 2,
+      "metrics": {
+        "space": "Lightricks/ltx-video-distilled",
+        "api_name": "/image_to_video"
+      }
+    },
+    {
+      "job": "vid_s07",
+      "usd": 0.0,
+      "ts": 1792797095.291966,
+      "model": "LTX-Video-distilled@space",
+      "attempt": 3,
+      "metrics": {
+        "space": "Lightricks/ltx-video-distilled",
+        "api_name": "/image_to_video"
+      }
+    }
+  ]
+}

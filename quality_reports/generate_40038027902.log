@@ -1,0 +1,15 @@
+project=ep1_hinterkaifeck jobs=3 done=0 pending=3 est=$0.00 spent=$0.00 cap=$0.00 dry_run=False
+  - char_andreas                 image  FLUX.1-schnell@space                     ~$0.000 -> characters/andreas.png
+  - kf_s07                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s07.png
+  - vid_s07                      video  LTX-Video-distilled@space                ~$0.000 -> animated_shots/s07.mp4
+[char_andreas] attempt 1 model=FLUX.1-schnell@space
+[char_andreas] OK
+[kf_s07] attempt 1 model=FLUX.1-schnell@space
+[kf_s07] OK
+[vid_s07] attempt 1 model=LTX-Video-distilled@space
+[vid_s07] ERROR: [Errno 2] No such file or directory: 'ffprobe'
+[vid_s07] attempt 2 model=LTX-Video-distilled@space
+[vid_s07] ERROR: [Errno 2] No such file or directory: 'ffprobe'
+[vid_s07] attempt 3 model=LTX-Video-distilled@space
+[vid_s07] ERROR: [Errno 2] No such file or directory: 'ffprobe'
+done. failures=1 spent=$0.00

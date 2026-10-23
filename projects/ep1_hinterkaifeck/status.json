@@ -1,0 +1,19 @@
+{
+  "char_andreas": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "characters/andreas.png"
+  },
+  "kf_s07": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "keyframes/s07.png"
+  },
+  "vid_s07": {
+    "state": "error",
+    "error": "[Errno 2] No such file or directory: 'ffprobe'",
+    "attempt": 3
+  }
+}
