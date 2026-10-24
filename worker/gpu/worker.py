@@ -78,12 +78,16 @@ def gen_video(j, out):
     return {"model": LTX_ID, "pipeline": "LTXConditionPipeline", "frames": frames, "fps": LTX_FPS, "size": [LTX_W, LTX_H], "gen_s": round(time.time()-t0, 1)}
 
 # ---------------------------------------------------------------- run
+# order: images first (first result within ~1 min), then text encoding, then videos
 vj = [j for j in pending if j["type"] == "video"]
-if vj:
-    try: ltx_encode_all(vj)
-    except Exception as e: log("LTX phase 1 failed:", e); traceback.print_exc()
-fails = 0
+pending = [j for j in pending if j["type"] != "video"] + vj
+fails = 0; _enc_done = False
 for j in pending:
+    if j["type"] == "video" and not _enc_done:
+        _enc_done = True
+        if _flux is not None: _flux = None; gc.collect(); torch.cuda.empty_cache()   # free FLUX before LTX (module-level name)
+        try: ltx_encode_all(vj)
+        except Exception as e: log("LTX phase 1 failed:", e); traceback.print_exc()
     out = OUT/j["out"]
     try:
         log(f"[{j['id']}] {j['type']} ...")
