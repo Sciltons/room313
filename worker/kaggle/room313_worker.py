@@ -70,9 +70,12 @@ def ltx():
     global _ltx
     if _ltx is None:
         from diffusers import LTXImageToVideoPipeline
+        from transformers import T5EncoderModel, BitsAndBytesConfig as TBnB
         log("loading LTX-Video ...")
-        _ltx = LTXImageToVideoPipeline.from_pretrained("Lightricks/LTX-Video-0.9.7-distilled", torch_dtype=torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16)
-        _ltx.enable_model_cpu_offload(); _ltx.vae.enable_tiling()
+        lid = "Lightricks/LTX-Video-0.9.7-distilled"; dt = torch.float16
+        t5 = T5EncoderModel.from_pretrained(lid, subfolder="text_encoder", quantization_config=TBnB(load_in_8bit=True), torch_dtype=dt)
+        _ltx = LTXImageToVideoPipeline.from_pretrained(lid, text_encoder=t5, torch_dtype=dt)
+        _ltx.enable_model_cpu_offload(); _ltx.vae.enable_tiling(); _ltx.vae.enable_slicing()
         log("LTX ready")
     return _ltx
 
@@ -82,11 +85,12 @@ def gen_video(j, out):
     img_rel = a["input_image_filepath"].replace("asset:", "")
     src = GEN / img_rel if (GEN / img_rel).exists() else prev_gen / img_rel
     if not src.exists(): raise FileNotFoundError(f"keyframe missing: {img_rel}")
-    W, H = int(a.get("width_ui", 896)), int(a.get("height_ui", 512)); W -= W % 32; H -= H % 32
+    W, H = 768, 416   # T4 (15 GB) budget; assemble.py rescales into the 1080x608 frame
     img = Image.open(src).convert("RGB").resize((W, H))
-    secs = float(a.get("duration_ui", 2)); fps = 24; frames = int(secs * fps); frames = (frames // 8) * 8 + 1
+    secs = min(3.0, float(a.get("duration_ui", 2))); fps = 24; frames = int(secs * fps); frames = (frames // 8) * 8 + 1   # <=73 frames on T4
     g = torch.Generator("cpu").manual_seed(int(a.get("seed_ui", 42)))
-    vid = p(image=img, prompt=a["prompt"], negative_prompt=a.get("negative_prompt", ""), width=W, height=H, num_frames=frames, num_inference_steps=8, guidance_scale=1.0, generator=g).frames[0]
+    torch.cuda.empty_cache()
+    vid = p(image=img, prompt=a["prompt"], negative_prompt=a.get("negative_prompt", ""), width=W, height=H, num_frames=frames, num_inference_steps=8, guidance_scale=1.0, generator=g, decode_timestep=0.05, decode_noise_scale=0.025).frames[0]
     out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=fps); return {"model": "LTX-Video-0.9.7-distilled", "frames": frames, "fps": fps}
 
 # ---------------------------------------------------------------- run
