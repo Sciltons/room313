@@ -516,7 +516,7 @@
       "chars": [
         "andreas"
       ],
-      "image": "medium shot from behind, {andreas} walking through the snow toward the barn holding a lantern, {farm_night}, his back to the camera",
+      "image": "wide shot from far behind, the back of {andreas} walking away through deep snow toward the barn holding a lantern, {farm_night}, his face completely hidden, only his back, coat and cap visible, lantern light on the snow",
       "motion": "he walks away toward the barn, lantern swinging, snow falling",
       "sfx": [
         "footsteps_snow",
@@ -662,7 +662,7 @@
       ],
       "env": "bedroom",
       "chars": [],
-      "image": "medium shot, {bedroom}, the bed with the quilt thrown aside and crumpled, a muddy boot print on the floorboards, grey morning light",
+      "image": "medium shot, {bedroom}, the bed with the quilt thrown aside and crumpled, a single muddy boot print on the clean wooden floorboards, grey morning light, no stains",
       "motion": "dust drifting in the light, slow pan across the unmade bed to the boot print",
       "sfx": [
         "room_tone"
