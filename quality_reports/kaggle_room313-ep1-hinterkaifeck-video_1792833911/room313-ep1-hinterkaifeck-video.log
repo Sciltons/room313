@@ -1,0 +1,80 @@
+[{"stream_name":"stderr","time":0.649117381,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stdout","time":1.6296804310000002,"data":"[    1.0s] stage=video jobs=1 pending=1 gpu=Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":1.629707222,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stderr","time":24.32148854,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":24.321515172,"data":"grpcio-tools 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.321521259,"data":"gradio 6.26.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.321525463,"data":"moviepy 1.0.3 requires decorator\u003c5.0,\u003e=4.0.2, but you have decorator 5.3.1 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.321529923,"data":"google-ai-generativelanguage 0.6.15 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,\u003c6.0.0dev,\u003e=3.20.2, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.32153573,"data":"ydf 0.15.0 requires protobuf\u003c7.0.0,\u003e=5.29.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.321539894,"data":"grpcio-status 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":50.07677902,"data":"[   49.5s] LTX phase 1: text encoder ...\n"}
+,{"stream_name":"stderr","time":50.648156822,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":135.985251005,"data":"\rFetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rFetching 4 files:  25%|██▌       | 1/4 [01:24\u003c04:14, 84.78s/it]\rFetching 4 files: 100%|██████████| 4/4 [01:24\u003c00:00, 21.20s/it]\n"}
+,{"stream_name":"stderr","time":173.455989123,"data":"\rLoading weights:   0%|          | 0/219 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/219 [00:01\u003c04:12,  1.16s/it]\rLoading weights:   3%|▎         | 7/219 [00:03\u003c01:44,  2.03it/s]\rLoading weights:   7%|▋         | 16/219 [00:05\u003c00:54,  3.73it/s]\rLoading weights:  11%|█▏        | 25/219 [00:05\u003c00:30,  6.44it/s]\rLoading weights:  20%|█▉        | 43/219 [00:05\u003c00:12, 14.63it/s]\rLoading weights:  24%|██▎       | 52/219 [00:05\u003c00:08, 19.29it/s]\rLoading weights:  28%|██▊       | 61/219 [00:05\u003c00:06, 23.77it/s]\rLoading weights:  32%|███▏      | 70/219 [00:05\u003c00:05, 28.39it/s]\rLoading weights:  39%|███▉      | 86/219 [00:05\u003c00:03, 42.76it/s]\rLoading weights:  43%|████▎     | 95/219 [00:07\u003c00:05, 20.99it/s]\rLoading weights:  47%|████▋     | 102/219 [00:09\u003c00:13,  8.85it/s]\rLoading weights:  49%|████▉     | 107/219 [00:11\u003c00:20,  5.55it/s]\rLoading weights:  53%|█████▎    | 115/219 [00:14\u003c00:21,  4.77it/s]\rLoading weights:  54%|█████▍    | 118/219 [00:14\u003c00:19,  5.20it/s]\rLoading weights:  57%|█████▋    | 124/219 [00:16\u003c00:23,  4.03it/s]\rLoading weights:  61%|██████    | 133/219 [00:18\u003c00:21,  4.01it/s]\rLoading weights:  62%|██████▏   | 135/219 [00:19\u003c00:19,  4.32it/s]\rLoading weights:  65%|██████▍   | 142/219 [00:21\u003c00:20,  3.79it/s]\rLoading weights:  69%|██████▉   | 151/219 [00:22\u003c00:14,  4.74it/s]\rLoading weights:  73%|███████▎  | 160/219 [00:23\u003c00:10,  5.85it/s]\rLoading weights:  78%|███████▊  | 170/219 [00:24\u003c00:07,  6.21it/s]\rLoading weights:  81%|████████▏ | 178/219 [00:26\u003c00:06,  6.32it/s]\rLoading weights:  82%|████████▏ | 179/219 [00:27\u003c00:08,  4.94it/s]\rLoading weights:  85%|████████▌ | 187/219 [00:28\u003c00:06,  4.93it/s]\rLoading weights:  86%|████████▌ | 188/219 [00:29\u003c00:06,  4.51it/s]\rLoading weights:  89%|████████▉ | 196/219 [00:31\u003c00:05,  4.19it/s]\rLoading weights:  90%|████████▉ | 197/219 [00:31\u003c00:05,  4.03it/s]\rLoading weights:  94%|█████████▎| 205/219 [00:33\u003c00:03,  3.81it/s]\rLoading weights:  98%|█████████▊| 214/219 [00:35\u003c00:01,  4.24it/s]\rLoading weights:  98%|█████████▊| 215/219 [00:35\u003c00:00,  4.35it/s]\rLoading weights: 100%|██████████| 219/219 [00:37\u003c00:00,  3.90it/s]\rLoading weights: 100%|██████████| 219/219 [00:37\u003c00:00,  5.88it/s]\n"}
+,{"stream_name":"stdout","time":191.951166665,"data":"[  191.3s]   embeddings for 1 shots; text encoder freed\n"}
+,{"stream_name":"stdout","time":191.974071055,"data":"[  191.3s] [vid_s03] video ...\n"}
+,{"stream_name":"stdout","time":199.269952168,"data":"[  198.6s] LTX phase 2: transformer + vae ...\n"}
+,{"stream_name":"stderr","time":199.270284798,"data":"/usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\n"}
+,{"stream_name":"stderr","time":199.270300374,"data":"  deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\n"}
+,{"stream_name":"stderr","time":330.765144308,"data":"\rFetching 12 files:   0%|          | 0/12 [00:00\u003c?, ?it/s]\rFetching 12 files:  50%|█████     | 6/12 [01:04\u003c01:04, 10.78s/it]\rFetching 12 files:  58%|█████▊    | 7/12 [01:23\u003c01:01, 12.27s/it]\rFetching 12 files:  67%|██████▋   | 8/12 [02:11\u003c01:20, 20.01s/it]\rFetching 12 files: 100%|██████████| 12/12 [02:11\u003c00:00, 10.95s/it]\n"}
+,{"stream_name":"stderr","time":340.93904436,"data":"\rLoading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading pipeline components...:  33%|███▎      | 1/3 [00:10\u003c00:20, 10.03s/it]\n"}
+,{"stream_name":"stderr","time":356.19447597,"data":"\rLoading checkpoint shards:   0%|          | 0/6 [00:00\u003c?, ?it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":375.916437559,"data":"\rLoading checkpoint shards:  17%|█▋        | 1/6 [00:15\u003c01:16, 15.26s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":395.799981271,"data":"\rLoading checkpoint shards:  33%|███▎      | 2/6 [00:34\u003c01:11, 17.88s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":415.747757221,"data":"\rLoading checkpoint shards:  50%|█████     | 3/6 [00:54\u003c00:56, 18.80s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":435.786254468,"data":"\rLoading checkpoint shards:  67%|██████▋   | 4/6 [01:14\u003c00:38, 19.25s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":441.188192974,"data":"\rLoading checkpoint shards:  83%|████████▎ | 5/6 [01:34\u003c00:19, 19.54s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":441.191398402,"data":"\rLoading checkpoint shards: 100%|██████████| 6/6 [01:40\u003c00:00, 14.73s/it]\u001b[A\rLoading checkpoint shards: 100%|██████████| 6/6 [01:40\u003c00:00, 16.71s/it]\n"}
+,{"stream_name":"stderr","time":441.257028626,"data":"\rLoading pipeline components...:  67%|██████▋   | 2/3 [01:50\u003c01:03, 63.19s/it]\rLoading pipeline components...: 100%|██████████| 3/3 [01:50\u003c00:00, 36.83s/it]\n"}
+,{"stream_name":"stdout","time":446.081692103,"data":"[  445.5s] [vid_s03] ERROR CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 30.81 MiB is free. Including non-PyTorch memory, this process has 14.53 GiB memory in use. Of the allocated memory 14.39 GiB is allocated by PyTorch, and 11.72 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":446.09611618,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":446.098241721,"data":"  File \"/kaggle/src/script.py\", line 119, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":446.098256574,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":446.098261004,"data":"                                                       ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":446.098265839,"data":"  File \"/kaggle/src/script.py\", line 97, in gen_video\n"}
+,{"stream_name":"stderr","time":446.0982697,"data":"    a = j[\"input\"][\"args\"]; p = ltx()\n"}
+,{"stream_name":"stderr","time":446.098273818,"data":"                                ~~~^^\n"}
+,{"stream_name":"stderr","time":446.098277194,"data":"  File \"/kaggle/src/script.py\", line 91, in ltx\n"}
+,{"stream_name":"stderr","time":446.098281236,"data":"    _ltx = LTXImageToVideoPipeline.from_pretrained(LTX_ID, text_encoder=None, tokenizer=None, torch_dtype=torch.float16, low_cpu_mem_usage=True).to(DEV)\n"}
+,{"stream_name":"stderr","time":446.098286026,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/pipeline_utils.py\", line 583, in to\n"}
+,{"stream_name":"stderr","time":446.098290204,"data":"    module.to(device, dtype)\n"}
+,{"stream_name":"stderr","time":446.098293867,"data":"    ~~~~~~~~~^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":446.098297799,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/models/modeling_utils.py\", line 1640, in to\n"}
+,{"stream_name":"stderr","time":446.098301512,"data":"    return super().to(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":446.098304725,"data":"           ~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":446.098308144,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":446.098311626,"data":"    return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":446.098314848,"data":"           ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":446.098318111,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":446.098321638,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":446.098324809,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":446.098328094,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":446.098331601,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":446.098352244,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":446.098357811,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":446.098361529,"data":"    module._apply(fn)\n"}
+,{"stream_name":"stderr","time":446.098364712,"data":"    ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":446.098378976,"data":"  [Previous line repeated 2 more times]\n"}
+,{"stream_name":"stderr","time":446.09838239,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 965, in _apply\n"}
+,{"stream_name":"stderr","time":446.098385911,"data":"    param_applied = fn(param)\n"}
+,{"stream_name":"stderr","time":446.098389178,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1370, in convert\n"}
+,{"stream_name":"stderr","time":446.098392903,"data":"    return t.to(\n"}
+,{"stream_name":"stderr","time":446.098397944,"data":"           ~~~~^\n"}
+,{"stream_name":"stderr","time":446.098405856,"data":"        device,\n"}
+,{"stream_name":"stderr","time":446.098408415,"data":"        ^^^^^^^\n"}
+,{"stream_name":"stderr","time":446.098410728,"data":"        dtype if t.is_floating_point() or t.is_complex() else None,\n"}
+,{"stream_name":"stderr","time":446.098413058,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":446.098415309,"data":"        non_blocking,\n"}
+,{"stream_name":"stderr","time":446.098417557,"data":"        ^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":446.098419745,"data":"    )\n"}
+,{"stream_name":"stderr","time":446.0984219,"data":"    ^\n"}
+,{"stream_name":"stderr","time":446.098427176,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 30.81 MiB is free. Including non-PyTorch memory, this process has 14.53 GiB memory in use. Of the allocated memory 14.39 GiB is allocated by PyTorch, and 11.72 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":447.368883064,"data":"[  446.7s] done. ok=0 failed=1\n"}
+,{"stream_name":"stderr","time":454.373599141,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":454.373626177,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":454.648614423,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":454.648644216,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":455.948063924,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":456.855687088,"data":"[NbConvertApp] Writing 321992 bytes to __results__.html\n"}
+]
