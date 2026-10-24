@@ -1,0 +1,55 @@
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash mkdir stash://ahmedali41329174/room313
+API error: code=17, message=Failed to create directory: directory already exists
+
+Error: API error: code=17, message=Failed to create directory: directory already exists
+Usage:
+  camber stash mkdir [flags]
+
+Flags:
+  -h, --help            help for mkdir
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber stash mkdir stash://ahmedali41329174/room313/assets
+Directory created successfully
+
+$ camber stash rm stash://ahmedali41329174/room313/pkg.tar.gz
+Do you want to remove: stash://ahmedali41329174/room313/pkg.tar.gz? [y/N]: Remove success
+
+$ camber stash rm stash://ahmedali41329174/room313/run.log
+Do you want to remove: stash://ahmedali41329174/room313/run.log? [y/N]: Remove success
+
+$ camber stash cp /home/runner/work/room313/room313/quality_reports/camber_run_1792869538/pkg.tar.gz stash://ahmedali41329174/room313/pkg.tar.gz
+Perform copying /home/runner/work/room313/room313/quality_reports/camber_run_1792869538/pkg.tar.gz to stash://ahmedali41329174/room313/pkg.tar.gz
+user/b122b56b-0c44-4dd5-b902-23db56cb53e2/room313/pkg.tar.gz
+
+Uploading /home/runner/work/room313/room313/quality_reports/camber_run_1792869538/pkg.tar.gz: 100.00% (9.8MB/9.8MB) 0.00 B/s
+
+Uploading /home/runner/work/room313/room313/quality_reports/camber_run_1792869538/pkg.tar.gz: 100.00% (9.8MB/9.8MB) 0.00 B/s
+
+$ camber chat -a @ahmedali41329174.room313 -m Run this exact shell command on the compute node, do not modify it, do not run anything else, then reply with its output only:
+cd ~/room313 && rm -rf pkg && tar xzf pkg.tar.gz && cd pkg && mkdir -p out && (nohup bash gpu/run.sh > ../run.log 2>&1 &) ; sleep 8; echo STARTED; tail -5 ../run.log --output json --no-thinking
+{"conversation_id":"ab3fb3db-7e50-4ec3-bd66-bfbdba2d96c7","result":"```\nSTARTED\n```","output_stash_files":[]}
+
+  675s | [  553.4s] done. ok=0 failed=32
+-rw-r--r--. 1 jovyan users 5706 Oct 24 19:30 out.tar.gz
+RUN_FAILED rc=1
+final: FAILED
+$ camber stash cp stash://ahmedali41329174/room313/pkg/out.tar.gz /home/runner/work/room313/room313/quality_reports/camber_run_1792869538/out.tar.gz
+Perform copying stash://ahmedali41329174/room313/pkg/out.tar.gz to /home/runner/work/room313/room313/quality_reports/camber_run_1792869538/out.tar.gz
+/home/runner/work/room313/room313/quality_reports/camber_run_1792869538/out.tar.gz
+
+Downloaded /home/runner/work/room313/room313/quality_reports/camber_run_1792869538/out.tar.gz: 100.00% (5.6KB/5.6KB)
+
+FAILED; merged 0 files
