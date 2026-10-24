@@ -23,9 +23,9 @@
         896,
         512
       ],
-      "gen_s": 22.8
+      "gen_s": 22.7
     },
-    "elapsed": 972.3,
+    "elapsed": 1161.4,
     "worker": "camber-L4"
   },
   "char_cazilia": {
@@ -218,9 +218,9 @@
         896,
         512
       ],
-      "gen_s": 41.8
+      "gen_s": 55.2
     },
-    "elapsed": 850.5,
+    "elapsed": 999.8,
     "worker": "camber-L4"
   },
   "vid_s01": {
@@ -235,9 +235,9 @@
         896,
         512
       ],
-      "gen_s": 51.3
+      "gen_s": 70.0
     },
-    "elapsed": 779.8,
+    "elapsed": 919.0,
     "worker": "camber-L4"
   },
   "vid_s07_A": {
@@ -455,9 +455,9 @@
         896,
         512
       ],
-      "gen_s": 28.8
+      "gen_s": 25.5
     },
-    "elapsed": 808.7,
+    "elapsed": 944.5,
     "worker": "camber-L4"
   },
   "vid_s04": {
@@ -472,9 +472,9 @@
         896,
         512
       ],
-      "gen_s": 34.1
+      "gen_s": 51.0
     },
-    "elapsed": 884.7,
+    "elapsed": 1050.8,
     "worker": "camber-L4"
   },
   "vid_s05": {
@@ -489,9 +489,9 @@
         896,
         512
       ],
-      "gen_s": 32.2
+      "gen_s": 54.6
     },
-    "elapsed": 917.0,
+    "elapsed": 1105.5,
     "worker": "camber-L4"
   },
   "vid_s06": {
@@ -506,9 +506,9 @@
         896,
         512
       ],
-      "gen_s": 32.4
+      "gen_s": 33.0
     },
-    "elapsed": 949.4,
+    "elapsed": 1138.6,
     "worker": "camber-L4"
   },
   "vid_s08": {
@@ -523,9 +523,9 @@
         896,
         512
       ],
-      "gen_s": 22.9
+      "gen_s": 22.6
     },
-    "elapsed": 995.3,
+    "elapsed": 1184.1,
     "worker": "camber-L4"
   },
   "vid_s09": {
@@ -540,9 +540,9 @@
         896,
         512
       ],
-      "gen_s": 23.0
+      "gen_s": 22.5
     },
-    "elapsed": 1018.4,
+    "elapsed": 1206.6,
     "worker": "camber-L4"
   },
   "vid_s10": {
@@ -557,9 +557,9 @@
         896,
         512
       ],
-      "gen_s": 32.5
+      "gen_s": 32.2
     },
-    "elapsed": 1051.0,
+    "elapsed": 1238.9,
     "worker": "camber-L4"
   },
   "vid_s11": {
@@ -574,9 +574,9 @@
         896,
         512
       ],
-      "gen_s": 32.7
+      "gen_s": 32.4
     },
-    "elapsed": 1083.7,
+    "elapsed": 1271.3,
     "worker": "camber-L4"
   },
   "vid_s12": {
@@ -591,9 +591,9 @@
         896,
         512
       ],
-      "gen_s": 33.0
+      "gen_s": 32.2
     },
-    "elapsed": 1116.8,
+    "elapsed": 1303.6,
     "worker": "camber-L4"
   },
   "vid_s13": {
@@ -608,9 +608,9 @@
         896,
         512
       ],
-      "gen_s": 32.7
+      "gen_s": 32.1
     },
-    "elapsed": 1149.5,
+    "elapsed": 1335.9,
     "worker": "camber-L4"
   },
   "vid_s14": {
@@ -625,9 +625,9 @@
         896,
         512
       ],
-      "gen_s": 32.9
+      "gen_s": 32.5
     },
-    "elapsed": 1182.5,
+    "elapsed": 1368.4,
     "worker": "camber-L4"
   },
   "vid_s15": {
@@ -642,9 +642,9 @@
         896,
         512
       ],
-      "gen_s": 23.1
+      "gen_s": 23.0
     },
-    "elapsed": 1205.7,
+    "elapsed": 1391.5,
     "worker": "camber-L4"
   },
   "vid_s16": {
@@ -659,9 +659,9 @@
         896,
         512
       ],
-      "gen_s": 23.1
+      "gen_s": 22.9
     },
-    "elapsed": 1228.9,
+    "elapsed": 1414.4,
     "worker": "camber-L4"
   },
   "music_night_terror": {
@@ -792,157 +792,157 @@
   },
   "char_maid_old": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 90.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 77.12 MiB is free. Including non-PyTorch memory, this process has 21.95 GiB memory in use. Of the allocated memory 21.72 GiB is allocated by PyTorch, and 5.39 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments",
     "worker": "camber-L4"
   },
   "char_neighbor": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 3.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:",
     "worker": "camber-L4"
   },
   "kf_s17": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s18": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s19": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s20": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s21": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s22": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s23": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s24": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s25": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s26": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s27": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s28": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s29": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s30": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s31": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s32": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s33": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s34": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s35": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s36": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s37": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s38": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s39": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s40": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s41": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s42": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s43": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s45": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "kf_s46": {
     "state": "error",
-    "error": "process() takes no keyword arguments",
+    "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 3.12 MiB is free. Including non-PyTorch memory, this process has 22.02 GiB memory in use. Of the allocated memory 21.79 GiB is allocated by PyTorch, and 2.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
     "worker": "camber-L4"
   },
   "vid_s17": {
