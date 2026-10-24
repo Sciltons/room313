@@ -1,0 +1,44 @@
+name: kaggle-gpu-generate
+# Free GPU worker: pushes worker/kaggle/ as a Kaggle script kernel (T4x2/P100, internet on), waits, pulls outputs, commits them.
+# Needs free secrets KAGGLE_USERNAME + KAGGLE_KEY (phone-verified Kaggle account). $0.
+on:
+  workflow_dispatch:
+    inputs:
+      project: {description: "projects/<name>", required: true, default: "ep1_hinterkaifeck"}
+      stage:   {description: "milestone | image | character | video | all", required: true, default: "milestone"}
+      only:    {description: "comma-separated job ids (optional, forces regeneration)", required: false, default: ""}
+
+concurrency:
+  group: "kaggle-${{ inputs.project }}"
+  cancel-in-progress: false
+
+jobs:
+  kaggle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 720
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q kaggle
+      - name: Dispatch to Kaggle and wait
+        id: k
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          set -o pipefail
+          python3 worker/kaggle_dispatch.py --project "${{ inputs.project }}" --stage "${{ inputs.stage }}" --only "${{ inputs.only }}" | tee run.log
+          echo "exit=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
+      - name: Commit assets + status + kernel log
+        if: always()
+        run: |
+          mkdir -p quality_reports; cp run.log quality_reports/kaggle_${{ github.run_id }}.log 2>/dev/null || true
+          rm -f worker/kaggle/job.json worker/kaggle/kernel-metadata.json
+          git config user.name "studio-worker"; git config user.email "studio-worker@users.noreply.github.com"
+          git add -A projects/${{ inputs.project }}/generated projects/${{ inputs.project }}/status.json quality_reports 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "kaggle assets: ${{ inputs.project }} ${{ inputs.stage }} [skip ci]" && git pull --rebase && git push)
+      - name: Result
+        run: test "${{ steps.k.outputs.exit }}" = "0"
