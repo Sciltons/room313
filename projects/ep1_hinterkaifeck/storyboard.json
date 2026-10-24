@@ -446,7 +446,8 @@
       },
       "hatch_creak": {
         "prompt": "slow wooden attic hatch creaking open, old rusty hinge",
-        "duration": 3
+        "duration": 3,
+        "fs_query": "door creak"
       },
       "drop_pulse": {
         "prompt": "distorted sub bass pulse hits, four fast hits",
@@ -464,7 +465,8 @@
       },
       "pot_simmer": {
         "prompt": "pot simmering on a stove, gentle bubbling, steam",
-        "duration": 4
+        "duration": 4,
+        "fs_query": "boiling pot"
       },
       "drawer_wood": {
         "prompt": "wooden drawer pulled open and rummaging through small objects",
@@ -493,7 +495,7 @@
       "lamp_creak": {
         "prompt": "oil lantern handle creaking while swinging",
         "duration": 2,
-        "fs_query": "lantern creak"
+        "fs_query": "metal creak"
       },
       "attic_silence_ring": {
         "prompt": "near-silent attic with a faint high ringing tone and dust settling, eerie",
@@ -503,7 +505,7 @@
       "key_drop": {
         "prompt": "small iron key falling and hitting a wooden floor, close, single drop",
         "duration": 2,
-        "fs_query": "key drop wood floor"
+        "fs_query": "keys drop"
       }
     }
   }

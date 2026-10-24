@@ -1074,7 +1074,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "wooden attic hatch",
+    "query": "door creak",
     "min_dur": 0.5,
     "max_dur": 9
    },
@@ -1130,7 +1130,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "pot simmering stove",
+    "query": "boiling pot",
     "min_dur": 0.5,
     "max_dur": 12
    },
@@ -1214,7 +1214,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "lantern creak",
+    "query": "metal creak",
     "min_dur": 0.5,
     "max_dur": 8
    },
@@ -1242,7 +1242,7 @@
    "model": "freesound-cc0",
    "est_usd": 0,
    "input": {
-    "query": "key drop wood floor",
+    "query": "keys drop",
     "min_dur": 0.5,
     "max_dur": 8
    },
