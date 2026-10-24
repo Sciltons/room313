@@ -1,0 +1,49 @@
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash rm stash://ahmedali41329174/room313/assets/keyframes/s23.png
+Do you want to remove: stash://ahmedali41329174/room313/assets/keyframes/s23.png? [y/N]: Remove success
+
+$ camber stash rm stash://ahmedali41329174/room313/assets/keyframes/s32.png
+Do you want to remove: stash://ahmedali41329174/room313/assets/keyframes/s32.png? [y/N]: Remove success
+
+$ camber stash rm -r stash://ahmedali41329174/room313/assets/animated_shots
+Do you want to remove: stash://ahmedali41329174/room313/assets/animated_shots? [y/N]: Remove success
+
+$ camber stash ls stash://ahmedali41329174/room313/assets/keyframes
+Name                Type                Size
+----                ----                ----
+s17.png             file                665.8KB
+s18.png             file                691.7KB
+s19.png             file                800.3KB
+s20.png             file                605.3KB
+s21.png             file                560.6KB
+s22.png             file                698.6KB
+s24.png             file                690.1KB
+s25.png             file                591.1KB
+s26.png             file                499.5KB
+s27.png             file                440.8KB
+s28.png             file                698.6KB
+s29.png             file                725.5KB
+s30.png             file                802.9KB
+s31.png             file                546.5KB
+s33.png             file                722.5KB
+s34.png             file                731.5KB
+s35.png             file                612.8KB
+s36.png             file                523.9KB
+s37.png             file                708.1KB
+s38.png             file                670.3KB
+s39.png             file                807.6KB
+s40.png             file                380.9KB
+s41.png             file                929.8KB
+s42.png             file                864.7KB
+s43.png             file                738.9KB
+s45.png             file                413.6KB
+s46.png             file                571.3KB
+
