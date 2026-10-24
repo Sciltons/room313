@@ -1,2 +1,5 @@
 projects/*/renders/
 __pycache__/
+quality_reports/*/pkg/
+quality_reports/*/pkg.tar.gz
+quality_reports/*/assets_sync/
