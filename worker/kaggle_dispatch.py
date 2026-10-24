@@ -25,7 +25,7 @@ def main():
     # kernel payload
     job = json.dumps({"repo": repo_url, "project": a.project, "stage": a.stage, "only": [x for x in a.only.split(",") if x]})
     push = ROOT / "quality_reports" / "_kaggle_push"; shutil.rmtree(push, ignore_errors=True); push.mkdir(parents=True)
-    (push / "script.py").write_text((KDIR / "room313_worker.py").read_text().replace("__JOB_JSON__", job.replace("\\", "\\\\").replace('"', '\\"')))
+    (push / "script.py").write_text((KDIR / "room313_worker.py").read_text().replace("__JOB_JSON__", job.replace("\\", "\\\\").replace('"', '\\"')).replace("__HF_TOKEN__", os.environ.get("HF_TOKEN", "")))
     (push / "kernel-metadata.json").write_text(json.dumps({
         "id": f"{user}/{slug}", "title": slug, "code_file": "script.py", "language": "python", "kernel_type": "script",
         "is_private": "true", "enable_gpu": "true", "enable_tpu": "false", "enable_internet": "true", "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []}, indent=1))

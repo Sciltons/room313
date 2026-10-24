@@ -11,6 +11,8 @@ import os, sys, json, time, subprocess, pathlib, shutil, traceback
 
 WORK = pathlib.Path("/kaggle/working"); GEN = WORK / "generated"; GEN.mkdir(parents=True, exist_ok=True)
 JOB = json.loads(os.environ.get("ROOM313_JOB") or "__JOB_JSON__")   # injected by kaggle_dispatch.py (kernels carry a single file)
+_HF = "__HF_TOKEN__"
+if _HF and not _HF.startswith("__"): os.environ["HF_TOKEN"] = os.environ["HUGGINGFACE_HUB_TOKEN"] = _HF   # gated FLUX weights
 STATUS = {}; T0 = time.time()
 def log(*a): print(f"[{time.time()-T0:7.1f}s]", *a, flush=True)
 def save_status(): (WORK / "kaggle_status.json").write_text(json.dumps(STATUS, indent=1))

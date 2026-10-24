@@ -28,6 +28,7 @@ jobs:
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           set -o pipefail
           python3 worker/kaggle_dispatch.py --project "${{ inputs.project }}" --stage "${{ inputs.stage }}" --only "${{ inputs.only }}" | tee run.log
