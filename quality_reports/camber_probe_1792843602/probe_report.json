@@ -1,0 +1,58 @@
+[
+ {
+  "cmd": "camber version",
+  "rc": 0,
+  "out": "Camber 1.0.42 - 435f260"
+ },
+ {
+  "cmd": "camber me",
+  "rc": 0,
+  "out": "======================User Information======================\nEmail:               scilton19@gmail.com\nUsername:            ahmedali41329174\nStash:               stash://ahmedali41329174/\nCurrently Selected Team:  ahmeddefaultteam25018776\n\n============================================================"
+ },
+ {
+  "cmd": "camber job get --help",
+  "rc": 0,
+  "out": "Get job status.\n\nUsage:\n  camber job get [flags]\n\nFlags:\n  -h, --help            help for get\n      --output string   output format (e.g. json)\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "camber job logs --help",
+  "rc": 0,
+  "out": "View job logs.\n\nUsage:\n  camber job logs [flags]\n\nFlags:\n  -h, --help   help for logs\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "camber job list --help",
+  "rc": 0,
+  "out": "List jobs.\n\nUsage:\n  camber job list [flags]\n\nFlags:\n  -h, --help            help for list\n      --output string   output format (e.g. json)\n      --page int        The page number of list job segmentation, the value must be greater than 0 (default 1)\n      --size int        The number of jobs on each page, the number must be greater than 0 (default 10)\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "camber stash cp --help",
+  "rc": 0,
+  "out": "Copy Stash\n\nUsage:\n  camber stash cp [flags]\n\nFlags:\n      --exclude stringArray   exclude local paths matching a pattern when recursively uploading a folder to Stash; can be repeated\n  -h, --help                  help for cp\n  -r, --recursive             copy directory recursively\n      --use-gitignore         apply .gitignore patterns when recursively uploading a local folder to Stash\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "stash cp probe.sh",
+  "rc": 0,
+  "out": "Perform copying /home/runner/work/room313/room313/worker/gpu/probe.sh to stash://ahmedali41329174/room313/probe.sh\nuser/b122b56b-0c44-4dd5-b902-23db56cb53e2/room313/probe.sh\n\nUploading /home/runner/work/room313/room313/worker/gpu/probe.sh: 100.00% (1.1KB/1.1KB) 0.00 B/s\n\nUploading /home/runner/work/room313/room313/worker/gpu/probe.sh: 100.00% (1.1KB/1.1KB) 0.00 B/s"
+ },
+ {
+  "cmd": "stash ls",
+  "out": "Name                Type                Size\n----                ----                ----\nprobe.sh            file                1.1KB"
+ },
+ {
+  "cmd": "job create probe",
+  "out": "API error: code=1005, message=Job creation is not available on the free tier. Please upgrade your plan.\n\nError: API error: code=1005, message=Job creation is not available on the free tier. Please upgrade your plan.\nUsage:\n  camber job create [flags]\n\nFlags:\n      --cmd string      command for the job (required)\n      --engine string   Type for the job (required): base, mpi, mesa, athena, nextflow, gromacs, lammps, openfoam (default \"base\")\n      --gpu             Whether to use GPU (default: false)\n  -h, --help            help for create\n      --num-nodes int   Number of nodes to use (default: 1) (default 1)\n      --path string     Input stash path for the job (e.g., stash://project/) (required)\n      --size string     Node size for the job (required): xxsmall, xsmall, small, medium, large (default \"xxsmall\")\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)",
+  "job": "1005"
+ },
+ {
+  "job": "1005",
+  "final": "error"
+ },
+ {
+  "cmd": "job logs",
+  "out": "API error: code=10, message=Failed to get job\n\nError: API error: code=10, message=Failed to get job\nUsage:\n  camber job logs [flags]\n\nFlags:\n  -h, --help   help for logs\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "stash ls after",
+  "out": "Name                Type                Size\n----                ----                ----\nprobe.sh            file                1.1KB"
+ }
+]

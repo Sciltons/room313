@@ -1,0 +1,145 @@
+$ camber version
+Camber 1.0.42 - 435f260
+
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber job get --help
+Get job status.
+
+Usage:
+  camber job get [flags]
+
+Flags:
+  -h, --help            help for get
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber job logs --help
+View job logs.
+
+Usage:
+  camber job logs [flags]
+
+Flags:
+  -h, --help   help for logs
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber job list --help
+List jobs.
+
+Usage:
+  camber job list [flags]
+
+Flags:
+  -h, --help            help for list
+      --output string   output format (e.g. json)
+      --page int        The page number of list job segmentation, the value must be greater than 0 (default 1)
+      --size int        The number of jobs on each page, the number must be greater than 0 (default 10)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber stash cp --help
+Copy Stash
+
+Usage:
+  camber stash cp [flags]
+
+Flags:
+      --exclude stringArray   exclude local paths matching a pattern when recursively uploading a folder to Stash; can be repeated
+  -h, --help                  help for cp
+  -r, --recursive             copy directory recursively
+      --use-gitignore         apply .gitignore patterns when recursively uploading a local folder to Stash
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash mkdir stash://ahmedali41329174/room313
+Directory created successfully
+
+$ camber stash cp /home/runner/work/room313/room313/worker/gpu/probe.sh stash://ahmedali41329174/room313/probe.sh
+Perform copying /home/runner/work/room313/room313/worker/gpu/probe.sh to stash://ahmedali41329174/room313/probe.sh
+user/b122b56b-0c44-4dd5-b902-23db56cb53e2/room313/probe.sh
+
+Uploading /home/runner/work/room313/room313/worker/gpu/probe.sh: 100.00% (1.1KB/1.1KB) 0.00 B/s
+
+Uploading /home/runner/work/room313/room313/worker/gpu/probe.sh: 100.00% (1.1KB/1.1KB) 0.00 B/s
+
+$ camber stash ls stash://ahmedali41329174/room313
+Name                Type                Size
+----                ----                ----
+probe.sh            file                1.1KB
+
+$ camber job create --engine base --size xsmall --cmd bash probe.sh --path stash://ahmedali41329174/room313/ --gpu
+API error: code=1005, message=Job creation is not available on the free tier. Please upgrade your plan.
+
+Error: API error: code=1005, message=Job creation is not available on the free tier. Please upgrade your plan.
+Usage:
+  camber job create [flags]
+
+Flags:
+      --cmd string      command for the job (required)
+      --engine string   Type for the job (required): base, mpi, mesa, athena, nextflow, gromacs, lammps, openfoam (default "base")
+      --gpu             Whether to use GPU (default: false)
+  -h, --help            help for create
+      --num-nodes int   Number of nodes to use (default: 1) (default 1)
+      --path string     Input stash path for the job (e.g., stash://project/) (required)
+      --size string     Node size for the job (required): xxsmall, xsmall, small, medium, large (default "xxsmall")
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber job get 1005
+API error: code=10, message=Failed to get job
+
+Error: API error: code=10, message=Failed to get job
+Usage:
+  camber job get [flags]
+
+Flags:
+  -h, --help            help for get
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+  0s status=error
+$ camber job logs 1005
+API error: code=10, message=Failed to get job
+
+Error: API error: code=10, message=Failed to get job
+Usage:
+  camber job logs [flags]
+
+Flags:
+  -h, --help   help for logs
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber stash ls stash://ahmedali41329174/room313
+Name                Type                Size
+----                ----                ----
+probe.sh            file                1.1KB
+
+probe report -> /home/runner/work/room313/room313/quality_reports/camber_probe_1792843602

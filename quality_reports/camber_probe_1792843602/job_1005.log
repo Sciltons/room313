@@ -1,0 +1,11 @@
+API error: code=10, message=Failed to get job
+
+Error: API error: code=10, message=Failed to get job
+Usage:
+  camber job logs [flags]
+
+Flags:
+  -h, --help   help for logs
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
