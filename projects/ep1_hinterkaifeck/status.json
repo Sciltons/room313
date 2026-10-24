@@ -23,9 +23,9 @@
         896,
         512
       ],
-      "gen_s": 23.1
+      "gen_s": 22.8
     },
-    "elapsed": 1011.4,
+    "elapsed": 1071.5,
     "worker": "camber-L4"
   },
   "char_cazilia": {
@@ -218,9 +218,9 @@
         896,
         512
       ],
-      "gen_s": 67.9
+      "gen_s": 39.0
     },
-    "elapsed": 879.1,
+    "elapsed": 939.5,
     "worker": "camber-L4"
   },
   "vid_s01": {
@@ -235,9 +235,9 @@
         896,
         512
       ],
-      "gen_s": 63.1
+      "gen_s": 46.8
     },
-    "elapsed": 767.6,
+    "elapsed": 872.8,
     "worker": "camber-L4"
   },
   "vid_s07_A": {
@@ -455,9 +455,9 @@
         896,
         512
       ],
-      "gen_s": 43.5
+      "gen_s": 27.5
     },
-    "elapsed": 811.2,
+    "elapsed": 900.4,
     "worker": "camber-L4"
   },
   "vid_s04": {
@@ -472,9 +472,9 @@
         896,
         512
       ],
-      "gen_s": 48.4
+      "gen_s": 39.4
     },
-    "elapsed": 927.6,
+    "elapsed": 979.0,
     "worker": "camber-L4"
   },
   "vid_s05": {
@@ -489,9 +489,9 @@
         896,
         512
       ],
-      "gen_s": 37.6
+      "gen_s": 35.0
     },
-    "elapsed": 965.3,
+    "elapsed": 1014.0,
     "worker": "camber-L4"
   },
   "vid_s06": {
@@ -500,15 +500,15 @@
     "metrics": {
       "model": "Lightricks/LTX-Video-0.9.7-distilled",
       "pipeline": "LTXConditionPipeline",
-      "frames": 49,
+      "frames": 73,
       "fps": 24,
       "size": [
         896,
         512
       ],
-      "gen_s": 22.9
+      "gen_s": 34.4
     },
-    "elapsed": 988.2,
+    "elapsed": 1048.6,
     "worker": "camber-L4"
   },
   "vid_s08": {
@@ -523,9 +523,9 @@
         896,
         512
       ],
-      "gen_s": 23.2
+      "gen_s": 22.9
     },
-    "elapsed": 1034.7,
+    "elapsed": 1094.5,
     "worker": "camber-L4"
   },
   "vid_s09": {
@@ -534,15 +534,15 @@
     "metrics": {
       "model": "Lightricks/LTX-Video-0.9.7-distilled",
       "pipeline": "LTXConditionPipeline",
-      "frames": 73,
+      "frames": 49,
       "fps": 24,
       "size": [
         896,
         512
       ],
-      "gen_s": 33.1
+      "gen_s": 22.9
     },
-    "elapsed": 1067.9,
+    "elapsed": 1117.5,
     "worker": "camber-L4"
   },
   "vid_s10": {
@@ -557,9 +557,9 @@
         896,
         512
       ],
-      "gen_s": 37.2
+      "gen_s": 34.4
     },
-    "elapsed": 1105.2,
+    "elapsed": 1151.9,
     "worker": "camber-L4"
   },
   "vid_s11": {
@@ -574,9 +574,9 @@
         896,
         512
       ],
-      "gen_s": 32.2
+      "gen_s": 36.2
     },
-    "elapsed": 1137.4,
+    "elapsed": 1188.3,
     "worker": "camber-L4"
   },
   "vid_s12": {
@@ -585,15 +585,15 @@
     "metrics": {
       "model": "Lightricks/LTX-Video-0.9.7-distilled",
       "pipeline": "LTXConditionPipeline",
-      "frames": 49,
+      "frames": 73,
       "fps": 24,
       "size": [
         896,
         512
       ],
-      "gen_s": 22.7
+      "gen_s": 35.7
     },
-    "elapsed": 1160.2,
+    "elapsed": 1224.0,
     "worker": "camber-L4"
   },
   "vid_s13": {
@@ -608,9 +608,9 @@
         896,
         512
       ],
-      "gen_s": 32.5
+      "gen_s": 38.3
     },
-    "elapsed": 1192.8,
+    "elapsed": 1262.4,
     "worker": "camber-L4"
   },
   "vid_s14": {
@@ -619,15 +619,15 @@
     "metrics": {
       "model": "Lightricks/LTX-Video-0.9.7-distilled",
       "pipeline": "LTXConditionPipeline",
-      "frames": 49,
+      "frames": 73,
       "fps": 24,
       "size": [
         896,
         512
       ],
-      "gen_s": 23.1
+      "gen_s": 35.5
     },
-    "elapsed": 1216.0,
+    "elapsed": 1297.9,
     "worker": "camber-L4"
   },
   "vid_s15": {
@@ -642,9 +642,9 @@
         896,
         512
       ],
-      "gen_s": 23.3
+      "gen_s": 24.6
     },
-    "elapsed": 1239.3,
+    "elapsed": 1322.6,
     "worker": "camber-L4"
   },
   "vid_s16": {
@@ -653,15 +653,15 @@
     "metrics": {
       "model": "Lightricks/LTX-Video-0.9.7-distilled",
       "pipeline": "LTXConditionPipeline",
-      "frames": 73,
+      "frames": 49,
       "fps": 24,
       "size": [
         896,
         512
       ],
-      "gen_s": 32.9
+      "gen_s": 24.2
     },
-    "elapsed": 1272.3,
+    "elapsed": 1346.8,
     "worker": "camber-L4"
   },
   "music_night_terror": {
@@ -789,5 +789,305 @@
     "qc": "ok",
     "attempt": 1,
     "out": "audio/sfx/wood_creak.mp3"
+  },
+  "char_maid_old": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "char_neighbor": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s17": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s18": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s19": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s20": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s21": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s22": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s23": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s24": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s25": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s26": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s27": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s28": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s29": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s30": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s31": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s32": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s33": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s34": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s35": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s36": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s37": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s38": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s39": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s40": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s41": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s42": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s43": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s45": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "kf_s46": {
+    "state": "error",
+    "error": "process() takes no keyword arguments",
+    "worker": "camber-L4"
+  },
+  "vid_s17": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s17.png",
+    "worker": "camber-L4"
+  },
+  "vid_s18": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s18.png",
+    "worker": "camber-L4"
+  },
+  "vid_s19": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s19.png",
+    "worker": "camber-L4"
+  },
+  "vid_s20": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s20.png",
+    "worker": "camber-L4"
+  },
+  "vid_s21": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s21.png",
+    "worker": "camber-L4"
+  },
+  "vid_s22": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s22.png",
+    "worker": "camber-L4"
+  },
+  "vid_s23": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s23.png",
+    "worker": "camber-L4"
+  },
+  "vid_s24": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s24.png",
+    "worker": "camber-L4"
+  },
+  "vid_s25": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s25.png",
+    "worker": "camber-L4"
+  },
+  "vid_s26": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s26.png",
+    "worker": "camber-L4"
+  },
+  "vid_s27": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s27.png",
+    "worker": "camber-L4"
+  },
+  "vid_s28": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s28.png",
+    "worker": "camber-L4"
+  },
+  "vid_s29": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s29.png",
+    "worker": "camber-L4"
+  },
+  "vid_s30": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s30.png",
+    "worker": "camber-L4"
+  },
+  "vid_s31": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s31.png",
+    "worker": "camber-L4"
+  },
+  "vid_s32": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s32.png",
+    "worker": "camber-L4"
+  },
+  "vid_s33": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s33.png",
+    "worker": "camber-L4"
+  },
+  "vid_s34": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s34.png",
+    "worker": "camber-L4"
+  },
+  "vid_s35": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s35.png",
+    "worker": "camber-L4"
+  },
+  "vid_s36": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s36.png",
+    "worker": "camber-L4"
+  },
+  "vid_s37": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s37.png",
+    "worker": "camber-L4"
+  },
+  "vid_s38": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s38.png",
+    "worker": "camber-L4"
+  },
+  "vid_s39": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s39.png",
+    "worker": "camber-L4"
+  },
+  "vid_s40": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s40.png",
+    "worker": "camber-L4"
+  },
+  "vid_s41": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s41.png",
+    "worker": "camber-L4"
+  },
+  "vid_s42": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s42.png",
+    "worker": "camber-L4"
+  },
+  "vid_s43": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s43.png",
+    "worker": "camber-L4"
+  },
+  "vid_s45": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s45.png",
+    "worker": "camber-L4"
+  },
+  "vid_s46": {
+    "state": "error",
+    "error": "keyframe missing: keyframes/s46.png",
+    "worker": "camber-L4"
   }
 }
