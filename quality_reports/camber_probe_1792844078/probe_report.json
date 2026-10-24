@@ -1,0 +1,37 @@
+[
+ {
+  "cmd": "camber version",
+  "rc": 0,
+  "out": "Camber 1.0.42 - 435f260"
+ },
+ {
+  "cmd": "camber me",
+  "rc": 0,
+  "out": "======================User Information======================\nEmail:               scilton19@gmail.com\nUsername:            ahmedali41329174\nStash:               stash://ahmedali41329174/\nCurrently Selected Team:  ahmeddefaultteam25018776\n\n============================================================"
+ },
+ {
+  "cmd": "camber app create --help",
+  "rc": 0,
+  "out": "Create a new application\n\nUsage:\n  camber app create [flags]\n\nFlags:\n      --file string     Path to the JSON file containing app definition (local path or stash://path)\n  -h, --help            help for create\n      --output string   output format (e.g. json)\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "camber app run --help",
+  "rc": 0,
+  "out": "Run an application\n\nUsage:\n  camber app run [flags]\n\nFlags:\n  -h, --help                help for run\n      --input stringArray   Input in key=value format. Repeat for multiple inputs.\n      --node-size string    Node size for the job\n      --num-nodes int32     Number of nodes for the job\n      --output string       output format (e.g. json)\n      --with-gpu            Whether to use GPU\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "camber app describe --help",
+  "rc": 0,
+  "out": "Describe an application\n\nUsage:\n  camber app describe [flags]\n\nFlags:\n  -h, --help            help for describe\n      --output string   output format (e.g. json)\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "camber pod spawn --help",
+  "rc": 0,
+  "out": "Stream an idempotent pod worker run until its final result\n\nUsage:\n  camber pod spawn [flags]\n\nFlags:\n      --agent-id string                Selected agent UUID\n      --child-conversation-id string   Existing child conversation UUID\n  -h, --help                           help for spawn\n      --message string                 Worker task\n      --message-stdin                  Read the worker task from stdin\n      --pod-id string                  Parent pod UUID\n      --request-id string              Idempotency UUID\n\nGlobal Flags:\n      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)"
+ },
+ {
+  "cmd": "camber app describe satminer-cpu",
+  "rc": 0,
+  "out": "======================Application Information======================\n\nName:                satminer-cpu\nTitle:               Satminer-Cpu\nEngine Type:         base\nDescription:         Description\nJob Config:            system_size:\n    Description: Select the configuration for the job\n    Default: small\n    Options:\n      - small:\n          Node Size: XXSMALL, Num Nodes: 1, GPU: false\n\nCommand:             \nVersion:             1.0.0\nCreated At:          2026-05-31T17:05:37Z\nAuthor:              xanxan18\nTags:                N/A\nUpstream Apps:       N/A\nDownstream Apps:     N/A"
+ }
+]

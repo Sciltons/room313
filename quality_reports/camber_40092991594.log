@@ -1,0 +1,96 @@
+$ camber version
+Camber 1.0.42 - 435f260
+
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber app create --help
+Create a new application
+
+Usage:
+  camber app create [flags]
+
+Flags:
+      --file string     Path to the JSON file containing app definition (local path or stash://path)
+  -h, --help            help for create
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber app run --help
+Run an application
+
+Usage:
+  camber app run [flags]
+
+Flags:
+  -h, --help                help for run
+      --input stringArray   Input in key=value format. Repeat for multiple inputs.
+      --node-size string    Node size for the job
+      --num-nodes int32     Number of nodes for the job
+      --output string       output format (e.g. json)
+      --with-gpu            Whether to use GPU
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber app describe --help
+Describe an application
+
+Usage:
+  camber app describe [flags]
+
+Flags:
+  -h, --help            help for describe
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber pod spawn --help
+Stream an idempotent pod worker run until its final result
+
+Usage:
+  camber pod spawn [flags]
+
+Flags:
+      --agent-id string                Selected agent UUID
+      --child-conversation-id string   Existing child conversation UUID
+  -h, --help                           help for spawn
+      --message string                 Worker task
+      --message-stdin                  Read the worker task from stdin
+      --pod-id string                  Parent pod UUID
+      --request-id string              Idempotency UUID
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber app describe satminer-cpu
+======================Application Information======================
+
+Name:                satminer-cpu
+Title:               Satminer-Cpu
+Engine Type:         base
+Description:         Description
+Job Config:            system_size:
+    Description: Select the configuration for the job
+    Default: small
+    Options:
+      - small:
+          Node Size: XXSMALL, Num Nodes: 1, GPU: false
+
+Command:             
+Version:             1.0.0
+Created At:          2026-05-31T17:05:37Z
+Author:              xanxan18
+Tags:                N/A
+Upstream Apps:       N/A
+Downstream Apps:     N/A
+
