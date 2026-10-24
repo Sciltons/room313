@@ -67,7 +67,7 @@ def gen_image(j, out):
 # ---------------------------------------------------------------- LTX-Video image->video (Lightricks 2B distilled), two-phase to fit Kaggle RAM/VRAM
 LTX_ID = "Lightricks/LTX-Video"; LTX_W, LTX_H, LTX_FPS, LTX_MAXS = 768, 416, 24, 3.0   # 2B model (0.9.7-distilled is 13B: does not fit a T4)
 LTX_STEPS, LTX_CFG = 8, 1.0
-DISTILLED_T = [1000, 993, 987, 981, 975, 909, 725, 421]   # LTX 0.9.7 distilled first-pass schedule (x1000)
+DISTILLED_T = [1000, 993, 987, 981, 975, 909, 725, 0.03]   # LTX 0.9.7 distilled schedule (diffusers docs)
 VARIANTS = JOB.get("variants") or [{"tag": "", "compute": "fp16", "timesteps": DISTILLED_T}]
 CUR = VARIANTS[0]
 _ltx = None; _emb = {}
@@ -90,17 +90,17 @@ def ltx_encode_all(video_jobs):
 def ltx():
     global _ltx
     if _ltx is None:
-        from diffusers import LTXImageToVideoPipeline
-        log("LTX phase 2: transformer + vae ...")
-        from diffusers import LTXVideoTransformer3DModel, BitsAndBytesConfig as DBnB
+        from diffusers import LTXConditionPipeline, LTXVideoTransformer3DModel, BitsAndBytesConfig as DBnB
+        log("LTX phase 2: transformer + vae (LTXConditionPipeline) ...")
         cdt = torch.bfloat16 if CUR.get("compute") == "bf16" else torch.float16
         tr = LTXVideoTransformer3DModel.from_pretrained(LTX_ID, subfolder="transformer", quantization_config=DBnB(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=cdt), torch_dtype=cdt, low_cpu_mem_usage=True)
-        _ltx = LTXImageToVideoPipeline.from_pretrained(LTX_ID, transformer=tr, text_encoder=None, tokenizer=None, torch_dtype=cdt, low_cpu_mem_usage=True)
+        _ltx = LTXConditionPipeline.from_pretrained(LTX_ID, transformer=tr, text_encoder=None, tokenizer=None, torch_dtype=cdt, low_cpu_mem_usage=True)
         _ltx.vae.to(DEV); _ltx.vae.enable_tiling(); log(f"LTX ready (13B nf4, compute={cdt}) vram={torch.cuda.memory_allocated()/1e9:.1f}GB")
     return _ltx
 
 def gen_video(j, out):
     from diffusers.utils import export_to_video
+    from diffusers.pipelines.ltx.pipeline_ltx_condition import LTXVideoCondition
     a = j["input"]["args"]; p = ltx()
     img_rel = a["input_image_filepath"].replace("asset:", "")
     src = GEN / img_rel if (GEN / img_rel).exists() else prev_gen / img_rel
@@ -109,20 +109,14 @@ def gen_video(j, out):
     secs = min(LTX_MAXS, float(a.get("duration_ui", 2))); frames = (int(secs * LTX_FPS) // 8) * 8 + 1
     (pe, pm), (ne, nm) = _emb[j["id"]]; dt = p.transformer.dtype
     g = torch.Generator("cpu").manual_seed(int(a.get("seed_ui", 42))); torch.cuda.empty_cache()
-    kw = dict(image=img, prompt_embeds=pe.to(DEV, dt), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV, dt), negative_prompt_attention_mask=nm.to(DEV),
-              width=LTX_W, height=LTX_H, num_frames=frames, guidance_scale=LTX_CFG, generator=g, decode_timestep=0.05, decode_noise_scale=0.025)
-    ts = CUR.get("timesteps"); kw["num_inference_steps"] = len(ts) if ts else LTX_STEPS
-    sch = p.scheduler
-    if ts:   # force the exact distilled schedule: the i2v pipeline computes its own sigmas, so override set_timesteps
-        want = [t/1000 for t in ts]
-        if not getattr(sch, "_orig_set", None): sch._orig_set = sch.set_timesteps
-        def _st(num_inference_steps=None, device=None, sigmas=None, mu=None, timesteps=None, **k):
-            sch.config.use_dynamic_shifting = False; sch.config.shift = 1.0
-            return sch._orig_set(sigmas=want, device=device)
-        sch.set_timesteps = _st
-    elif getattr(sch, "_orig_set", None): sch.set_timesteps = sch._orig_set
-    vid = p(**kw).frames[0]
-    out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=LTX_FPS); return {"model": LTX_ID, "frames": frames, "fps": LTX_FPS, "size": [LTX_W, LTX_H], "variant": CUR}
+    ts = CUR.get("timesteps") or DISTILLED_T
+    t0 = time.time()
+    vid = p(conditions=[LTXVideoCondition(image=img, frame_index=0)],
+            prompt_embeds=pe.to(DEV, dt), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV, dt), negative_prompt_attention_mask=nm.to(DEV),
+            width=LTX_W, height=LTX_H, num_frames=frames, timesteps=ts, guidance_scale=CUR.get("cfg", 1.0), guidance_rescale=0.7, image_cond_noise_scale=0.0,
+            decode_timestep=0.05, decode_noise_scale=0.025, generator=g).frames[0]
+    out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=LTX_FPS)
+    return {"model": LTX_ID, "pipeline": "LTXConditionPipeline", "frames": frames, "fps": LTX_FPS, "size": [LTX_W, LTX_H], "variant": CUR, "gen_s": round(time.time()-t0, 1)}
 
 # ---------------------------------------------------------------- run
 fails = 0
