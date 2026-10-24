@@ -28,7 +28,11 @@ def probe(rep):
     sh(["camber","stash","cp",str(ROOT/"worker"/"gpu"/"probe.sh"),f"{sp}/probe.sh"])
     sh(["camber","agent","list"])
     msg = f"Run this exact shell command on the compute node and do nothing else: cd {sp.replace(root+'/','~/')} 2>/dev/null || cd /stash/room313 2>/dev/null || cd $(find / -maxdepth 4 -type d -name room313 2>/dev/null | head -1); bash probe.sh > probe_out.txt 2>&1; tail -60 probe_out.txt. Reply with the full output of tail."
-    rc, out = sh(["camber","chat","-m",msg,"--output","json","--no-thinking"], timeout=1200); (QR/"chat_probe.json").write_text(out)
+    me = root.replace("stash://","").strip("/")
+    for tag in ["@nova", f"@{me}.nova", "@camber.nova", "@nova.default", "@nova.nova"]:
+        rc, out = sh(["camber","chat","-a",tag,"-m","Reply with exactly: PONG","--output","json","--no-thinking"], timeout=300)
+        if rc == 0 and "required" not in out.lower() and "not found" not in out.lower():
+            print("AGENT TAG OK:", tag); rc, out = sh(["camber","chat","-a",tag,"-m",msg,"--output","json","--no-thinking"], timeout=1500); (QR/"chat_probe.json").write_text(out); break
     sh(["camber","stash","ls",sp])
     rc, out = sh(["camber","stash","cp",f"{sp}/probe_out.txt",str(QR/"probe_out.txt")])
     if (QR/"probe_out.txt").exists(): print("=== probe_out.txt ===\n" + (QR/"probe_out.txt").read_text()[:5000])
