@@ -60,7 +60,7 @@ def wait(job_id, poll=30, timeout_min=360):
     return "TIMEOUT"
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("mode", choices=["probe","run"]); ap.add_argument("--project"); ap.add_argument("--stage", default="video"); ap.add_argument("--only", default="")
+    ap = argparse.ArgumentParser(); ap.add_argument("mode", choices=["probe","run","collect"]); ap.add_argument("--project"); ap.add_argument("--stage", default="video"); ap.add_argument("--only", default="")
     ap.add_argument("--engine", default=os.environ.get("CAMBER_ENGINE") or "base"); ap.add_argument("--size", default=os.environ.get("CAMBER_SIZE") or "xsmall"); ap.add_argument("--stash-path", default=os.environ.get("CAMBER_STASH") or "room313")
     a = ap.parse_args()
     if not os.environ.get("CAMBER_API_KEY"): raise SystemExit("CAMBER_API_KEY missing")
@@ -78,6 +78,9 @@ def main():
             rc, out = sh(["camber","job","logs",jid]); (outdir/f"job_{jid}.log").write_text(out); rep.append({"cmd":"job logs","out":out[:6000]})
             rc, out = sh(["camber","stash","ls",sp]); rep.append({"cmd":"stash ls after","out":out})
         (outdir/"probe_report.json").write_text(json.dumps(rep, indent=1)); print("probe report ->", outdir); return 0
+    if a.mode == "collect":
+        root = stash_root(); sp = f"{root}/{a.stash_path}"; proj = ROOT/"projects"/a.project; gen = proj/"generated"
+        return collect(sp, outdir, proj, gen, "collect")
     # ---- run (agent route): package worker + manifest + assets -> stash; agent starts gpu/run.sh in background; poll run.log in stash; collect out.tar.gz
     proj = ROOT/"projects"/a.project; pkg = outdir/"pkg"; pkg.mkdir()
     shutil.copytree(ROOT/"worker"/"gpu", pkg/"gpu"); shutil.copy(proj/"manifest.json", pkg/"manifest.json")
@@ -104,10 +107,14 @@ def main():
             if "RUN_DONE" in txt: final = "DONE"; break
             if "RUN_FAILED" in txt: final = "FAILED"; break
     print("final:", final)
+    rc = collect(sp, outdir, proj, gen, final)
+    shutil.rmtree(pkg, ignore_errors=True); tar.unlink(missing_ok=True); return rc
+
+def collect(sp, outdir, proj, gen, final):
     rc, out = sh(["camber","stash","cp",f"{sp}/pkg/out.tar.gz",str(outdir/"out.tar.gz")])
     o = outdir/"out.tar.gz"; n = 0
     if o.exists():
-        with tarfile.open(o) as t: t.extractall(outdir)   # archive root is out/
+        with tarfile.open(o) as t: t.extractall(outdir)
         for f in (outdir/"out"/"generated").rglob("*"):
             if f.is_file(): d = gen/f.relative_to(outdir/"out"/"generated"); d.parent.mkdir(parents=True, exist_ok=True); shutil.copy(f, d); n += 1
         stp = proj/"status.json"; status = json.loads(stp.read_text()) if stp.exists() else {}
@@ -118,8 +125,7 @@ def main():
         wl = outdir/"out"/"worker.log"
         if wl.exists(): shutil.copy(wl, outdir/"worker.log")
         shutil.rmtree(outdir/"out", ignore_errors=True); o.unlink()
-    shutil.rmtree(pkg, ignore_errors=True); tar.unlink(missing_ok=True)
-    print(f"run -> {final}; merged {n} files"); return 0 if n else 1
+    print(f"{final}; merged {n} files"); return 0 if n else 1
 
 def a_timeout(a): return int(os.environ.get("CAMBER_TIMEOUT_MIN", "240")) * 60
 

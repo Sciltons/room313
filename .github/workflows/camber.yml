@@ -3,7 +3,7 @@ name: camber-gpu
 on:
   workflow_dispatch:
     inputs:
-      mode:    {description: "probe | run", required: true, default: "probe"}
+      mode:    {description: "probe | run | collect", required: true, default: "probe"}
       project: {description: "projects/<name>", required: false, default: "ep1_hinterkaifeck"}
       stage:   {description: "video | image | character | all", required: false, default: "video"}
       only:    {description: "comma-separated job ids (optional)", required: false, default: ""}
@@ -40,6 +40,7 @@ jobs:
         run: |
           set -o pipefail
           if [ "${{ inputs.mode }}" = "probe" ]; then python3 worker/camber_dispatch.py probe | tee run.log
+          elif [ "${{ inputs.mode }}" = "collect" ]; then python3 worker/camber_dispatch.py collect --project "${{ inputs.project }}" | tee run.log
           else python3 worker/camber_dispatch.py run --project "${{ inputs.project }}" --stage "${{ inputs.stage }}" --only "${{ inputs.only }}" | tee run.log; fi
           echo "exit=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
       - name: Commit results
@@ -48,6 +49,8 @@ jobs:
           mkdir -p quality_reports; cp run.log quality_reports/camber_${{ github.run_id }}.log 2>/dev/null || true
           git config user.name "studio-worker"; git config user.email "studio-worker@users.noreply.github.com"
           git add -A projects/${{ inputs.project }}/generated projects/${{ inputs.project }}/status.json quality_reports 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "camber ${{ inputs.mode }}: ${{ inputs.project }} ${{ inputs.stage }} [skip ci]" && git pull --rebase && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "camber ${{ inputs.mode }}: ${{ inputs.project }} ${{ inputs.stage }} [skip ci]"
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs origin main && git push && break; echo "push retry $i"; sleep $((i*10)); done
       - name: Result
         run: test "${{ steps.c.outputs.exit }}" = "0"
