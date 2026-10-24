@@ -93,4 +93,4 @@ for j in pending:
     except Exception as e:
         fails += 1; STATUS[j["id"]] = {"state": "error", "error": str(e)[:400]}; log(f"[{j['id']}] ERROR {e}"); traceback.print_exc()
     save(); torch.cuda.empty_cache()
-log(f"done. ok={sum(1 for v in STATUS.values() if v['state']=='ok')} failed={fails}")
+log(f"done. ok={sum(1 for v in STATUS.values() if v['state']=='ok')} failed={fails}"); sys.exit(1 if fails else 0)

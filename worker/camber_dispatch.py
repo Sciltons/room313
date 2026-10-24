@@ -10,7 +10,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 QR = ROOT / "quality_reports"
 
 def sh(cmd, check=False, timeout=900):
-    r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, cwd=ROOT)
+    r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, cwd=ROOT, input="y\n"*20)
     out = (r.stdout + ("\n" + r.stderr if r.stderr.strip() else "")).strip()
     print(f"$ {' '.join(cmd)}\n{out[:4000]}\n", flush=True)
     if check and r.returncode != 0: raise SystemExit(f"command failed: {' '.join(cmd)}")
