@@ -206,7 +206,22 @@
         416
       ]
     },
-    "elapsed": 341.6,
+    "elapsed": 442.5,
+    "worker": "kaggle"
+  },
+  "vid_s01": {
+    "state": "ok",
+    "out": "animated_shots/s01.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        768,
+        416
+      ]
+    },
+    "elapsed": 348.0,
     "worker": "kaggle"
   }
 }
