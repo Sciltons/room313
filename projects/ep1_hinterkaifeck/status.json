@@ -663,5 +663,131 @@
     },
     "elapsed": 1272.3,
     "worker": "camber-L4"
+  },
+  "music_night_terror": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/night_terror.wav"
+  },
+  "music_aftermath": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/aftermath.wav"
+  },
+  "music_investigation": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/investigation.wav"
+  },
+  "music_seance": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/seance.wav"
+  },
+  "music_sting_hard": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/sting_hard.wav"
+  },
+  "music_ending": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/ending.wav"
+  },
+  "sfx_footsteps_snow": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/footsteps_snow.mp3"
+  },
+  "sfx_crowd_murmur": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/crowd_murmur.mp3"
+  },
+  "sfx_barn_creak": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/barn_creak.mp3"
+  },
+  "sfx_footsteps_wood": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/footsteps_wood.mp3"
+  },
+  "sfx_lantern_drop": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/lantern_drop.mp3"
+  },
+  "sfx_metal_clink": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/metal_clink.mp3"
+  },
+  "sfx_cows": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/cows.mp3"
+  },
+  "sfx_school_bell": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/school_bell.mp3"
+  },
+  "sfx_gasp": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/gasp.mp3"
+  },
+  "sfx_typewriter": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/typewriter.mp3"
+  },
+  "sfx_cart_wood": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/cart_wood.mp3"
+  },
+  "sfx_candle_whoosh": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/candle_whoosh.mp3"
+  },
+  "sfx_rubble": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/rubble.mp3"
+  },
+  "sfx_demolition": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/demolition.mp3"
+  },
+  "sfx_wood_creak": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/wood_creak.mp3"
   }
 }

@@ -1,0 +1,65 @@
+project=ep1_hinterkaifeck jobs=43 done=22 pending=21 est=$0.00 spent=$0.00 cap=$0.00 dry_run=False
+  - music_night_terror           audio  musicgen-small@cpu                       ~$0.000 -> audio/music/night_terror.wav
+  - music_aftermath              audio  musicgen-small@cpu                       ~$0.000 -> audio/music/aftermath.wav
+  - music_investigation          audio  musicgen-small@cpu                       ~$0.000 -> audio/music/investigation.wav
+  - music_seance                 audio  musicgen-small@cpu                       ~$0.000 -> audio/music/seance.wav
+  - music_sting_hard             audio  musicgen-small@cpu                       ~$0.000 -> audio/music/sting_hard.wav
+  - music_ending                 audio  musicgen-small@cpu                       ~$0.000 -> audio/music/ending.wav
+  - sfx_footsteps_snow           audio  freesound-cc0                            ~$0.000 -> audio/sfx/footsteps_snow.mp3
+  - sfx_crowd_murmur             audio  freesound-cc0                            ~$0.000 -> audio/sfx/crowd_murmur.mp3
+  - sfx_barn_creak               audio  freesound-cc0                            ~$0.000 -> audio/sfx/barn_creak.mp3
+  - sfx_footsteps_wood           audio  freesound-cc0                            ~$0.000 -> audio/sfx/footsteps_wood.mp3
+  - sfx_lantern_drop             audio  freesound-cc0                            ~$0.000 -> audio/sfx/lantern_drop.mp3
+  - sfx_metal_clink              audio  freesound-cc0                            ~$0.000 -> audio/sfx/metal_clink.mp3
+  - sfx_cows                     audio  freesound-cc0                            ~$0.000 -> audio/sfx/cows.mp3
+  - sfx_school_bell              audio  freesound-cc0                            ~$0.000 -> audio/sfx/school_bell.mp3
+  - sfx_gasp                     audio  freesound-cc0                            ~$0.000 -> audio/sfx/gasp.mp3
+  - sfx_typewriter               audio  freesound-cc0                            ~$0.000 -> audio/sfx/typewriter.mp3
+  - sfx_cart_wood                audio  freesound-cc0                            ~$0.000 -> audio/sfx/cart_wood.mp3
+  - sfx_candle_whoosh            audio  freesound-cc0                            ~$0.000 -> audio/sfx/candle_whoosh.mp3
+  - sfx_rubble                   audio  freesound-cc0                            ~$0.000 -> audio/sfx/rubble.mp3
+  - sfx_demolition               audio  freesound-cc0                            ~$0.000 -> audio/sfx/demolition.mp3
+  - sfx_wood_creak               audio  freesound-cc0                            ~$0.000 -> audio/sfx/wood_creak.mp3
+[music_night_terror] attempt 1 model=musicgen-small@cpu
+[music_night_terror] OK
+[music_aftermath] attempt 1 model=musicgen-small@cpu
+[music_aftermath] OK
+[music_investigation] attempt 1 model=musicgen-small@cpu
+[music_investigation] OK
+[music_seance] attempt 1 model=musicgen-small@cpu
+[music_seance] OK
+[music_sting_hard] attempt 1 model=musicgen-small@cpu
+[music_sting_hard] OK
+[music_ending] attempt 1 model=musicgen-small@cpu
+[music_ending] OK
+[sfx_footsteps_snow] attempt 1 model=freesound-cc0
+[sfx_footsteps_snow] OK
+[sfx_crowd_murmur] attempt 1 model=freesound-cc0
+[sfx_crowd_murmur] OK
+[sfx_barn_creak] attempt 1 model=freesound-cc0
+[sfx_barn_creak] OK
+[sfx_footsteps_wood] attempt 1 model=freesound-cc0
+[sfx_footsteps_wood] OK
+[sfx_lantern_drop] attempt 1 model=freesound-cc0
+[sfx_lantern_drop] OK
+[sfx_metal_clink] attempt 1 model=freesound-cc0
+[sfx_metal_clink] OK
+[sfx_cows] attempt 1 model=freesound-cc0
+[sfx_cows] OK
+[sfx_school_bell] attempt 1 model=freesound-cc0
+[sfx_school_bell] OK
+[sfx_gasp] attempt 1 model=freesound-cc0
+[sfx_gasp] OK
+[sfx_typewriter] attempt 1 model=freesound-cc0
+[sfx_typewriter] OK
+[sfx_cart_wood] attempt 1 model=freesound-cc0
+[sfx_cart_wood] OK
+[sfx_candle_whoosh] attempt 1 model=freesound-cc0
+[sfx_candle_whoosh] OK
+[sfx_rubble] attempt 1 model=freesound-cc0
+[sfx_rubble] OK
+[sfx_demolition] attempt 1 model=freesound-cc0
+[sfx_demolition] OK
+[sfx_wood_creak] attempt 1 model=freesound-cc0
+[sfx_wood_creak] OK
+done. failures=0 spent=$0.00

@@ -938,6 +938,267 @@
         "license": "http://creativecommons.org/publicdomain/zero/1.0/",
         "by": "Kyanite_"
       }
+    },
+    {
+      "job": "music_night_terror",
+      "usd": 0.0,
+      "ts": 1792858393.9425561,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 254.6,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_aftermath",
+      "usd": 0.0,
+      "ts": 1792858608.1163535,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 214.0,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_investigation",
+      "usd": 0.0,
+      "ts": 1792858819.8561928,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 211.7,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_seance",
+      "usd": 0.0,
+      "ts": 1792858970.5676613,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 150.7,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_sting_hard",
+      "usd": 0.0,
+      "ts": 1792859013.493097,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 42.9,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_ending",
+      "usd": 0.0,
+      "ts": 1792859216.8948007,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 203.3,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "sfx_footsteps_snow",
+      "usd": 0.0,
+      "ts": 1792859219.4678001,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 422630,
+        "name": "Steps on snow passing by",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Aurelon"
+      }
+    },
+    {
+      "job": "sfx_crowd_murmur",
+      "usd": 0.0,
+      "ts": 1792859222.153641,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 466767,
+        "name": "Murmur.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "stewadosan"
+      }
+    },
+    {
+      "job": "sfx_barn_creak",
+      "usd": 0.0,
+      "ts": 1792859223.843109,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 659437,
+        "name": "Wooden door grincing with reverb from metal basin.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Sadiquecat"
+      }
+    },
+    {
+      "job": "sfx_footsteps_wood",
+      "usd": 0.0,
+      "ts": 1792859225.1087875,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 384895,
+        "name": "Knight Right Footstep Forest/Grass 6 (With Chainmail)",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Ali_6868"
+      }
+    },
+    {
+      "job": "sfx_lantern_drop",
+      "usd": 0.0,
+      "ts": 1792859226.3894012,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 432913,
+        "name": "key_drop.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Kyanite_"
+      }
+    },
+    {
+      "job": "sfx_metal_clink",
+      "usd": 0.0,
+      "ts": 1792859227.8826275,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 558992,
+        "name": "coins-falling-013.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Gerent"
+      }
+    },
+    {
+      "job": "sfx_cows",
+      "usd": 0.0,
+      "ts": 1792859229.157837,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 691476,
+        "name": "goat2.mp3",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "saha213131"
+      }
+    },
+    {
+      "job": "sfx_school_bell",
+      "usd": 0.0,
+      "ts": 1792859231.32817,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 787912,
+        "name": "Koulun kellot sis\u00e4tiloissa (Finnish school bells indoors)",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "modusmogulus"
+      }
+    },
+    {
+      "job": "sfx_gasp",
+      "usd": 0.0,
+      "ts": 1792859233.4303045,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 447460,
+        "name": "yawning sound by a man",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "florianreichelt"
+      }
+    },
+    {
+      "job": "sfx_typewriter",
+      "usd": 0.0,
+      "ts": 1792859234.8919945,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 742884,
+        "name": "Rythmic next-gen typewriter sfx",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "xkeril"
+      }
+    },
+    {
+      "job": "sfx_cart_wood",
+      "usd": 0.0,
+      "ts": 1792859237.2835038,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 388391,
+        "name": "Horse and Carriage.mp3",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "maadmacs"
+      }
+    },
+    {
+      "job": "sfx_candle_whoosh",
+      "usd": 0.0,
+      "ts": 1792859238.571494,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 494789,
+        "name": "Jacket/Cloth Rustle 3",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "brandondelehoy"
+      }
+    },
+    {
+      "job": "sfx_rubble",
+      "usd": 0.0,
+      "ts": 1792859239.9772265,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 718749,
+        "name": "Metal Shovel Impact SFX (leading woosh)2",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Sadiquecat"
+      }
+    },
+    {
+      "job": "sfx_demolition",
+      "usd": 0.0,
+      "ts": 1792859243.1410613,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 487134,
+        "name": "R27-24-Crashes - Wood and Glass.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "craigsmith"
+      }
+    },
+    {
+      "job": "sfx_wood_creak",
+      "usd": 0.0,
+      "ts": 1792859244.3918874,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 506664,
+        "name": "Wood Creak Single V9",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Rudmer_Rotteveel"
+      }
     }
   ]
 }
