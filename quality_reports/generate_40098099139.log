@@ -1,0 +1,84 @@
+project=ep1_hinterkaifeck jobs=22 done=0 pending=22 est=$0.00 spent=$0.00 cap=$0.00 dry_run=False
+  - music_dread_drone            audio  musicgen-small@cpu                       ~$0.000 -> audio/music/dread_drone.wav
+  - music_drop                   audio  musicgen-small@cpu                       ~$0.000 -> audio/music/drop.wav
+  - music_family_theme           audio  musicgen-small@cpu                       ~$0.000 -> audio/music/family_theme.wav
+  - music_unease                 audio  musicgen-small@cpu                       ~$0.000 -> audio/music/unease.wav
+  - music_unease_rise            audio  musicgen-small@cpu                       ~$0.000 -> audio/music/unease_rise.wav
+  - music_sting_soft             audio  musicgen-small@cpu                       ~$0.000 -> audio/music/sting_soft.wav
+  - sfx_wind_valley              audio  freesound-cc0                            ~$0.000 -> audio/sfx/wind_valley.mp3
+  - sfx_room_tone                audio  freesound-cc0                            ~$0.000 -> audio/sfx/room_tone.mp3
+  - sfx_impact_sub               audio  freesound-cc0                            ~$0.000 -> audio/sfx/impact_sub.mp3
+  - sfx_hatch_creak              audio  freesound-cc0                            ~$0.000 -> audio/sfx/hatch_creak.mp3
+  - sfx_drop_pulse               audio  freesound-cc0                            ~$0.000 -> audio/sfx/drop_pulse.mp3
+  - sfx_stamp_hit                audio  freesound-cc0                            ~$0.000 -> audio/sfx/stamp_hit.mp3
+  - sfx_chair_creak              audio  freesound-cc0                            ~$0.000 -> audio/sfx/chair_creak.mp3
+  - sfx_pot_simmer               audio  freesound-cc0                            ~$0.000 -> audio/sfx/pot_simmer.mp3
+  - sfx_drawer_wood              audio  freesound-cc0                            ~$0.000 -> audio/sfx/drawer_wood.mp3
+  - sfx_paper_rustle             audio  freesound-cc0                            ~$0.000 -> audio/sfx/paper_rustle.mp3
+  - sfx_footsteps_above          audio  freesound-cc0                            ~$0.000 -> audio/sfx/footsteps_above.mp3
+  - sfx_dust_trickle             audio  freesound-cc0                            ~$0.000 -> audio/sfx/dust_trickle.mp3
+  - sfx_ladder_creak             audio  freesound-cc0                            ~$0.000 -> audio/sfx/ladder_creak.mp3
+  - sfx_lamp_creak               audio  freesound-cc0                            ~$0.000 -> audio/sfx/lamp_creak.mp3
+  - sfx_attic_silence_ring       audio  freesound-cc0                            ~$0.000 -> audio/sfx/attic_silence_ring.mp3
+  - sfx_key_drop                 audio  freesound-cc0                            ~$0.000 -> audio/sfx/key_drop.mp3
+[music_dread_drone] attempt 1 model=musicgen-small@cpu
+[music_dread_drone] OK
+[music_drop] attempt 1 model=musicgen-small@cpu
+[music_drop] OK
+[music_family_theme] attempt 1 model=musicgen-small@cpu
+[music_family_theme] OK
+[music_unease] attempt 1 model=musicgen-small@cpu
+[music_unease] OK
+[music_unease_rise] attempt 1 model=musicgen-small@cpu
+[music_unease_rise] OK
+[music_sting_soft] attempt 1 model=musicgen-small@cpu
+[music_sting_soft] OK
+[sfx_wind_valley] attempt 1 model=freesound-cc0
+[sfx_wind_valley] OK
+[sfx_room_tone] attempt 1 model=freesound-cc0
+[sfx_room_tone] OK
+[sfx_impact_sub] attempt 1 model=freesound-cc0
+[sfx_impact_sub] OK
+[sfx_hatch_creak] attempt 1 model=freesound-cc0
+[sfx_hatch_creak] ERROR: no freesound result
+[sfx_hatch_creak] attempt 2 model=freesound-cc0
+[sfx_hatch_creak] ERROR: no freesound result
+[sfx_hatch_creak] attempt 3 model=freesound-cc0
+[sfx_hatch_creak] ERROR: no freesound result
+[sfx_drop_pulse] attempt 1 model=freesound-cc0
+[sfx_drop_pulse] OK
+[sfx_stamp_hit] attempt 1 model=freesound-cc0
+[sfx_stamp_hit] OK
+[sfx_chair_creak] attempt 1 model=freesound-cc0
+[sfx_chair_creak] OK
+[sfx_pot_simmer] attempt 1 model=freesound-cc0
+[sfx_pot_simmer] ERROR: no freesound result
+[sfx_pot_simmer] attempt 2 model=freesound-cc0
+[sfx_pot_simmer] ERROR: no freesound result
+[sfx_pot_simmer] attempt 3 model=freesound-cc0
+[sfx_pot_simmer] ERROR: no freesound result
+[sfx_drawer_wood] attempt 1 model=freesound-cc0
+[sfx_drawer_wood] OK
+[sfx_paper_rustle] attempt 1 model=freesound-cc0
+[sfx_paper_rustle] OK
+[sfx_footsteps_above] attempt 1 model=freesound-cc0
+[sfx_footsteps_above] OK
+[sfx_dust_trickle] attempt 1 model=freesound-cc0
+[sfx_dust_trickle] OK
+[sfx_ladder_creak] attempt 1 model=freesound-cc0
+[sfx_ladder_creak] OK
+[sfx_lamp_creak] attempt 1 model=freesound-cc0
+[sfx_lamp_creak] ERROR: no freesound result
+[sfx_lamp_creak] attempt 2 model=freesound-cc0
+[sfx_lamp_creak] ERROR: no freesound result
+[sfx_lamp_creak] attempt 3 model=freesound-cc0
+[sfx_lamp_creak] ERROR: no freesound result
+[sfx_attic_silence_ring] attempt 1 model=freesound-cc0
+[sfx_attic_silence_ring] OK
+[sfx_key_drop] attempt 1 model=freesound-cc0
+[sfx_key_drop] ERROR: no freesound result
+[sfx_key_drop] attempt 2 model=freesound-cc0
+[sfx_key_drop] ERROR: no freesound result
+[sfx_key_drop] attempt 3 model=freesound-cc0
+[sfx_key_drop] ERROR: no freesound result
+done. failures=4 spent=$0.00

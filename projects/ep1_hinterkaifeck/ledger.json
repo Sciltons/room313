@@ -664,6 +664,228 @@
         "license_note": "model license",
         "fallback": "local_cpu_lcm"
       }
+    },
+    {
+      "job": "music_dread_drone",
+      "usd": 0.0,
+      "ts": 1792848639.560918,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 232.3,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_drop",
+      "usd": 0.0,
+      "ts": 1792848704.3305001,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 64.4,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_family_theme",
+      "usd": 0.0,
+      "ts": 1792848842.370888,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 138.0,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_unease",
+      "usd": 0.0,
+      "ts": 1792849007.3413236,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 164.9,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_unease_rise",
+      "usd": 0.0,
+      "ts": 1792849066.040746,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 58.6,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "music_sting_soft",
+      "usd": 0.0,
+      "ts": 1792849105.7202501,
+      "model": "musicgen-small@cpu",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 39.6,
+        "license_note": "CC-BY-NC"
+      }
+    },
+    {
+      "job": "sfx_wind_valley",
+      "usd": 0.0,
+      "ts": 1792849122.2659318,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 567356,
+        "name": "200509 Wind, window, cold gusts, moan, whistle, 1pm.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "TRP"
+      }
+    },
+    {
+      "job": "sfx_room_tone",
+      "usd": 0.0,
+      "ts": 1792849132.6593792,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 411914,
+        "name": "Laundry Room Ambience",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "moviebuffgavin"
+      }
+    },
+    {
+      "job": "sfx_impact_sub",
+      "usd": 0.0,
+      "ts": 1792849134.250846,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 754771,
+        "name": "Riser Hit sfx 097",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "AudioPapkin"
+      }
+    },
+    {
+      "job": "sfx_drop_pulse",
+      "usd": 0.0,
+      "ts": 1792849166.9539657,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 62900,
+        "name": "Bass swell fade.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "SpeedY"
+      }
+    },
+    {
+      "job": "sfx_stamp_hit",
+      "usd": 0.0,
+      "ts": 1792849168.1002674,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 523058,
+        "name": "Chambering 1",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "magnuswaker"
+      }
+    },
+    {
+      "job": "sfx_chair_creak",
+      "usd": 0.0,
+      "ts": 1792849169.5240107,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 590161,
+        "name": "Creaking in Room 11.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Greg_Surr"
+      }
+    },
+    {
+      "job": "sfx_drawer_wood",
+      "usd": 0.0,
+      "ts": 1792849202.0838969,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 323421,
+        "name": "Glass Slide 9",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "WasabiWielder"
+      }
+    },
+    {
+      "job": "sfx_paper_rustle",
+      "usd": 0.0,
+      "ts": 1792849203.2615178,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 676626,
+        "name": "Rip 9 - Long",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "NearTheAtmoshphere"
+      }
+    },
+    {
+      "job": "sfx_footsteps_above",
+      "usd": 0.0,
+      "ts": 1792849204.4668326,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 802600,
+        "name": "Creaking Floorboards 18",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "qubodup"
+      }
+    },
+    {
+      "job": "sfx_dust_trickle",
+      "usd": 0.0,
+      "ts": 1792849205.7787147,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 528579,
+        "name": "Heavy Book Falling.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "mariannadeoliveira"
+      }
+    },
+    {
+      "job": "sfx_ladder_creak",
+      "usd": 0.0,
+      "ts": 1792849207.744923,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 265306,
+        "name": "climbing a ladder",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "lextrack"
+      }
+    },
+    {
+      "job": "sfx_attic_silence_ring",
+      "usd": 0.0,
+      "ts": 1792849241.6533432,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 188201,
+        "name": "Ringing loop.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "SpliceSound"
+      }
     }
   ]
 }

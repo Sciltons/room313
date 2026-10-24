@@ -306,5 +306,133 @@
     },
     "elapsed": 316.1,
     "worker": "kaggle"
+  },
+  "music_dread_drone": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/dread_drone.wav"
+  },
+  "music_drop": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/drop.wav"
+  },
+  "music_family_theme": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/family_theme.wav"
+  },
+  "music_unease": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/unease.wav"
+  },
+  "music_unease_rise": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/unease_rise.wav"
+  },
+  "music_sting_soft": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/music/sting_soft.wav"
+  },
+  "sfx_wind_valley": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/wind_valley.mp3"
+  },
+  "sfx_room_tone": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/room_tone.mp3"
+  },
+  "sfx_impact_sub": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/impact_sub.mp3"
+  },
+  "sfx_hatch_creak": {
+    "state": "error",
+    "error": "no freesound result",
+    "attempt": 3
+  },
+  "sfx_drop_pulse": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/drop_pulse.mp3"
+  },
+  "sfx_stamp_hit": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/stamp_hit.mp3"
+  },
+  "sfx_chair_creak": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/chair_creak.mp3"
+  },
+  "sfx_pot_simmer": {
+    "state": "error",
+    "error": "no freesound result",
+    "attempt": 3
+  },
+  "sfx_drawer_wood": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/drawer_wood.mp3"
+  },
+  "sfx_paper_rustle": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/paper_rustle.mp3"
+  },
+  "sfx_footsteps_above": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/footsteps_above.mp3"
+  },
+  "sfx_dust_trickle": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/dust_trickle.mp3"
+  },
+  "sfx_ladder_creak": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/ladder_creak.mp3"
+  },
+  "sfx_lamp_creak": {
+    "state": "error",
+    "error": "no freesound result",
+    "attempt": 3
+  },
+  "sfx_attic_silence_ring": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/attic_silence_ring.mp3"
+  },
+  "sfx_key_drop": {
+    "state": "error",
+    "error": "no freesound result",
+    "attempt": 3
   }
 }
