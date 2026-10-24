@@ -88,6 +88,582 @@
         "space": "black-forest-labs/FLUX.1-schnell",
         "api_name": "/infer"
       }
+    },
+    {
+      "job": "char_maria",
+      "usd": 0.0,
+      "ts": 1792803642.4332414,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 81.0,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "char_maria",
+      "usd": 0.0,
+      "ts": 1792803690.2804935,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 46.9,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "char_maria",
+      "usd": 0.0,
+      "ts": 1792803738.3414717,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.3,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s01",
+      "usd": 0.0,
+      "ts": 1792803786.6987872,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s01",
+      "usd": 0.0,
+      "ts": 1792803834.6987681,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s01",
+      "usd": 0.0,
+      "ts": 1792803883.1294837,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.5,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s02",
+      "usd": 0.0,
+      "ts": 1792803931.2549825,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s02",
+      "usd": 0.0,
+      "ts": 1792803979.241593,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s02",
+      "usd": 0.0,
+      "ts": 1792804027.2670584,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s03",
+      "usd": 0.0,
+      "ts": 1792804075.1637535,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s03",
+      "usd": 0.0,
+      "ts": 1792804123.0720174,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s03",
+      "usd": 0.0,
+      "ts": 1792804171.4141057,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s04",
+      "usd": 0.0,
+      "ts": 1792804219.6516569,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.3,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s04",
+      "usd": 0.0,
+      "ts": 1792804267.863259,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s04",
+      "usd": 0.0,
+      "ts": 1792804315.983327,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s05",
+      "usd": 0.0,
+      "ts": 1792804364.085597,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.3,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s05",
+      "usd": 0.0,
+      "ts": 1792804412.5477347,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.6,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s05",
+      "usd": 0.0,
+      "ts": 1792804460.8479204,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s06",
+      "usd": 0.0,
+      "ts": 1792804508.9162142,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s06",
+      "usd": 0.0,
+      "ts": 1792804557.2804651,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.5,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s06",
+      "usd": 0.0,
+      "ts": 1792804605.343885,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.3,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s08",
+      "usd": 0.0,
+      "ts": 1792804653.506404,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s08",
+      "usd": 0.0,
+      "ts": 1792804701.9603224,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.5,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s08",
+      "usd": 0.0,
+      "ts": 1792804749.925166,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s09",
+      "usd": 0.0,
+      "ts": 1792804798.109899,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s09",
+      "usd": 0.0,
+      "ts": 1792804846.1276362,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s09",
+      "usd": 0.0,
+      "ts": 1792804894.1639378,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s10",
+      "usd": 0.0,
+      "ts": 1792804942.4388578,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s10",
+      "usd": 0.0,
+      "ts": 1792804990.6710548,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.3,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s10",
+      "usd": 0.0,
+      "ts": 1792805038.8733873,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s11",
+      "usd": 0.0,
+      "ts": 1792805087.025629,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.3,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s11",
+      "usd": 0.0,
+      "ts": 1792805135.1158717,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s11",
+      "usd": 0.0,
+      "ts": 1792805183.3362083,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s12",
+      "usd": 0.0,
+      "ts": 1792805231.316765,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s12",
+      "usd": 0.0,
+      "ts": 1792805279.4102387,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s12",
+      "usd": 0.0,
+      "ts": 1792805327.3633814,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s13",
+      "usd": 0.0,
+      "ts": 1792805375.340377,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s13",
+      "usd": 0.0,
+      "ts": 1792805423.4138005,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s13",
+      "usd": 0.0,
+      "ts": 1792805471.544939,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s14",
+      "usd": 0.0,
+      "ts": 1792805519.7925115,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s14",
+      "usd": 0.0,
+      "ts": 1792805568.043351,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s14",
+      "usd": 0.0,
+      "ts": 1792805616.0388896,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s15",
+      "usd": 0.0,
+      "ts": 1792805664.234243,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.3,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s15",
+      "usd": 0.0,
+      "ts": 1792805712.4788418,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.5,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s15",
+      "usd": 0.0,
+      "ts": 1792805760.4705138,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s16",
+      "usd": 0.0,
+      "ts": 1792805808.5162032,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "elapsed": 47.2,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s16",
+      "usd": 0.0,
+      "ts": 1792805856.7227921,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 2,
+      "metrics": {
+        "elapsed": 47.4,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
+    },
+    {
+      "job": "kf_s16",
+      "usd": 0.0,
+      "ts": 1792805904.7716017,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 3,
+      "metrics": {
+        "elapsed": 47.1,
+        "license_note": "model license",
+        "fallback": "local_cpu_lcm"
+      }
     }
   ]
 }
