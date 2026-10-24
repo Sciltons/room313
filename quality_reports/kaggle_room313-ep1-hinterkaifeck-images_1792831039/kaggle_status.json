@@ -1,0 +1,128 @@
+{
+ "char_maria": {
+  "state": "ok",
+  "out": "characters/maria.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 317
+  },
+  "elapsed": 393.6
+ },
+ "kf_s01": {
+  "state": "ok",
+  "out": "keyframes/s01.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 412
+  },
+  "elapsed": 419.2
+ },
+ "kf_s02": {
+  "state": "ok",
+  "out": "keyframes/s02.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 412
+  },
+  "elapsed": 444.0
+ },
+ "kf_s04": {
+  "state": "ok",
+  "out": "keyframes/s04.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 412
+  },
+  "elapsed": 468.7
+ },
+ "kf_s05": {
+  "state": "ok",
+  "out": "keyframes/s05.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 412
+  },
+  "elapsed": 492.7
+ },
+ "kf_s06": {
+  "state": "ok",
+  "out": "keyframes/s06.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 412
+  },
+  "elapsed": 517.1
+ },
+ "kf_s08": {
+  "state": "ok",
+  "out": "keyframes/s08.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 314
+  },
+  "elapsed": 541.8
+ },
+ "kf_s09": {
+  "state": "ok",
+  "out": "keyframes/s09.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 315
+  },
+  "elapsed": 566.0
+ },
+ "kf_s10": {
+  "state": "ok",
+  "out": "keyframes/s10.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 316
+  },
+  "elapsed": 590.1
+ },
+ "kf_s11": {
+  "state": "ok",
+  "out": "keyframes/s11.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 314
+  },
+  "elapsed": 614.3
+ },
+ "kf_s12": {
+  "state": "ok",
+  "out": "keyframes/s12.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 412
+  },
+  "elapsed": 638.5
+ },
+ "kf_s13": {
+  "state": "ok",
+  "out": "keyframes/s13.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 313
+  },
+  "elapsed": 662.7
+ },
+ "kf_s14": {
+  "state": "ok",
+  "out": "keyframes/s14.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 313
+  },
+  "elapsed": 686.8
+ },
+ "kf_s15": {
+  "state": "ok",
+  "out": "keyframes/s15.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 313
+  },
+  "elapsed": 710.9
+ }
+}

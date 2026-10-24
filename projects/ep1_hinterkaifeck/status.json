@@ -35,22 +35,34 @@
     "out": "characters/girl.png"
   },
   "char_maria": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "characters/maria.png"
+    "state": "ok",
+    "out": "characters/maria.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 317
+    },
+    "elapsed": 393.6,
+    "worker": "kaggle"
   },
   "kf_s01": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s01.png"
+    "state": "ok",
+    "out": "keyframes/s01.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 412
+    },
+    "elapsed": 419.2,
+    "worker": "kaggle"
   },
   "kf_s02": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s02.png"
+    "state": "ok",
+    "out": "keyframes/s02.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 412
+    },
+    "elapsed": 444.0,
+    "worker": "kaggle"
   },
   "kf_s03": {
     "state": "ok",
@@ -63,70 +75,114 @@
     "worker": "kaggle"
   },
   "kf_s04": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s04.png"
+    "state": "ok",
+    "out": "keyframes/s04.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 412
+    },
+    "elapsed": 468.7,
+    "worker": "kaggle"
   },
   "kf_s05": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s05.png"
+    "state": "ok",
+    "out": "keyframes/s05.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 412
+    },
+    "elapsed": 492.7,
+    "worker": "kaggle"
   },
   "kf_s06": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s06.png"
+    "state": "ok",
+    "out": "keyframes/s06.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 412
+    },
+    "elapsed": 517.1,
+    "worker": "kaggle"
   },
   "kf_s08": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s08.png"
+    "state": "ok",
+    "out": "keyframes/s08.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 314
+    },
+    "elapsed": 541.8,
+    "worker": "kaggle"
   },
   "kf_s09": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s09.png"
+    "state": "ok",
+    "out": "keyframes/s09.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 315
+    },
+    "elapsed": 566.0,
+    "worker": "kaggle"
   },
   "kf_s10": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s10.png"
+    "state": "ok",
+    "out": "keyframes/s10.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 316
+    },
+    "elapsed": 590.1,
+    "worker": "kaggle"
   },
   "kf_s11": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s11.png"
+    "state": "ok",
+    "out": "keyframes/s11.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 314
+    },
+    "elapsed": 614.3,
+    "worker": "kaggle"
   },
   "kf_s12": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s12.png"
+    "state": "ok",
+    "out": "keyframes/s12.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 412
+    },
+    "elapsed": 638.5,
+    "worker": "kaggle"
   },
   "kf_s13": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s13.png"
+    "state": "ok",
+    "out": "keyframes/s13.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 313
+    },
+    "elapsed": 662.7,
+    "worker": "kaggle"
   },
   "kf_s14": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s14.png"
+    "state": "ok",
+    "out": "keyframes/s14.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 313
+    },
+    "elapsed": 686.8,
+    "worker": "kaggle"
   },
   "kf_s15": {
-    "state": "qc_failed",
-    "qc": "too small 768x448",
-    "attempt": 3,
-    "out": "keyframes/s15.png"
+    "state": "ok",
+    "out": "keyframes/s15.png",
+    "metrics": {
+      "model": "FLUX.1-schnell nf4",
+      "seed": 313
+    },
+    "elapsed": 710.9,
+    "worker": "kaggle"
   },
   "kf_s16": {
     "state": "ok",
