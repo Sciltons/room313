@@ -20,6 +20,7 @@ def esc(t): return t.replace("\\","\\\\").replace(":","\\:").replace("'","\u2019
 CAP_HTML = """<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>
 @font-face{font-family:Cairo;src:url("file://%s")} html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden}
 .t{font-family:Cairo,"DejaVu Sans",sans-serif;font-weight:700;position:absolute;left:0;right:0;text-align:center;direction:rtl;white-space:nowrap}
+#cap{white-space:normal;margin:0 auto;max-width:980px;word-wrap:break-word}
 #tag{top:%dpx;color:#e6e0d4;font-size:34px;letter-spacing:3px} #tag span{display:inline-block;padding:10px 36px 14px;border:2px solid rgba(155,17,30,.9);border-radius:4px;background:rgba(11,11,13,.6)}
 #cap{top:%dpx;color:%s;font-size:%dpx;line-height:1.4;padding:0 30px;text-shadow:0 3px 0 #000,0 0 22px rgba(0,0,0,.95)}
 #stamp{top:%dpx;color:#b5121f;font-size:104px} #stamp span{display:inline-block;padding:0 40px 10px;border:8px solid #b5121f;border-radius:8px;transform:rotate(-6deg)}
@@ -85,7 +86,8 @@ def caption_png(text, style, fr, out, tag=True):
     from playwright.sync_api import sync_playwright
     if _pw is None:
         _pw=sync_playwright().start(); _pw.browser=_pw.chromium.launch(); _pw.page=_pw.browser.new_page(viewport={"width":1080,"height":1920})
-    color="#e0303c" if style=="red" else "#f2ede4"; size=76 if style=="red" else 60
+    color="#e0303c" if style=="red" else "#f2ede4"; n=len(text)
+    size=(76 if n<=14 else 64 if n<=22 else 56) if style=="red" else (60 if n<=18 else 54 if n<=28 else 48)
     stamp=f'<div id="stamp" class="t"><span>{text}</span></div>' if style=="stamp" else ""
     html=CAP_HTML%(FONT, fr["y"]-90, fr["y"]+fr["h"]+60, color, size, fr["y"]+fr["h"]//2-70, text, stamp)
     if not tag: html=html.replace('<div id="tag" class="t">','<div id="tag" class="t" style="display:none">')
@@ -141,7 +143,7 @@ def main():
         for i,c in enumerate(caps):
             png=work/f"cap_{i:02d}.png"; caption_png(c["text"], c.get("style",""), fr, png, tag=False)
             ins.extend(["-loop","1","-framerate","1","-i",str(png)]); a,b=c["t"]
-            fc.append(f"[{i+1}:v]format=rgba,fade=t=in:st={a:.2f}:d=0.12:alpha=1,fade=t=out:st={max(a,b-0.12):.2f}:d=0.12:alpha=1[c{i}];[{cur}][c{i}]overlay=0:0:enable='between(t,{a:.2f},{b:.2f})'[v{i}]"); cur=f"v{i}"
+            fc.append(f"[{i+1}:v]format=rgba[c{i}];[{cur}][c{i}]overlay=0:0:enable='between(t,{a:.2f},{b:.2f})'[v{i}]"); cur=f"v{i}"   # hard cut: exact word timing (1 fps png inputs can't fade)
         fc.append(f"[{cur}]format=yuv420p[vout]")
         vcap=work/"video_cap.mp4"
         run(["ffmpeg","-y","-loglevel","error","-threads","0","-i",str(video),*ins,"-filter_complex",";".join(fc),"-map","[vout]","-t",str(total),"-r",str(FPS),"-c:v","libx264","-preset","ultrafast","-crf","20",str(vcap)])
