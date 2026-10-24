@@ -1,0 +1,27 @@
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash cp stash://ahmedali41329174/room313/pkg/out.tar.gz /home/runner/work/room313/room313/quality_reports/camber_collect_1792876076/out.tar.gz
+Perform copying stash://ahmedali41329174/room313/pkg/out.tar.gz to /home/runner/work/room313/room313/quality_reports/camber_collect_1792876076/out.tar.gz
+source path does not exist: stash://ahmedali41329174/room313/pkg/out.tar.gz
+
+Error: source path does not exist: stash://ahmedali41329174/room313/pkg/out.tar.gz
+Usage:
+  camber stash cp [flags]
+
+Flags:
+      --exclude stringArray   exclude local paths matching a pattern when recursively uploading a folder to Stash; can be repeated
+  -h, --help                  help for cp
+  -r, --recursive             copy directory recursively
+      --use-gitignore         apply .gitignore patterns when recursively uploading a local folder to Stash
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+collect; merged 0 files
