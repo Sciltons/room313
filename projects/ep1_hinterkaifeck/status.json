@@ -1373,28 +1373,88 @@
     "worker": "camber-L4"
   },
   "vid_s33": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s33.png",
+    "state": "ok",
+    "out": "animated_shots/s33.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 32.7
+    },
+    "elapsed": 1340.6,
     "worker": "camber-L4"
   },
   "vid_s34": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s34.png",
+    "state": "ok",
+    "out": "animated_shots/s34.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 32.8
+    },
+    "elapsed": 1373.4,
     "worker": "camber-L4"
   },
   "vid_s35": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s35.png",
+    "state": "ok",
+    "out": "animated_shots/s35.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 33.2
+    },
+    "elapsed": 1406.7,
     "worker": "camber-L4"
   },
   "vid_s36": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s36.png",
+    "state": "ok",
+    "out": "animated_shots/s36.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 33.3
+    },
+    "elapsed": 1440.0,
     "worker": "camber-L4"
   },
   "vid_s37": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s37.png",
+    "state": "ok",
+    "out": "animated_shots/s37.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 33.3
+    },
+    "elapsed": 1473.4,
     "worker": "camber-L4"
   },
   "vid_s38": {
