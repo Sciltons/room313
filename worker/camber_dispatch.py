@@ -90,16 +90,18 @@ def main():
     tar = outdir/"pkg.tar.gz"
     with tarfile.open(tar, "w:gz") as t: t.add(pkg, arcname="pkg")
     root = stash_root(); sp = f"{root}/{a.stash_path}"; me = root.replace("stash://","").strip("/"); tag = f"@{me}.room313"
-    sh(["camber","stash","mkdir",sp]); sh(["camber","stash","rm",f"{sp}/pkg.tar.gz"]); sh(["camber","stash","rm",f"{sp}/run.log"])
+    sh(["camber","stash","mkdir",sp]); sh(["camber","stash","mkdir",f"{sp}/assets"]); sh(["camber","stash","rm",f"{sp}/pkg.tar.gz"]); sh(["camber","stash","rm",f"{sp}/run.log"])
     sh(["camber","stash","cp",str(tar),f"{sp}/pkg.tar.gz"], check=True)
     cmd = f"cd ~/{a.stash_path} && rm -rf pkg && tar xzf pkg.tar.gz && cd pkg && mkdir -p out && (nohup bash gpu/run.sh > ../run.log 2>&1 &) ; sleep 8; echo STARTED; tail -5 ../run.log"
     msg = f"Run this exact shell command on the compute node, do not modify it, do not run anything else, then reply with its output only:\n{cmd}"
     rc, out = sh(["camber","chat","-a",tag,"-m",msg,"--output","json","--no-thinking"], timeout=600); (outdir/"chat_start.json").write_text(out)
     if "STARTED" not in out: print("agent did not confirm start"); 
-    # poll run.log
-    t0 = time.time(); last = ""; final = "TIMEOUT"
+    # poll run.log; every ~3 min checkpoint new assets from the stash into the repo (so a failed run never loses work)
+    t0 = time.time(); last = ""; final = "TIMEOUT"; lastsync = 0; synced = set()
     while time.time() - t0 < a_timeout(a):
         time.sleep(60); lf = outdir/"run.log"
+        if time.time() - lastsync > 180:
+            lastsync = time.time(); synced |= checkpoint(sp, outdir, proj, gen, synced)
         r = subprocess.run(["camber","stash","cp",f"{sp}/run.log",str(lf)], capture_output=True, text=True, cwd=ROOT)
         if lf.exists():
             txt = lf.read_text(errors="ignore"); tail = "\n".join(txt.strip().splitlines()[-3:])
@@ -107,8 +109,37 @@ def main():
             if "RUN_DONE" in txt: final = "DONE"; break
             if "RUN_FAILED" in txt: final = "FAILED"; break
     print("final:", final)
+    synced |= checkpoint(sp, outdir, proj, gen, synced)
     rc = collect(sp, outdir, proj, gen, final)
     shutil.rmtree(pkg, ignore_errors=True); tar.unlink(missing_ok=True); return rc
+
+def checkpoint(sp, outdir, proj, gen, synced):
+    """pull assets/ from the stash, merge into projects/<p>/generated, commit + push. Returns set of new relative paths."""
+    loc = outdir/"assets_sync"; shutil.rmtree(loc, ignore_errors=True)
+    r = subprocess.run(["camber","stash","cp","-r",f"{sp}/assets",str(loc)], capture_output=True, text=True, cwd=ROOT, input="y\n"*5)
+    src = loc/"assets" if (loc/"assets").exists() else loc
+    if not src.exists(): return set()
+    new = set()
+    for f in src.rglob("*"):
+        if f.is_file() and f.name != "gpu_status.json":
+            rel = str(f.relative_to(src))
+            if rel in synced: continue
+            d = gen/rel; d.parent.mkdir(parents=True, exist_ok=True); shutil.copy(f, d); new.add(rel)
+    st = src/"gpu_status.json"
+    if st.exists():
+        stp = proj/"status.json"; status = json.loads(stp.read_text()) if stp.exists() else {}
+        for k, v in json.loads(st.read_text()).items(): status[k] = {**v, "worker": "camber-L4"}
+        stp.write_text(json.dumps(status, indent=2))
+    if new:
+        print(f"checkpoint: {len(new)} new assets -> committing", flush=True)
+        subprocess.run(["git","config","user.name","studio-worker"], cwd=ROOT); subprocess.run(["git","config","user.email","studio-worker@users.noreply.github.com"], cwd=ROOT)
+        subprocess.run(["git","add","-A",str(gen),str(proj/"status.json")], cwd=ROOT)
+        if subprocess.run(["git","diff","--cached","--quiet"], cwd=ROOT).returncode != 0:
+            subprocess.run(["git","commit","-q","-m",f"checkpoint: {len(new)} assets [skip ci]"], cwd=ROOT)
+            for i in range(5):
+                if subprocess.run(["git","pull","--rebase","-X","theirs","origin","main"], cwd=ROOT, capture_output=True).returncode == 0 and subprocess.run(["git","push"], cwd=ROOT, capture_output=True).returncode == 0: break
+                time.sleep(10*(i+1))
+    shutil.rmtree(loc, ignore_errors=True); return new
 
 def collect(sp, outdir, proj, gen, final):
     rc, out = sh(["camber","stash","cp",f"{sp}/pkg/out.tar.gz",str(outdir/"out.tar.gz")])

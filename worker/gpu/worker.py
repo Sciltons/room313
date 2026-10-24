@@ -8,14 +8,19 @@ import os, sys, json, time, pathlib, traceback, gc
 HERE = pathlib.Path(__file__).resolve().parent; PKG = HERE.parent
 JOB = json.loads((PKG/"job.json").read_text()); MAN = json.loads((PKG/"manifest.json").read_text())
 OUT = PKG/"out"/"generated"; OUT.mkdir(parents=True, exist_ok=True); PREV = PKG/"generated"
+ASSETS = pathlib.Path(os.environ.get("ASSETS_DIR") or (PKG.parent/"assets")); ASSETS.mkdir(parents=True, exist_ok=True)   # persistent on the stash
 STATUS = {}; T0 = time.time()
 def log(*a): print(f"[{time.time()-T0:7.1f}s]", *a, flush=True)
-def save(): (PKG/"out"/"gpu_status.json").write_text(json.dumps(STATUS, indent=1))
+def save():
+    (PKG/"out"/"gpu_status.json").write_text(json.dumps(STATUS, indent=1)); (ASSETS/"gpu_status.json").write_text(json.dumps(STATUS, indent=1))
 
 stage, only = JOB.get("stage","video"), set(JOB.get("only", []))
 def in_stage(j): return stage == "all" or j["type"] == stage or j.get("stage") == stage or stage in j.get("tags", []) or (stage == "images" and j["type"] == "image")
 jobs = [j for j in MAN["jobs"] if in_stage(j) and (not only or j["id"] in only) and j.get("provider") == "hf_space"]
-pending = [j for j in jobs if j["id"] in only or not (PREV/j["out"]).exists()]
+import shutil
+pending = [j for j in jobs if j["id"] in only or not ((PREV/j["out"]).exists() or (ASSETS/j["out"]).exists())]
+for j in jobs:   # resume: assets from an earlier (failed) run on the stash count as done and are re-exported
+    if (ASSETS/j["out"]).exists() and not (OUT/j["out"]).exists(): (OUT/j["out"]).parent.mkdir(parents=True, exist_ok=True); shutil.copy(ASSETS/j["out"], OUT/j["out"])
 import torch
 log(f"stage={stage} jobs={len(jobs)} pending={len(pending)} gpu={torch.cuda.get_device_name(0)} vram={torch.cuda.get_device_properties(0).total_memory/1e9:.0f}GB bf16={torch.cuda.is_bf16_supported()}")
 if not pending: save(); sys.exit(0)
@@ -70,7 +75,7 @@ def gen_video(j, out):
     from diffusers.utils import export_to_video
     from diffusers.pipelines.ltx.pipeline_ltx_condition import LTXVideoCondition
     a = j["input"]["args"]; p = ltx()
-    rel = a["input_image_filepath"].replace("asset:", ""); src = OUT/rel if (OUT/rel).exists() else PREV/rel
+    rel = a["input_image_filepath"].replace("asset:", ""); src = next((d/rel for d in (OUT, ASSETS, PREV) if (d/rel).exists()), PREV/rel)
     if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
     img = Image.open(src).convert("RGB").resize((LTX_W, LTX_H))
     secs = min(LTX_MAXS, float(a.get("duration_ui", 2))); frames = (int(secs*LTX_FPS)//8)*8 + 1
@@ -99,6 +104,7 @@ for j in pending:
         log(f"[{j['id']}] {j['type']} ...")
         m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
         if m is None: STATUS[j["id"]] = {"state": "skipped"}; continue
+        (ASSETS/j["out"]).parent.mkdir(parents=True, exist_ok=True); shutil.copy(out, ASSETS/j["out"])   # checkpoint immediately
         STATUS[j["id"]] = {"state": "ok", "out": j["out"], "metrics": m, "elapsed": round(time.time()-T0, 1)}; log(f"[{j['id']}] OK {m.get('gen_s','')}")
     except Exception as e:
         fails += 1; STATUS[j["id"]] = {"state": "error", "error": str(e)[:400]}; log(f"[{j['id']}] ERROR {e}"); traceback.print_exc()
