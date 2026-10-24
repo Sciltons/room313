@@ -1,0 +1,44 @@
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash cp stash://ahmedali41329174/room313/pkg/out.tar.gz /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz
+Perform copying stash://ahmedali41329174/room313/pkg/out.tar.gz to /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz
+/home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz
+
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 1.04% (16.0KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 1.05% (16.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 2.09% (32.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 2.15% (33.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 3.19% (49.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 3.25% (50.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 4.29% (66.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 4.35% (67.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 5.39% (83.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 5.45% (84.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 6.49% (100.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 6.56% (101.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 7.59% (117.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 7.66% (118.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 8.69% (134.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 8.76% (135.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 9.80% (151.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 9.86% (152.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 10.90% (168.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 10.96% (169.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 12.00% (185.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 12.06% (186.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 13.10% (202.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 13.16% (203.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 14.20% (219.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 14.27% (220.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 15.30% (236.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/out.tar.gz: 15.37% (237.2KB/1.5MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_collect_1792851452/ou
+
+collect; merged 16 files

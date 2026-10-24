@@ -23,9 +23,9 @@
         896,
         512
       ],
-      "gen_s": 33.5
+      "gen_s": 23.1
     },
-    "elapsed": 739.1,
+    "elapsed": 1011.4,
     "worker": "camber-L4"
   },
   "char_cazilia": {
@@ -210,31 +210,35 @@
     "state": "ok",
     "out": "animated_shots/s03.mp4",
     "metrics": {
-      "model": "Lightricks/LTX-Video",
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
       "frames": 73,
       "fps": 24,
       "size": [
-        768,
-        416
-      ]
+        896,
+        512
+      ],
+      "gen_s": 67.9
     },
-    "elapsed": 442.5,
-    "worker": "kaggle"
+    "elapsed": 879.1,
+    "worker": "camber-L4"
   },
   "vid_s01": {
     "state": "ok",
     "out": "animated_shots/s01.mp4",
     "metrics": {
-      "model": "Lightricks/LTX-Video",
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
       "frames": 73,
       "fps": 24,
       "size": [
-        768,
-        416
-      ]
+        896,
+        512
+      ],
+      "gen_s": 63.1
     },
-    "elapsed": 348.0,
-    "worker": "kaggle"
+    "elapsed": 767.6,
+    "worker": "camber-L4"
   },
   "vid_s07_A": {
     "state": "ok",
@@ -438,5 +442,226 @@
     "qc": "ok",
     "attempt": 1,
     "out": "audio/sfx/key_drop.mp3"
+  },
+  "vid_s02": {
+    "state": "ok",
+    "out": "animated_shots/s02.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 49,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 43.5
+    },
+    "elapsed": 811.2,
+    "worker": "camber-L4"
+  },
+  "vid_s04": {
+    "state": "ok",
+    "out": "animated_shots/s04.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 48.4
+    },
+    "elapsed": 927.6,
+    "worker": "camber-L4"
+  },
+  "vid_s05": {
+    "state": "ok",
+    "out": "animated_shots/s05.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 37.6
+    },
+    "elapsed": 965.3,
+    "worker": "camber-L4"
+  },
+  "vid_s06": {
+    "state": "ok",
+    "out": "animated_shots/s06.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 49,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 22.9
+    },
+    "elapsed": 988.2,
+    "worker": "camber-L4"
+  },
+  "vid_s08": {
+    "state": "ok",
+    "out": "animated_shots/s08.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 49,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 23.2
+    },
+    "elapsed": 1034.7,
+    "worker": "camber-L4"
+  },
+  "vid_s09": {
+    "state": "ok",
+    "out": "animated_shots/s09.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 33.1
+    },
+    "elapsed": 1067.9,
+    "worker": "camber-L4"
+  },
+  "vid_s10": {
+    "state": "ok",
+    "out": "animated_shots/s10.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 37.2
+    },
+    "elapsed": 1105.2,
+    "worker": "camber-L4"
+  },
+  "vid_s11": {
+    "state": "ok",
+    "out": "animated_shots/s11.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 32.2
+    },
+    "elapsed": 1137.4,
+    "worker": "camber-L4"
+  },
+  "vid_s12": {
+    "state": "ok",
+    "out": "animated_shots/s12.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 49,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 22.7
+    },
+    "elapsed": 1160.2,
+    "worker": "camber-L4"
+  },
+  "vid_s13": {
+    "state": "ok",
+    "out": "animated_shots/s13.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 32.5
+    },
+    "elapsed": 1192.8,
+    "worker": "camber-L4"
+  },
+  "vid_s14": {
+    "state": "ok",
+    "out": "animated_shots/s14.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 49,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 23.1
+    },
+    "elapsed": 1216.0,
+    "worker": "camber-L4"
+  },
+  "vid_s15": {
+    "state": "ok",
+    "out": "animated_shots/s15.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 49,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 23.3
+    },
+    "elapsed": 1239.3,
+    "worker": "camber-L4"
+  },
+  "vid_s16": {
+    "state": "ok",
+    "out": "animated_shots/s16.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 32.9
+    },
+    "elapsed": 1272.3,
+    "worker": "camber-L4"
   }
 }
