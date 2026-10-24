@@ -73,8 +73,7 @@ def ltx():
         from transformers import T5EncoderModel, BitsAndBytesConfig as TBnB
         log("loading LTX-Video ...")
         lid = "Lightricks/LTX-Video-0.9.7-distilled"; dt = torch.float16
-        t5 = T5EncoderModel.from_pretrained(lid, subfolder="text_encoder", quantization_config=TBnB(load_in_8bit=True), torch_dtype=dt)
-        _ltx = LTXImageToVideoPipeline.from_pretrained(lid, text_encoder=t5, torch_dtype=dt)
+        _ltx = LTXImageToVideoPipeline.from_pretrained(lid, torch_dtype=dt, low_cpu_mem_usage=True)   # fp16 everything; cpu-offload keeps T5 off the GPU during denoising
         _ltx.enable_model_cpu_offload(); _ltx.vae.enable_tiling(); _ltx.vae.enable_slicing()
         log("LTX ready")
     return _ltx
