@@ -42,11 +42,18 @@ def flux():
     if _flux is None:
         from diffusers import FluxPipeline, FluxTransformer2DModel, BitsAndBytesConfig as DBnB
         from transformers import T5EncoderModel, BitsAndBytesConfig as TBnB
-        mid = "black-forest-labs/FLUX.1-schnell"; dt = torch.float16
-        log("loading FLUX.1-schnell nf4 ...")
-        t5 = T5EncoderModel.from_pretrained(mid, subfolder="text_encoder_2", quantization_config=TBnB(load_in_8bit=True), torch_dtype=dt)
-        tr = FluxTransformer2DModel.from_pretrained(mid, subfolder="transformer", quantization_config=DBnB(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=dt), torch_dtype=dt)
-        _flux = FluxPipeline.from_pretrained(mid, transformer=tr, text_encoder_2=t5, torch_dtype=dt)
+        dt = torch.float16
+        # official repo first; if it is gated for this account, fall back to an unmodified Apache-2.0 mirror in diffusers format
+        for mid in [os.environ.get("FLUX_REPO") or "black-forest-labs/FLUX.1-schnell", "YuCollection/FLUX.1-schnell-Diffusers"]:
+            try:
+                log(f"loading {mid} nf4 ...")
+                t5 = T5EncoderModel.from_pretrained(mid, subfolder="text_encoder_2", quantization_config=TBnB(load_in_8bit=True), torch_dtype=dt)
+                tr = FluxTransformer2DModel.from_pretrained(mid, subfolder="transformer", quantization_config=DBnB(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=dt), torch_dtype=dt)
+                _flux = FluxPipeline.from_pretrained(mid, transformer=tr, text_encoder_2=t5, torch_dtype=dt); break
+            except Exception as e:
+                if "gated" in str(e).lower() or "403" in str(e) or "401" in str(e): log(f"  {mid}: access denied -> next source"); continue
+                raise
+        else: raise RuntimeError("no accessible FLUX.1-schnell source")
         _flux.enable_model_cpu_offload(); _flux.vae.enable_slicing(); _flux.vae.enable_tiling()
         log("FLUX ready")
     return _flux
