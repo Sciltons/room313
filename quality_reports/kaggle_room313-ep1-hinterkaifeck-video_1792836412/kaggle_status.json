@@ -1,0 +1,16 @@
+{
+ "vid_s07": {
+  "state": "ok",
+  "out": "animated_shots/s07.mp4",
+  "metrics": {
+   "model": "Lightricks/LTX-Video",
+   "frames": 49,
+   "fps": 24,
+   "size": [
+    768,
+    416
+   ]
+  },
+  "elapsed": 341.4
+ }
+}

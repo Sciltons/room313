@@ -12,9 +12,19 @@
     "out": "keyframes/s07.png"
   },
   "vid_s07": {
-    "state": "error",
-    "error": "[Errno 2] No such file or directory: 'ffprobe'",
-    "attempt": 3
+    "state": "ok",
+    "out": "animated_shots/s07.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video",
+      "frames": 49,
+      "fps": 24,
+      "size": [
+        768,
+        416
+      ]
+    },
+    "elapsed": 341.4,
+    "worker": "kaggle"
   },
   "char_cazilia": {
     "state": "ok",
