@@ -1,0 +1,268 @@
+$ camber version
+Camber 1.0.42 - 435f260
+
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber pod --help
+Manage agent pod worker runs
+
+Usage:
+  camber pod [command]
+
+Available Commands:
+  spawn       Stream an idempotent pod worker run until its final result
+
+Flags:
+  -h, --help   help for pod
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber pod [command] --help" for more information about a command.
+
+$ camber agent --help
+List and manage AI agents.
+
+Usage:
+  camber agent [command]
+
+Available Commands:
+  context     Manage agent knowledge base context
+  create      Create an agent
+  list        List all agents
+  pull        Pull an agent mirror into the current project
+  push        Push local mirror context changes to Camber
+  skill       Manage agent skills
+  team        Manage agent teams
+  update      Update an agent
+
+Flags:
+  -h, --help   help for agent
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber agent [command] --help" for more information about a command.
+
+$ camber app --help
+Create, list, delete, and manage app resources.
+
+Usage:
+  camber app [command]
+
+Available Commands:
+  create      Create a new application
+  delete      Delete an application
+  describe    Describe an application
+  list        List all applications
+  run         Run an application
+
+Flags:
+  -h, --help   help for app
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber app [command] --help" for more information about a command.
+
+$ camber chat --help
+Send a message to a Camber AI agent and stream the response to your terminal.
+
+Usage:
+  camber chat [flags]
+  camber chat [command]
+
+Available Commands:
+  status      Check the status/result of an async chat run
+
+Flags:
+  -a, --agent string             Agent tag (e.g. @nova.snowflake; also set via AGENT_TAG env var)
+      --async                    Submit the chat and return immediately with a conversation id and link; poll 'camber chat status' for the result
+      --cid string               Same as --conversation-id
+  -c, --conversation-id string   Optional UUID of an existing chat session to continue
+      --effort string            Reasoning effort for this chat: low, medium, or high; defaults to the model's default
+  -h, --help                     help for chat
+  -m, --message string           Message to send to the agent
+      --model string             Model to use for this chat. Available: bedrock:claude-sonnet-4-6 (default), bedrock:claude-opus-4-6-v1, bedrock:claude-opus-4-8, bedrock:claude-sonnet-5, bedrock:claude-opus-5
+      --no-thinking              Disable extended thinking for this chat (only supported by some models)
+  -o, --output string            Use "json" for non-streaming output: one JSON line with result and output_stash_files
+      --stop                     With --async: stop the conversation's current run and start a new message (requires --conversation-id)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber chat [command] --help" for more information about a command.
+
+$ camber app list
+====================== Applications Information ======================
+
+----- Application 1 of 234 -----
+Name           : pgdb-prokaryote-database
+Title          : Proteogenomics Database Generation
+Engine Type    : NEXTFLOW
+Author         : vania
+Tags           : biology, genomics, analysis
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Default: large
+    Options:
+      - large:
+          Node Size: LARGE, Num Nodes: 1, GPU: false
+
+----- Application 2 of 234 -----
+Name           : gromacs-protein-md
+Title          : Protein Molecular Dynamics: Structure and Stability Analysis
+Engine Type    : GROMACS
+Author         : linh
+Tags           : condensed-matter, biological-physics, simulation
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Description: Select the configuration for the job
+    Default: small_gpu
+    Options:
+      - small_gpu:
+          Node Size: XSMALL, Num Nodes: 1, GPU: true
+
+----- Application 3 of 234 -----
+Name           : phageannotator-genome-annotation
+Title          : Phageannotator: Bacteriophage Genome Annotation
+Engine Type    : NEXTFLOW
+Author         : vania
+Tags           : biology, genomics, analysis
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Default: medium
+    Options:
+      - medium:
+          Node Size: MEDIUM, Num Nodes: 1, GPU: false
+
+----- Application 4 of 234 -----
+Name           : satminer-cpu
+Title          : Satminer-Cpu
+Engine Type    : base
+Author         : xanxan18
+Tags           : N/A
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Description: Select the configuration for the job
+    Default: small
+    Options:
+      - small:
+          Node Size: XXSMALL, Num Nodes: 1, GPU: false
+
+----- Application 5 of 234 -----
+Name           : nextflow
+Title          : General nextflow
+Engine Type    : NEXTFLOW
+Author         : linh
+Tags           : N/A
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Description: Selecting a preset will prefill the node configuration below. You can still edit the values.
+    Default: default
+    Options:
+      - default:
+          Node Size: SMALL, Num Nodes: 1, GPU: false
+
+----- Application 6 of 234 -----
+Name           : phageannotator-annotation
+Title          : Phage Genome Identification & Annotation (nf-core/phageannotator)
+Engine Type    : NEXTFLOW
+Author         : vania
+Tags           : biology, genomics, analysis
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Default: medium
+    Options:
+      - medium:
+          Node Size: MEDIUM, Num Nodes: 1, GPU: false
+      - large:
+          Node Size: LARGE, Num Nodes: 1, GPU: false
+
+----- Application 7 of 234 -----
+Name           : demultiplex-ngs
+Title          : NGS Demultiplexing (nf-core/demultiplex)
+Engine Type    : NEXTFLOW
+Author         : vania
+Tags           : biology, genomics, analysis
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Default: medium
+    Options:
+      - medium:
+          Node Size: MEDIUM, Num Nodes: 1, GPU: false
+
+----- Application 8 of 234 -----
+Name           : gromacs-gen
+Title          : General GROMACS
+Engine Type    : GROMACS
+Author         : vania
+Tags           : condensed-matter, biological-physics, simulation
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Description: Select the configuration for the job
+    Default: small
+    Options:
+      - small:
+          Node Size: XXSMALL, Num Nodes: 1, GPU: false
+
+----- Application 9 of 234 -----
+Name           : pacvar-repeat-expansions
+Title          : Tandem Repeat Expansion Analysis (PacBio)
+Engine Type    : NEXTFLOW
+Author         : vania
+Tags           : biology, genomics, analysis
+Upstream Apps  : N/A
+Downstream Apps: N/A
+Job Config     :
+  system_size:
+    Default: large
+    Options:
+      - large:
+          Node Size: LARGE, Num Nodes: 1, GPU: false
+
+----- Application 10 of 234 -----
+
+$ camber agent list
+No agents found.
+
+$ camber pod list
+Manage agent pod worker runs
+
+Usage:
+  camber pod [command]
+
+Available Commands:
+  spawn       Stream an idempotent pod worker run until its final result
+
+Flags:
+  -h, --help   help for pod
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber pod [command] --help" for more information about a command.
+
