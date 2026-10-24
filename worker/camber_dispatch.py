@@ -78,21 +78,32 @@ def main():
             rc, out = sh(["camber","job","logs",jid]); (outdir/f"job_{jid}.log").write_text(out); rep.append({"cmd":"job logs","out":out[:6000]})
             rc, out = sh(["camber","stash","ls",sp]); rep.append({"cmd":"stash ls after","out":out})
         (outdir/"probe_report.json").write_text(json.dumps(rep, indent=1)); print("probe report ->", outdir); return 0
-    # ---- run: package worker + manifest + needed assets, submit, wait, collect
+    # ---- run (agent route): package worker + manifest + assets -> stash; agent starts gpu/run.sh in background; poll run.log in stash; collect out.tar.gz
     proj = ROOT/"projects"/a.project; pkg = outdir/"pkg"; pkg.mkdir()
     shutil.copytree(ROOT/"worker"/"gpu", pkg/"gpu"); shutil.copy(proj/"manifest.json", pkg/"manifest.json")
     gen = proj/"generated"
-    if gen.exists(): shutil.copytree(gen, pkg/"generated")   # keyframes needed for i2v (small)
+    if gen.exists(): shutil.copytree(gen, pkg/"generated", ignore=shutil.ignore_patterns("*.mp4", "*.wav", "*.mp3"))   # keyframes only (i2v inputs)
     (pkg/"job.json").write_text(json.dumps({"project": a.project, "stage": a.stage, "only": [x for x in a.only.split(",") if x]}))
     tar = outdir/"pkg.tar.gz"
     with tarfile.open(tar, "w:gz") as t: t.add(pkg, arcname="pkg")
-    root = stash_root(); sp = f"{root}/{a.stash_path}"; sh(["camber","stash","mkdir",sp])
-    sh(["camber","stash","rm",f"{sp}/pkg.tar.gz"]); sh(["camber","stash","rm","-r",f"{sp}/pkg"])
+    root = stash_root(); sp = f"{root}/{a.stash_path}"; me = root.replace("stash://","").strip("/"); tag = f"@{me}.room313"
+    sh(["camber","stash","mkdir",sp]); sh(["camber","stash","rm",f"{sp}/pkg.tar.gz"]); sh(["camber","stash","rm",f"{sp}/run.log"])
     sh(["camber","stash","cp",str(tar),f"{sp}/pkg.tar.gz"], check=True)
-    jid, out = submit("tar xzf pkg.tar.gz && cd pkg && bash gpu/run.sh", a.engine, a.size, sp + "/", gpu=True)
-    if not jid: raise SystemExit("could not parse job id")
-    st = wait(jid); rc, out = sh(["camber","job","logs",jid]); (outdir/f"job_{jid}.log").write_text(out)
-    # outputs: pkg/out.tar.gz written by run.sh into the stash
+    cmd = f"cd ~/{a.stash_path} && rm -rf pkg && tar xzf pkg.tar.gz && cd pkg && mkdir -p out && (nohup bash gpu/run.sh > ../run.log 2>&1 &) ; sleep 8; echo STARTED; tail -5 ../run.log"
+    msg = f"Run this exact shell command on the compute node, do not modify it, do not run anything else, then reply with its output only:\n{cmd}"
+    rc, out = sh(["camber","chat","-a",tag,"-m",msg,"--output","json","--no-thinking"], timeout=600); (outdir/"chat_start.json").write_text(out)
+    if "STARTED" not in out: print("agent did not confirm start"); 
+    # poll run.log
+    t0 = time.time(); last = ""; final = "TIMEOUT"
+    while time.time() - t0 < a_timeout(a):
+        time.sleep(60); lf = outdir/"run.log"
+        r = subprocess.run(["camber","stash","cp",f"{sp}/run.log",str(lf)], capture_output=True, text=True, cwd=ROOT)
+        if lf.exists():
+            txt = lf.read_text(errors="ignore"); tail = "\n".join(txt.strip().splitlines()[-3:])
+            if tail != last: print(f"  {int(time.time()-t0)}s | {tail[-300:]}", flush=True); last = tail
+            if "RUN_DONE" in txt: final = "DONE"; break
+            if "RUN_FAILED" in txt: final = "FAILED"; break
+    print("final:", final)
     rc, out = sh(["camber","stash","cp",f"{sp}/pkg/out.tar.gz",str(outdir/"out.tar.gz")])
     o = outdir/"out.tar.gz"; n = 0
     if o.exists():
@@ -102,10 +113,14 @@ def main():
         stp = proj/"status.json"; status = json.loads(stp.read_text()) if stp.exists() else {}
         ks = outdir/"out"/"gpu_status.json"
         if ks.exists():
-            for k, v in json.loads(ks.read_text()).items(): status[k] = {**v, "worker": "camber"}
+            for k, v in json.loads(ks.read_text()).items(): status[k] = {**v, "worker": "camber-L4"}
             stp.write_text(json.dumps(status, indent=2))
+        wl = outdir/"out"/"worker.log"
+        if wl.exists(): shutil.copy(wl, outdir/"worker.log")
         shutil.rmtree(outdir/"out", ignore_errors=True); o.unlink()
     shutil.rmtree(pkg, ignore_errors=True); tar.unlink(missing_ok=True)
-    print(f"job {jid} -> {st}; merged {n} files"); return 0 if n else 1
+    print(f"run -> {final}; merged {n} files"); return 0 if n else 1
+
+def a_timeout(a): return int(os.environ.get("CAMBER_TIMEOUT_MIN", "240")) * 60
 
 if __name__ == "__main__": sys.exit(main())
