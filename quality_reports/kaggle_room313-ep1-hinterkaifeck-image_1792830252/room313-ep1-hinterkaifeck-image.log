@@ -1,0 +1,196 @@
+[{"stream_name":"stderr","time":0.907848508,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stdout","time":2.198175446,"data":"[    1.3s] stage=image jobs=2 pending=2 gpu=Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":2.198206484,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stderr","time":28.151404668,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":28.151429175,"data":"grpcio-tools 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":28.151434636,"data":"gradio 6.26.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":28.15143921,"data":"moviepy 1.0.3 requires decorator\u003c5.0,\u003e=4.0.2, but you have decorator 5.3.1 which is incompatible.\n"}
+,{"stream_name":"stderr","time":28.151443521,"data":"google-ai-generativelanguage 0.6.15 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,\u003c6.0.0dev,\u003e=3.20.2, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":28.151449005,"data":"ydf 0.15.0 requires protobuf\u003c7.0.0,\u003e=5.29.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":28.151453332,"data":"grpcio-status 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":36.624723154,"data":"[   35.8s] [kf_s03] image ...\n"}
+,{"stream_name":"stdout","time":69.411678594,"data":"[   68.6s] loading FLUX.1-schnell nf4 ...\n"}
+,{"stream_name":"stdout","time":70.418809022,"data":"[   69.6s] [kf_s03] ERROR You are trying to access a gated repo.\n"}
+,{"stream_name":"stdout","time":70.418883299,"data":"Make sure to have access to it at https://huggingface.co/black-forest-labs/FLUX.1-schnell.\n"}
+,{"stream_name":"stdout","time":70.418891091,"data":"403 Client Error. (Request ID: Root=1-6adc6b78-2d2b28a45aafde0c78f1f445;4d3a6a79-6f68-495f-8101-423d3c57f376)\n"}
+,{"stream_name":"stdout","time":70.41889602,"data":"\n"}
+,{"stream_name":"stdout","time":70.418900371,"data":"Cannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config.json.\n"}
+,{"stream_name":"stdout","time":70.418905647,"data":"Access to model black-forest-labs/FLUX.1-schnell is restricted and you are not in the authorized list. Visit https://huggingface.co/black-forest-labs/FLUX.1-schnell to ask for access.\n"}
+,{"stream_name":"stderr","time":70.422603321,"data":"httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config.json'\n"}
+,{"stream_name":"stderr","time":70.422621401,"data":"For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403\n"}
+,{"stream_name":"stderr","time":70.422626659,"data":"\n"}
+,{"stream_name":"stderr","time":70.422631035,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":70.422636328,"data":"\n"}
+,{"stream_name":"stderr","time":70.422641203,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":70.423699562,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 537, in cached_files\n"}
+,{"stream_name":"stderr","time":70.423710931,"data":"    hf_hub_download(\n"}
+,{"stream_name":"stderr","time":70.423717373,"data":"    ~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":70.423740131,"data":"        path_or_repo_id,\n"}
+,{"stream_name":"stderr","time":70.423742889,"data":"        ^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":70.423745167,"data":"    ...\u003c10 lines\u003e...\n"}
+,{"stream_name":"stderr","time":70.423747992,"data":"        tqdm_class=tqdm_class,\n"}
+,{"stream_name":"stderr","time":70.423750331,"data":"        ^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":70.423752653,"data":"    )\n"}
+,{"stream_name":"stderr","time":70.423754955,"data":"    ^\n"}
+,{"stream_name":"stderr","time":70.423757324,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py\", line 89, in _inner_fn\n"}
+,{"stream_name":"stderr","time":70.423760965,"data":"    return fn(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":70.423778019,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_http.py\", line 266, in _inner\n"}
+,{"stream_name":"stderr","time":70.42378261,"data":"    return fn(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":70.423786683,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py\", line 1047, in hf_hub_download\n"}
+,{"stream_name":"stderr","time":70.423790814,"data":"    return _hf_hub_download_to_cache_dir(\n"}
+,{"stream_name":"stderr","time":70.423795823,"data":"        # Destination\n"}
+,{"stream_name":"stderr","time":70.42379959,"data":"    ...\u003c15 lines\u003e...\n"}
+,{"stream_name":"stderr","time":70.423803728,"data":"        dry_run=dry_run,\n"}
+,{"stream_name":"stderr","time":70.423807621,"data":"    )\n"}
+,{"stream_name":"stderr","time":70.423811657,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py\", line 1194, in _hf_hub_download_to_cache_dir\n"}
+,{"stream_name":"stderr","time":70.423815957,"data":"    _raise_on_head_call_error(head_call_error, force_download, local_files_only)\n"}
+,{"stream_name":"stderr","time":70.423820209,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":70.423823841,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py\", line 1953, in _raise_on_head_call_error\n"}
+,{"stream_name":"stderr","time":70.423828367,"data":"    raise head_call_error\n"}
+,{"stream_name":"stderr","time":70.423832117,"data":"huggingface_hub.errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-6adc6b78-2d2b28a45aafde0c78f1f445;4d3a6a79-6f68-495f-8101-423d3c57f376)\n"}
+,{"stream_name":"stderr","time":70.423836728,"data":"\n"}
+,{"stream_name":"stderr","time":70.423840151,"data":"Cannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config.json.\n"}
+,{"stream_name":"stderr","time":70.423844079,"data":"Access to model black-forest-labs/FLUX.1-schnell is restricted and you are not in the authorized list. Visit https://huggingface.co/black-forest-labs/FLUX.1-schnell to ask for access.\n"}
+,{"stream_name":"stderr","time":70.423851835,"data":"\n"}
+,{"stream_name":"stderr","time":70.423855206,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":70.423858837,"data":"\n"}
+,{"stream_name":"stderr","time":70.423863886,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":70.42509562,"data":"  File \"/kaggle/src/script.py\", line 92, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":70.425123454,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":70.425140178,"data":"        ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":70.425143005,"data":"  File \"/kaggle/src/script.py\", line 55, in gen_image\n"}
+,{"stream_name":"stderr","time":70.425145454,"data":"    a = j[\"input\"][\"args\"]; p = flux()\n"}
+,{"stream_name":"stderr","time":70.42514816,"data":"                                ~~~~^^\n"}
+,{"stream_name":"stderr","time":70.425164362,"data":"  File \"/kaggle/src/script.py\", line 47, in flux\n"}
+,{"stream_name":"stderr","time":70.425168748,"data":"    t5 = T5EncoderModel.from_pretrained(mid, subfolder=\"text_encoder_2\", quantization_config=TBnB(load_in_8bit=True), torch_dtype=dt)\n"}
+,{"stream_name":"stderr","time":70.42517326,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 4208, in from_pretrained\n"}
+,{"stream_name":"stderr","time":70.425177966,"data":"    config, model_kwargs = config_class.from_pretrained(\n"}
+,{"stream_name":"stderr","time":70.425192803,"data":"                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":70.425196765,"data":"        config_path,\n"}
+,{"stream_name":"stderr","time":70.425199976,"data":"        ^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":70.425203146,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":70.425206476,"data":"        **kwargs,\n"}
+,{"stream_name":"stderr","time":70.425209667,"data":"        ^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":70.425212767,"data":"    )\n"}
+,{"stream_name":"stderr","time":70.425215856,"data":"    ^\n"}
+,{"stream_name":"stderr","time":70.425218994,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 869, in from_pretrained\n"}
+,{"stream_name":"stderr","time":70.425222532,"data":"    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":70.425225928,"data":"                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":70.425229285,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 919, in get_config_dict\n"}
+,{"stream_name":"stderr","time":70.425232802,"data":"    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":70.425236177,"data":"                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":70.425239677,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 971, in _get_config_dict\n"}
+,{"stream_name":"stderr","time":70.425260718,"data":"    resolved_config_file = cached_file(\n"}
+,{"stream_name":"stderr","time":70.42526491,"data":"        pretrained_model_name_or_path,\n"}
+,{"stream_name":"stderr","time":70.425269241,"data":"    ...\u003c8 lines\u003e...\n"}
+,{"stream_name":"stderr","time":70.425273461,"data":"        subfolder=subfolder,\n"}
+,{"stream_name":"stderr","time":70.425277784,"data":"    )\n"}
+,{"stream_name":"stderr","time":70.42528121,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 370, in cached_file\n"}
+,{"stream_name":"stderr","time":70.425285,"data":"    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)\n"}
+,{"stream_name":"stderr","time":70.425288594,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 610, in cached_files\n"}
+,{"stream_name":"stderr","time":70.425296191,"data":"    raise OSError(\n"}
+,{"stream_name":"stderr","time":70.425299693,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":70.425303154,"data":"    ) from e\n"}
+,{"stream_name":"stderr","time":70.425307071,"data":"OSError: You are trying to access a gated repo.\n"}
+,{"stream_name":"stderr","time":70.42531264,"data":"Make sure to have access to it at https://huggingface.co/black-forest-labs/FLUX.1-schnell.\n"}
+,{"stream_name":"stderr","time":70.425316515,"data":"403 Client Error. (Request ID: Root=1-6adc6b78-2d2b28a45aafde0c78f1f445;4d3a6a79-6f68-495f-8101-423d3c57f376)\n"}
+,{"stream_name":"stderr","time":70.425320304,"data":"\n"}
+,{"stream_name":"stderr","time":70.425323568,"data":"Cannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config.json.\n"}
+,{"stream_name":"stderr","time":70.425327503,"data":"Access to model black-forest-labs/FLUX.1-schnell is restricted and you are not in the authorized list. Visit https://huggingface.co/black-forest-labs/FLUX.1-schnell to ask for access.\n"}
+,{"stream_name":"stdout","time":70.425473552,"data":"[   69.6s] [kf_s16] image ...\n"}
+,{"stream_name":"stdout","time":70.425487119,"data":"[   69.6s] loading FLUX.1-schnell nf4 ...\n"}
+,{"stream_name":"stdout","time":71.160776203,"data":"[   70.3s] [kf_s16] ERROR You are trying to access a gated repo.\n"}
+,{"stream_name":"stdout","time":71.160809296,"data":"Make sure to have access to it at https://huggingface.co/black-forest-labs/FLUX.1-schnell.\n"}
+,{"stream_name":"stdout","time":71.160813866,"data":"403 Client Error. (Request ID: Root=1-6adc6b79-1ea7b96519d6a8713a679a0f;c76e1999-baf3-49f9-b5bd-a396957c8482)\n"}
+,{"stream_name":"stdout","time":71.160817976,"data":"\n"}
+,{"stream_name":"stdout","time":71.160821835,"data":"Cannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config.json.\n"}
+,{"stream_name":"stdout","time":71.160825975,"data":"Access to model black-forest-labs/FLUX.1-schnell is restricted and you are not in the authorized list. Visit https://huggingface.co/black-forest-labs/FLUX.1-schnell to ask for access.\n"}
+,{"stream_name":"stderr","time":71.161917915,"data":"httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config.json'\n"}
+,{"stream_name":"stderr","time":71.161945516,"data":"For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403\n"}
+,{"stream_name":"stderr","time":71.161950572,"data":"\n"}
+,{"stream_name":"stderr","time":71.161954601,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":71.161958397,"data":"\n"}
+,{"stream_name":"stderr","time":71.161961918,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":71.162902772,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 537, in cached_files\n"}
+,{"stream_name":"stderr","time":71.162922383,"data":"    hf_hub_download(\n"}
+,{"stream_name":"stderr","time":71.162926719,"data":"    ~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":71.16293031,"data":"        path_or_repo_id,\n"}
+,{"stream_name":"stderr","time":71.162933986,"data":"        ^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":71.162937536,"data":"    ...\u003c10 lines\u003e...\n"}
+,{"stream_name":"stderr","time":71.162941714,"data":"        tqdm_class=tqdm_class,\n"}
+,{"stream_name":"stderr","time":71.162957739,"data":"        ^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":71.162961531,"data":"    )\n"}
+,{"stream_name":"stderr","time":71.162965123,"data":"    ^\n"}
+,{"stream_name":"stderr","time":71.162968799,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py\", line 89, in _inner_fn\n"}
+,{"stream_name":"stderr","time":71.162973003,"data":"    return fn(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":71.1629765,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_http.py\", line 266, in _inner\n"}
+,{"stream_name":"stderr","time":71.162980545,"data":"    return fn(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":71.162983799,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py\", line 1047, in hf_hub_download\n"}
+,{"stream_name":"stderr","time":71.162988087,"data":"    return _hf_hub_download_to_cache_dir(\n"}
+,{"stream_name":"stderr","time":71.162991752,"data":"        # Destination\n"}
+,{"stream_name":"stderr","time":71.162995351,"data":"    ...\u003c15 lines\u003e...\n"}
+,{"stream_name":"stderr","time":71.162999133,"data":"        dry_run=dry_run,\n"}
+,{"stream_name":"stderr","time":71.163002729,"data":"    )\n"}
+,{"stream_name":"stderr","time":71.163006111,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py\", line 1194, in _hf_hub_download_to_cache_dir\n"}
+,{"stream_name":"stderr","time":71.163010177,"data":"    _raise_on_head_call_error(head_call_error, force_download, local_files_only)\n"}
+,{"stream_name":"stderr","time":71.163013899,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":71.163017737,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py\", line 1953, in _raise_on_head_call_error\n"}
+,{"stream_name":"stderr","time":71.1630214,"data":"    raise head_call_error\n"}
+,{"stream_name":"stderr","time":71.163024743,"data":"huggingface_hub.errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-6adc6b79-1ea7b96519d6a8713a679a0f;c76e1999-baf3-49f9-b5bd-a396957c8482)\n"}
+,{"stream_name":"stderr","time":71.163028551,"data":"\n"}
+,{"stream_name":"stderr","time":71.163032017,"data":"Cannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config.json.\n"}
+,{"stream_name":"stderr","time":71.163036002,"data":"Access to model black-forest-labs/FLUX.1-schnell is restricted and you are not in the authorized list. Visit https://huggingface.co/black-forest-labs/FLUX.1-schnell to ask for access.\n"}
+,{"stream_name":"stderr","time":71.163040126,"data":"\n"}
+,{"stream_name":"stderr","time":71.163043451,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":71.163047098,"data":"\n"}
+,{"stream_name":"stderr","time":71.16305053,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":71.164125186,"data":"  File \"/kaggle/src/script.py\", line 92, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":71.164143794,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":71.164148794,"data":"        ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":71.164152686,"data":"  File \"/kaggle/src/script.py\", line 55, in gen_image\n"}
+,{"stream_name":"stderr","time":71.164156265,"data":"    a = j[\"input\"][\"args\"]; p = flux()\n"}
+,{"stream_name":"stderr","time":71.164159893,"data":"                                ~~~~^^\n"}
+,{"stream_name":"stderr","time":71.164174962,"data":"  File \"/kaggle/src/script.py\", line 47, in flux\n"}
+,{"stream_name":"stderr","time":71.164178927,"data":"    t5 = T5EncoderModel.from_pretrained(mid, subfolder=\"text_encoder_2\", quantization_config=TBnB(load_in_8bit=True), torch_dtype=dt)\n"}
+,{"stream_name":"stderr","time":71.16418286,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 4208, in from_pretrained\n"}
+,{"stream_name":"stderr","time":71.164187039,"data":"    config, model_kwargs = config_class.from_pretrained(\n"}
+,{"stream_name":"stderr","time":71.164190685,"data":"                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":71.164194038,"data":"        config_path,\n"}
+,{"stream_name":"stderr","time":71.164197433,"data":"        ^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":71.164200908,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":71.164204883,"data":"        **kwargs,\n"}
+,{"stream_name":"stderr","time":71.164208639,"data":"        ^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":71.164216809,"data":"    )\n"}
+,{"stream_name":"stderr","time":71.164220567,"data":"    ^\n"}
+,{"stream_name":"stderr","time":71.164224214,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 869, in from_pretrained\n"}
+,{"stream_name":"stderr","time":71.164228615,"data":"    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":71.164232402,"data":"                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":71.164236486,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 919, in get_config_dict\n"}
+,{"stream_name":"stderr","time":71.164240955,"data":"    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":71.164244834,"data":"                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":71.164248689,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 971, in _get_config_dict\n"}
+,{"stream_name":"stderr","time":71.164252697,"data":"    resolved_config_file = cached_file(\n"}
+,{"stream_name":"stderr","time":71.164256584,"data":"        pretrained_model_name_or_path,\n"}
+,{"stream_name":"stderr","time":71.164260689,"data":"    ...\u003c8 lines\u003e...\n"}
+,{"stream_name":"stderr","time":71.164275357,"data":"        subfolder=subfolder,\n"}
+,{"stream_name":"stderr","time":71.164278402,"data":"    )\n"}
+,{"stream_name":"stderr","time":71.16428177,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 370, in cached_file\n"}
+,{"stream_name":"stderr","time":71.164284967,"data":"    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)\n"}
+,{"stream_name":"stderr","time":71.164289032,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 610, in cached_files\n"}
+,{"stream_name":"stderr","time":71.16429233,"data":"    raise OSError(\n"}
+,{"stream_name":"stderr","time":71.164295381,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":71.164298462,"data":"    ) from e\n"}
+,{"stream_name":"stderr","time":71.164302393,"data":"OSError: You are trying to access a gated repo.\n"}
+,{"stream_name":"stderr","time":71.164306136,"data":"Make sure to have access to it at https://huggingface.co/black-forest-labs/FLUX.1-schnell.\n"}
+,{"stream_name":"stderr","time":71.164313658,"data":"403 Client Error. (Request ID: Root=1-6adc6b79-1ea7b96519d6a8713a679a0f;c76e1999-baf3-49f9-b5bd-a396957c8482)\n"}
+,{"stream_name":"stderr","time":71.164319852,"data":"\n"}
+,{"stream_name":"stderr","time":71.16432351,"data":"Cannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config.json.\n"}
+,{"stream_name":"stderr","time":71.164327509,"data":"Access to model black-forest-labs/FLUX.1-schnell is restricted and you are not in the authorized list. Visit https://huggingface.co/black-forest-labs/FLUX.1-schnell to ask for access.\n"}
+,{"stream_name":"stdout","time":71.168296109,"data":"[   70.3s] done. ok=0 failed=2\n"}
+,{"stream_name":"stderr","time":77.832738565,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":77.832767528,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":78.087969447,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":78.088000314,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":78.890277963,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":79.89316469,"data":"[NbConvertApp] Writing 311816 bytes to __results__.html\n"}
+]
