@@ -1,0 +1,25 @@
+Kernel version 13 successfully pushed.  Please check progress at https://www.kaggle.com/code/ahmedelmaghraaby/room313-ep1-hinterkaifeck-video
+  0s ahmedelmaghraaby/room313-ep1-hinterkaifeck-video has status "KernelWorkerStatus.QUEUED"
+  30s ahmedelmaghraaby/room313-ep1-hinterkaifeck-video has status "KernelWorkerStatus.RUNNING"
+  334s ahmedelmaghraaby/room313-ep1-hinterkaifeck-video has status "KernelWorkerStatus.COMPLETE"
+Downloading s07_A.mp4 to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792838872/generated/animated_shots
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792838872/generated/animated_shots/s07_A.mp4
+Downloading s07_C.mp4 to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792838872/generated/animated_shots
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792838872/generated/animated_shots/s07_C.mp4
+Downloading kaggle_status.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792838872
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792838872/kaggle_status.json
+Kernel log downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792838872/room313-ep1-hinterkaifeck-video.log 
+
+  0%|          | 0.00/126k [00:00<?, ?B/s]
+100%|██████████| 126k/126k [00:00<00:00, 40.0MB/s]
+
+  0%|          | 0.00/126k [00:00<?, ?B/s]
+100%|██████████| 126k/126k [00:00<00:00, 18.3MB/s]
+
+  0%|          | 0.00/665 [00:00<?, ?B/s]
+100%|██████████| 665/665 [00:00<00:00, 4.04MB/s]
+merged 2 files into /home/runner/work/room313/room313/projects/ep1_hinterkaifeck/generated; kernel log: /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792838872
+not ok: ['vid_s07']

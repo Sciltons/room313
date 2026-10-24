@@ -229,6 +229,7 @@
     "out": "animated_shots/s07_A.mp4",
     "metrics": {
       "model": "Lightricks/LTX-Video",
+      "pipeline": "LTXConditionPipeline",
       "frames": 49,
       "fps": 24,
       "size": [
@@ -238,9 +239,10 @@
       "variant": {
         "tag": "A",
         "compute": "fp16"
-      }
+      },
+      "gen_s": 8.7
     },
-    "elapsed": 273.1,
+    "elapsed": 267.1,
     "worker": "kaggle"
   },
   "vid_s07_B": {
@@ -277,6 +279,7 @@
     "out": "animated_shots/s07_C.mp4",
     "metrics": {
       "model": "Lightricks/LTX-Video",
+      "pipeline": "LTXConditionPipeline",
       "frames": 49,
       "fps": 24,
       "size": [
@@ -286,9 +289,10 @@
       "variant": {
         "tag": "C",
         "compute": "bf16"
-      }
+      },
+      "gen_s": 45.1
     },
-    "elapsed": 328.8,
+    "elapsed": 316.1,
     "worker": "kaggle"
   }
 }
