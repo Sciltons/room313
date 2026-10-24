@@ -251,9 +251,9 @@
       "chars": [],
       "caption": "مفتاح البيت ضاع… ومحدش لقاه.",
       "image": "extreme close-up of an empty iron nail on a wooden plank wall where a house key used to hang, a faint pale outline of the missing key on the wood, candlelight",
-      "motion": "slow push-in on the empty nail, candlelight flicker",
+      "motion": "the old iron key slips off the nail and drops out of the frame, leaving the nail empty, candlelight flickering, dust",
       "sfx": [
-        "key_tick"
+        "key_drop"
       ],
       "music": "unease"
     },
@@ -401,11 +401,6 @@
         "duration": 3,
         "fs_query": "wooden drawer open"
       },
-      "key_tick": {
-        "prompt": "small metallic tick with a soft reverse swell, suspense",
-        "duration": 2,
-        "fs_query": "metal tick"
-      },
       "paper_rustle": {
         "prompt": "unfolding and turning a large newspaper, close",
         "duration": 3,
@@ -434,6 +429,11 @@
         "prompt": "near-silent attic with a faint high ringing tone and dust settling, eerie",
         "duration": 5,
         "fs_query": "high ringing tone"
+      },
+      "key_drop": {
+        "prompt": "small iron key falling and hitting a wooden floor, close, single drop",
+        "duration": 2,
+        "fs_query": "key drop wood floor"
       }
     }
   }

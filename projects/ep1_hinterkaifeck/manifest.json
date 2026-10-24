@@ -803,7 +803,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "slow push-in on the empty nail, candlelight flicker, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "the old iron key slips off the nail and drops out of the frame, leaving the nail empty, candlelight flickering, dust, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s12.png",
      "mode": "image-to-video",
@@ -1151,20 +1151,6 @@
    "out": "audio/sfx/drawer_wood.mp3"
   },
   {
-   "id": "sfx_key_tick",
-   "type": "audio",
-   "stage": "audio",
-   "provider": "freesound",
-   "model": "freesound-cc0",
-   "est_usd": 0,
-   "input": {
-    "query": "metal tick",
-    "min_dur": 0.5,
-    "max_dur": 8
-   },
-   "out": "audio/sfx/key_tick.mp3"
-  },
-  {
    "id": "sfx_paper_rustle",
    "type": "audio",
    "stage": "audio",
@@ -1247,6 +1233,20 @@
     "max_dur": 15
    },
    "out": "audio/sfx/attic_silence_ring.mp3"
+  },
+  {
+   "id": "sfx_key_drop",
+   "type": "audio",
+   "stage": "audio",
+   "provider": "freesound",
+   "model": "freesound-cc0",
+   "est_usd": 0,
+   "input": {
+    "query": "key drop wood floor",
+    "min_dur": 0.5,
+    "max_dur": 8
+   },
+   "out": "audio/sfx/key_drop.mp3"
   }
  ]
 }
