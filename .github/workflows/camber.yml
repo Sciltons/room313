@@ -7,8 +7,8 @@ on:
       project: {description: "projects/<name>", required: false, default: "ep1_hinterkaifeck"}
       stage:   {description: "video | image | character | all", required: false, default: "video"}
       only:    {description: "comma-separated job ids (optional)", required: false, default: ""}
-      engine:  {description: "camber engine type", required: false, default: "mpi"}
-      size:    {description: "camber node size", required: false, default: "SMALL"}
+      engine:  {description: "camber engine type", required: false, default: "base"}
+      size:    {description: "camber node size", required: false, default: "xsmall"}
 
 concurrency:
   group: "camber-${{ inputs.project }}"
