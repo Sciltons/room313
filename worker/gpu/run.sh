@@ -6,7 +6,9 @@ python3 -c "import diffusers, transformers, imageio" 2>/dev/null || pip install 
 python3 -c "import torch; assert torch.cuda.is_available()" || echo "WARN: no cuda torch"
 export HF_HUB_ENABLE_HF_TRANSFER=0 HF_HUB_DISABLE_XET=1
 # --- smoke test FIRST (fail fast, never burn GPU hours on a broken environment)
-pip install -q -U brotli zstandard 2>&1 | tail -1
+pip install -q -U brotli zstandard "bitsandbytes>=0.45" 2>&1 | tail -1
+python3 -c "import bitsandbytes" || { echo "RUN_FAILED bitsandbytes"; tar czf out.tar.gz out; exit 1; }
+free -g | sed -n 2p
 smoke() { python3 - <<'PY'
 import sys
 from huggingface_hub import hf_hub_download
