@@ -37,6 +37,14 @@
     "maria": {
       "name": "Maria Baumgartner",
       "prompt": "a 44-year-old Bavarian maid, round tired face, dark hair pinned back under a white kerchief, brown dress with a white apron, carrying a small cloth bundle"
+    },
+    "maid_old": {
+      "name": "الخدّامة القديمة",
+      "prompt": "a 55-year-old Bavarian farm maid, thin worn face, grey hair under a dark brown headscarf, patched grey wool coat over a dark dress, carrying a cloth bundle on her back, anxious eyes"
+    },
+    "neighbor": {
+      "name": "الجار (لورنز)",
+      "prompt": "a 40-year-old Bavarian farmer neighbor, broad red face, short brown moustache, brown felt hat, grey wool jacket, holding a lantern"
     }
   },
   "environments": {
@@ -44,14 +52,22 @@
     "hallway": "dark interior hallway of a 1920s farmhouse, rough wooden plank walls, a hanging oil lamp, a wooden ladder leading up to a closed attic hatch in the ceiling",
     "kitchen": "dim 1920s Bavarian farmhouse kitchen, wooden plank walls, a long wooden table, a tiled stove, an oil lamp on the table, a small window with snow outside",
     "attic": "dark wooden attic of a 1920s farmhouse seen by lantern light, hay on the floor, thin light leaking between the roof planks",
-    "bedroom": "small 1920s farmhouse bedroom at night, a wooden bed with a thick quilt, a crucifix on the wall, a candle on the nightstand, wooden ceiling planks above"
+    "bedroom": "small 1920s farmhouse bedroom at night, a wooden bed with a thick quilt, a crucifix on the wall, a candle on the nightstand, wooden ceiling planks above",
+    "barn_night": "inside a 1920s Bavarian farm barn at night, rough timber beams, hay bales, a wooden stall with two cows, one hanging oil lantern, deep shadows, the big barn door ajar with snow and darkness outside",
+    "barn_door": "the outer wooden door of a 1920s Bavarian barn attached to the farmhouse, at night, snow on the ground, the door half open with faint lantern light spilling out, dark forest behind",
+    "village": "a small 1920s Bavarian village street in winter, timber-framed houses with snow on the roofs, a church tower, muddy snow road, grey sky",
+    "farm_day": "an isolated 1920s Bavarian farmhouse with an attached barn in early spring, melting snow, bare trees, overcast grey sky, smoke from the chimney",
+    "police": "a 1920s Bavarian police station office, wooden desks, stacks of paper files, a typewriter, a photograph board on the wall, a gas lamp, men in dark uniforms",
+    "seance": "a dim 1920s Munich parlour prepared for a séance, a round table with a dark velvet cloth, candles, heavy curtains, a crystal ball, shadows on the wall",
+    "ruins": "bombed-out Munich street in 1945, ruined stone buildings, rubble, snow and ash, torn documents blowing in the wind, grey sky",
+    "demolition": "a 1920s Bavarian farmhouse being demolished by workers with pickaxes and ropes, half the roof gone, wooden beams falling, dust in the spring sunlight"
   },
   "shots": [
     {
       "id": "s01",
       "t": [
         0.0,
-        3.38
+        3.25
       ],
       "env": "farm_night",
       "chars": [],
@@ -65,8 +81,8 @@
     {
       "id": "s02",
       "t": [
-        3.38,
-        4.46
+        3.25,
+        4.39
       ],
       "env": "hallway",
       "chars": [],
@@ -80,7 +96,7 @@
     {
       "id": "s03",
       "t": [
-        4.46,
+        4.39,
         8.76
       ],
       "env": "hallway",
@@ -169,7 +185,7 @@
       "id": "s04",
       "t": [
         8.76,
-        11.09
+        10.78
       ],
       "env": "farm_night",
       "chars": [],
@@ -183,8 +199,8 @@
     {
       "id": "s05",
       "t": [
-        11.09,
-        13.31
+        10.78,
+        13.24
       ],
       "env": "farm_night",
       "chars": [],
@@ -198,8 +214,8 @@
     {
       "id": "s06",
       "t": [
-        13.31,
-        15.3
+        13.24,
+        15.28
       ],
       "env": "farm_night",
       "chars": [],
@@ -214,8 +230,8 @@
     {
       "id": "s07",
       "t": [
-        15.3,
-        16.76
+        15.28,
+        16.74
       ],
       "env": "kitchen",
       "chars": [
@@ -232,8 +248,8 @@
     {
       "id": "s08",
       "t": [
-        16.76,
-        17.6
+        16.74,
+        17.62
       ],
       "env": "kitchen",
       "chars": [
@@ -250,8 +266,8 @@
     {
       "id": "s09",
       "t": [
-        17.6,
-        19.53
+        17.62,
+        18.74
       ],
       "env": "kitchen",
       "chars": [
@@ -267,7 +283,7 @@
     {
       "id": "s10",
       "t": [
-        19.53,
+        18.74,
         22.88
       ],
       "env": "kitchen",
@@ -286,7 +302,7 @@
       "id": "s11",
       "t": [
         22.88,
-        25.81
+        25.74
       ],
       "env": "kitchen",
       "chars": [
@@ -303,8 +319,8 @@
     {
       "id": "s12",
       "t": [
-        25.81,
-        28.52
+        25.74,
+        28.46
       ],
       "env": "kitchen",
       "chars": [],
@@ -318,8 +334,8 @@
     {
       "id": "s13",
       "t": [
-        28.52,
-        31.66
+        28.46,
+        31.64
       ],
       "env": "kitchen",
       "chars": [
@@ -336,8 +352,8 @@
     {
       "id": "s14",
       "t": [
-        31.66,
-        34.62
+        31.64,
+        34.32
       ],
       "env": "bedroom",
       "chars": [
@@ -354,8 +370,8 @@
     {
       "id": "s15",
       "t": [
-        34.62,
-        36.19
+        34.32,
+        36.02
       ],
       "env": "attic",
       "chars": [
@@ -372,8 +388,8 @@
     {
       "id": "s16",
       "t": [
-        36.19,
-        37.64
+        36.02,
+        37.77
       ],
       "env": "attic",
       "chars": [],
@@ -384,6 +400,508 @@
         "attic_silence_ring"
       ],
       "music": "sting_soft"
+    },
+    {
+      "id": "s17",
+      "t": [
+        37.77,
+        41.97
+      ],
+      "env": "farm_day",
+      "chars": [
+        "maid_old"
+      ],
+      "image": "medium wide shot, {maid_old} walking away from the farm along a muddy snow road, looking back over her shoulder at the house, {farm_day}",
+      "motion": "she walks slowly away, glances back at the house, wind moving her scarf",
+      "sfx": [
+        "wind_valley",
+        "footsteps_snow"
+      ],
+      "music": "unease"
+    },
+    {
+      "id": "s18",
+      "t": [
+        41.97,
+        46.04
+      ],
+      "env": "village",
+      "chars": [
+        "maid_old"
+      ],
+      "image": "close shot, {maid_old} whispering to two village women by a doorway, candlelight on their frightened faces, {village} at dusk",
+      "motion": "she whispers and leans in, the women's eyes widen, candle flickers",
+      "sfx": [
+        "crowd_murmur"
+      ],
+      "music": "unease",
+      "caption_style": "red"
+    },
+    {
+      "id": "s19",
+      "t": [
+        46.04,
+        50.36
+      ],
+      "env": "farm_day",
+      "chars": [
+        "maria"
+      ],
+      "image": "wide shot, {maria} arriving at the farm gate carrying her cloth bundle, {farm_day}, the farmhouse ahead, melting snow",
+      "motion": "she walks toward the gate, pauses, looks up at the house",
+      "sfx": [
+        "wind_valley",
+        "footsteps_snow"
+      ],
+      "music": "family_theme"
+    },
+    {
+      "id": "s20",
+      "t": [
+        50.36,
+        52.1
+      ],
+      "env": "kitchen",
+      "chars": [
+        "maria",
+        "cazilia"
+      ],
+      "image": "medium shot, {maria} hanging her coat on a wooden peg while {cazilia} watches from the stove, {kitchen}, daylight from the window",
+      "motion": "Maria hangs the coat and turns, Cazilia nods slightly, steam rises",
+      "sfx": [
+        "room_tone",
+        "pot_simmer"
+      ],
+      "music": "family_theme"
+    },
+    {
+      "id": "s21",
+      "t": [
+        52.1,
+        55.26
+      ],
+      "env": "barn_door",
+      "chars": [],
+      "image": "wide shot at night, {barn_door}, faint warm light inside the barn, a single line of footprints in the snow leading to the door",
+      "motion": "the barn door creaks slightly wider, lantern light flickers inside, snow drifting",
+      "sfx": [
+        "wind_valley",
+        "hatch_creak"
+      ],
+      "music": "night_terror"
+    },
+    {
+      "id": "s22",
+      "t": [
+        55.26,
+        56.66
+      ],
+      "env": "barn_night",
+      "chars": [],
+      "image": "low angle from inside the barn, {barn_night}, the doorway in the background with a dark human silhouette stepping in holding a lantern, hay in the foreground",
+      "motion": "the silhouette steps in slowly, lantern swinging, shadows stretching across the hay",
+      "sfx": [
+        "barn_creak",
+        "footsteps_wood"
+      ],
+      "music": "night_terror"
+    },
+    {
+      "id": "s23",
+      "t": [
+        56.66,
+        58.32
+      ],
+      "env": "farm_night",
+      "chars": [
+        "andreas"
+      ],
+      "image": "medium shot from behind, {andreas} walking through the snow toward the barn holding a lantern, {farm_night}, his back to the camera",
+      "motion": "he walks away toward the barn, lantern swinging, snow falling",
+      "sfx": [
+        "footsteps_snow",
+        "wind_valley"
+      ],
+      "music": "night_terror"
+    },
+    {
+      "id": "s24",
+      "t": [
+        58.32,
+        60.32
+      ],
+      "env": "farm_night",
+      "chars": [
+        "viktoria",
+        "girl"
+      ],
+      "image": "medium shot from behind, {viktoria} holding the hand of {girl} crossing the snow toward the open barn door, {farm_night}, lantern light from the barn",
+      "motion": "they walk slowly toward the barn, the girl looks back at the camera once",
+      "sfx": [
+        "footsteps_snow",
+        "wind_valley"
+      ],
+      "music": "night_terror"
+    },
+    {
+      "id": "s25",
+      "t": [
+        60.32,
+        62.04
+      ],
+      "env": "barn_door",
+      "chars": [],
+      "image": "close shot, a fallen oil lantern lying on its side in the snow outside the barn door, its flame going out, {barn_door}",
+      "motion": "the lantern flame sputters and dies, darkness closes in, snow falling",
+      "sfx": [
+        "lantern_drop",
+        "wind_valley"
+      ],
+      "music": "sting_soft",
+      "caption_style": "red"
+    },
+    {
+      "id": "s26",
+      "t": [
+        62.04,
+        63.98
+      ],
+      "env": "hallway",
+      "chars": [],
+      "image": "wide shot, {hallway}, a long dark human shadow with a raised long-handled tool cast on the wooden wall by the lamp, nobody visible",
+      "motion": "the shadow slowly grows larger across the wall, the lamp flame trembles",
+      "sfx": [
+        "footsteps_wood",
+        "room_tone"
+      ],
+      "music": "night_terror"
+    },
+    {
+      "id": "s27",
+      "t": [
+        63.98,
+        66.96
+      ],
+      "env": "bedroom",
+      "chars": [],
+      "image": "close shot, a small wooden cradle in a dark bedroom corner, a candle on the floor guttering out, {bedroom}, a white kerchief on the floorboards",
+      "motion": "the candle flame shrinks and goes out, slow push-in on the empty cradle",
+      "sfx": [
+        "room_tone"
+      ],
+      "music": "sting_soft"
+    },
+    {
+      "id": "s28",
+      "t": [
+        66.96,
+        70.34
+      ],
+      "env": "barn_night",
+      "chars": [],
+      "image": "extreme close-up of an old iron mattock (pickaxe hoe) leaning against a timber wall, {barn_night}, lantern light on the worn wooden handle",
+      "motion": "slow push-in on the mattock, lantern light flickering, dust in the air",
+      "sfx": [
+        "metal_clink",
+        "room_tone"
+      ],
+      "music": "aftermath"
+    },
+    {
+      "id": "s29",
+      "t": [
+        70.34,
+        72.52
+      ],
+      "env": "village",
+      "chars": [],
+      "image": "wide shot at night, {village}, all windows dark, snow falling, dead silence, the church tower against the clouds",
+      "motion": "snow falling gently over the sleeping village, clouds drifting",
+      "sfx": [
+        "wind_valley"
+      ],
+      "music": "aftermath"
+    },
+    {
+      "id": "s30",
+      "t": [
+        72.52,
+        75.86
+      ],
+      "env": "farm_day",
+      "chars": [],
+      "image": "wide shot at dawn, {farm_day}, pale grey light, a thin line of smoke rising from the chimney, one window glowing",
+      "motion": "smoke rising from the chimney, the light in the window flickering, mist moving",
+      "sfx": [
+        "wind_valley"
+      ],
+      "music": "aftermath"
+    },
+    {
+      "id": "s31",
+      "t": [
+        75.86,
+        79.42
+      ],
+      "env": "kitchen",
+      "chars": [],
+      "image": "medium shot, {kitchen}, the table with a half-eaten loaf of bread, a knife, an empty plate and a chair pulled out, nobody there, lamp light",
+      "motion": "slow push-in on the table, lamp flame flickering, a shadow passes across the wall",
+      "sfx": [
+        "room_tone",
+        "chair_creak"
+      ],
+      "music": "aftermath",
+      "caption_style": "red"
+    },
+    {
+      "id": "s32",
+      "t": [
+        79.42,
+        81.88
+      ],
+      "env": "bedroom",
+      "chars": [],
+      "image": "medium shot, {bedroom}, the bed with the quilt thrown aside and crumpled, a muddy boot print on the floorboards, grey morning light",
+      "motion": "dust drifting in the light, slow pan across the unmade bed to the boot print",
+      "sfx": [
+        "room_tone"
+      ],
+      "music": "aftermath"
+    },
+    {
+      "id": "s33",
+      "t": [
+        81.88,
+        84.32
+      ],
+      "env": "barn_night",
+      "chars": [],
+      "image": "medium shot in daylight, two cows eating hay in the barn stall, {barn_night} in grey daylight, a dark male silhouette standing in the doorway behind them, face unseen",
+      "motion": "the cows chew slowly, the silhouette in the doorway shifts its weight, dust in the light",
+      "sfx": [
+        "cows",
+        "barn_creak"
+      ],
+      "music": "aftermath"
+    },
+    {
+      "id": "s34",
+      "t": [
+        84.32,
+        86.86
+      ],
+      "env": "farm_day",
+      "chars": [
+        "neighbor"
+      ],
+      "image": "wide shot, {neighbor} and another farmer standing on the village road looking at the distant farmhouse, {farm_day}, smoke rising from its chimney",
+      "motion": "the two men watch, one points at the chimney, smoke drifting",
+      "sfx": [
+        "wind_valley"
+      ],
+      "music": "aftermath"
+    },
+    {
+      "id": "s35",
+      "t": [
+        86.86,
+        89.65
+      ],
+      "env": "farm_day",
+      "chars": [
+        "neighbor"
+      ],
+      "image": "medium shot, {neighbor} shrugging and turning away with a half smile, the farmhouse small and far behind him, {farm_day}",
+      "motion": "he shrugs, turns and walks away, smoke still rising far behind",
+      "sfx": [
+        "footsteps_snow"
+      ],
+      "music": "aftermath"
+    },
+    {
+      "id": "s36",
+      "t": [
+        89.65,
+        94.35
+      ],
+      "env": "village",
+      "chars": [],
+      "image": "medium shot, a 1920s village school classroom, an empty wooden desk in the front row with a small slate, other children seated, grey window light",
+      "motion": "the teacher glances at the empty desk, children fidget, chalk dust in the light",
+      "sfx": [
+        "school_bell"
+      ],
+      "music": "investigation"
+    },
+    {
+      "id": "s37",
+      "t": [
+        94.35,
+        96.71
+      ],
+      "env": "barn_night",
+      "chars": [
+        "neighbor"
+      ],
+      "image": "medium shot, {neighbor} and two farmers at the open barn door holding lanterns, frozen in horror, staring at something below the frame, {barn_night}",
+      "motion": "the men freeze, one lantern trembles, another man slowly removes his hat",
+      "sfx": [
+        "hatch_creak",
+        "gasp"
+      ],
+      "music": "sting_hard",
+      "caption_style": "red"
+    },
+    {
+      "id": "s38",
+      "t": [
+        96.71,
+        99.43
+      ],
+      "env": "police",
+      "chars": [],
+      "image": "medium shot, {police}, a policeman interviewing a nervous villager at a desk, stacks of files, a typewriter",
+      "motion": "the policeman writes, the villager fidgets with his hat, the lamp flickers",
+      "sfx": [
+        "typewriter",
+        "paper_rustle"
+      ],
+      "music": "investigation"
+    },
+    {
+      "id": "s39",
+      "t": [
+        99.43,
+        102.59
+      ],
+      "env": "police",
+      "chars": [],
+      "image": "close shot of six small sealed wooden crates being loaded onto a horse cart by two policemen, {village} street, grey day",
+      "motion": "the men lift a crate onto the cart, the horse shifts, snow falling",
+      "sfx": [
+        "cart_wood",
+        "wind_valley"
+      ],
+      "music": "investigation"
+    },
+    {
+      "id": "s40",
+      "t": [
+        102.59,
+        106.07
+      ],
+      "env": "seance",
+      "chars": [],
+      "image": "medium shot, {seance}, a female medium with closed eyes and hands on the velvet table, candles trembling, the crystal ball reflecting the flames",
+      "motion": "the candle flames bend as if in a draft, the medium's lips move, shadows sway",
+      "sfx": [
+        "candle_whoosh",
+        "room_tone"
+      ],
+      "music": "seance"
+    },
+    {
+      "id": "s41",
+      "t": [
+        106.07,
+        111.37
+      ],
+      "env": "ruins",
+      "chars": [],
+      "image": "wide shot, {ruins}, a broken wooden crate half buried in rubble and ash, papers blowing",
+      "motion": "papers and ash blowing across the rubble, smoke drifting, slow push-in on the broken crate",
+      "sfx": [
+        "wind_valley",
+        "rubble"
+      ],
+      "music": "investigation"
+    },
+    {
+      "id": "s42",
+      "t": [
+        111.37,
+        114.75
+      ],
+      "env": "demolition",
+      "chars": [],
+      "image": "wide shot, {demolition}, workers pulling a rope as a timber wall collapses, dust cloud",
+      "motion": "the wall tips and collapses in a cloud of dust, workers step back",
+      "sfx": [
+        "demolition",
+        "wind_valley"
+      ],
+      "music": "ending"
+    },
+    {
+      "id": "s43",
+      "t": [
+        114.75,
+        118.05
+      ],
+      "env": "attic",
+      "chars": [
+        "neighbor"
+      ],
+      "image": "close shot, a worker's hands lifting a loose floorboard in the attic revealing a rusty iron mattock hidden underneath, {attic}, daylight through the broken roof",
+      "motion": "the floorboard lifts slowly, dust falls, light reveals the mattock",
+      "sfx": [
+        "wood_creak",
+        "dust_trickle"
+      ],
+      "music": "ending"
+    },
+    {
+      "id": "s44",
+      "t": [
+        118.05,
+        120.77
+      ],
+      "env": "bedroom",
+      "chars": [
+        "andreas"
+      ],
+      "reuse": "s14",
+      "image": "",
+      "motion": "",
+      "sfx": [
+        "footsteps_above",
+        "dust_trickle"
+      ],
+      "music": "ending"
+    },
+    {
+      "id": "s45",
+      "t": [
+        120.77,
+        122.65
+      ],
+      "env": "attic",
+      "chars": [],
+      "image": "low angle looking up at dark wooden ceiling planks, a narrow black gap between two planks, dust falling from the gap, candle light from below",
+      "motion": "dust trickles from the gap, the candle light trembles, slow push-in on the gap",
+      "sfx": [
+        "dust_trickle",
+        "attic_silence_ring"
+      ],
+      "music": "ending",
+      "caption_style": "red"
+    },
+    {
+      "id": "s46",
+      "t": [
+        122.65,
+        127.034
+      ],
+      "env": "police",
+      "chars": [],
+      "image": "close shot, an old cardboard case file folder on a wooden desk, string-tied, yellowed papers inside, a candle, dust, {police}",
+      "motion": "slow push-in on the folder, the candle flickers, dust in the air",
+      "sfx": [
+        "paper_rustle",
+        "room_tone"
+      ],
+      "music": "ending"
     }
   ],
   "audio_assets": {
@@ -411,6 +929,30 @@
       "sting_soft": {
         "prompt": "a single soft eerie high violin note with long reverb fading into silence, 6 seconds",
         "duration": 6
+      },
+      "night_terror": {
+        "prompt": "slow horror pulse, deep sub bass heartbeat, dissonant low strings, distant metallic scrape, no melody, 30 seconds",
+        "duration": 30
+      },
+      "aftermath": {
+        "prompt": "cold eerie ambient drone, sparse piano notes with long reverb, quiet, unsettling calm, 30 seconds",
+        "duration": 30
+      },
+      "investigation": {
+        "prompt": "dark documentary underscore, slow ticking clock pulse, low cello, tense but restrained, 30 seconds",
+        "duration": 30
+      },
+      "seance": {
+        "prompt": "ghostly ethereal drone, glass harmonica tones, whispering reverb, very eerie, slow, 20 seconds",
+        "duration": 20
+      },
+      "sting_hard": {
+        "prompt": "sharp horror orchestral sting, brass and strings hit with a long dark tail, 6 seconds",
+        "duration": 6
+      },
+      "ending": {
+        "prompt": "sad slow piano and low strings, unresolved final chord, melancholic true crime outro, 30 seconds",
+        "duration": 30
       }
     },
     "sfx": {
@@ -490,6 +1032,81 @@
         "prompt": "small iron key falling and hitting a wooden floor, close, single drop",
         "duration": 2,
         "fs_query": "keys drop"
+      },
+      "footsteps_snow": {
+        "prompt": "footsteps crunching in deep snow",
+        "duration": 4,
+        "fs_query": "footsteps snow"
+      },
+      "crowd_murmur": {
+        "prompt": "quiet crowd murmur whispering",
+        "duration": 4,
+        "fs_query": "crowd murmur"
+      },
+      "barn_creak": {
+        "prompt": "old barn wood creaking",
+        "duration": 3,
+        "fs_query": "barn creak"
+      },
+      "footsteps_wood": {
+        "prompt": "slow footsteps on wooden floor",
+        "duration": 3,
+        "fs_query": "footsteps wood"
+      },
+      "lantern_drop": {
+        "prompt": "metal lantern dropping on ground",
+        "duration": 2,
+        "fs_query": "metal drop"
+      },
+      "metal_clink": {
+        "prompt": "iron tool clink",
+        "duration": 1,
+        "fs_query": "metal clink"
+      },
+      "cows": {
+        "prompt": "cows mooing in a barn",
+        "duration": 4,
+        "fs_query": "cow moo"
+      },
+      "school_bell": {
+        "prompt": "old school hand bell ringing",
+        "duration": 3,
+        "fs_query": "school bell"
+      },
+      "gasp": {
+        "prompt": "man gasp in shock",
+        "duration": 1,
+        "fs_query": "gasp"
+      },
+      "typewriter": {
+        "prompt": "old typewriter typing",
+        "duration": 4,
+        "fs_query": "typewriter"
+      },
+      "cart_wood": {
+        "prompt": "wooden cart and horse",
+        "duration": 3,
+        "fs_query": "horse cart"
+      },
+      "candle_whoosh": {
+        "prompt": "candle flame whoosh wind",
+        "duration": 2,
+        "fs_query": "whoosh wind"
+      },
+      "rubble": {
+        "prompt": "rubble stones falling",
+        "duration": 3,
+        "fs_query": "rubble"
+      },
+      "demolition": {
+        "prompt": "wooden building collapse crash",
+        "duration": 4,
+        "fs_query": "wood crash"
+      },
+      "wood_creak": {
+        "prompt": "floorboard creak",
+        "duration": 2,
+        "fs_query": "floorboard creak"
       }
     }
   },
@@ -497,23 +1114,23 @@
     {
       "t": [
         0.28,
-        3.41
+        3.28
       ],
       "text": "عيلة كاملة اتقتلت في المزرعة…",
       "style": ""
     },
     {
       "t": [
-        3.41,
-        4.49
+        3.28,
+        4.42
       ],
       "text": "والقاتل…",
       "style": ""
     },
     {
       "t": [
-        4.49,
-        6.51
+        4.42,
+        6.62
       ],
       "text": "واحد من البيت.",
       "style": "red"
@@ -521,62 +1138,62 @@
     {
       "t": [
         8.79,
-        11.12
+        10.81
       ],
       "text": "سنة ألف تسعمية اتنين وعشرين…",
       "style": ""
     },
     {
       "t": [
-        11.12,
-        13.34
+        10.81,
+        13.27
       ],
       "text": "مزرعة معزولة في جنوب ألمانيا…",
       "style": ""
     },
     {
       "t": [
-        13.34,
-        15.33
+        13.27,
+        15.31
       ],
       "text": "اسمها هِنترْكايفِك.",
       "style": "stamp"
     },
     {
       "t": [
-        15.33,
-        16.79
+        15.31,
+        16.77
       ],
       "text": "عايش فيها أندرياس…",
       "style": ""
     },
     {
       "t": [
-        16.79,
-        17.63
+        16.77,
+        17.65
       ],
       "text": "ومراته…",
       "style": ""
     },
     {
       "t": [
-        17.63,
-        19.55
+        17.65,
+        18.77
       ],
       "text": "وبنتهم فيكتوريا…",
       "style": ""
     },
     {
       "t": [
-        19.55,
-        20.91
+        18.77,
+        20.89
       ],
       "text": "وولادها: بنت سبع سنين…",
       "style": ""
     },
     {
       "t": [
-        20.91,
+        20.89,
         22.91
       ],
       "text": "وطفل سنتين.",
@@ -585,46 +1202,46 @@
     {
       "t": [
         22.91,
-        25.84
+        25.77
       ],
       "text": "الأسابيع اللي قبلها… كانت غريبة.",
       "style": ""
     },
     {
       "t": [
-        25.84,
-        27.24
+        25.77,
+        27.09
       ],
       "text": "مفتاح البيت ضاع…",
       "style": ""
     },
     {
       "t": [
-        27.24,
-        28.55
+        27.09,
+        28.49
       ],
       "text": "ومحدش لقاه.",
       "style": ""
     },
     {
       "t": [
-        28.55,
-        30.01
+        28.49,
+        30.09
       ],
       "text": "جرنال اتلقى في البيت…",
       "style": ""
     },
     {
       "t": [
-        30.01,
-        31.68
+        30.09,
+        31.67
       ],
       "text": "محدش فيهم اشتراه.",
       "style": ""
     },
     {
       "t": [
-        31.68,
+        31.67,
         32.67
       ],
       "text": "وبالليل…",
@@ -633,26 +1250,426 @@
     {
       "t": [
         32.67,
-        34.65
+        34.35
       ],
       "text": "صوت خطوات في الدور اللي فوق.",
       "style": ""
     },
     {
       "t": [
-        34.65,
-        36.22
+        34.35,
+        36.05
       ],
       "text": "أندرياس طلع يدوّر…",
       "style": ""
     },
     {
       "t": [
-        36.22,
-        37.64
+        36.05,
+        37.92
       ],
       "text": "ملقاش حد.",
       "style": "red"
+    },
+    {
+      "t": [
+        37.92,
+        39.92
+      ],
+      "text": "والخدّامة اللي كانت شغّالة عندهم…",
+      "style": ""
+    },
+    {
+      "t": [
+        39.92,
+        42.12
+      ],
+      "text": "سابت الشغل قبلها بشهور.",
+      "style": ""
+    },
+    {
+      "t": [
+        42.12,
+        43.4
+      ],
+      "text": "وقالت للناس…",
+      "style": ""
+    },
+    {
+      "t": [
+        43.4,
+        46.19
+      ],
+      "text": "«إن البيت ده… مسكون.»",
+      "style": "red"
+    },
+    {
+      "t": [
+        46.19,
+        48.27
+      ],
+      "text": "يوم ٣١ مارس…",
+      "style": ""
+    },
+    {
+      "t": [
+        48.27,
+        50.51
+      ],
+      "text": "وصلت خدّامة جديدة اسمها ماريا.",
+      "style": ""
+    },
+    {
+      "t": [
+        50.51,
+        52.25
+      ],
+      "text": "أول يوم شغل ليها.",
+      "style": ""
+    },
+    {
+      "t": [
+        52.25,
+        53.29
+      ],
+      "text": "في الليلة دي…",
+      "style": ""
+    },
+    {
+      "t": [
+        53.29,
+        55.41
+      ],
+      "text": "حد نادى على أهل البيت للزريبة…",
+      "style": ""
+    },
+    {
+      "t": [
+        55.41,
+        56.81
+      ],
+      "text": "واحد ورا التاني.",
+      "style": ""
+    },
+    {
+      "t": [
+        56.81,
+        57.65
+      ],
+      "text": "أندرياس…",
+      "style": ""
+    },
+    {
+      "t": [
+        57.65,
+        58.47
+      ],
+      "text": "مراته…",
+      "style": ""
+    },
+    {
+      "t": [
+        58.47,
+        59.33
+      ],
+      "text": "فيكتوريا…",
+      "style": ""
+    },
+    {
+      "t": [
+        59.33,
+        60.47
+      ],
+      "text": "وبنتها الصغيرة.",
+      "style": ""
+    },
+    {
+      "t": [
+        60.47,
+        62.19
+      ],
+      "text": "ولا واحد فيهم رجع.",
+      "style": "red"
+    },
+    {
+      "t": [
+        62.19,
+        64.13
+      ],
+      "text": "وبعدين دخل البيت…",
+      "style": ""
+    },
+    {
+      "t": [
+        64.13,
+        65.47
+      ],
+      "text": "وخلّص على الطفل…",
+      "style": ""
+    },
+    {
+      "t": [
+        65.47,
+        67.11
+      ],
+      "text": "وماريا.",
+      "style": "red"
+    },
+    {
+      "t": [
+        67.11,
+        68.85
+      ],
+      "text": "السلاح كان فاس زراعية…",
+      "style": ""
+    },
+    {
+      "t": [
+        68.85,
+        70.49
+      ],
+      "text": "من المزرعة نفسها.",
+      "style": ""
+    },
+    {
+      "t": [
+        70.49,
+        72.67
+      ],
+      "text": "ومحدش في القرية سمع حاجة.",
+      "style": ""
+    },
+    {
+      "t": [
+        72.67,
+        74.13
+      ],
+      "text": "بس الغريب مش القتل…",
+      "style": ""
+    },
+    {
+      "t": [
+        74.13,
+        76.01
+      ],
+      "text": "الغريب اللي حصل بعده.",
+      "style": ""
+    },
+    {
+      "t": [
+        76.01,
+        77.63
+      ],
+      "text": "القاتل مسابش البيت.",
+      "style": "red"
+    },
+    {
+      "t": [
+        77.63,
+        79.57
+      ],
+      "text": "فضل عايش فيه أربع أيام.",
+      "style": ""
+    },
+    {
+      "t": [
+        79.57,
+        80.79
+      ],
+      "text": "أكل من أكلهم…",
+      "style": ""
+    },
+    {
+      "t": [
+        80.79,
+        82.03
+      ],
+      "text": "ونام في سريرهم.",
+      "style": ""
+    },
+    {
+      "t": [
+        82.03,
+        84.47
+      ],
+      "text": "وكل يوم كان بيطلع يأكّل البهايم.",
+      "style": ""
+    },
+    {
+      "t": [
+        84.47,
+        87.01
+      ],
+      "text": "والجيران شافوا دخان طالع من المدخنة…",
+      "style": ""
+    },
+    {
+      "t": [
+        87.01,
+        89.8
+      ],
+      "text": "وقالوا إن العيلة بخير.",
+      "style": ""
+    },
+    {
+      "t": [
+        89.8,
+        91.4
+      ],
+      "text": "يوم ٤ أبريل…",
+      "style": ""
+    },
+    {
+      "t": [
+        91.4,
+        94.5
+      ],
+      "text": "الجيران استغربوا إن البنت الصغيرة مجتش المدرسة.",
+      "style": ""
+    },
+    {
+      "t": [
+        94.5,
+        95.36
+      ],
+      "text": "دخلوا…",
+      "style": ""
+    },
+    {
+      "t": [
+        95.36,
+        96.86
+      ],
+      "text": "ولقوا الستة مقتولين.",
+      "style": "red"
+    },
+    {
+      "t": [
+        96.86,
+        99.58
+      ],
+      "text": "البوليس حقق مع أكتر من مية شخص.",
+      "style": ""
+    },
+    {
+      "t": [
+        99.58,
+        100.86
+      ],
+      "text": "ولما مفيش دليل…",
+      "style": ""
+    },
+    {
+      "t": [
+        100.86,
+        102.74
+      ],
+      "text": "بعتوا رؤوس الضحايا لميونخ…",
+      "style": ""
+    },
+    {
+      "t": [
+        102.74,
+        104.36
+      ],
+      "text": "لوسطاء روحانيين…",
+      "style": ""
+    },
+    {
+      "t": [
+        104.36,
+        106.22
+      ],
+      "text": "عشان يسألوهم مين القاتل.",
+      "style": ""
+    },
+    {
+      "t": [
+        106.22,
+        108.7
+      ],
+      "text": "الرؤوس دي ضاعت في الحرب العالمية التانية.",
+      "style": ""
+    },
+    {
+      "t": [
+        108.7,
+        109.88
+      ],
+      "text": "ولحد النهاردة…",
+      "style": ""
+    },
+    {
+      "t": [
+        109.88,
+        111.52
+      ],
+      "text": "مرجعش.",
+      "style": "red"
+    },
+    {
+      "t": [
+        111.52,
+        114.9
+      ],
+      "text": "هدّوا المزرعة سنة ألف تسعمية تلاتة وعشرين…",
+      "style": ""
+    },
+    {
+      "t": [
+        114.9,
+        116.02
+      ],
+      "text": "ومع الهد…",
+      "style": ""
+    },
+    {
+      "t": [
+        116.02,
+        118.2
+      ],
+      "text": "لقوا الفاس مخبية في الدور اللي فوق.",
+      "style": ""
+    },
+    {
+      "t": [
+        118.2,
+        120.92
+      ],
+      "text": "نفس الدور اللي أندرياس سمع فيه الخطوات.",
+      "style": ""
+    },
+    {
+      "t": [
+        120.92,
+        122.8
+      ],
+      "text": "يعني كان فوق راسه من الأول.",
+      "style": "red"
+    },
+    {
+      "t": [
+        122.8,
+        123.9
+      ],
+      "text": "وللأسف…",
+      "style": ""
+    },
+    {
+      "t": [
+        123.9,
+        124.94
+      ],
+      "text": "لحد الآن…",
+      "style": ""
+    },
+    {
+      "t": [
+        124.94,
+        127.03
+      ],
+      "text": "الملف لسه مفتوح.",
+      "style": "stamp"
     }
   ]
 }

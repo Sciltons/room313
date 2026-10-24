@@ -101,7 +101,7 @@ def main():
     # ---------- 1) per-shot clips, exact duration, framed into 9:16 with captions
     clips=[]
     for s in sb["shots"]:
-        t0,t1=s["t"]; d=round(t1-t0,3); src=gen/"animated_shots"/f"{s['id']}.mp4"; kf=gen/"keyframes"/f"{s['id']}.png"; out=work/f"{s['id']}.mp4"
+        t0,t1=s["t"]; d=round(t1-t0,3); sid=s.get("reuse",s["id"]); src=gen/"animated_shots"/f"{sid}.mp4"; kf=gen/"keyframes"/f"{sid}.png"; out=work/f"{s['id']}.mp4"
         if src.exists():
             sd=probe_dur(src); mode="video"
             # fit: slow down up to 1.6x, otherwise loop; trim to d

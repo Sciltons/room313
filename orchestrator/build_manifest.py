@@ -40,6 +40,7 @@ def build_free(project):
                       "seed": seed_base + i, "randomize_seed": False, "width": 1024, "height": 576, "num_inference_steps": 4}},
             "out": f"characters/{cid}.png"})
     for s_ in sb["shots"]:
+        if s_.get("reuse"): continue
         prompt = fill(s_["image"], sb) + ", " + st["positive"]
         # consistency without a paid reference model: identical character description block + per-character fixed seed
         seed = seed_base + (list(sb["characters"]).index(s_["chars"][0]) if s_["chars"] else 99)
@@ -47,6 +48,7 @@ def build_free(project):
             "input": {**FREE["image_space"], "args": {"prompt": prompt, "seed": seed, "randomize_seed": False, "width": 1024, "height": 576, "num_inference_steps": 4}},
             "out": f"keyframes/{s_['id']}.png"})
     for s_ in sb["shots"]:
+        if s_.get("reuse"): continue
         shot_d = s_["t"][1] - s_["t"][0]; vd = int(min(5, max(2, round(shot_d + 0.5))))   # LTX Space: duration_ui seconds (2..8), fixed seed per shot
         jobs.append({"id": f"vid_{s_['id']}", "type": "video", "stage": "video", "provider": "hf_space", "model": "LTX-Video-distilled@space", "est_usd": 0, "expect_duration": vd, "tags": ["milestone"] if s_["id"] == ms_shot["id"] else [],
             "input": {**FREE["video_space"], "args": {"prompt": fill(s_["motion"], sb) + ", " + st["motion_default"], "negative_prompt": st["negative"],
