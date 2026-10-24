@@ -1,0 +1,44 @@
+[{"stream_name":"stderr","time":0.681416936,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stdout","time":1.687800249,"data":"[    1.0s] stage=video jobs=1 pending=1 gpu=Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":1.6878333620000001,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stderr","time":24.603802817000002,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":24.603828335,"data":"grpcio-tools 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.60383323,"data":"gradio 6.26.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.603837074,"data":"moviepy 1.0.3 requires decorator\u003c5.0,\u003e=4.0.2, but you have decorator 5.3.1 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.603840966,"data":"google-ai-generativelanguage 0.6.15 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,\u003c6.0.0dev,\u003e=3.20.2, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.603846246,"data":"ydf 0.15.0 requires protobuf\u003c7.0.0,\u003e=5.29.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":24.603850722,"data":"grpcio-status 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":30.351023973,"data":"[   29.7s] [vid_s03] video ...\n"}
+,{"stream_name":"stdout","time":56.764960019,"data":"[   56.1s] loading LTX-Video ...\n"}
+,{"stream_name":"stderr","time":56.765190296,"data":"/usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\n"}
+,{"stream_name":"stderr","time":56.765203958,"data":"  deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\n"}
+,{"stream_name":"stderr","time":56.873447184,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":274.227267886,"data":"\rFetching 22 files:   0%|          | 0/22 [00:00\u003c?, ?it/s]\rFetching 22 files:  23%|██▎       | 5/22 [00:00\u003c00:00, 49.36it/s]\rFetching 22 files:  41%|████      | 9/22 [00:19\u003c00:00, 49.36it/s]\rFetching 22 files:  45%|████▌     | 10/22 [02:51\u003c04:01, 20.14s/it]\rFetching 22 files:  91%|█████████ | 20/22 [03:37\u003c00:20, 10.40s/it]\rFetching 22 files: 100%|██████████| 22/22 [03:37\u003c00:00,  9.88s/it]\n"}
+,{"stream_name":"stderr","time":277.614054379,"data":"\rLoading pipeline components...:   0%|          | 0/5 [00:00\u003c?, ?it/s]\rLoading pipeline components...:  20%|██        | 1/5 [00:02\u003c00:11,  2.79s/it]\rLoading pipeline components...:  60%|██████    | 3/5 [00:03\u003c00:01,  1.12it/s]\n"}
+,{"stream_name":"stderr","time":296.765302863,"data":"\rLoading checkpoint shards:   0%|          | 0/6 [00:00\u003c?, ?it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":316.591258104,"data":"\rLoading checkpoint shards:  17%|█▋        | 1/6 [00:19\u003c01:35, 19.15s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":336.441963645,"data":"\rLoading checkpoint shards:  33%|███▎      | 2/6 [00:38\u003c01:18, 19.55s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":356.330618423,"data":"\rLoading checkpoint shards:  50%|█████     | 3/6 [00:58\u003c00:59, 19.69s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":376.329524775,"data":"\rLoading checkpoint shards:  67%|██████▋   | 4/6 [01:18\u003c00:39, 19.77s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":381.715862168,"data":"\rLoading checkpoint shards:  83%|████████▎ | 5/6 [01:38\u003c00:19, 19.85s/it]\u001b[A\n"}
+,{"stream_name":"stderr","time":381.719805133,"data":"\rLoading checkpoint shards: 100%|██████████| 6/6 [01:44\u003c00:00, 14.93s/it]\u001b[A\rLoading checkpoint shards: 100%|██████████| 6/6 [01:44\u003c00:00, 17.35s/it]\n"}
+,{"stream_name":"stderr","time":381.999606003,"data":"\rLoading pipeline components...:  80%|████████  | 4/5 [01:47\u003c00:36, 36.66s/it]\n"}
+,{"stream_name":"stderr","time":382.927357066,"data":"\rLoading weights:   0%|          | 0/219 [00:00\u003c?, ?it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":383.050584928,"data":"\rLoading weights:   0%|          | 1/219 [00:00\u003c03:22,  1.08it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":385.596349459,"data":"\rLoading weights:   2%|▏         | 5/219 [00:01\u003c00:35,  6.08it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":387.7944438,"data":"\rLoading weights:   3%|▎         | 7/219 [00:03\u003c02:03,  1.71it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":390.427480154,"data":"\rLoading weights:   7%|▋         | 16/219 [00:05\u003c01:09,  2.91it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":392.634545908,"data":"\rLoading weights:  11%|█▏        | 25/219 [00:08\u003c01:01,  3.15it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":392.768560343,"data":"\rLoading weights:  16%|█▌        | 34/219 [00:10\u003c00:53,  3.48it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":395.318091461,"data":"\rLoading weights:  16%|█▌        | 35/219 [00:10\u003c00:51,  3.60it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":397.398262553,"data":"\rLoading weights:  20%|█▉        | 43/219 [00:13\u003c00:51,  3.39it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":397.661480483,"data":"\rLoading weights:  24%|██▎       | 52/219 [00:15\u003c00:44,  3.71it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":400.080621314,"data":"\rLoading weights:  26%|██▋       | 58/219 [00:15\u003c00:33,  4.83it/s]\u001b[A\n"}
+,{"stream_name":"stderr","time":405.327702235,"data":"\rLoading weights:  28%|██▊       | 61/219 [00:18\u003c00:48,  3.27it/s]\u001b[AKilled\n"}
+,{"stream_name":"stderr","time":407.767709082,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":407.767738846,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":408.090460185,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":408.090485969,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":409.478813006,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":410.419639439,"data":"[NbConvertApp] Writing 313994 bytes to __results__.html\n"}
+]

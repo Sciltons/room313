@@ -1,0 +1,719 @@
+Kernel version 3 successfully pushed.  Please check progress at https://www.kaggle.com/code/ahmedelmaghraaby/room313-ep1-hinterkaifeck-video
+  0s ahmedelmaghraaby/room313-ep1-hinterkaifeck-video has status "KernelWorkerStatus.QUEUED"
+  30s ahmedelmaghraaby/room313-ep1-hinterkaifeck-video has status "KernelWorkerStatus.RUNNING"
+  426s ahmedelmaghraaby/room313-ep1-hinterkaifeck-video has status "KernelWorkerStatus.ERROR"
+Downloading HEAD to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/HEAD
+Downloading config to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/config
+Downloading description to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/description
+Downloading applypatch-msg.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/applypatch-msg.sample
+Downloading commit-msg.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/commit-msg.sample
+Downloading fsmonitor-watchman.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/fsmonitor-watchman.sample
+Downloading post-update.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/post-update.sample
+Downloading pre-applypatch.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/pre-applypatch.sample
+Downloading pre-commit.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/pre-commit.sample
+Downloading pre-merge-commit.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/pre-merge-commit.sample
+Downloading pre-push.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/pre-push.sample
+Downloading pre-rebase.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/pre-rebase.sample
+Downloading pre-receive.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/pre-receive.sample
+Downloading prepare-commit-msg.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/prepare-commit-msg.sample
+Downloading push-to-checkout.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/push-to-checkout.sample
+Downloading sendemail-validate.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/sendemail-validate.sample
+Downloading update.sample to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/hooks/update.sample
+Downloading index to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/index
+Downloading exclude to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/info
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/info/exclude
+Downloading HEAD to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/logs
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/logs/HEAD
+Downloading main to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/logs/refs/heads
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/logs/refs/heads/main
+Downloading HEAD to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/logs/refs/remotes/origin
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/logs/refs/remotes/origin/HEAD
+Downloading pack-02ccc6a55a5207a1726b6a45511d56e5047ff7ef.idx to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/objects/pack
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/objects/pack/pack-02ccc6a55a5207a1726b6a45511d56e5047ff7ef.idx
+Downloading pack-02ccc6a55a5207a1726b6a45511d56e5047ff7ef.pack to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/objects/pack
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/objects/pack/pack-02ccc6a55a5207a1726b6a45511d56e5047ff7ef.pack
+Downloading pack-02ccc6a55a5207a1726b6a45511d56e5047ff7ef.rev to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/objects/pack
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/objects/pack/pack-02ccc6a55a5207a1726b6a45511d56e5047ff7ef.rev
+Downloading packed-refs to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/packed-refs
+Downloading main to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/refs/heads
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/refs/heads/main
+Downloading HEAD to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/refs/remotes/origin
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/refs/remotes/origin/HEAD
+Downloading shallow to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.git/shallow
+Downloading connectivity.yml to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.github/workflows
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.github/workflows/connectivity.yml
+Downloading free-audit.yml to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.github/workflows
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.github/workflows/free-audit.yml
+Downloading generate.yml to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.github/workflows
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.github/workflows/generate.yml
+Downloading kaggle.yml to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.github/workflows
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.github/workflows/kaggle.yml
+Downloading .gitignore to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/.gitignore
+Downloading CONTEXT.md to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/CONTEXT.md
+Downloading README.md to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/README.md
+Downloading assemble.py to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/orchestrator
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/orchestrator/assemble.py
+Downloading build_manifest.py to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/orchestrator
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/orchestrator/build_manifest.py
+Downloading dispatch.py to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/orchestrator
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/orchestrator/dispatch.py
+Downloading narration.py to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/orchestrator
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/orchestrator/narration.py
+Downloading s07.mp4 to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/animated_shots
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/animated_shots/s07.mp4
+Downloading andreas.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters/andreas.png
+Downloading cazilia.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters/cazilia.png
+Downloading girl.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters/girl.png
+Downloading maria.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters/maria.png
+Downloading viktoria.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/characters/viktoria.png
+Downloading s01.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s01.png
+Downloading s02.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s02.png
+Downloading s03.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s03.png
+Downloading s04.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s04.png
+Downloading s05.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s05.png
+Downloading s06.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s06.png
+Downloading s07.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s07.png
+Downloading s08.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s08.png
+Downloading s09.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s09.png
+Downloading s10.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s10.png
+Downloading s11.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s11.png
+Downloading s12.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s12.png
+Downloading s13.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s13.png
+Downloading s14.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s14.png
+Downloading s15.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s15.png
+Downloading s16.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/generated/keyframes/s16.png
+Downloading narration_01.mp3 to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/input
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/input/narration_01.mp3
+Downloading narration_02.mp3 to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/input
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/input/narration_02.mp3
+Downloading narration_03.mp3 to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/input
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/input/narration_03.mp3
+Downloading ledger.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/ledger.json
+Downloading manifest.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/manifest.json
+Downloading assembly.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/quality_reports/assembly.json
+Downloading status.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/status.json
+Downloading storyboard.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/storyboard.json
+Downloading config.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/timeline
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/timeline/config.json
+Downloading narration.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/timeline
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/projects/ep1_hinterkaifeck/timeline/narration.json
+Downloading connectivity.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339/connectivity.txt
+Downloading cpu_image_sample.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339/cpu_image_sample.txt
+Downloading freesound.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339/freesound.txt
+Downloading kaggle.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339/kaggle.txt
+Downloading runner.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339/runner.txt
+Downloading space_flux_sample.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339/space_flux_sample.txt
+Downloading spaces_api.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40035894339/spaces_api.txt
+Downloading connectivity.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/connectivity.txt
+Downloading cpu_image_sample.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/cpu_image_sample.png
+Downloading cpu_image_sample.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/cpu_image_sample.txt
+Downloading freesound.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/freesound.txt
+Downloading kaggle.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/kaggle.txt
+Downloading runner.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/runner.txt
+Downloading space_flux_sample.png to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/space_flux_sample.png
+Downloading space_flux_sample.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/space_flux_sample.txt
+Downloading spaces_api.txt to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/free_audit_40036017325/spaces_api.txt
+Downloading generate_40038027902.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/generate_40038027902.log
+Downloading generate_40038942253.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/generate_40038942253.log
+Downloading generate_40044636190.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/generate_40044636190.log
+Downloading kaggle_40076308340.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_40076308340.log
+Downloading kaggle_40076404848.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_40076404848.log
+Downloading kaggle_40077276857.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_40077276857.log
+Downloading kaggle_40077883236.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_40077883236.log
+Downloading kaggle_40078123216.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_40078123216.log
+Downloading kaggle_40078738620.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_40078738620.log
+Downloading kaggle_40079944830.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_40079944830.log
+Downloading kaggle_40080554666.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_40080554666.log
+Downloading room313-ep1-hinterkaifeck-image.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792828814
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792828814/room313-ep1-hinterkaifeck-image.log
+Downloading kaggle_status.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792828890
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792828890/kaggle_status.json
+Downloading room313-ep1-hinterkaifeck-image.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792828890
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792828890/room313-ep1-hinterkaifeck-image.log
+Downloading kaggle_status.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792829701
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792829701/kaggle_status.json
+Downloading room313-ep1-hinterkaifeck-image.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792829701
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792829701/room313-ep1-hinterkaifeck-image.log
+Downloading kaggle_status.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792830252
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792830252/kaggle_status.json
+Downloading room313-ep1-hinterkaifeck-image.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792830252
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792830252/room313-ep1-hinterkaifeck-image.log
+Downloading kaggle_status.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792830479
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792830479/kaggle_status.json
+Downloading room313-ep1-hinterkaifeck-image.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792830479
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-image_1792830479/room313-ep1-hinterkaifeck-image.log
+Downloading kaggle_status.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-images_1792831039
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-images_1792831039/kaggle_status.json
+Downloading room313-ep1-hinterkaifeck-images.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-images_1792831039
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-images_1792831039/room313-ep1-hinterkaifeck-images.log
+Downloading kaggle_status.json to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792832160
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792832160/kaggle_status.json
+Downloading room313-ep1-hinterkaifeck-video.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792832160
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792832160/room313-ep1-hinterkaifeck-video.log
+Downloading room313-ep1-hinterkaifeck-video.log to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792832725
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792832725/room313-ep1-hinterkaifeck-video.log
+Downloading generate.py to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/worker
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/worker/generate.py
+Downloading room313_worker.py to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/worker/kaggle
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/worker/kaggle/room313_worker.py
+Downloading kaggle_dispatch.py to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/worker
+
+Output file downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/repo/worker/kaggle_dispatch.py
+Kernel log downloaded to /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380/room313-ep1-hinterkaifeck-video.log 
+
+  0%|          | 0.00/21.0 [00:00<?, ?B/s]
+100%|██████████| 21.0/21.0 [00:00<00:00, 138kB/s]
+
+  0%|          | 0.00/262 [00:00<?, ?B/s]
+100%|██████████| 262/262 [00:00<00:00, 1.49MB/s]
+
+  0%|          | 0.00/73.0 [00:00<?, ?B/s]
+100%|██████████| 73.0/73.0 [00:00<00:00, 498kB/s]
+
+  0%|          | 0.00/478 [00:00<?, ?B/s]
+100%|██████████| 478/478 [00:00<00:00, 2.50MB/s]
+
+  0%|          | 0.00/896 [00:00<?, ?B/s]
+100%|██████████| 896/896 [00:00<00:00, 5.35MB/s]
+
+  0%|          | 0.00/4.62k [00:00<?, ?B/s]
+100%|██████████| 4.62k/4.62k [00:00<00:00, 24.8MB/s]
+
+  0%|          | 0.00/189 [00:00<?, ?B/s]
+100%|██████████| 189/189 [00:00<00:00, 1.12MB/s]
+
+  0%|          | 0.00/424 [00:00<?, ?B/s]
+100%|██████████| 424/424 [00:00<00:00, 2.93MB/s]
+
+  0%|          | 0.00/1.60k [00:00<?, ?B/s]
+100%|██████████| 1.60k/1.60k [00:00<00:00, 10.9MB/s]
+
+  0%|          | 0.00/416 [00:00<?, ?B/s]
+100%|██████████| 416/416 [00:00<00:00, 2.42MB/s]
+
+  0%|          | 0.00/1.34k [00:00<?, ?B/s]
+100%|██████████| 1.34k/1.34k [00:00<00:00, 8.83MB/s]
+
+  0%|          | 0.00/4.78k [00:00<?, ?B/s]
+100%|██████████| 4.78k/4.78k [00:00<00:00, 27.1MB/s]
+
+  0%|          | 0.00/544 [00:00<?, ?B/s]
+100%|██████████| 544/544 [00:00<00:00, 4.38MB/s]
+
+  0%|          | 0.00/1.46k [00:00<?, ?B/s]
+100%|██████████| 1.46k/1.46k [00:00<00:00, 9.79MB/s]
+
+  0%|          | 0.00/2.72k [00:00<?, ?B/s]
+100%|██████████| 2.72k/2.72k [00:00<00:00, 17.5MB/s]
+
+  0%|          | 0.00/2.25k [00:00<?, ?B/s]
+100%|██████████| 2.25k/2.25k [00:00<00:00, 13.0MB/s]
+
+  0%|          | 0.00/3.56k [00:00<?, ?B/s]
+100%|██████████| 3.56k/3.56k [00:00<00:00, 19.2MB/s]
+
+  0%|          | 0.00/11.5k [00:00<?, ?B/s]
+100%|██████████| 11.5k/11.5k [00:00<00:00, 3.95MB/s]
+
+  0%|          | 0.00/240 [00:00<?, ?B/s]
+100%|██████████| 240/240 [00:00<00:00, 1.75MB/s]
+
+  0%|          | 0.00/179 [00:00<?, ?B/s]
+100%|██████████| 179/179 [00:00<00:00, 1.36MB/s]
+
+  0%|          | 0.00/179 [00:00<?, ?B/s]
+100%|██████████| 179/179 [00:00<00:00, 1.33MB/s]
+
+  0%|          | 0.00/179 [00:00<?, ?B/s]
+100%|██████████| 179/179 [00:00<00:00, 1.01MB/s]
+
+  0%|          | 0.00/4.08k [00:00<?, ?B/s]
+100%|██████████| 4.08k/4.08k [00:00<00:00, 21.9MB/s]
+
+  0%|          | 0.00/10.9M [00:00<?, ?B/s]
+  9%|▉         | 1.00M/10.9M [00:00<00:01, 6.36MB/s]
+ 37%|███▋      | 4.00M/10.9M [00:00<00:00, 18.0MB/s]
+100%|██████████| 10.9M/10.9M [00:00<00:00, 32.7MB/s]
+
+  0%|          | 0.00/496 [00:00<?, ?B/s]
+100%|██████████| 496/496 [00:00<00:00, 3.75MB/s]
+
+  0%|          | 0.00/112 [00:00<?, ?B/s]
+100%|██████████| 112/112 [00:00<00:00, 891kB/s]
+
+  0%|          | 0.00/41.0 [00:00<?, ?B/s]
+100%|██████████| 41.0/41.0 [00:00<00:00, 352kB/s]
+
+  0%|          | 0.00/30.0 [00:00<?, ?B/s]
+100%|██████████| 30.0/30.0 [00:00<00:00, 252kB/s]
+
+  0%|          | 0.00/41.0 [00:00<?, ?B/s]
+100%|██████████| 41.0/41.0 [00:00<00:00, 267kB/s]
+
+  0%|          | 0.00/1.59k [00:00<?, ?B/s]
+100%|██████████| 1.59k/1.59k [00:00<00:00, 10.6MB/s]
+
+  0%|          | 0.00/6.65k [00:00<?, ?B/s]
+100%|██████████| 6.65k/6.65k [00:00<00:00, 38.0MB/s]
+
+  0%|          | 0.00/3.74k [00:00<?, ?B/s]
+100%|██████████| 3.74k/3.74k [00:00<00:00, 22.0MB/s]
+
+  0%|          | 0.00/2.08k [00:00<?, ?B/s]
+100%|██████████| 2.08k/2.08k [00:00<00:00, 14.5MB/s]
+
+  0%|          | 0.00/33.0 [00:00<?, ?B/s]
+100%|██████████| 33.0/33.0 [00:00<00:00, 271kB/s]
+
+  0%|          | 0.00/3.44k [00:00<?, ?B/s]
+100%|██████████| 3.44k/3.44k [00:00<00:00, 22.0MB/s]
+
+  0%|          | 0.00/3.11k [00:00<?, ?B/s]
+100%|██████████| 3.11k/3.11k [00:00<00:00, 20.2MB/s]
+
+  0%|          | 0.00/9.61k [00:00<?, ?B/s]
+100%|██████████| 9.61k/9.61k [00:00<00:00, 44.6MB/s]
+
+  0%|          | 0.00/9.18k [00:00<?, ?B/s]
+100%|██████████| 9.18k/9.18k [00:00<00:00, 9.73MB/s]
+
+  0%|          | 0.00/4.53k [00:00<?, ?B/s]
+100%|██████████| 4.53k/4.53k [00:00<00:00, 25.6MB/s]
+
+  0%|          | 0.00/2.13k [00:00<?, ?B/s]
+100%|██████████| 2.13k/2.13k [00:00<00:00, 14.3MB/s]
+
+  0%|          | 0.00/122k [00:00<?, ?B/s]
+100%|██████████| 122k/122k [00:00<00:00, 1.43MB/s]
+
+  0%|          | 0.00/26.2k [00:00<?, ?B/s]
+100%|██████████| 26.2k/26.2k [00:00<00:00, 911kB/s]
+
+  0%|          | 0.00/17.4k [00:00<?, ?B/s]
+100%|██████████| 17.4k/17.4k [00:00<00:00, 1.42MB/s]
+
+  0%|          | 0.00/21.2k [00:00<?, ?B/s]
+100%|██████████| 21.2k/21.2k [00:00<00:00, 1.62MB/s]
+
+  0%|          | 0.00/366k [00:00<?, ?B/s]
+100%|██████████| 366k/366k [00:00<00:00, 3.78MB/s]
+
+  0%|          | 0.00/19.9k [00:00<?, ?B/s]
+100%|██████████| 19.9k/19.9k [00:00<00:00, 682kB/s]
+
+  0%|          | 0.00/712k [00:00<?, ?B/s]
+100%|██████████| 712k/712k [00:00<00:00, 4.15MB/s]
+100%|██████████| 712k/712k [00:00<00:00, 4.15MB/s]
+
+  0%|          | 0.00/520k [00:00<?, ?B/s]
+100%|██████████| 520k/520k [00:00<00:00, 3.52MB/s]
+100%|██████████| 520k/520k [00:00<00:00, 3.51MB/s]
+
+  0%|          | 0.00/518k [00:00<?, ?B/s]
+100%|██████████| 518k/518k [00:00<00:00, 3.54MB/s]
+100%|██████████| 518k/518k [00:00<00:00, 3.53MB/s]
+
+  0%|          | 0.00/793k [00:00<?, ?B/s]
+100%|██████████| 793k/793k [00:00<00:00, 4.65MB/s]
+100%|██████████| 793k/793k [00:00<00:00, 4.64MB/s]
+
+  0%|          | 0.00/962k [00:00<?, ?B/s]
+100%|██████████| 962k/962k [00:00<00:00, 5.04MB/s]
+100%|██████████| 962k/962k [00:00<00:00, 5.03MB/s]
+
+  0%|          | 0.00/763k [00:00<?, ?B/s]
+100%|██████████| 763k/763k [00:00<00:00, 9.56MB/s]
+
+  0%|          | 0.00/30.9k [00:00<?, ?B/s]
+100%|██████████| 30.9k/30.9k [00:00<00:00, 1.86MB/s]
+
+  0%|          | 0.00/555k [00:00<?, ?B/s]
+100%|██████████| 555k/555k [00:00<00:00, 4.77MB/s]
+100%|██████████| 555k/555k [00:00<00:00, 4.76MB/s]
+
+  0%|          | 0.00/601k [00:00<?, ?B/s]
+100%|██████████| 601k/601k [00:00<00:00, 4.77MB/s]
+100%|██████████| 601k/601k [00:00<00:00, 4.76MB/s]
+
+  0%|          | 0.00/589k [00:00<?, ?B/s]
+100%|██████████| 589k/589k [00:00<00:00, 3.90MB/s]
+100%|██████████| 589k/589k [00:00<00:00, 3.90MB/s]
+
+  0%|          | 0.00/553k [00:00<?, ?B/s]
+100%|██████████| 553k/553k [00:00<00:00, 4.12MB/s]
+100%|██████████| 553k/553k [00:00<00:00, 4.11MB/s]
+
+  0%|          | 0.00/532k [00:00<?, ?B/s]
+100%|██████████| 532k/532k [00:00<00:00, 3.61MB/s]
+100%|██████████| 532k/532k [00:00<00:00, 3.61MB/s]
+
+  0%|          | 0.00/659k [00:00<?, ?B/s]
+100%|██████████| 659k/659k [00:00<00:00, 8.17MB/s]
+
+  0%|          | 0.00/569k [00:00<?, ?B/s]
+100%|██████████| 569k/569k [00:00<00:00, 4.70MB/s]
+100%|██████████| 569k/569k [00:00<00:00, 4.70MB/s]
+
+  0%|          | 0.00/643k [00:00<?, ?B/s]
+100%|██████████| 643k/643k [00:00<00:00, 4.74MB/s]
+100%|██████████| 643k/643k [00:00<00:00, 4.73MB/s]
+
+  0%|          | 0.00/581k [00:00<?, ?B/s]
+100%|██████████| 581k/581k [00:00<00:00, 3.22MB/s]
+100%|██████████| 581k/581k [00:00<00:00, 3.21MB/s]
+
+  0%|          | 0.00/84.5k [00:00<?, ?B/s]
+100%|██████████| 84.5k/84.5k [00:00<00:00, 1.34MB/s]
+
+  0%|          | 0.00/208k [00:00<?, ?B/s]
+100%|██████████| 208k/208k [00:00<00:00, 2.15MB/s]
+
+  0%|          | 0.00/222k [00:00<?, ?B/s]
+100%|██████████| 222k/222k [00:00<00:00, 2.18MB/s]
+100%|██████████| 222k/222k [00:00<00:00, 2.18MB/s]
+
+  0%|          | 0.00/14.9k [00:00<?, ?B/s]
+100%|██████████| 14.9k/14.9k [00:00<00:00, 7.13MB/s]
+
+  0%|          | 0.00/47.2k [00:00<?, ?B/s]
+100%|██████████| 47.2k/47.2k [00:00<00:00, 1.78MB/s]
+
+  0%|          | 0.00/2.62k [00:00<?, ?B/s]
+100%|██████████| 2.62k/2.62k [00:00<00:00, 17.5MB/s]
+
+  0%|          | 0.00/4.17k [00:00<?, ?B/s]
+100%|██████████| 4.17k/4.17k [00:00<00:00, 24.4MB/s]
+
+  0%|          | 0.00/15.4k [00:00<?, ?B/s]
+100%|██████████| 15.4k/15.4k [00:00<00:00, 3.08MB/s]
+
+  0%|          | 0.00/41.0 [00:00<?, ?B/s]
+100%|██████████| 41.0/41.0 [00:00<00:00, 320kB/s]
+
+  0%|          | 0.00/2.10k [00:00<?, ?B/s]
+100%|██████████| 2.10k/2.10k [00:00<00:00, 12.5MB/s]
+
+  0%|          | 0.00/900 [00:00<?, ?B/s]
+100%|██████████| 900/900 [00:00<00:00, 5.86MB/s]
+
+  0%|          | 0.00/1.42k [00:00<?, ?B/s]
+100%|██████████| 1.42k/1.42k [00:00<00:00, 9.74MB/s]
+
+  0%|          | 0.00/79.0 [00:00<?, ?B/s]
+100%|██████████| 79.0/79.0 [00:00<00:00, 541kB/s]
+
+  0%|          | 0.00/123 [00:00<?, ?B/s]
+100%|██████████| 123/123 [00:00<00:00, 1.02MB/s]
+
+  0%|          | 0.00/430 [00:00<?, ?B/s]
+100%|██████████| 430/430 [00:00<00:00, 3.23MB/s]
+
+  0%|          | 0.00/148 [00:00<?, ?B/s]
+100%|██████████| 148/148 [00:00<00:00, 868kB/s]
+
+  0%|          | 0.00/753 [00:00<?, ?B/s]
+100%|██████████| 753/753 [00:00<00:00, 4.64MB/s]
+
+  0%|          | 0.00/900 [00:00<?, ?B/s]
+100%|██████████| 900/900 [00:00<00:00, 5.38MB/s]
+
+  0%|          | 0.00/357k [00:00<?, ?B/s]
+100%|██████████| 357k/357k [00:00<00:00, 4.39MB/s]
+
+  0%|          | 0.00/2.65k [00:00<?, ?B/s]
+100%|██████████| 2.65k/2.65k [00:00<00:00, 15.0MB/s]
+
+  0%|          | 0.00/79.0 [00:00<?, ?B/s]
+100%|██████████| 79.0/79.0 [00:00<00:00, 612kB/s]
+
+  0%|          | 0.00/123 [00:00<?, ?B/s]
+100%|██████████| 123/123 [00:00<00:00, 986kB/s]
+
+  0%|          | 0.00/430 [00:00<?, ?B/s]
+100%|██████████| 430/430 [00:00<00:00, 3.30MB/s]
+
+  0%|          | 0.00/32.8k [00:00<?, ?B/s]
+100%|██████████| 32.8k/32.8k [00:00<00:00, 1.81MB/s]
+
+  0%|          | 0.00/159 [00:00<?, ?B/s]
+100%|██████████| 159/159 [00:00<00:00, 1.28MB/s]
+
+  0%|          | 0.00/34.1k [00:00<?, ?B/s]
+100%|██████████| 34.1k/34.1k [00:00<00:00, 1.94MB/s]
+
+  0%|          | 0.00/941 [00:00<?, ?B/s]
+100%|██████████| 941/941 [00:00<00:00, 5.72MB/s]
+
+  0%|          | 0.00/8.08k [00:00<?, ?B/s]
+100%|██████████| 8.08k/8.08k [00:00<00:00, 7.93MB/s]
+
+  0%|          | 0.00/8.30k [00:00<?, ?B/s]
+100%|██████████| 8.30k/8.30k [00:00<00:00, 41.9MB/s]
+
+  0%|          | 0.00/703 [00:00<?, ?B/s]
+100%|██████████| 703/703 [00:00<00:00, 4.58MB/s]
+
+  0%|          | 0.00/1.18k [00:00<?, ?B/s]
+100%|██████████| 1.18k/1.18k [00:00<00:00, 7.75MB/s]
+
+  0%|          | 0.00/1.18k [00:00<?, ?B/s]
+100%|██████████| 1.18k/1.18k [00:00<00:00, 7.89MB/s]
+
+  0%|          | 0.00/1.18k [00:00<?, ?B/s]
+100%|██████████| 1.18k/1.18k [00:00<00:00, 7.99MB/s]
+
+  0%|          | 0.00/2.04k [00:00<?, ?B/s]
+100%|██████████| 2.04k/2.04k [00:00<00:00, 14.6MB/s]
+
+  0%|          | 0.00/7.56k [00:00<?, ?B/s]
+100%|██████████| 7.56k/7.56k [00:00<00:00, 41.4MB/s]
+
+  0%|          | 0.00/1.18k [00:00<?, ?B/s]
+100%|██████████| 1.18k/1.18k [00:00<00:00, 7.26MB/s]
+
+  0%|          | 0.00/53.8k [00:00<?, ?B/s]
+100%|██████████| 53.8k/53.8k [00:00<00:00, 2.08MB/s]
+
+  0%|          | 0.00/2.50k [00:00<?, ?B/s]
+100%|██████████| 2.50k/2.50k [00:00<00:00, 16.0MB/s]
+
+  0%|          | 0.00/912 [00:00<?, ?B/s]
+100%|██████████| 912/912 [00:00<00:00, 5.87MB/s]
+
+  0%|          | 0.00/23.1k [00:00<?, ?B/s]
+100%|██████████| 23.1k/23.1k [00:00<00:00, 747kB/s]
+
+  0%|          | 0.00/912 [00:00<?, ?B/s]
+100%|██████████| 912/912 [00:00<00:00, 6.89MB/s]
+
+  0%|          | 0.00/23.5k [00:00<?, ?B/s]
+100%|██████████| 23.5k/23.5k [00:00<00:00, 746kB/s]
+
+  0%|          | 0.00/912 [00:00<?, ?B/s]
+100%|██████████| 912/912 [00:00<00:00, 5.94MB/s]
+
+  0%|          | 0.00/23.3k [00:00<?, ?B/s]
+100%|██████████| 23.3k/23.3k [00:00<00:00, 1.67MB/s]
+
+  0%|          | 0.00/306 [00:00<?, ?B/s]
+100%|██████████| 306/306 [00:00<00:00, 2.28MB/s]
+
+  0%|          | 0.00/17.4k [00:00<?, ?B/s]
+100%|██████████| 17.4k/17.4k [00:00<00:00, 1.32MB/s]
+
+  0%|          | 0.00/2.09k [00:00<?, ?B/s]
+100%|██████████| 2.09k/2.09k [00:00<00:00, 11.6MB/s]
+
+  0%|          | 0.00/31.5k [00:00<?, ?B/s]
+100%|██████████| 31.5k/31.5k [00:00<00:00, 1.86MB/s]
+
+  0%|          | 0.00/454 [00:00<?, ?B/s]
+100%|██████████| 454/454 [00:00<00:00, 3.49MB/s]
+
+  0%|          | 0.00/30.0k [00:00<?, ?B/s]
+100%|██████████| 30.0k/30.0k [00:00<00:00, 893kB/s]
+
+  0%|          | 0.00/17.7k [00:00<?, ?B/s]
+100%|██████████| 17.7k/17.7k [00:00<00:00, 1.36MB/s]
+
+  0%|          | 0.00/16.5k [00:00<?, ?B/s]
+100%|██████████| 16.5k/16.5k [00:00<00:00, 1.32MB/s]
+
+  0%|          | 0.00/7.20k [00:00<?, ?B/s]
+100%|██████████| 7.20k/7.20k [00:00<00:00, 37.5MB/s]
+
+  0%|          | 0.00/3.96k [00:00<?, ?B/s]
+100%|██████████| 3.96k/3.96k [00:00<00:00, 22.8MB/s]
+merged 0 files into /home/runner/work/room313/room313/projects/ep1_hinterkaifeck/generated; kernel log: /home/runner/work/room313/room313/quality_reports/kaggle_room313-ep1-hinterkaifeck-video_1792833380
+not ok: ['vid_s03']
