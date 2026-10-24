@@ -23,11 +23,13 @@ def main():
     repo_url = sh(["git", "remote", "get-url", "origin"], cwd=ROOT).replace("git@github.com:", "https://github.com/").removesuffix(".git")
     slug = f"room313-{a.project}-{a.stage}".lower().replace("_", "-")[:50]
     # kernel payload
-    (KDIR / "job.json").write_text(json.dumps({"repo": repo_url, "project": a.project, "stage": a.stage, "only": [x for x in a.only.split(",") if x]}))
-    (KDIR / "kernel-metadata.json").write_text(json.dumps({
-        "id": f"{user}/{slug}", "title": slug, "code_file": "room313_worker.py", "language": "python", "kernel_type": "script",
+    job = json.dumps({"repo": repo_url, "project": a.project, "stage": a.stage, "only": [x for x in a.only.split(",") if x]})
+    push = ROOT / "quality_reports" / "_kaggle_push"; shutil.rmtree(push, ignore_errors=True); push.mkdir(parents=True)
+    (push / "script.py").write_text((KDIR / "room313_worker.py").read_text().replace("__JOB_JSON__", job.replace("\\", "\\\\").replace('"', '\\"')))
+    (push / "kernel-metadata.json").write_text(json.dumps({
+        "id": f"{user}/{slug}", "title": slug, "code_file": "script.py", "language": "python", "kernel_type": "script",
         "is_private": "true", "enable_gpu": "true", "enable_tpu": "false", "enable_internet": "true", "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": []}, indent=1))
-    print(sh(["kaggle", "kernels", "push", "-p", str(KDIR)]))
+    print(sh(["kaggle", "kernels", "push", "-p", str(push)])); shutil.rmtree(push, ignore_errors=True)
     kid = f"{user}/{slug}"; t0 = time.time(); last = ""
     while True:
         st = sh(["kaggle", "kernels", "status", kid], check=False)
