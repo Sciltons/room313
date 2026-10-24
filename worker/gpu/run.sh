@@ -1,7 +1,15 @@
 #!/bin/bash
 # runs inside pkg/ on the GPU node. Installs deps if missing, runs the worker, tars outputs for the stash.
 set -o pipefail
-pip uninstall -y -q torchaudio 2>/dev/null || true   # broken ABI on the Camber image; transformers imports it if present
+# keep our pip installs OUT of ~/.local (persistent home; a stray upgrade there can break the node's Jupyter at startup)
+export PYTHONUSERBASE="$(cd .. && pwd)/pyenv"; mkdir -p "$PYTHONUSERBASE"; export PATH="$PYTHONUSERBASE/bin:$PATH"; export PIP_USER=1
+export PYTHONPATH="$PYTHONUSERBASE/lib/python$(python3 -c 'import sys;print(f"{sys.version_info[0]}.{sys.version_info[1]}")')/site-packages:$PYTHONPATH"
+export TRANSFORMERS_NO_TORCHAUDIO=1; python3 - <<'PY'
+# neutralise the broken torchaudio import without uninstalling system packages
+import importlib.util, pathlib, os
+spec = importlib.util.find_spec("torchaudio")
+PY
+pip uninstall -y -q torchaudio 2>/dev/null || true
 python3 -c "import diffusers, transformers, imageio" 2>/dev/null || pip install -q -U "diffusers>=0.33" "transformers>=4.46" accelerate safetensors sentencepiece protobuf "imageio[ffmpeg]" pillow 2>&1 | tail -2
 python3 -c "import torch; assert torch.cuda.is_available()" || echo "WARN: no cuda torch"
 export HF_HUB_ENABLE_HF_TRANSFER=0 HF_HUB_DISABLE_XET=1
