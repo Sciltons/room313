@@ -25,7 +25,7 @@
       ],
       "gen_s": 22.8
     },
-    "elapsed": 1071.5,
+    "elapsed": 972.3,
     "worker": "camber-L4"
   },
   "char_cazilia": {
@@ -218,9 +218,9 @@
         896,
         512
       ],
-      "gen_s": 39.0
+      "gen_s": 41.8
     },
-    "elapsed": 939.5,
+    "elapsed": 850.5,
     "worker": "camber-L4"
   },
   "vid_s01": {
@@ -235,9 +235,9 @@
         896,
         512
       ],
-      "gen_s": 46.8
+      "gen_s": 51.3
     },
-    "elapsed": 872.8,
+    "elapsed": 779.8,
     "worker": "camber-L4"
   },
   "vid_s07_A": {
@@ -455,9 +455,9 @@
         896,
         512
       ],
-      "gen_s": 27.5
+      "gen_s": 28.8
     },
-    "elapsed": 900.4,
+    "elapsed": 808.7,
     "worker": "camber-L4"
   },
   "vid_s04": {
@@ -472,9 +472,9 @@
         896,
         512
       ],
-      "gen_s": 39.4
+      "gen_s": 34.1
     },
-    "elapsed": 979.0,
+    "elapsed": 884.7,
     "worker": "camber-L4"
   },
   "vid_s05": {
@@ -489,9 +489,9 @@
         896,
         512
       ],
-      "gen_s": 35.0
+      "gen_s": 32.2
     },
-    "elapsed": 1014.0,
+    "elapsed": 917.0,
     "worker": "camber-L4"
   },
   "vid_s06": {
@@ -506,9 +506,9 @@
         896,
         512
       ],
-      "gen_s": 34.4
+      "gen_s": 32.4
     },
-    "elapsed": 1048.6,
+    "elapsed": 949.4,
     "worker": "camber-L4"
   },
   "vid_s08": {
@@ -525,7 +525,7 @@
       ],
       "gen_s": 22.9
     },
-    "elapsed": 1094.5,
+    "elapsed": 995.3,
     "worker": "camber-L4"
   },
   "vid_s09": {
@@ -540,9 +540,9 @@
         896,
         512
       ],
-      "gen_s": 22.9
+      "gen_s": 23.0
     },
-    "elapsed": 1117.5,
+    "elapsed": 1018.4,
     "worker": "camber-L4"
   },
   "vid_s10": {
@@ -557,9 +557,9 @@
         896,
         512
       ],
-      "gen_s": 34.4
+      "gen_s": 32.5
     },
-    "elapsed": 1151.9,
+    "elapsed": 1051.0,
     "worker": "camber-L4"
   },
   "vid_s11": {
@@ -574,9 +574,9 @@
         896,
         512
       ],
-      "gen_s": 36.2
+      "gen_s": 32.7
     },
-    "elapsed": 1188.3,
+    "elapsed": 1083.7,
     "worker": "camber-L4"
   },
   "vid_s12": {
@@ -591,9 +591,9 @@
         896,
         512
       ],
-      "gen_s": 35.7
+      "gen_s": 33.0
     },
-    "elapsed": 1224.0,
+    "elapsed": 1116.8,
     "worker": "camber-L4"
   },
   "vid_s13": {
@@ -608,9 +608,9 @@
         896,
         512
       ],
-      "gen_s": 38.3
+      "gen_s": 32.7
     },
-    "elapsed": 1262.4,
+    "elapsed": 1149.5,
     "worker": "camber-L4"
   },
   "vid_s14": {
@@ -625,9 +625,9 @@
         896,
         512
       ],
-      "gen_s": 35.5
+      "gen_s": 32.9
     },
-    "elapsed": 1297.9,
+    "elapsed": 1182.5,
     "worker": "camber-L4"
   },
   "vid_s15": {
@@ -642,9 +642,9 @@
         896,
         512
       ],
-      "gen_s": 24.6
+      "gen_s": 23.1
     },
-    "elapsed": 1322.6,
+    "elapsed": 1205.7,
     "worker": "camber-L4"
   },
   "vid_s16": {
@@ -659,9 +659,9 @@
         896,
         512
       ],
-      "gen_s": 24.2
+      "gen_s": 23.1
     },
-    "elapsed": 1346.8,
+    "elapsed": 1228.9,
     "worker": "camber-L4"
   },
   "music_night_terror": {

@@ -1,0 +1,81 @@
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash mkdir stash://ahmedali41329174/room313
+API error: code=17, message=Failed to create directory: directory already exists
+
+Error: API error: code=17, message=Failed to create directory: directory already exists
+Usage:
+  camber stash mkdir [flags]
+
+Flags:
+  -h, --help            help for mkdir
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber stash rm stash://ahmedali41329174/room313/pkg.tar.gz
+Do you want to remove: stash://ahmedali41329174/room313/pkg.tar.gz? [y/N]: Remove success
+
+$ camber stash rm stash://ahmedali41329174/room313/run.log
+Do you want to remove: stash://ahmedali41329174/room313/run.log? [y/N]: Remove success
+
+$ camber stash cp /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/pkg.tar.gz stash://ahmedali41329174/room313/pkg.tar.gz
+Perform copying /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/pkg.tar.gz to stash://ahmedali41329174/room313/pkg.tar.gz
+user/b122b56b-0c44-4dd5-b902-23db56cb53e2/room313/pkg.tar.gz
+
+Uploading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/pkg.tar.gz: 100.00% (9.8MB/9.8MB) 0.00 B/s
+
+Uploading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/pkg.tar.gz: 100.00% (9.8MB/9.8MB) 0.00 B/s
+
+$ camber chat -a @ahmedali41329174.room313 -m Run this exact shell command on the compute node, do not modify it, do not run anything else, then reply with its output only:
+cd ~/room313 && rm -rf pkg && tar xzf pkg.tar.gz && cd pkg && mkdir -p out && (nohup bash gpu/run.sh > ../run.log 2>&1 &) ; sleep 8; echo STARTED; tail -5 ../run.log --output json --no-thinking
+{"conversation_id":"b4bdf3b0-15d4-4a69-a8ad-8bcc86533cf4","result":"```\nSTARTED\n```","output_stash_files":[]}
+
+  1274s | [ 1229.0s] done. ok=16 failed=60
+-rw-r--r--. 1 jovyan users 1627239 Oct 24 17:57 out.tar.gz
+RUN_FAILED rc=1
+final: FAILED
+$ camber stash cp stash://ahmedali41329174/room313/pkg/out.tar.gz /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz
+Perform copying stash://ahmedali41329174/room313/pkg/out.tar.gz to /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz
+/home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz
+
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 1.01% (16.0KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 1.02% (16.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 2.03% (32.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 2.09% (33.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 3.10% (49.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 3.16% (50.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 4.17% (66.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 4.23% (67.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 5.24% (83.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 5.30% (84.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 6.31% (100.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 6.37% (101.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 7.37% (117.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 7.44% (118.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 8.44% (134.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 8.51% (135.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 9.51% (151.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 9.58% (152.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 10.58% (168.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 10.65% (169.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 11.65% (185.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 11.72% (186.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 12.72% (202.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 12.79% (203.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 13.79% (219.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 13.86% (220.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 14.86% (236.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 14.93% (237.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_1792863414/out.tar.gz: 15.93% (253.2KB/1.6MB) 0.00 B/s
+Downloading /home/runner/work/room313/room313/quality_reports/camber_run_179286341
+
+FAILED; merged 16 files

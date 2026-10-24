@@ -1,0 +1,2634 @@
+[    1.6s] stage=all jobs=97 pending=76 gpu=NVIDIA L4 vram=24GB bf16=True
+[   10.8s] LTX phase 1: T5 text encoder ...
+Loading weights:   0%|          | 0/219 [00:00<?, ?it/s]Loading weights:   0%|          | 1/219 [00:01<07:04,  1.95s/it]Loading weights:   1%|▏         | 3/219 [00:02<02:12,  1.63it/s]Loading weights:   3%|▎         | 7/219 [00:06<03:32,  1.00s/it]Loading weights:   4%|▍         | 9/219 [00:07<02:32,  1.38it/s]Loading weights:   6%|▌         | 13/219 [00:08<01:49,  1.89it/s]Loading weights:   6%|▋         | 14/219 [00:09<01:48,  1.89it/s]Loading weights:   7%|▋         | 16/219 [00:12<02:48,  1.21it/s]Loading weights:   8%|▊         | 17/219 [00:12<02:24,  1.40it/s]Loading weights:   8%|▊         | 18/219 [00:13<02:45,  1.22it/s]Loading weights:  10%|█         | 22/219 [00:14<01:31,  2.16it/s]Loading weights:  11%|█▏        | 25/219 [00:18<02:30,  1.29it/s]Loading weights:  12%|█▏        | 26/219 [00:18<02:18,  1.40it/s]Loading weights:  12%|█▏        | 27/219 [00:19<02:13,  1.43it/s]Loading weights:  14%|█▍        | 31/219 [00:20<01:33,  2.02it/s]Loading weights:  15%|█▍        | 32/219 [00:20<01:22,  2.27it/s]Loading weights:  16%|█▌        | 34/219 [00:23<02:22,  1.29it/s]Loading weights:  16%|█▌        | 35/219 [00:24<02:15,  1.35it/s]Loading weights:  16%|█▋        | 36/219 [00:25<02:34,  1.19it/s]Loading weights:  18%|█▊        | 40/219 [00:25<01:15,  2.36it/s]Loading weights:  19%|█▊        | 41/219 [00:26<01:18,  2.26it/s]Loading weights:  20%|█▉        | 43/219 [00:29<02:33,  1.14it/s]Loading weights:  20%|██        | 44/219 [00:30<02:29,  1.17it/s]Loading weights:  22%|██▏       | 49/219 [00:31<01:28,  1.93it/s]Loading weights:  23%|██▎       | 50/219 [00:32<01:27,  1.93it/s]Loading weights:  24%|██▎       | 52/219 [00:35<02:12,  1.26it/s]Loading weights:  24%|██▍       | 53/219 [00:35<01:53,  1.46it/s]Loading weights:  25%|██▍       | 54/219 [00:36<02:03,  1.33it/s]Loading weights:  26%|██▋       | 58/219 [00:37<01:15,  2.14it/s]Loading weights:  27%|██▋       | 59/219 [00:37<01:06,  2.41it/s]Loading weights:  28%|██▊       | 61/219 [00:41<02:21,  1.11it/s]Loading weights:  29%|██▉       | 63/219 [00:42<02:00,  1.30it/s]Loading weights:  31%|███       | 67/219 [00:43<01:20,  1.88it/s]Loading weights:  32%|███▏      | 70/219 [00:46<01:44,  1.43it/s]Loading weights:  32%|███▏      | 71/219 [00:47<01:46,  1.39it/s]Loading weights:  33%|███▎      | 72/219 [00:48<01:53,  1.29it/s]Loading weights:  35%|███▌      | 77/219 [00:49<01:07,  2.11it/s]Loading weights:  36%|███▌      | 79/219 [00:52<01:42,  1.37it/s]Loading weights:  37%|███▋      | 80/219 [00:53<01:45,  1.31it/s]Loading weights:  39%|███▉      | 85/219 [00:54<01:05,  2.06it/s]Loading weights:  39%|███▉      | 86/219 [00:55<01:09,  1.91it/s]Loading weights:  40%|████      | 88/219 [00:58<01:43,  1.26it/s]Loading weights:  41%|████      | 90/219 [00:59<01:33,  1.38it/s]Loading weights:  43%|████▎     | 94/219 [01:00<01:01,  2.02it/s]Loading weights:  43%|████▎     | 95/219 [01:00<00:57,  2.17it/s]Loading weights:  44%|████▍     | 97/219 [01:04<01:43,  1.17it/s]Loading weights:  45%|████▍     | 98/219 [01:04<01:34,  1.29it/s]Loading weights:  45%|████▌     | 99/219 [01:05<01:34,  1.27it/s]Loading weights:  47%|████▋     | 103/219 [01:06<00:56,  2.07it/s]Loading weights:  47%|████▋     | 104/219 [01:06<00:52,  2.20it/s]Loading weights:  48%|████▊     | 106/219 [01:09<01:30,  1.25it/s]Loading weights:  49%|████▉     | 107/219 [01:10<01:25,  1.30it/s]Loading weights:  49%|████▉     | 108/219 [01:11<01:28,  1.26it/s]Loading weights:  51%|█████     | 112/219 [01:11<00:44,  2.38it/s]Loading weights:  52%|█████▏    | 113/219 [01:12<00:46,  2.29it/s]Loading weights:  53%|█████▎    | 115/219 [01:15<01:22,  1.26it/s]Loading weights:  53%|█████▎    | 116/219 [01:16<01:25,  1.20it/s]Loading weights:  53%|█████▎    | 117/219 [01:16<01:17,  1.31it/s]Loading weights:  55%|█████▌    | 121/219 [01:17<00:41,  2.39it/s]Loading weights:  56%|█████▌    | 122/219 [01:18<00:47,  2.05it/s]Loading weights:  57%|█████▋    | 124/219 [01:21<01:21,  1.17it/s]Loading weights:  57%|█████▋    | 125/219 [01:22<01:12,  1.30it/s]Loading weights:  58%|█████▊    | 126/219 [01:22<01:06,  1.39it/s]Loading weights:  59%|█████▉    | 130/219 [01:23<00:41,  2.13it/s]Loading weights:  60%|█████▉    | 131/219 [01:24<00:40,  2.16it/s]Loading weights:  61%|██████    | 133/219 [01:27<01:13,  1.16it/s]Loading weights:  61%|██████    | 134/219 [01:27<01:01,  1.38it/s]Loading weights:  62%|██████▏   | 135/219 [01:28<01:07,  1.25it/s]Loading weights:  63%|██████▎   | 139/219 [01:29<00:37,  2.11it/s]Loading weights:  65%|██████▍   | 142/219 [01:33<00:57,  1.34it/s]Loading weights:  65%|██████▌   | 143/219 [01:33<00:54,  1.39it/s]Loading weights:  66%|██████▌   | 144/219 [01:34<00:54,  1.36it/s]Loading weights:  68%|██████▊   | 148/219 [01:35<00:31,  2.24it/s]Loading weights:  68%|██████▊   | 149/219 [01:35<00:32,  2.13it/s]Loading weights:  69%|██████▉   | 151/219 [01:38<00:54,  1.24it/s]Loading weights:  69%|██████▉   | 152/219 [01:39<00:54,  1.24it/s]Loading weights:  70%|██████▉   | 153/219 [01:40<00:49,  1.33it/s]Loading weights:  72%|███████▏  | 157/219 [01:41<00:28,  2.20it/s]Loading weights:  72%|███████▏  | 158/219 [01:41<00:30,  1.97it/s]Loading weights:  73%|███████▎  | 160/219 [01:45<00:51,  1.15it/s]Loading weights:  74%|███████▎  | 161/219 [01:45<00:47,  1.23it/s]Loading weights:  74%|███████▍  | 162/219 [01:46<00:46,  1.24it/s]Loading weights:  76%|███████▌  | 166/219 [01:47<00:25,  2.09it/s]Loading weights:  76%|███████▋  | 167/219 [01:47<00:24,  2.08it/s]Loading weights:  77%|███████▋  | 169/219 [01:50<00:40,  1.24it/s]Loading weights:  78%|███████▊  | 170/219 [01:51<00:37,  1.31it/s]Loading weights:  78%|███████▊  | 171/219 [01:52<00:40,  1.19it/s]Loading weights:  80%|███████▉  | 175/219 [01:52<00:19,  2.23it/s]Loading weights:  80%|████████  | 176/219 [01:53<00:20,  2.10it/s]Loading weights:  81%|████████▏ | 178/219 [01:57<00:36,  1.13it/s]Loading weights:  82%|████████▏ | 179/219 [01:57<00:34,  1.17it/s]Loading weights:  82%|████████▏ | 180/219 [01:58<00:28,  1.36it/s]Loading weights:  84%|████████▍ | 184/219 [01:59<00:16,  2.07it/s]Loading weights:  84%|████████▍ | 185/219 [01:59<00:16,  2.03it/s]Loading weights:  85%|████████▌ | 187/219 [02:02<00:27,  1.18it/s]Loading weights:  86%|████████▌ | 188/219 [02:03<00:22,  1.35it/s]Loading weights:  86%|████████▋ | 189/219 [02:04<00:24,  1.23it/s]Loading weights:  88%|████████▊ | 193/219 [02:05<00:12,  2.09it/s]Loading weights:  89%|████████▊ | 194/219 [02:05<00:11,  2.27it/s]Loading weights:  89%|████████▉ | 196/219 [02:09<00:21,  1.09it/s]Loading weights:  90%|████████▉ | 197/219 [02:09<00:18,  1.19it/s]Loading weights:  90%|█████████ | 198/219 [02:10<00:16,  1.27it/s]Loading weights:  92%|█████████▏| 202/219 [02:11<00:08,  1.99it/s]Loading weights:  93%|█████████▎| 203/219 [02:11<00:07,  2.06it/s]Loading weights:  94%|█████████▎| 205/219 [02:15<00:12,  1.16it/s]Loading weights:  94%|█████████▍| 206/219 [02:15<00:10,  1.25it/s]Loading weights:  95%|█████████▍| 207/219 [02:16<00:10,  1.17it/s]Loading weights:  96%|█████████▋| 211/219 [02:17<00:03,  2.16it/s]Loading weights:  97%|█████████▋| 212/219 [02:17<00:03,  2.10it/s]Loading weights:  98%|█████████▊| 214/219 [02:21<00:04,  1.14it/s]Loading weights:  98%|█████████▊| 215/219 [02:21<00:03,  1.18it/s]Loading weights:  99%|█████████▊| 216/219 [02:22<00:02,  1.37it/s]Loading weights: 100%|██████████| 219/219 [02:29<00:00,  1.46s/it]Loading weights: 100%|██████████| 219/219 [02:29<00:00,  1.47it/s]
+[  168.7s]   45 prompt embeddings; T5 freed
+[  168.7s] [char_maid_old] image ...
+[  172.9s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+/opt/conda/lib/python3.12/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 271.43it/s]
+[  173.1s] [char_maid_old] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  173.1s] [char_neighbor] image ...
+[  173.1s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 304.61it/s]
+[  173.2s] [char_neighbor] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  173.2s] [kf_s17] image ...
+[  173.2s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 296.89it/s]
+[  173.4s] [kf_s17] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  173.4s] [kf_s18] image ...
+[  173.4s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 296.28it/s]
+[  173.5s] [kf_s18] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  173.5s] [kf_s19] image ...
+[  173.5s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 288.35it/s]
+[  173.6s] [kf_s19] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  173.6s] [kf_s20] image ...
+[  173.6s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 291.79it/s]
+[  173.8s] [kf_s20] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  173.8s] [kf_s21] image ...
+[  173.8s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 287.89it/s]
+[  173.9s] [kf_s21] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  173.9s] [kf_s22] image ...
+[  173.9s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 305.18it/s]
+[  174.0s] [kf_s22] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  174.0s] [kf_s23] image ...
+[  174.0s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 283.85it/s]
+[  174.2s] [kf_s23] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  174.2s] [kf_s24] image ...
+[  174.2s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 287.70it/s]
+[  174.3s] [kf_s24] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  174.3s] [kf_s25] image ...
+[  174.3s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 292.92it/s]
+[  174.4s] [kf_s25] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  174.4s] [kf_s26] image ...
+[  174.4s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 283.48it/s]
+[  174.6s] [kf_s26] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  174.6s] [kf_s27] image ...
+[  174.6s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 315.25it/s]
+[  174.7s] [kf_s27] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  174.7s] [kf_s28] image ...
+[  174.7s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 299.61it/s]
+[  174.9s] [kf_s28] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  174.9s] [kf_s29] image ...
+[  174.9s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 161.25it/s]
+[  175.0s] [kf_s29] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  175.0s] [kf_s30] image ...
+[  175.0s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 272.44it/s]
+[  175.2s] [kf_s30] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  175.2s] [kf_s31] image ...
+[  175.2s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 294.81it/s]
+[  175.3s] [kf_s31] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  175.3s] [kf_s32] image ...
+[  175.3s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 295.97it/s]
+[  175.4s] [kf_s32] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  175.5s] [kf_s33] image ...
+[  175.5s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 257.55it/s]
+[  175.6s] [kf_s33] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  175.6s] [kf_s34] image ...
+[  175.6s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 297.09it/s]
+[  175.7s] [kf_s34] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  175.7s] [kf_s35] image ...
+[  175.7s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 312.22it/s]
+[  175.8s] [kf_s35] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  175.8s] [kf_s36] image ...
+[  175.8s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 302.15it/s]
+[  176.0s] [kf_s36] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  176.0s] [kf_s37] image ...
+[  176.0s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 301.62it/s]
+[  176.1s] [kf_s37] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  176.1s] [kf_s38] image ...
+[  176.1s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 292.16it/s]
+[  176.2s] [kf_s38] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  176.3s] [kf_s39] image ...
+[  176.3s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 262.82it/s]
+[  176.4s] [kf_s39] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  176.4s] [kf_s40] image ...
+[  176.4s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 294.35it/s]
+[  176.5s] [kf_s40] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  176.5s] [kf_s41] image ...
+[  176.5s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 230.83it/s]
+[  176.7s] [kf_s41] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  176.7s] [kf_s42] image ...
+[  176.7s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 232.20it/s]
+[  176.8s] [kf_s42] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  176.8s] [kf_s43] image ...
+[  176.8s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 304.52it/s]
+[  177.0s] [kf_s43] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  177.0s] [kf_s45] image ...
+[  177.0s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 288.95it/s]
+[  177.1s] [kf_s45] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  177.1s] [kf_s46] image ...
+[  177.1s] loading YuCollection/FLUX.1-schnell-Diffusers bf16 ...
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  83%|████████▎ | 19/23 [00:00<00:00, 291.56it/s]
+[  177.2s] [kf_s46] ERROR process() takes no keyword arguments
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+        ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 35, in gen_image
+    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+                                ^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 32, in flux
+    log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 871, in from_pretrained
+    cached_folder = cls.download(
+                    ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/diffusers/pipelines/pipeline_utils.py", line 1787, in download
+    cached_folder = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2032, in _download_to_tmp_and_move
+    http_get(
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 459, in http_get
+    for chunk in response.iter_bytes(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_models.py", line 894, in iter_bytes
+    for decoded in decoder.decode(raw_bytes):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/httpx2/_decoders.py", line 191, in decode
+    decompressed = self._decompress(data, output_buffer_limit=output_buffer_limit)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: process() takes no keyword arguments
+[  177.2s] [vid_s01] video ...
+[  177.2s] LTX phase 2: 13B transformer (fp8 storage / bf16 compute) + vae ...
+/opt/conda/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 1669.82it/s]
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:02,  2.10it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:02,  1.91it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  1.84it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:02<00:01,  1.84it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:02<00:00,  2.15it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  2.40it/s]
+Loading pipeline components...:   0%|          | 0/3 [00:00<?, ?it/s]Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00,  3.55it/s]Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00,  3.55it/s]
+[  728.5s] LTX ready vram=15.6GB
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:25,  3.58s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.21s/it] 38%|███▊      | 3/8 [00:10<00:16,  3.35s/it] 50%|█████     | 4/8 [00:13<00:13,  3.42s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.46s/it] 75%|███████▌  | 6/8 [00:20<00:06,  3.48s/it] 88%|████████▊ | 7/8 [00:24<00:03,  3.49s/it]100%|██████████| 8/8 [00:27<00:00,  3.50s/it]100%|██████████| 8/8 [00:27<00:00,  3.46s/it]
+[  779.8s] [vid_s01] OK 51.3
+[  779.9s] [vid_s02] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:02<00:17,  2.46s/it] 25%|██▌       | 2/8 [00:04<00:13,  2.24s/it] 38%|███▊      | 3/8 [00:07<00:11,  2.35s/it] 50%|█████     | 4/8 [00:09<00:09,  2.40s/it] 62%|██████▎   | 5/8 [00:11<00:07,  2.43s/it] 75%|███████▌  | 6/8 [00:14<00:04,  2.44s/it] 88%|████████▊ | 7/8 [00:16<00:02,  2.46s/it]100%|██████████| 8/8 [00:19<00:00,  2.46s/it]100%|██████████| 8/8 [00:19<00:00,  2.43s/it]
+[  808.7s] [vid_s02] OK 28.8
+[  808.7s] [vid_s03] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:24,  3.53s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.21s/it] 38%|███▊      | 3/8 [00:10<00:16,  3.36s/it] 50%|█████     | 4/8 [00:13<00:13,  3.44s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.48s/it] 75%|███████▌  | 6/8 [00:20<00:07,  3.51s/it] 88%|████████▊ | 7/8 [00:24<00:03,  3.53s/it]100%|██████████| 8/8 [00:27<00:00,  3.54s/it]100%|██████████| 8/8 [00:27<00:00,  3.48s/it]
+[  850.5s] [vid_s03] OK 41.8
+[  850.6s] [vid_s04] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:24,  3.55s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.22s/it] 38%|███▊      | 3/8 [00:10<00:16,  3.37s/it] 50%|█████     | 4/8 [00:13<00:13,  3.45s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.49s/it] 75%|███████▌  | 6/8 [00:20<00:07,  3.51s/it] 88%|████████▊ | 7/8 [00:24<00:03,  3.53s/it]100%|██████████| 8/8 [00:27<00:00,  3.54s/it]100%|██████████| 8/8 [00:27<00:00,  3.49s/it]
+[  884.7s] [vid_s04] OK 34.1
+[  884.7s] [vid_s05] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:24,  3.56s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.23s/it] 38%|███▊      | 3/8 [00:10<00:16,  3.39s/it] 50%|█████     | 4/8 [00:13<00:13,  3.46s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.51s/it] 75%|███████▌  | 6/8 [00:20<00:07,  3.53s/it] 88%|████████▊ | 7/8 [00:24<00:03,  3.55s/it]100%|██████████| 8/8 [00:28<00:00,  3.56s/it]100%|██████████| 8/8 [00:28<00:00,  3.51s/it]
+[  917.0s] [vid_s05] OK 32.2
+[  917.0s] [vid_s06] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:25,  3.60s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.27s/it] 38%|███▊      | 3/8 [00:10<00:17,  3.43s/it] 50%|█████     | 4/8 [00:13<00:14,  3.50s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.54s/it] 75%|███████▌  | 6/8 [00:21<00:07,  3.57s/it] 88%|████████▊ | 7/8 [00:24<00:03,  3.58s/it]100%|██████████| 8/8 [00:28<00:00,  3.59s/it]100%|██████████| 8/8 [00:28<00:00,  3.54s/it]
+[  949.4s] [vid_s06] OK 32.4
+[  949.4s] [vid_s07] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:02<00:17,  2.52s/it] 25%|██▌       | 2/8 [00:04<00:13,  2.29s/it] 38%|███▊      | 3/8 [00:07<00:11,  2.40s/it] 50%|█████     | 4/8 [00:09<00:09,  2.45s/it] 62%|██████▎   | 5/8 [00:12<00:07,  2.48s/it] 75%|███████▌  | 6/8 [00:14<00:04,  2.50s/it] 88%|████████▊ | 7/8 [00:17<00:02,  2.51s/it]100%|██████████| 8/8 [00:19<00:00,  2.52s/it]100%|██████████| 8/8 [00:19<00:00,  2.48s/it]
+[  972.3s] [vid_s07] OK 22.8
+[  972.4s] [vid_s08] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:02<00:17,  2.53s/it] 25%|██▌       | 2/8 [00:04<00:13,  2.30s/it] 38%|███▊      | 3/8 [00:07<00:12,  2.41s/it] 50%|█████     | 4/8 [00:09<00:09,  2.47s/it] 62%|██████▎   | 5/8 [00:12<00:07,  2.49s/it] 75%|███████▌  | 6/8 [00:14<00:05,  2.51s/it] 88%|████████▊ | 7/8 [00:17<00:02,  2.53s/it]100%|██████████| 8/8 [00:19<00:00,  2.53s/it]100%|██████████| 8/8 [00:19<00:00,  2.50s/it]
+[  995.3s] [vid_s08] OK 22.9
+[  995.4s] [vid_s09] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:02<00:17,  2.55s/it] 25%|██▌       | 2/8 [00:04<00:13,  2.32s/it] 38%|███▊      | 3/8 [00:07<00:12,  2.43s/it] 50%|█████     | 4/8 [00:09<00:09,  2.49s/it] 62%|██████▎   | 5/8 [00:12<00:07,  2.52s/it] 75%|███████▌  | 6/8 [00:14<00:05,  2.54s/it] 88%|████████▊ | 7/8 [00:17<00:02,  2.55s/it]100%|██████████| 8/8 [00:20<00:00,  2.55s/it]100%|██████████| 8/8 [00:20<00:00,  2.52s/it]
+[ 1018.4s] [vid_s09] OK 23.0
+[ 1018.4s] [vid_s10] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:25,  3.63s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.29s/it] 38%|███▊      | 3/8 [00:10<00:17,  3.44s/it] 50%|█████     | 4/8 [00:13<00:14,  3.52s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.55s/it] 75%|███████▌  | 6/8 [00:21<00:07,  3.58s/it] 88%|████████▊ | 7/8 [00:24<00:03,  3.59s/it]100%|██████████| 8/8 [00:28<00:00,  3.60s/it]100%|██████████| 8/8 [00:28<00:00,  3.55s/it]
+[ 1051.0s] [vid_s10] OK 32.5
+[ 1051.0s] [vid_s11] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:25,  3.62s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.28s/it] 38%|███▊      | 3/8 [00:10<00:17,  3.45s/it] 50%|█████     | 4/8 [00:13<00:14,  3.52s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.56s/it] 75%|███████▌  | 6/8 [00:21<00:07,  3.59s/it] 88%|████████▊ | 7/8 [00:24<00:03,  3.61s/it]100%|██████████| 8/8 [00:28<00:00,  3.62s/it]100%|██████████| 8/8 [00:28<00:00,  3.57s/it]
+[ 1083.7s] [vid_s11] OK 32.7
+[ 1083.8s] [vid_s12] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:25,  3.66s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.32s/it] 38%|███▊      | 3/8 [00:10<00:17,  3.48s/it] 50%|█████     | 4/8 [00:14<00:14,  3.56s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.60s/it] 75%|███████▌  | 6/8 [00:21<00:07,  3.62s/it] 88%|████████▊ | 7/8 [00:25<00:03,  3.63s/it]100%|██████████| 8/8 [00:28<00:00,  3.64s/it]100%|██████████| 8/8 [00:28<00:00,  3.59s/it]
+[ 1116.8s] [vid_s12] OK 33.0
+[ 1116.8s] [vid_s13] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:25,  3.64s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.30s/it] 38%|███▊      | 3/8 [00:10<00:17,  3.46s/it] 50%|█████     | 4/8 [00:13<00:14,  3.53s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.57s/it] 75%|███████▌  | 6/8 [00:21<00:07,  3.60s/it] 88%|████████▊ | 7/8 [00:24<00:03,  3.62s/it]100%|██████████| 8/8 [00:28<00:00,  3.63s/it]100%|██████████| 8/8 [00:28<00:00,  3.57s/it]
+[ 1149.5s] [vid_s13] OK 32.7
+[ 1149.6s] [vid_s14] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:03<00:25,  3.65s/it] 25%|██▌       | 2/8 [00:06<00:19,  3.31s/it] 38%|███▊      | 3/8 [00:10<00:17,  3.47s/it] 50%|█████     | 4/8 [00:14<00:14,  3.55s/it] 62%|██████▎   | 5/8 [00:17<00:10,  3.59s/it] 75%|███████▌  | 6/8 [00:21<00:07,  3.62s/it] 88%|████████▊ | 7/8 [00:25<00:03,  3.64s/it]100%|██████████| 8/8 [00:28<00:00,  3.64s/it]100%|██████████| 8/8 [00:28<00:00,  3.59s/it]
+[ 1182.5s] [vid_s14] OK 32.9
+[ 1182.6s] [vid_s15] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:02<00:17,  2.57s/it] 25%|██▌       | 2/8 [00:04<00:13,  2.33s/it] 38%|███▊      | 3/8 [00:07<00:12,  2.44s/it] 50%|█████     | 4/8 [00:09<00:09,  2.49s/it] 62%|██████▎   | 5/8 [00:12<00:07,  2.52s/it] 75%|███████▌  | 6/8 [00:15<00:05,  2.54s/it] 88%|████████▊ | 7/8 [00:17<00:02,  2.55s/it]100%|██████████| 8/8 [00:20<00:00,  2.56s/it]100%|██████████| 8/8 [00:20<00:00,  2.52s/it]
+[ 1205.7s] [vid_s15] OK 23.1
+[ 1205.7s] [vid_s16] video ...
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:02<00:17,  2.56s/it] 25%|██▌       | 2/8 [00:04<00:13,  2.33s/it] 38%|███▊      | 3/8 [00:07<00:12,  2.44s/it] 50%|█████     | 4/8 [00:09<00:09,  2.49s/it] 62%|██████▎   | 5/8 [00:12<00:07,  2.52s/it] 75%|███████▌  | 6/8 [00:15<00:05,  2.54s/it] 88%|████████▊ | 7/8 [00:17<00:02,  2.56s/it]100%|██████████| 8/8 [00:20<00:00,  2.56s/it]100%|██████████| 8/8 [00:20<00:00,  2.52s/it]
+[ 1228.9s] [vid_s16] OK 23.1
+[ 1228.9s] [vid_s17] video ...
+[ 1228.9s] [vid_s17] ERROR keyframe missing: keyframes/s17.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s17.png
+[ 1228.9s] [vid_s18] video ...
+[ 1228.9s] [vid_s18] ERROR keyframe missing: keyframes/s18.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s18.png
+[ 1228.9s] [vid_s19] video ...
+[ 1228.9s] [vid_s19] ERROR keyframe missing: keyframes/s19.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s19.png
+[ 1228.9s] [vid_s20] video ...
+[ 1228.9s] [vid_s20] ERROR keyframe missing: keyframes/s20.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s20.png
+[ 1228.9s] [vid_s21] video ...
+[ 1228.9s] [vid_s21] ERROR keyframe missing: keyframes/s21.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s21.png
+[ 1228.9s] [vid_s22] video ...
+[ 1228.9s] [vid_s22] ERROR keyframe missing: keyframes/s22.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s22.png
+[ 1228.9s] [vid_s23] video ...
+[ 1228.9s] [vid_s23] ERROR keyframe missing: keyframes/s23.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s23.png
+[ 1228.9s] [vid_s24] video ...
+[ 1228.9s] [vid_s24] ERROR keyframe missing: keyframes/s24.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s24.png
+[ 1228.9s] [vid_s25] video ...
+[ 1228.9s] [vid_s25] ERROR keyframe missing: keyframes/s25.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s25.png
+[ 1228.9s] [vid_s26] video ...
+[ 1228.9s] [vid_s26] ERROR keyframe missing: keyframes/s26.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s26.png
+[ 1228.9s] [vid_s27] video ...
+[ 1228.9s] [vid_s27] ERROR keyframe missing: keyframes/s27.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s27.png
+[ 1228.9s] [vid_s28] video ...
+[ 1228.9s] [vid_s28] ERROR keyframe missing: keyframes/s28.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s28.png
+[ 1228.9s] [vid_s29] video ...
+[ 1228.9s] [vid_s29] ERROR keyframe missing: keyframes/s29.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s29.png
+[ 1228.9s] [vid_s30] video ...
+[ 1228.9s] [vid_s30] ERROR keyframe missing: keyframes/s30.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s30.png
+[ 1228.9s] [vid_s31] video ...
+[ 1228.9s] [vid_s31] ERROR keyframe missing: keyframes/s31.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s31.png
+[ 1228.9s] [vid_s32] video ...
+[ 1228.9s] [vid_s32] ERROR keyframe missing: keyframes/s32.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s32.png
+[ 1228.9s] [vid_s33] video ...
+[ 1228.9s] [vid_s33] ERROR keyframe missing: keyframes/s33.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s33.png
+[ 1228.9s] [vid_s34] video ...
+[ 1228.9s] [vid_s34] ERROR keyframe missing: keyframes/s34.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s34.png
+[ 1228.9s] [vid_s35] video ...
+[ 1228.9s] [vid_s35] ERROR keyframe missing: keyframes/s35.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s35.png
+[ 1228.9s] [vid_s36] video ...
+[ 1228.9s] [vid_s36] ERROR keyframe missing: keyframes/s36.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s36.png
+[ 1229.0s] [vid_s37] video ...
+[ 1229.0s] [vid_s37] ERROR keyframe missing: keyframes/s37.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s37.png
+[ 1229.0s] [vid_s38] video ...
+[ 1229.0s] [vid_s38] ERROR keyframe missing: keyframes/s38.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s38.png
+[ 1229.0s] [vid_s39] video ...
+[ 1229.0s] [vid_s39] ERROR keyframe missing: keyframes/s39.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s39.png
+[ 1229.0s] [vid_s40] video ...
+[ 1229.0s] [vid_s40] ERROR keyframe missing: keyframes/s40.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s40.png
+[ 1229.0s] [vid_s41] video ...
+[ 1229.0s] [vid_s41] ERROR keyframe missing: keyframes/s41.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s41.png
+[ 1229.0s] [vid_s42] video ...
+[ 1229.0s] [vid_s42] ERROR keyframe missing: keyframes/s42.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s42.png
+[ 1229.0s] [vid_s43] video ...
+[ 1229.0s] [vid_s43] ERROR keyframe missing: keyframes/s43.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s43.png
+[ 1229.0s] [vid_s45] video ...
+[ 1229.0s] [vid_s45] ERROR keyframe missing: keyframes/s45.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s45.png
+[ 1229.0s] [vid_s46] video ...
+[ 1229.0s] [vid_s46] ERROR keyframe missing: keyframes/s46.png
+Traceback (most recent call last):
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 90, in <module>
+    m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
+                                                       ^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/room313/pkg/gpu/worker.py", line 70, in gen_video
+    if not src.exists(): raise FileNotFoundError(f"keyframe missing: {rel}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: keyframe missing: keyframes/s46.png
+[ 1229.0s] done. ok=16 failed=60
+-rw-r--r--. 1 jovyan users 1627239 Oct 24 17:57 out.tar.gz
+RUN_FAILED rc=1
