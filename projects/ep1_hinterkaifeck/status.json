@@ -23,9 +23,9 @@
         896,
         512
       ],
-      "gen_s": 22.7
+      "gen_s": 23.2
     },
-    "elapsed": 1161.4,
+    "elapsed": 1805.9,
     "worker": "camber-L4"
   },
   "char_cazilia": {
@@ -472,9 +472,9 @@
         896,
         512
       ],
-      "gen_s": 51.0
+      "gen_s": 55.5
     },
-    "elapsed": 1050.8,
+    "elapsed": 1716.7,
     "worker": "camber-L4"
   },
   "vid_s05": {
@@ -489,9 +489,9 @@
         896,
         512
       ],
-      "gen_s": 54.6
+      "gen_s": 32.6
     },
-    "elapsed": 1105.5,
+    "elapsed": 1749.4,
     "worker": "camber-L4"
   },
   "vid_s06": {
@@ -506,9 +506,9 @@
         896,
         512
       ],
-      "gen_s": 33.0
+      "gen_s": 32.8
     },
-    "elapsed": 1138.6,
+    "elapsed": 1782.3,
     "worker": "camber-L4"
   },
   "vid_s08": {
@@ -523,9 +523,9 @@
         896,
         512
       ],
-      "gen_s": 22.6
+      "gen_s": 23.0
     },
-    "elapsed": 1184.1,
+    "elapsed": 1829.0,
     "worker": "camber-L4"
   },
   "vid_s09": {
