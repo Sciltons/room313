@@ -1,0 +1,25 @@
+name: transcribe-narration
+# Word timestamps for caption sync (faster-whisper on CPU). $0.
+on:
+  workflow_dispatch:
+    inputs:
+      project: {description: "projects/<name>", required: true, default: "ep1_hinterkaifeck"}
+      model:   {description: "whisper model (small|medium|large-v3)", required: false, default: "medium"}
+jobs:
+  asr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q faster-whisper
+      - run: python3 orchestrator/transcribe.py "${{ inputs.project }}" "${{ inputs.model }}"
+      - name: Commit words.json
+        run: |
+          git config user.name "studio-worker"; git config user.email "studio-worker@users.noreply.github.com"
+          git add projects/${{ inputs.project }}/timeline/words.json
+          git diff --cached --quiet && exit 0
+          git commit -m "asr: word timestamps ${{ inputs.project }} [skip ci]"
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs origin main && git push && break; sleep $((i*10)); done
