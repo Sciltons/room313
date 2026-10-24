@@ -1,0 +1,67 @@
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash mkdir stash://ahmedali41329174/room313
+API error: code=17, message=Failed to create directory: directory already exists
+
+Error: API error: code=17, message=Failed to create directory: directory already exists
+Usage:
+  camber stash mkdir [flags]
+
+Flags:
+  -h, --help            help for mkdir
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber stash mkdir stash://ahmedali41329174/room313/assets
+API error: code=17, message=Failed to create directory: directory already exists
+
+Error: API error: code=17, message=Failed to create directory: directory already exists
+Usage:
+  camber stash mkdir [flags]
+
+Flags:
+  -h, --help            help for mkdir
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber stash rm stash://ahmedali41329174/room313/pkg.tar.gz
+Do you want to remove: stash://ahmedali41329174/room313/pkg.tar.gz? [y/N]: Remove success
+
+$ camber stash rm stash://ahmedali41329174/room313/run.log
+Do you want to remove: stash://ahmedali41329174/room313/run.log? [y/N]: Remove success
+
+$ camber stash cp /home/runner/work/room313/room313/quality_reports/camber_run_1792873383/pkg.tar.gz stash://ahmedali41329174/room313/pkg.tar.gz
+Perform copying /home/runner/work/room313/room313/quality_reports/camber_run_1792873383/pkg.tar.gz to stash://ahmedali41329174/room313/pkg.tar.gz
+user/b122b56b-0c44-4dd5-b902-23db56cb53e2/room313/pkg.tar.gz
+
+Uploading /home/runner/work/room313/room313/quality_reports/camber_run_1792873383/pkg.tar.gz: 36.06% (10.0MB/27.7MB) 0.00 B/s
+Uploading /home/runner/work/room313/room313/quality_reports/camber_run_1792873383/pkg.tar.gz: 72.12% (20.0MB/27.7MB) 0.00 B/s
+Uploading /home/runner/work/room313/room313/quality_reports/camber_run_1792873383/pkg.tar.gz: 100.00% (27.7MB/27.7MB) 95.76 MB/s
+
+Uploading /home/runner/work/room313/room313/quality_reports/camber_run_1792873383/pkg.tar.gz: 100.00% (27.7MB/27.7MB) 0.00 B/s
+
+$ camber chat -a @ahmedali41329174.room313 -m Run this exact shell command on the compute node, do not modify it, do not run anything else, then reply with its output only:
+cd ~/room313 && rm -rf pkg && tar xzf pkg.tar.gz && cd pkg && mkdir -p out && (nohup bash gpu/run.sh > ../run.log 2>&1 &) ; sleep 8; echo STARTED; tail -5 ../run.log --output json --no-thinking
+{"conversation_id":"5590565e-6df0-4f25-a019-7528d2012ae0","result":"```\nSTARTED\n```","output_stash_files":[]}
+
+checkpoint: 29 new assets -> committing
+checkpoint: 2 new assets -> committing
+checkpoint: 5 new assets -> committing
+checkpoint: 5 new assets -> committing
+checkpoint: 6 new assets -> committing
+checkpoint: 5 new assets -> committing
+checkpoint: 4 new assets -> committing
+  1908s |  25%|██▌       | 2/8 [00:06<00:20,  3.34s/it]
+ 38%|███▊      | 3/8 [00:10<00:17,  3.50s/it]
+ 50%|█████     | 4/8 [00:14<00:14,  3.58s/it]
