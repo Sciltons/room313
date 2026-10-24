@@ -1,92 +1,242 @@
 {
  "shots": {
   "s01": {
-   "mode": "video",
-   "target": 3.38,
-   "got": 3.367
+   "mode": "cached",
+   "target": 3.25,
+   "got": 3.233
   },
   "s02": {
-   "mode": "video",
-   "target": 1.08,
-   "got": 1.067
+   "mode": "cached",
+   "target": 1.14,
+   "got": 1.133
   },
   "s03": {
-   "mode": "video",
-   "target": 4.3,
-   "got": 4.3
+   "mode": "cached",
+   "target": 4.37,
+   "got": 4.333
   },
   "s04": {
-   "mode": "video",
-   "target": 2.33,
-   "got": 2.3
+   "mode": "cached",
+   "target": 2.02,
+   "got": 2.033
   },
   "s05": {
-   "mode": "video",
-   "target": 2.22,
-   "got": 2.233
+   "mode": "cached",
+   "target": 2.46,
+   "got": 2.467
   },
   "s06": {
-   "mode": "video",
-   "target": 1.99,
-   "got": 1.967
+   "mode": "cached",
+   "target": 2.04,
+   "got": 2.033
   },
   "s07": {
-   "mode": "video",
+   "mode": "cached",
    "target": 1.46,
    "got": 1.467
   },
   "s08": {
-   "mode": "video",
-   "target": 0.84,
-   "got": 0.833
+   "mode": "cached",
+   "target": 0.88,
+   "got": 0.867
   },
   "s09": {
-   "mode": "video",
-   "target": 1.93,
-   "got": 1.9
+   "mode": "cached",
+   "target": 1.12,
+   "got": 1.1
   },
   "s10": {
-   "mode": "video",
-   "target": 3.35,
-   "got": 3.333
+   "mode": "cached",
+   "target": 4.14,
+   "got": 4.133
   },
   "s11": {
-   "mode": "video",
-   "target": 2.93,
-   "got": 2.9
+   "mode": "cached",
+   "target": 2.86,
+   "got": 2.867
   },
   "s12": {
-   "mode": "video",
-   "target": 2.71,
+   "mode": "cached",
+   "target": 2.72,
    "got": 2.7
   },
   "s13": {
-   "mode": "video",
-   "target": 3.14,
-   "got": 3.133
+   "mode": "cached",
+   "target": 3.18,
+   "got": 3.167
   },
   "s14": {
-   "mode": "video",
-   "target": 2.96,
-   "got": 2.933
+   "mode": "cached",
+   "target": 2.68,
+   "got": 2.667
   },
   "s15": {
-   "mode": "video",
-   "target": 1.57,
-   "got": 1.533
+   "mode": "cached",
+   "target": 1.7,
+   "got": 1.7
   },
   "s16": {
-   "mode": "video",
-   "target": 1.45,
-   "got": 1.433
+   "mode": "cached",
+   "target": 1.75,
+   "got": 1.733
+  },
+  "s17": {
+   "mode": "cached",
+   "target": 4.2,
+   "got": 4.167
+  },
+  "s18": {
+   "mode": "cached",
+   "target": 4.07,
+   "got": 4.067
+  },
+  "s19": {
+   "mode": "cached",
+   "target": 4.32,
+   "got": 4.3
+  },
+  "s20": {
+   "mode": "cached",
+   "target": 1.74,
+   "got": 1.733
+  },
+  "s21": {
+   "mode": "cached",
+   "target": 3.16,
+   "got": 3.133
+  },
+  "s22": {
+   "mode": "cached",
+   "target": 1.4,
+   "got": 1.367
+  },
+  "s23": {
+   "mode": "cached",
+   "target": 1.66,
+   "got": 1.667
+  },
+  "s24": {
+   "mode": "cached",
+   "target": 2.0,
+   "got": 1.967
+  },
+  "s25": {
+   "mode": "cached",
+   "target": 1.72,
+   "got": 1.7
+  },
+  "s26": {
+   "mode": "cached",
+   "target": 1.94,
+   "got": 1.933
+  },
+  "s27": {
+   "mode": "cached",
+   "target": 2.98,
+   "got": 2.967
+  },
+  "s28": {
+   "mode": "cached",
+   "target": 3.38,
+   "got": 3.367
+  },
+  "s29": {
+   "mode": "cached",
+   "target": 2.18,
+   "got": 2.167
+  },
+  "s30": {
+   "mode": "cached",
+   "target": 3.34,
+   "got": 3.333
+  },
+  "s31": {
+   "mode": "cached",
+   "target": 3.56,
+   "got": 3.533
+  },
+  "s32": {
+   "mode": "cached",
+   "target": 2.46,
+   "got": 2.467
+  },
+  "s33": {
+   "mode": "cached",
+   "target": 2.44,
+   "got": 2.433
+  },
+  "s34": {
+   "mode": "cached",
+   "target": 2.54,
+   "got": 2.533
+  },
+  "s35": {
+   "mode": "cached",
+   "target": 2.79,
+   "got": 2.767
+  },
+  "s36": {
+   "mode": "cached",
+   "target": 4.7,
+   "got": 4.7
+  },
+  "s37": {
+   "mode": "cached",
+   "target": 2.36,
+   "got": 2.333
+  },
+  "s38": {
+   "mode": "cached",
+   "target": 2.72,
+   "got": 2.7
+  },
+  "s39": {
+   "mode": "cached",
+   "target": 3.16,
+   "got": 3.133
+  },
+  "s40": {
+   "mode": "cached",
+   "target": 3.48,
+   "got": 3.467
+  },
+  "s41": {
+   "mode": "cached",
+   "target": 5.3,
+   "got": 5.3
+  },
+  "s42": {
+   "mode": "cached",
+   "target": 3.38,
+   "got": 3.367
+  },
+  "s43": {
+   "mode": "cached",
+   "target": 3.3,
+   "got": 3.3
+  },
+  "s44": {
+   "mode": "cached",
+   "target": 2.72,
+   "got": 2.7
+  },
+  "s45": {
+   "mode": "cached",
+   "target": 1.88,
+   "got": 1.867
+  },
+  "s46": {
+   "mode": "cached",
+   "target": 4.384,
+   "got": 4.367
   }
  },
  "audio": {},
  "placeholders": [],
  "final": {
   "path": "/home/claude/room313/projects/ep1_hinterkaifeck/renders/final.mp4",
-  "duration": 37.633,
-  "expected": 37.64,
+  "duration": 127.033,
+  "expected": 127.034,
   "streams": [
    "h264,video,1080,1920",
    "aac,audio"
