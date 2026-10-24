@@ -169,7 +169,7 @@ def qc(job, path):
         try:
             from PIL import Image
             im = Image.open(path); w, h = im.size
-            if w < 512 or h < 512: return False, f"too small {w}x{h}"
+            if w < 640 or h < 360: return False, f"too small {w}x{h}"
         except Exception as e: return False, f"unreadable image: {e}"
     elif job["type"] in ("video", "audio"):
         p = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)], capture_output=True, text=True)

@@ -37,9 +37,8 @@ jobs:
         run: |
           if [ ! -f orchestrator/fonts/Cairo-Bold.ttf ]; then
             mkdir -p orchestrator/fonts
-            curl -sSL -o orchestrator/fonts/Cairo-Bold.ttf "https://github.com/google/fonts/raw/main/ofl/cairo/static/Cairo-Bold.ttf" \
-            || curl -sSL -o orchestrator/fonts/Cairo-Bold.ttf "https://raw.githubusercontent.com/google/fonts/main/ofl/cairo/Cairo%5Bslnt%2Cwght%5D.ttf" || true
-            file orchestrator/fonts/Cairo-Bold.ttf | grep -qi "font" || rm -f orchestrator/fonts/Cairo-Bold.ttf
+            curl -sSL -o orchestrator/fonts/Cairo-Bold.ttf "https://raw.githubusercontent.com/google/fonts/main/ofl/cairo/Cairo%5Bslnt%2Cwght%5D.ttf" || true
+            python3 -c "from PIL import ImageFont; ImageFont.truetype('orchestrator/fonts/Cairo-Bold.ttf', 20); print('font ok')" || rm -f orchestrator/fonts/Cairo-Bold.ttf
           fi
       - name: Generate (resumable, $0)
         id: gen
