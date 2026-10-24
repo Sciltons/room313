@@ -11,8 +11,7 @@ import os, sys, json, time, subprocess, pathlib, shutil, traceback
 
 WORK = pathlib.Path("/kaggle/working"); GEN = WORK / "generated"; GEN.mkdir(parents=True, exist_ok=True)
 JOB = json.loads(os.environ.get("ROOM313_JOB") or "__JOB_JSON__")   # injected by kaggle_dispatch.py (kernels carry a single file)
-_HF = "__HF_TOKEN__"
-if _HF and not _HF.startswith("__"): os.environ["HF_TOKEN"] = os.environ["HUGGINGFACE_HUB_TOKEN"] = _HF   # gated FLUX weights
+# No HF token in the kernel source: the official FLUX repo is gated; we use an unmodified Apache-2.0 mirror instead.
 STATUS = {}; T0 = time.time()
 def log(*a): print(f"[{time.time()-T0:7.1f}s]", *a, flush=True)
 def save_status(): (WORK / "kaggle_status.json").write_text(json.dumps(STATUS, indent=1))
@@ -24,7 +23,7 @@ subprocess.run(["git", "clone", "--depth", "1", JOB["repo"], str(REPO)], check=T
 proj = REPO / "projects" / JOB["project"]; man = json.loads((proj / "manifest.json").read_text())
 prev_gen = proj / "generated"
 stage, only = JOB.get("stage", "all"), set(JOB.get("only", []))
-def in_stage(j): return stage == "all" or j["type"] == stage or j.get("stage") == stage or stage in j.get("tags", [])
+def in_stage(j): return stage == "all" or j["type"] == stage or j.get("stage") == stage or stage in j.get("tags", []) or (stage == "images" and j["type"] == "image")
 jobs = [j for j in man["jobs"] if in_stage(j) and (not only or j["id"] in only) and j.get("provider") == "hf_space"]
 pending = [j for j in jobs if not (prev_gen / j["out"]).exists() or j["id"] in only]
 log(f"stage={stage} jobs={len(jobs)} pending={len(pending)} gpu={subprocess.run(['nvidia-smi','--query-gpu=name,memory.total','--format=csv,noheader'],capture_output=True,text=True).stdout.strip()}")
@@ -44,7 +43,7 @@ def flux():
         from transformers import T5EncoderModel, BitsAndBytesConfig as TBnB
         dt = torch.float16
         # official repo first; if it is gated for this account, fall back to an unmodified Apache-2.0 mirror in diffusers format
-        for mid in [os.environ.get("FLUX_REPO") or "black-forest-labs/FLUX.1-schnell", "YuCollection/FLUX.1-schnell-Diffusers"]:
+        for mid in [os.environ.get("FLUX_REPO") or "YuCollection/FLUX.1-schnell-Diffusers", "black-forest-labs/FLUX.1-schnell"]:
             try:
                 log(f"loading {mid} nf4 ...")
                 t5 = T5EncoderModel.from_pretrained(mid, subfolder="text_encoder_2", quantization_config=TBnB(load_in_8bit=True), torch_dtype=dt)
