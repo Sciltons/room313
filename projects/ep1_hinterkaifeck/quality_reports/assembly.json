@@ -2,13 +2,13 @@
  "shots": {
   "s01": {
    "mode": "video",
-   "target": 3.5,
-   "got": 3.5
+   "target": 3.38,
+   "got": 3.367
   },
   "s02": {
    "mode": "video",
-   "target": 1.1,
-   "got": 1.1
+   "target": 1.08,
+   "got": 1.067
   },
   "s03": {
    "mode": "video",
@@ -17,75 +17,75 @@
   },
   "s04": {
    "mode": "video",
-   "target": 2.1,
-   "got": 2.1
+   "target": 2.33,
+   "got": 2.3
   },
   "s05": {
    "mode": "video",
-   "target": 2.5,
-   "got": 2.5
+   "target": 2.22,
+   "got": 2.233
   },
   "s06": {
    "mode": "video",
-   "target": 1.9,
-   "got": 1.9
+   "target": 1.99,
+   "got": 1.967
   },
   "s07": {
    "mode": "video",
-   "target": 1.9,
-   "got": 1.9
+   "target": 1.46,
+   "got": 1.467
   },
   "s08": {
    "mode": "video",
-   "target": 1.4,
-   "got": 1.367
+   "target": 0.84,
+   "got": 0.833
   },
   "s09": {
    "mode": "video",
-   "target": 2.5,
-   "got": 2.5
+   "target": 1.93,
+   "got": 1.9
   },
   "s10": {
    "mode": "video",
-   "target": 2.2,
-   "got": 2.167
+   "target": 3.35,
+   "got": 3.333
   },
   "s11": {
    "mode": "video",
-   "target": 2.7,
-   "got": 2.7
+   "target": 2.93,
+   "got": 2.9
   },
   "s12": {
    "mode": "video",
-   "target": 1.9,
-   "got": 1.9
+   "target": 2.71,
+   "got": 2.7
   },
   "s13": {
    "mode": "video",
-   "target": 2.5,
-   "got": 2.5
+   "target": 3.14,
+   "got": 3.133
   },
   "s14": {
    "mode": "video",
-   "target": 2.0,
-   "got": 1.967
+   "target": 2.96,
+   "got": 2.933
   },
   "s15": {
    "mode": "video",
-   "target": 1.9,
-   "got": 1.9
+   "target": 1.57,
+   "got": 1.533
   },
   "s16": {
    "mode": "video",
-   "target": 3.2,
-   "got": 3.167
+   "target": 1.45,
+   "got": 1.433
   }
  },
  "audio": {},
  "placeholders": [],
  "final": {
   "path": "/home/claude/room313/projects/ep1_hinterkaifeck/renders/final.mp4",
-  "duration": 37.467,
+  "duration": 37.633,
   "expected": 37.64,
   "streams": [
    "h264,video,1080,1920",

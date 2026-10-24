@@ -51,11 +51,10 @@
       "id": "s01",
       "t": [
         0.0,
-        3.5
+        3.38
       ],
       "env": "farm_night",
       "chars": [],
-      "caption": "عيلة كاملة اتقتلت في المزرعة…",
       "image": "wide establishing shot at night, {farm_night}, a single line of footprints in the snow coming from the forest to the front door, snow falling",
       "motion": "heavy snow falling across the whole frame, wind blowing snowflakes sideways, the camera slowly pushes in toward the glowing window, clouds drifting past the moon",
       "sfx": [
@@ -66,12 +65,11 @@
     {
       "id": "s02",
       "t": [
-        3.5,
-        4.6
+        3.38,
+        4.46
       ],
       "env": "hallway",
       "chars": [],
-      "caption": "والقاتل…",
       "image": "{hallway}, low angle looking up at the closed attic hatch, the lamp giving a weak warm light, dust in the air, nobody there",
       "motion": "oil lamp swaying slightly, dust floating, very slow push-in toward the hatch",
       "sfx": [
@@ -82,12 +80,11 @@
     {
       "id": "s03",
       "t": [
-        4.6,
-        8.9
+        4.46,
+        8.76
       ],
       "env": "hallway",
       "chars": [],
-      "caption": "واحد من البيت.",
       "caption_style": "red",
       "image": "{hallway}, the oil lamp glowing blood red, the attic hatch open a crack with pure black darkness behind it and two faint eyes barely visible in the gap, red light bleeding across the wooden ceiling, horror",
       "motion": "the oil lantern swings and its flame flickers violently, red light pulsing and flashing across the wooden walls, the two eyes in the dark hatch blink and glint, the hatch creaks open wider, dust falling",
@@ -171,12 +168,11 @@
     {
       "id": "s04",
       "t": [
-        8.9,
-        11.0
+        8.76,
+        11.09
       ],
       "env": "farm_night",
       "chars": [],
-      "caption": "سنة ألف تسعمية اتنين وعشرين…",
       "image": "aerial wide shot, {farm_night}, the farm tiny in the middle of an endless dark pine forest, mist between the trees, moonlight",
       "motion": "slow aerial drift forward over the forest, mist moving, snow falling",
       "sfx": [
@@ -187,12 +183,11 @@
     {
       "id": "s05",
       "t": [
-        11.0,
-        13.5
+        11.09,
+        13.31
       ],
       "env": "farm_night",
       "chars": [],
-      "caption": "مزرعة معزولة في جنوب ألمانيا…",
       "image": "ground-level wide shot in deep snow, {farm_night}, a frozen dirt road leading to the farm, bare black trees along the road, no footprints, dead silence",
       "motion": "very slow dolly forward along the road, snow drifting across the ground",
       "sfx": [
@@ -203,12 +198,11 @@
     {
       "id": "s06",
       "t": [
-        13.5,
-        15.4
+        13.31,
+        15.3
       ],
       "env": "farm_night",
       "chars": [],
-      "caption": "اسمها هِنترْكايفِك.",
       "caption_style": "stamp",
       "image": "close shot of a weathered wooden farm sign nailed to a fence post in the snow, hand-painted faded letters 'HINTERKAIFECK', frost on the wood, dark farm out of focus behind",
       "motion": "camera settles slowly, snow falling, light flicker",
@@ -220,14 +214,13 @@
     {
       "id": "s07",
       "t": [
-        15.4,
-        17.3
+        15.3,
+        16.76
       ],
       "env": "kitchen",
       "chars": [
         "andreas"
       ],
-      "caption": "عايش فيها أندرياس…",
       "image": "medium shot, {andreas} sitting at the head of the kitchen table, {kitchen}, lamp light on his face, looking down at his hands",
       "motion": "he slowly lifts his eyes toward the camera, lamp flame flickering, breathing",
       "sfx": [
@@ -239,14 +232,13 @@
     {
       "id": "s08",
       "t": [
-        17.3,
-        18.7
+        16.76,
+        17.6
       ],
       "env": "kitchen",
       "chars": [
         "cazilia"
       ],
-      "caption": "ومراته…",
       "image": "medium shot, {cazilia} standing by the tiled stove, {kitchen}, holding a wooden spoon, half her face in shadow",
       "motion": "she turns her head slightly toward the camera, steam rising from the pot",
       "sfx": [
@@ -258,14 +250,13 @@
     {
       "id": "s09",
       "t": [
-        18.7,
-        21.2
+        17.6,
+        19.53
       ],
       "env": "kitchen",
       "chars": [
         "viktoria"
       ],
-      "caption": "وبنتهم فيكتوريا…",
       "image": "medium shot, {viktoria} by the kitchen window with snow outside, {kitchen}, rocking the toddler on her hip, tired gentle expression",
       "motion": "she gently rocks the child, looks out of the window, snow falling outside",
       "sfx": [
@@ -276,15 +267,14 @@
     {
       "id": "s10",
       "t": [
-        21.2,
-        23.4
+        19.53,
+        22.88
       ],
       "env": "kitchen",
       "chars": [
         "girl",
         "viktoria"
       ],
-      "caption": "وولادها: بنت سبع سنين… وطفل سنتين.",
       "image": "medium close shot, {girl} sitting on the kitchen bench hugging her rag doll, {kitchen}, the toddler's small hand reaching into frame, lamp light",
       "motion": "the girl looks up slowly, hugs the doll tighter, the lamp flickers",
       "sfx": [
@@ -295,14 +285,13 @@
     {
       "id": "s11",
       "t": [
-        23.4,
-        26.1
+        22.88,
+        25.81
       ],
       "env": "kitchen",
       "chars": [
         "cazilia"
       ],
-      "caption": "الأسابيع اللي قبلها… كانت غريبة.",
       "image": "medium shot, {cazilia} alone in the kitchen at night searching through a wooden drawer by candlelight, {kitchen}, drawer pulled open, worried face",
       "motion": "she rummages through the drawer, candle flame trembling, shadows moving on the wall",
       "sfx": [
@@ -314,12 +303,11 @@
     {
       "id": "s12",
       "t": [
-        26.1,
-        28.0
+        25.81,
+        28.52
       ],
       "env": "kitchen",
       "chars": [],
-      "caption": "مفتاح البيت ضاع… ومحدش لقاه.",
       "image": "extreme close-up of an empty iron nail on a wooden plank wall where a house key used to hang, a faint pale outline of the missing key on the wood, candlelight",
       "motion": "the old iron key slips off the nail and drops out of the frame, leaving the nail empty, candlelight flickering, dust",
       "sfx": [
@@ -330,14 +318,13 @@
     {
       "id": "s13",
       "t": [
-        28.0,
-        30.5
+        28.52,
+        31.66
       ],
       "env": "kitchen",
       "chars": [
         "andreas"
       ],
-      "caption": "جرنال اتلقى في البيت… محدش فيهم اشتراه.",
       "image": "over-the-shoulder shot, {andreas} holding an unfolded 1920s German newspaper at the kitchen table, {kitchen}, staring at it with a suspicious frown, lamp light on the paper",
       "motion": "he turns the newspaper slowly, frowns, the lamp flickers",
       "sfx": [
@@ -349,14 +336,13 @@
     {
       "id": "s14",
       "t": [
-        30.5,
-        32.5
+        31.66,
+        34.62
       ],
       "env": "bedroom",
       "chars": [
         "andreas"
       ],
-      "caption": "وبالليل… صوت خطوات في السقيفة فوق.",
       "image": "close-up, {andreas} lying in bed at night, {bedroom}, eyes wide open staring up at the wooden ceiling, candle almost out, dust falling from the planks above",
       "motion": "his eyes slowly move across the ceiling, dust drifts down, candle flame flickers",
       "sfx": [
@@ -368,14 +354,13 @@
     {
       "id": "s15",
       "t": [
-        32.5,
-        34.4
+        34.62,
+        36.19
       ],
       "env": "attic",
       "chars": [
         "andreas"
       ],
-      "caption": "أندرياس طلع يدوّر…",
       "image": "low angle, {andreas} climbing a wooden ladder up through the attic hatch holding an oil lamp above his head, {attic}, his face lit from below, fear and anger",
       "motion": "he climbs one rung, raises the lamp, light sweeping across the attic beams",
       "sfx": [
@@ -387,12 +372,11 @@
     {
       "id": "s16",
       "t": [
-        34.4,
-        37.6
+        36.19,
+        37.64
       ],
       "env": "attic",
       "chars": [],
-      "caption": "ملقاش حد.",
       "caption_style": "red",
       "image": "wide shot, {attic}, empty, lantern light revealing a human-shaped hollow pressed into the hay where someone has been lying, nobody there",
       "motion": "lantern light slowly sweeping over the hay hollow, dust in the beam, held still",
@@ -508,5 +492,167 @@
         "fs_query": "keys drop"
       }
     }
-  }
+  },
+  "captions": [
+    {
+      "t": [
+        0.28,
+        3.41
+      ],
+      "text": "عيلة كاملة اتقتلت في المزرعة…",
+      "style": ""
+    },
+    {
+      "t": [
+        3.41,
+        4.49
+      ],
+      "text": "والقاتل…",
+      "style": ""
+    },
+    {
+      "t": [
+        4.49,
+        6.51
+      ],
+      "text": "واحد من البيت.",
+      "style": "red"
+    },
+    {
+      "t": [
+        8.79,
+        11.12
+      ],
+      "text": "سنة ألف تسعمية اتنين وعشرين…",
+      "style": ""
+    },
+    {
+      "t": [
+        11.12,
+        13.34
+      ],
+      "text": "مزرعة معزولة في جنوب ألمانيا…",
+      "style": ""
+    },
+    {
+      "t": [
+        13.34,
+        15.33
+      ],
+      "text": "اسمها هِنترْكايفِك.",
+      "style": "stamp"
+    },
+    {
+      "t": [
+        15.33,
+        16.79
+      ],
+      "text": "عايش فيها أندرياس…",
+      "style": ""
+    },
+    {
+      "t": [
+        16.79,
+        17.63
+      ],
+      "text": "ومراته…",
+      "style": ""
+    },
+    {
+      "t": [
+        17.63,
+        19.55
+      ],
+      "text": "وبنتهم فيكتوريا…",
+      "style": ""
+    },
+    {
+      "t": [
+        19.55,
+        20.91
+      ],
+      "text": "وولادها: بنت سبع سنين…",
+      "style": ""
+    },
+    {
+      "t": [
+        20.91,
+        22.91
+      ],
+      "text": "وطفل سنتين.",
+      "style": ""
+    },
+    {
+      "t": [
+        22.91,
+        25.84
+      ],
+      "text": "الأسابيع اللي قبلها… كانت غريبة.",
+      "style": ""
+    },
+    {
+      "t": [
+        25.84,
+        27.24
+      ],
+      "text": "مفتاح البيت ضاع…",
+      "style": ""
+    },
+    {
+      "t": [
+        27.24,
+        28.55
+      ],
+      "text": "ومحدش لقاه.",
+      "style": ""
+    },
+    {
+      "t": [
+        28.55,
+        30.01
+      ],
+      "text": "جرنال اتلقى في البيت…",
+      "style": ""
+    },
+    {
+      "t": [
+        30.01,
+        31.68
+      ],
+      "text": "محدش فيهم اشتراه.",
+      "style": ""
+    },
+    {
+      "t": [
+        31.68,
+        32.67
+      ],
+      "text": "وبالليل…",
+      "style": ""
+    },
+    {
+      "t": [
+        32.67,
+        34.65
+      ],
+      "text": "صوت خطوات في الدور اللي فوق.",
+      "style": ""
+    },
+    {
+      "t": [
+        34.65,
+        36.22
+      ],
+      "text": "أندرياس طلع يدوّر…",
+      "style": ""
+    },
+    {
+      "t": [
+        36.22,
+        37.64
+      ],
+      "text": "ملقاش حد.",
+      "style": "red"
+    }
+  ]
 }
