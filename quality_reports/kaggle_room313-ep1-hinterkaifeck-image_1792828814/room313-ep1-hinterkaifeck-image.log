@@ -1,0 +1,21 @@
+[{"stream_name":"stderr","time":0.546552105,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":0.547811713,"data":"  File \"/kaggle/src/script.py\", line 13, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":0.547828586,"data":"    JOB = json.loads(pathlib.Path(__file__).with_name(\"job.json\").read_text())\n"}
+,{"stream_name":"stderr","time":0.547833183,"data":"                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":0.54783703,"data":"  File \"/usr/lib/python3.13/pathlib/_local.py\", line 546, in read_text\n"}
+,{"stream_name":"stderr","time":0.547841003,"data":"    return PathBase.read_text(self, encoding, errors, newline)\n"}
+,{"stream_name":"stderr","time":0.547844488,"data":"           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":0.547847961,"data":"  File \"/usr/lib/python3.13/pathlib/_abc.py\", line 632, in read_text\n"}
+,{"stream_name":"stderr","time":0.547851768,"data":"    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n"}
+,{"stream_name":"stderr","time":0.547855676,"data":"         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":0.547859329,"data":"  File \"/usr/lib/python3.13/pathlib/_local.py\", line 537, in open\n"}
+,{"stream_name":"stderr","time":0.54786299,"data":"    return io.open(self, mode, buffering, encoding, errors, newline)\n"}
+,{"stream_name":"stderr","time":0.54786652,"data":"           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":0.547870461,"data":"FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/src/job.json'\n"}
+,{"stream_name":"stderr","time":3.003904584,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3.003928151,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3.3154333,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3.315475139,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4.778645354,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5.766897093,"data":"[NbConvertApp] Writing 309960 bytes to __results__.html\n"}
+]
