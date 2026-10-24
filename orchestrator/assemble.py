@@ -24,6 +24,7 @@ CAP_HTML = """<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>
 #tag{top:%dpx;color:#e6e0d4;font-size:34px;letter-spacing:3px} #tag span{display:inline-block;padding:10px 36px 14px;border:2px solid rgba(155,17,30,.9);border-radius:4px;background:rgba(11,11,13,.6)}
 #cap{top:%dpx;color:%s;font-size:%dpx;line-height:1.4;padding:0 30px;text-shadow:0 3px 0 #000,0 0 22px rgba(0,0,0,.95)}
 #stamp{top:%dpx;color:#b5121f;font-size:104px} #stamp span{display:inline-block;padding:0 40px 10px;border:8px solid #b5121f;border-radius:8px;transform:rotate(-6deg)}
+#cap .w{opacity:.5} #cap .w.done{opacity:1} #cap .w.on{opacity:1;color:#ffd166}
 </style></head><body><div id="tag" class="t"><span>غُرفة ٣١٣</span></div><div id="cap" class="t">%s</div>%s</body></html>"""
 # ---------- procedural FX (ffmpeg blend with time expressions). Storyboard: "fx": [{"type": ..., ...}], boxes in keyframe px (1024x576)
 def _radial(w, h, cx, cy, r, color, feather=1.0):
@@ -81,7 +82,8 @@ def fx_chain(shot, fr, d, work):
     return inputs, ";".join(chain)
 
 _pw=None
-def caption_png(text, style, fr, out, tag=True):
+def caption_png(text, style, fr, out, tag=True, words=None, k=None):
+    """words/k: karaoke state — words[:k] spoken (full), words[k] current (accent), rest dim"""
     global _pw
     from playwright.sync_api import sync_playwright
     if _pw is None:
@@ -89,7 +91,10 @@ def caption_png(text, style, fr, out, tag=True):
     color="#e0303c" if style=="red" else "#f2ede4"; n=len(text)
     size=(76 if n<=14 else 64 if n<=22 else 56) if style=="red" else (60 if n<=18 else 54 if n<=28 else 48)
     stamp=f'<div id="stamp" class="t"><span>{text}</span></div>' if style=="stamp" else ""
-    html=CAP_HTML%(FONT, fr["y"]-90, fr["y"]+fr["h"]+60, color, size, fr["y"]+fr["h"]//2-70, text, stamp)
+    body=text
+    if words is not None and k is not None and style!="stamp":
+        body=" ".join(f'<span class="w {"done" if i<k else "on" if i==k else ""}">{w}</span>' for i,w in enumerate(words))
+    html=CAP_HTML%(FONT, fr["y"]-90, fr["y"]+fr["h"]+60, color, size, fr["y"]+fr["h"]//2-70, body, stamp)
     if not tag: html=html.replace('<div id="tag" class="t">','<div id="tag" class="t" style="display:none">')
     _pw.page.set_content(html); _pw.page.wait_for_timeout(50); _pw.page.screenshot(path=str(out), omit_background=True)
 
@@ -127,8 +132,9 @@ def main():
         fx_in, fx_f = fx_chain(s, fr, d, work)
         vf=(f"[0:v]{vf_fit},scale={fr['w']}:{fr['h']}:force_original_aspect_ratio=increase,crop={fr['w']}:{fr['h']},fps={FPS},format=rgb24[sh];{fx_f};[shfx]format=rgba[shr];"
             f"color=c=black:s={W}x{H}:r={FPS}:d={d}[bg];[bg][shr]overlay={fr['x']}:{fr['y']}:shortest=1[base];"
-            f"[1:v]format=rgba,fade=t=in:st=0:d=0.25:alpha=1[cap];[base][cap]overlay=0:0:shortest=1{flash},"
-            f"vignette=PI/4,noise=alls=12:allf=t+u,fade=t=in:st=0:d=0.08:color=black,fade=t=out:st={max(0,d-0.08)}:d=0.08:color=black,format=yuv420p[v]")
+            f"[base]vignette=PI/4,noise=alls=12:allf=t+u{flash}[grain];"
+            f"[1:v]format=rgba[cap];[grain][cap]overlay=0:0:shortest=1,"
+            f"fade=t=in:st=0:d=0.08:color=black,fade=t=out:st={max(0,d-0.08)}:d=0.08:color=black,format=yuv420p[v]")
         run(["ffmpeg","-y","-loglevel","error",*inp,"-loop","1","-t",str(d),"-i",str(capfile),*fx_in,"-filter_complex",vf,"-map","[v]","-an","-t",str(d),"-r",str(FPS),"-c:v","libx264","-preset","veryfast","-crf","18",str(out)])
         got=probe_dur(out); clips.append(out); report["shots"][s["id"]]={"mode":mode,"target":d,"got":round(got,3)}
         print(f"{s['id']} {mode:18s} {d:5.2f}s -> {got:5.2f}s")
@@ -136,19 +142,32 @@ def main():
     # ---------- 2) video concat
     lst=work/"concat.txt"; lst.write_text("".join(f"file '{c}'\n" for c in clips))
     video=work/"video.mp4"; run(["ffmpeg","-y","-loglevel","error","-f","concat","-safe","0","-i",str(lst),"-c","copy",str(video)])
-    # ---------- 2b) caption track: phrases timed to the narration (storyboard["captions"]), independent of shot boundaries
+    # ---------- 2b) caption track: ONE image-sequence stream (concat demuxer, exact durations) -> no flicker, word-accurate timing
     caps=sb.get("captions",[])
     if caps:
-        ins=[]; fc=[]; cur="0:v"
+        states=[]   # (start, end, png)
+        blank=work/"cap_blank.png"; caption_png("", "", fr, blank, tag=False)
         for i,c in enumerate(caps):
-            png=work/f"cap_{i:02d}.png"; caption_png(c["text"], c.get("style",""), fr, png, tag=False)
-            ins.extend(["-loop","1","-framerate","1","-i",str(png)]); a,b=c["t"]
-            fc.append(f"[{i+1}:v]format=rgba[c{i}];[{cur}][c{i}]overlay=0:0:enable='between(t,{a:.2f},{b:.2f})'[v{i}]"); cur=f"v{i}"   # hard cut: exact word timing (1 fps png inputs can't fade)
-        fc.append(f"[{cur}]format=yuv420p[vout]")
+            a_,b_=c["t"]; ws=c.get("words")
+            if ws and len(ws)>1 and c.get("style")!="stamp":
+                for k,wd in enumerate(ws):
+                    st=max(a_, wd["t"]); en=ws[k+1]["t"] if k+1<len(ws) else b_
+                    if en<=st: continue
+                    png=work/f"cap_{i:02d}_{k:02d}.png"; caption_png(c["text"], c.get("style",""), fr, png, tag=False, words=[w["w"] for w in ws], k=k); states.append((st,en,png))
+            else:
+                png=work/f"cap_{i:02d}.png"; caption_png(c["text"], c.get("style",""), fr, png, tag=False); states.append((a_,b_,png))
+        states.sort(key=lambda x:x[0]); lines=[]; cur=0.0
+        for st,en,png in states:
+            if st>cur+0.01: lines.append(f"file '{blank}'\nduration {st-cur:.3f}")
+            lines.append(f"file '{png}'\nduration {max(0.034,en-st):.3f}"); cur=max(cur,en)
+        if total>cur: lines.append(f"file '{blank}'\nduration {total-cur:.3f}")
+        lines.append(f"file '{blank}'")
+        clist=work/"captions.txt"; clist.write_text("\n".join(lines)+"\n")
         vcap=work/"video_cap.mp4"
-        run(["ffmpeg","-y","-loglevel","error","-threads","0","-i",str(video),*ins,"-filter_complex",";".join(fc),"-map","[vout]","-t",str(total),"-r",str(FPS),"-c:v","libx264","-preset","ultrafast","-crf","20",str(vcap)])
-        video=vcap; print(f"caption track: {len(caps)} phrases")
-
+        run(["ffmpeg","-y","-loglevel","error","-threads","0","-i",str(video),"-f","concat","-safe","0","-i",str(clist),
+             "-filter_complex",f"[1:v]format=rgba,fps={FPS}[cap];[0:v][cap]overlay=0:0:eof_action=pass,format=yuv420p[vout]",
+             "-map","[vout]","-t",str(total),"-r",str(FPS),"-c:v","libx264","-preset","ultrafast","-crf","20",str(vcap)])
+        video=vcap; print(f"caption track: {len(caps)} phrases, {len(states)} word states")
     # ---------- 3) audio: narration (untouched) + music beds + sfx, ducked under the voice
     inputs=[]; fc=[]; idx=0
     def add(path):
