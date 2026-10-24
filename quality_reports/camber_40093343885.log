@@ -1,0 +1,168 @@
+GROMACS command: cd ${simulationFolder} && rm -rf prod_apps && git clone https://github.com/CamberCloud-Inc/prod_apps.git && cp -r prod_apps/gromacs ./gromacs && rm -rf prod_apps && cd gromacs && ./run_gromacs.sh ${temperature} ${saltConcentration} ${simulationTime} ${pressure} ${cutoffDistance} ${integrator}
+GROMACS spec: [
+ {
+  "default_value": "300",
+  "description": "Simulation temperature in Kelvin (250-400K range). Controls molecular motion and thermal equilibrium. Examples: 298K (room temp), 300K (standard), 310K (physiological), 350K (high temp). Default: 300K.",
+  "disabled": false,
+  "hidden": false,
+  "label": "Temperature (K)",
+  "name": "temperature",
+  "options": null,
+  "placeholder": "",
+  "required": true,
+  "restrictions": null,
+  "type": "Input"
+ },
+ {
+  "default_value": "0.15",
+  "description": "Ionic strength in molar concentration (0.01-3.0M range). Affects electrostatic screening and protein stability. Examples: 0.05M (low salt), 0.15M (physiological), 1.0M (high salt), 2.0M (very high). Default: 0.15M.",
+  "disabled": false,
+  "hidden": false,
+  "label": "Salt Concentration (M)",
+  "name": "saltConcentration",
+  "options": null,
+  "placeholder": "",
+  "required": true,
+  "restrictions": null,
+  "type": "Input"
+ },
+ {
+  "default_value": "100",
+  "description": "Duration of NPT production run in picoseconds (10-1000ps range). Longer simulations provide better sampling but take more time. Examples: 50ps (quick test), 100ps (standard), 500ps (extended), 1000ps (long run). Default: 100ps.",
+  "disabled": false,
+  "hidden": false,
+  "label": "Simulation Time (ps)",
+  "name": "simulationTime",
+  "options": null,
+  "placeholder": "",
+  "required": true,
+  "restrictions": null,
+  "type": "Input"
+ },
+ {
+  "default_value": "1.0",
+  "description": "System pressure in bar (0.1-10.0 range). Standard atmospheric pressure is 1.01325 bar. Examples: 0.5bar (low pressure), 1.0bar (standard), 2.0bar (moderate), 5.0bar (high pressure). Default: 1.0bar.",
+  "disabled": false,
+  "hidden": false,
+  "label": "Pressure (bar)",
+  "name": "pressure",
+  "options": null,
+  "placeholder": "",
+  "required": true,
+  "restrictions": null,
+  "type": "Input"
+ },
+ {
+  "default_value": "1.0",
+  "description": "Non-bonded interaction cutoff in nanometers (0.8-2.0nm range). Larger values are more accurate but computationally expensive. Examples: 0.9nm (short), 1.0nm (standard), 1.2nm (extended), 1.4nm (long range). Default: 1.0nm.",
+  "disabled": false,
+  "hidden": false,
+  "label": "Cutoff Distance (nm)",
+  "name": "cutoffDistance",
+  "options": null,
+  "placeholder": "",
+  "required": true,
+  "restrictions": null,
+  "type": "Input"
+ },
+ {
+  "default_value": "md",
+  "description": "Numerical integration algorithm for MD timesteps. Options: md=leap-frog (standard, fast), md-vv=velocity-verlet (more accurate), sd=stochastic dynamics (includes friction). Default: md (leap-frog).",
+  "disabled": false,
+  "hidden": false,
+  "label": "MD Integrator",
+  "name": "integrator",
+  "options": [
+   {
+    "label": "Leap-Frog (md)",
+    "value": "md"
+   },
+   {
+    "label": "Velocity-Verlet (md-vv)",
+    "value": "md-vv"
+   },
+   {
+    "label": "Stochastic Dynamics (sd)",
+    "value": "sd"
+   }
+  ],
+  "placeholder": "",
+  "required": true,
+  "restrictions": null,
+  "type": "Select"
+ },
+ {
+  "de
+GROMACS job_config: [{"type": "Select", "label": "System Size", "name": "system_size", "hidden": true, "description": "Select the configuration for the job", "options": [{"label": "Small GPU", "value": "small_gpu", "map_value": {"node_size": "XSMALL", "num_nodes": 1, "with_gpu": true}}], "default_value": "small_gpu"}]
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash cp /home/runner/work/room313/room313/worker/gpu/probe.sh stash://ahmedali41329174/room313/probe.sh
+Perform copying /home/runner/work/room313/room313/worker/gpu/probe.sh to stash://ahmedali41329174/room313/probe.sh
+
+Uploading /home/runner/work/room313/room313/worker/gpu/probe.sh: 100.00% (1.1KB/1.1KB) 0.00 B/s
+
+Uploading /home/runner/work/room313/room313/worker/gpu/probe.sh: 100.00% (1.1KB/1.1KB) 0.00 B/s
+
+$ camber app create --file /home/runner/work/room313/room313/quality_reports/app.json --output json
+validation failed: Key: 'AppData.EngineType' Error:Field validation for 'EngineType' failed on the 'required' tag
+
+Error: validation failed: Key: 'AppData.EngineType' Error:Field validation for 'EngineType' failed on the 'required' tag
+Usage:
+  camber app create [flags]
+
+Flags:
+      --file string     Path to the JSON file containing app definition (local path or stash://path)
+  -h, --help            help for create
+      --output string   output format (e.g. json)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber app run room313-probe --with-gpu --node-size xsmall --output json
+API error: code=10, message=Failed to get app
+
+Error: API error: code=10, message=Failed to get app
+Usage:
+  camber app run [flags]
+
+Flags:
+  -h, --help                help for run
+      --input stringArray   Input in key=value format. Repeat for multiple inputs.
+      --node-size string    Node size for the job
+      --num-nodes int32     Number of nodes for the job
+      --output string       output format (e.g. json)
+      --with-gpu            Whether to use GPU
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber app run room313-probe --output json
+API error: code=10, message=Failed to get app
+
+Error: API error: code=10, message=Failed to get app
+Usage:
+  camber app run [flags]
+
+Flags:
+  -h, --help                help for run
+      --input stringArray   Input in key=value format. Repeat for multiple inputs.
+      --node-size string    Node size for the job
+      --num-nodes int32     Number of nodes for the job
+      --output string       output format (e.g. json)
+      --with-gpu            Whether to use GPU
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber job list
+======================Job Information======================
+
+Total: 0 jobs(s); Page 1; Size: 10
+
