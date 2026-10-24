@@ -23,7 +23,9 @@ def main():
     repo_url = sh(["git", "remote", "get-url", "origin"], cwd=ROOT).replace("git@github.com:", "https://github.com/").removesuffix(".git")
     slug = f"room313-{a.project}-{a.stage}".lower().replace("_", "-")[:50]
     # kernel payload
-    job = json.dumps({"repo": repo_url, "project": a.project, "stage": a.stage, "only": [x for x in a.only.split(",") if x]})
+    job = {"repo": repo_url, "project": a.project, "stage": a.stage, "only": [x for x in a.only.split(",") if x]}
+    if os.environ.get("VARIANTS"): job["variants"] = json.loads(os.environ["VARIANTS"])
+    job = json.dumps(job)
     push = ROOT / "quality_reports" / "_kaggle_push"; shutil.rmtree(push, ignore_errors=True); push.mkdir(parents=True)
     (push / "script.py").write_text((KDIR / "room313_worker.py").read_text().replace("__JOB_JSON__", job.replace("\\", "\\\\").replace('"', '\\"')))
     (push / "kernel-metadata.json").write_text(json.dumps({

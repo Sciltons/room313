@@ -7,6 +7,7 @@ on:
       project: {description: "projects/<name>", required: true, default: "ep1_hinterkaifeck"}
       stage:   {description: "milestone | image | character | video | all", required: true, default: "milestone"}
       only:    {description: "comma-separated job ids (optional, forces regeneration)", required: false, default: ""}
+      variants: {description: "JSON list of LTX variants for A/B tests (optional)", required: false, default: ""}
 
 concurrency:
   group: "kaggle-${{ inputs.project }}"
@@ -28,6 +29,7 @@ jobs:
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          VARIANTS: ${{ inputs.variants }}
         run: |
           set -o pipefail
           python3 worker/kaggle_dispatch.py --project "${{ inputs.project }}" --stage "${{ inputs.stage }}" --only "${{ inputs.only }}" | tee run.log

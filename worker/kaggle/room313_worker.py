@@ -90,9 +90,10 @@ def ltx():
         from diffusers import LTXImageToVideoPipeline
         log("LTX phase 2: transformer + vae ...")
         from diffusers import LTXVideoTransformer3DModel, BitsAndBytesConfig as DBnB
-        tr = LTXVideoTransformer3DModel.from_pretrained(LTX_ID, subfolder="transformer", quantization_config=DBnB(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=torch.float16), torch_dtype=torch.float16, low_cpu_mem_usage=True)
-        _ltx = LTXImageToVideoPipeline.from_pretrained(LTX_ID, transformer=tr, text_encoder=None, tokenizer=None, torch_dtype=torch.float16, low_cpu_mem_usage=True)
-        _ltx.vae.to(DEV); _ltx.vae.enable_tiling(); log(f"LTX ready (13B nf4) vram={torch.cuda.memory_allocated()/1e9:.1f}GB")
+        cdt = torch.bfloat16 if CUR.get("compute") == "bf16" else torch.float16
+        tr = LTXVideoTransformer3DModel.from_pretrained(LTX_ID, subfolder="transformer", quantization_config=DBnB(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=cdt), torch_dtype=cdt, low_cpu_mem_usage=True)
+        _ltx = LTXImageToVideoPipeline.from_pretrained(LTX_ID, transformer=tr, text_encoder=None, tokenizer=None, torch_dtype=cdt, low_cpu_mem_usage=True)
+        _ltx.vae.to(DEV); _ltx.vae.enable_tiling(); log(f"LTX ready (13B nf4, compute={cdt}) vram={torch.cuda.memory_allocated()/1e9:.1f}GB")
     return _ltx
 
 def gen_video(j, out):
@@ -103,11 +104,15 @@ def gen_video(j, out):
     if not src.exists(): raise FileNotFoundError(f"keyframe missing: {img_rel}")
     img = Image.open(src).convert("RGB").resize((LTX_W, LTX_H))
     secs = min(LTX_MAXS, float(a.get("duration_ui", 2))); frames = (int(secs * LTX_FPS) // 8) * 8 + 1
-    (pe, pm), (ne, nm) = _emb[j["id"]]
+    (pe, pm), (ne, nm) = _emb[j["id"]]; dt = p.transformer.dtype
     g = torch.Generator("cpu").manual_seed(int(a.get("seed_ui", 42))); torch.cuda.empty_cache()
-    vid = p(image=img, prompt_embeds=pe.to(DEV), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV), negative_prompt_attention_mask=nm.to(DEV),
-            width=LTX_W, height=LTX_H, num_frames=frames, num_inference_steps=LTX_STEPS, guidance_scale=LTX_CFG, generator=g, decode_timestep=0.03, decode_noise_scale=0.025).frames[0]
-    out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=LTX_FPS); return {"model": LTX_ID, "frames": frames, "fps": LTX_FPS, "size": [LTX_W, LTX_H]}
+    kw = dict(image=img, prompt_embeds=pe.to(DEV, dt), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV, dt), negative_prompt_attention_mask=nm.to(DEV),
+              width=LTX_W, height=LTX_H, num_frames=frames, guidance_scale=LTX_CFG, generator=g, decode_timestep=0.05, decode_noise_scale=0.025)
+    ts = CUR.get("timesteps")
+    if ts: kw["timesteps"] = ts
+    else: kw["num_inference_steps"] = LTX_STEPS
+    vid = p(**kw).frames[0]
+    out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=LTX_FPS); return {"model": LTX_ID, "frames": frames, "fps": LTX_FPS, "size": [LTX_W, LTX_H], "variant": CUR}
 
 # ---------------------------------------------------------------- run
 fails = 0
@@ -115,13 +120,21 @@ vj = [j for j in pending if j["type"] == "video"]
 if vj:
     try: ltx_encode_all(vj)
     except Exception as e: log("LTX phase 1 failed:", e); traceback.print_exc()
-for j in pending:
+def _runs():
+    for j in pending:
+        if j["type"] == "video" and len(VARIANTS) > 1:
+            for v in VARIANTS: yield j, v
+        else: yield j, VARIANTS[0]
+for j, v in _runs():
+    if v is not CUR:
+        CUR = v; _ltx = None; torch.cuda.empty_cache(); import gc; gc.collect()
     out = GEN / j["out"]
+    if v.get("tag"): out = out.with_name(out.stem + "_" + v["tag"] + out.suffix)
     try:
-        log(f"[{j['id']}] {j['type']} ...")
+        log(f"[{j['id']}] {j['type']} variant={v.get('tag') or '-'} ...")
         m = gen_image(j, out) if j["type"] == "image" else gen_video(j, out) if j["type"] == "video" else None
         if m is None: STATUS[j["id"]] = {"state": "skipped", "why": "unsupported type on kaggle"}; continue
-        STATUS[j["id"]] = {"state": "ok", "out": j["out"], "metrics": m, "elapsed": round(time.time() - T0, 1)}; log(f"[{j['id']}] OK")
+        STATUS[j["id"] + ("_" + v["tag"] if v.get("tag") else "")] = {"state": "ok", "out": str(out.relative_to(GEN)), "metrics": m, "elapsed": round(time.time() - T0, 1)}; log(f"[{j['id']}] OK")
     except Exception as e:
         fails += 1; STATUS[j["id"]] = {"state": "error", "error": str(e)[:400]}; log(f"[{j['id']}] ERROR {e}"); traceback.print_exc()
     save_status()
