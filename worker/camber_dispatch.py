@@ -20,7 +20,7 @@ def stash_root():
     rc, out = sh(["camber","me"]); m = re.search(r"Stash:\s*(stash://\S+)", out)
     return (m.group(1) if m else "stash://").rstrip("/")
 def probe(rep):
-    for c in [["camber","version"],["camber","me"],["camber","pod","--help"],["camber","agent","--help"],["camber","app","--help"],["camber","chat","--help"],["camber","app","list"],["camber","agent","list"],["camber","pod","list"]]:
+    for c in [["camber","version"],["camber","me"],["camber","app","create","--help"],["camber","app","run","--help"],["camber","app","describe","--help"],["camber","pod","spawn","--help"],["camber","app","describe","satminer-cpu"]]:
         rc, out = sh(c); rep.append({"cmd": " ".join(c), "rc": rc, "out": out})
     if os.environ.get("PROBE_HELP_ONLY"): return
 
