@@ -1,0 +1,104 @@
+[{"stream_name":"stderr","time":1.880521056,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stdout","time":3.808147325,"data":"[    2.1s] stage=video jobs=1 pending=1 gpu=Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":3.8081803709999997,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stderr","time":37.325736316,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":37.325773406,"data":"grpcio-tools 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":37.325795474,"data":"gradio 6.26.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":37.325802304,"data":"moviepy 1.0.3 requires decorator\u003c5.0,\u003e=4.0.2, but you have decorator 5.3.1 which is incompatible.\n"}
+,{"stream_name":"stderr","time":37.32580888,"data":"google-ai-generativelanguage 0.6.15 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,\u003c6.0.0dev,\u003e=3.20.2, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":37.325816434,"data":"ydf 0.15.0 requires protobuf\u003c7.0.0,\u003e=5.29.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":37.325821681,"data":"grpcio-status 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":95.350026885,"data":"[   93.6s] LTX phase 1: text encoder ...\n"}
+,{"stream_name":"stderr","time":95.611302384,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":184.485963365,"data":"\rFetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rFetching 4 files:  25%|██▌       | 1/4 [01:26\u003c04:20, 86.86s/it]\rFetching 4 files: 100%|██████████| 4/4 [01:26\u003c00:00, 21.72s/it]\n"}
+,{"stream_name":"stderr","time":222.463631969,"data":"\rLoading weights:   0%|          | 0/219 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/219 [00:01\u003c05:13,  1.44s/it]\rLoading weights:   3%|▎         | 7/219 [00:04\u003c01:56,  1.82it/s]\rLoading weights:   7%|▋         | 16/219 [00:05\u003c00:56,  3.62it/s]\rLoading weights:  11%|█▏        | 25/219 [00:05\u003c00:29,  6.56it/s]\rLoading weights:  16%|█▌        | 34/219 [00:05\u003c00:17, 10.49it/s]\rLoading weights:  20%|█▉        | 43/219 [00:05\u003c00:11, 15.34it/s]\rLoading weights:  24%|██▎       | 52/219 [00:05\u003c00:07, 21.22it/s]\rLoading weights:  27%|██▋       | 59/219 [00:05\u003c00:06, 25.84it/s]\rLoading weights:  30%|███       | 66/219 [00:06\u003c00:04, 30.62it/s]\rLoading weights:  33%|███▎      | 72/219 [00:06\u003c00:04, 34.45it/s]\rLoading weights:  36%|███▌      | 79/219 [00:06\u003c00:03, 37.05it/s]\rLoading weights:  41%|████      | 89/219 [00:06\u003c00:02, 47.41it/s]\rLoading weights:  44%|████▍     | 96/219 [00:07\u003c00:06, 20.06it/s]\rLoading weights:  46%|████▌     | 101/219 [00:09\u003c00:17,  6.91it/s]\rLoading weights:  48%|████▊     | 106/219 [00:12\u003c00:25,  4.51it/s]\rLoading weights:  53%|█████▎    | 115/219 [00:14\u003c00:23,  4.47it/s]\rLoading weights:  53%|█████▎    | 117/219 [00:14\u003c00:22,  4.61it/s]\rLoading weights:  57%|█████▋    | 124/219 [00:16\u003c00:24,  3.86it/s]\rLoading weights:  61%|██████    | 133/219 [00:18\u003c00:21,  3.99it/s]\rLoading weights:  61%|██████    | 134/219 [00:19\u003c00:20,  4.07it/s]\rLoading weights:  65%|██████▍   | 142/219 [00:21\u003c00:20,  3.82it/s]\rLoading weights:  69%|██████▉   | 151/219 [00:22\u003c00:13,  4.87it/s]\rLoading weights:  73%|███████▎  | 160/219 [00:23\u003c00:09,  6.40it/s]\rLoading weights:  78%|███████▊  | 170/219 [00:24\u003c00:07,  6.30it/s]\rLoading weights:  81%|████████▏ | 178/219 [00:26\u003c00:07,  5.56it/s]\rLoading weights:  82%|████████▏ | 179/219 [00:26\u003c00:07,  5.51it/s]\rLoading weights:  85%|████████▌ | 187/219 [00:29\u003c00:07,  4.41it/s]\rLoading weights:  89%|████████▉ | 196/219 [00:31\u003c00:05,  4.19it/s]\rLoading weights:  94%|█████████▎| 205/219 [00:34\u003c00:03,  3.95it/s]\rLoading weights:  98%|█████████▊| 214/219 [00:36\u003c00:01,  4.14it/s]\rLoading weights: 100%|██████████| 219/219 [00:37\u003c00:00,  3.89it/s]\rLoading weights: 100%|██████████| 219/219 [00:37\u003c00:00,  5.82it/s]\n"}
+,{"stream_name":"stdout","time":242.438480656,"data":"[  240.7s]   embeddings for 1 shots; text encoder freed\n"}
+,{"stream_name":"stdout","time":242.463556941,"data":"[  240.8s] [vid_s07] video variant=A ...\n"}
+,{"stream_name":"stdout","time":252.801262793,"data":"[  251.1s] LTX phase 2: transformer + vae (LTXConditionPipeline) ...\n"}
+,{"stream_name":"stderr","time":252.907837851,"data":"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.\n"}
+,{"stream_name":"stderr","time":252.907914663,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":295.333713888,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:42\u003c00:42, 42.18s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:42\u003c00:00, 21.09s/it]\n"}
+,{"stream_name":"stderr","time":298.603824802,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.93s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.40s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.48s/it]\n"}
+,{"stream_name":"stderr","time":298.644217661,"data":"/usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\n"}
+,{"stream_name":"stderr","time":298.644243428,"data":"  deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\n"}
+,{"stream_name":"stderr","time":311.650680738,"data":"\rFetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rFetching 4 files:  75%|███████▌  | 3/4 [00:00\u003c00:00, 22.04it/s]\rFetching 4 files: 100%|██████████| 4/4 [00:12\u003c00:00,  3.18s/it]\n"}
+,{"stream_name":"stderr","time":313.989320755,"data":"\rLoading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading pipeline components...:  33%|███▎      | 1/3 [00:01\u003c00:03,  1.76s/it]\rLoading pipeline components...:  67%|██████▋   | 2/3 [00:02\u003c00:01,  1.06s/it]\rLoading pipeline components...: 100%|██████████| 3/3 [00:02\u003c00:00,  1.28it/s]\n"}
+,{"stream_name":"stdout","time":314.248507536,"data":"[  312.5s] LTX ready (13B nf4, compute=torch.float16) vram=2.0GB\n"}
+,{"stream_name":"stdout","time":314.650296641,"data":"[  312.9s] [vid_s07] ERROR `mu` must be passed when `use_dynamic_shifting` is set to be `True`\n"}
+,{"stream_name":"stderr","time":314.656583465,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":314.658072102,"data":"  File \"/kaggle/src/script.py\", line 139, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":314.658084501,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":314.658088488,"data":"                                                       ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":314.658091839,"data":"  File \"/kaggle/src/script.py\", line 114, in gen_video\n"}
+,{"stream_name":"stderr","time":314.658095004,"data":"    vid = p(conditions=[LTXVideoCondition(image=img, frame_index=0)],\n"}
+,{"stream_name":"stderr","time":314.658098326,"data":"          ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":314.658101401,"data":"            prompt_embeds=pe.to(DEV, dt), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV, dt), negative_prompt_attention_mask=nm.to(DEV),\n"}
+,{"stream_name":"stderr","time":314.658104596,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":314.658107938,"data":"            width=LTX_W, height=LTX_H, num_frames=frames, timesteps=ts, guidance_scale=CUR.get(\"cfg\", 1.0), guidance_rescale=0.7, image_cond_noise_scale=0.0,\n"}
+,{"stream_name":"stderr","time":314.658111238,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":314.658114624,"data":"            decode_timestep=0.05, decode_noise_scale=0.025, generator=g).frames[0]\n"}
+,{"stream_name":"stderr","time":314.658117733,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":314.658120746,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n"}
+,{"stream_name":"stderr","time":314.65812407,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":314.658127034,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_condition.py\", line 1122, in __call__\n"}
+,{"stream_name":"stderr","time":314.658130312,"data":"    timesteps, num_inference_steps = retrieve_timesteps(\n"}
+,{"stream_name":"stderr","time":314.65813336,"data":"                                     ~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":314.65813643,"data":"        self.scheduler,\n"}
+,{"stream_name":"stderr","time":314.658139317,"data":"        ^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":314.658142434,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":314.658145492,"data":"        timesteps,\n"}
+,{"stream_name":"stderr","time":314.658148458,"data":"        ^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":314.658151432,"data":"    )\n"}
+,{"stream_name":"stderr","time":314.658154384,"data":"    ^\n"}
+,{"stream_name":"stderr","time":314.658157382,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_condition.py\", line 192, in retrieve_timesteps\n"}
+,{"stream_name":"stderr","time":314.65816058,"data":"    scheduler.set_timesteps(timesteps=timesteps, device=device, **kwargs)\n"}
+,{"stream_name":"stderr","time":314.658163658,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":314.658248006,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/schedulers/scheduling_flow_match_euler_discrete.py\", line 310, in set_timesteps\n"}
+,{"stream_name":"stderr","time":314.658286149,"data":"    raise ValueError(\"`mu` must be passed when `use_dynamic_shifting` is set to be `True`\")\n"}
+,{"stream_name":"stderr","time":314.658291374,"data":"ValueError: `mu` must be passed when `use_dynamic_shifting` is set to be `True`\n"}
+,{"stream_name":"stdout","time":315.013805505,"data":"[  313.3s] [vid_s07] video variant=C ...\n"}
+,{"stream_name":"stdout","time":315.013837537,"data":"[  313.3s] LTX phase 2: transformer + vae (LTXConditionPipeline) ...\n"}
+,{"stream_name":"stderr","time":315.18549693,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files: 100%|██████████| 2/2 [00:00\u003c00:00, 1012.02it/s]\n"}
+,{"stream_name":"stderr","time":318.188370715,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.74s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.29s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.36s/it]\n"}
+,{"stream_name":"stderr","time":318.830698064,"data":"\rLoading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading pipeline components...:  67%|██████▋   | 2/3 [00:00\u003c00:00,  4.28it/s]\rLoading pipeline components...: 100%|██████████| 3/3 [00:00\u003c00:00,  6.41it/s]\n"}
+,{"stream_name":"stdout","time":319.100989269,"data":"[  317.4s] LTX ready (13B nf4, compute=torch.bfloat16) vram=2.0GB\n"}
+,{"stream_name":"stdout","time":319.149848045,"data":"[  317.4s] [vid_s07] ERROR `mu` must be passed when `use_dynamic_shifting` is set to be `True`\n"}
+,{"stream_name":"stderr","time":319.150551146,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":319.151815531,"data":"  File \"/kaggle/src/script.py\", line 139, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":319.151834684,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":319.151839446,"data":"                                                       ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":319.15184277,"data":"  File \"/kaggle/src/script.py\", line 114, in gen_video\n"}
+,{"stream_name":"stderr","time":319.151846009,"data":"    vid = p(conditions=[LTXVideoCondition(image=img, frame_index=0)],\n"}
+,{"stream_name":"stderr","time":319.151849136,"data":"          ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":319.151865159,"data":"            prompt_embeds=pe.to(DEV, dt), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV, dt), negative_prompt_attention_mask=nm.to(DEV),\n"}
+,{"stream_name":"stderr","time":319.151871405,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":319.151874933,"data":"            width=LTX_W, height=LTX_H, num_frames=frames, timesteps=ts, guidance_scale=CUR.get(\"cfg\", 1.0), guidance_rescale=0.7, image_cond_noise_scale=0.0,\n"}
+,{"stream_name":"stderr","time":319.151879336,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":319.151883034,"data":"            decode_timestep=0.05, decode_noise_scale=0.025, generator=g).frames[0]\n"}
+,{"stream_name":"stderr","time":319.151886379,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":319.151917147,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n"}
+,{"stream_name":"stderr","time":319.151921488,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":319.151924899,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_condition.py\", line 1122, in __call__\n"}
+,{"stream_name":"stderr","time":319.151928711,"data":"    timesteps, num_inference_steps = retrieve_timesteps(\n"}
+,{"stream_name":"stderr","time":319.151931869,"data":"                                     ~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":319.151934954,"data":"        self.scheduler,\n"}
+,{"stream_name":"stderr","time":319.151938216,"data":"        ^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":319.151941429,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":319.151944728,"data":"        timesteps,\n"}
+,{"stream_name":"stderr","time":319.151947944,"data":"        ^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":319.151951242,"data":"    )\n"}
+,{"stream_name":"stderr","time":319.151954906,"data":"    ^\n"}
+,{"stream_name":"stderr","time":319.151958111,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_condition.py\", line 192, in retrieve_timesteps\n"}
+,{"stream_name":"stderr","time":319.151961599,"data":"    scheduler.set_timesteps(timesteps=timesteps, device=device, **kwargs)\n"}
+,{"stream_name":"stderr","time":319.151964914,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":319.151969221,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/schedulers/scheduling_flow_match_euler_discrete.py\", line 310, in set_timesteps\n"}
+,{"stream_name":"stderr","time":319.151973124,"data":"    raise ValueError(\"`mu` must be passed when `use_dynamic_shifting` is set to be `True`\")\n"}
+,{"stream_name":"stderr","time":319.151977059,"data":"ValueError: `mu` must be passed when `use_dynamic_shifting` is set to be `True`\n"}
+,{"stream_name":"stdout","time":319.16110067,"data":"[  317.5s] done. ok=0 failed=2\n"}
+,{"stream_name":"stderr","time":330.595924297,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":330.595958643,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":331.095033211,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":331.095060203,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":332.036027699,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":333.678938045,"data":"[NbConvertApp] Writing 332707 bytes to __results__.html\n"}
+]

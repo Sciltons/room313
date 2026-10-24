@@ -13,7 +13,7 @@
   },
   "vid_s07": {
     "state": "error",
-    "error": "LTXImageToVideoPipeline.__call__() got an unexpected keyword argument 'sigmas'",
+    "error": "`mu` must be passed when `use_dynamic_shifting` is set to be `True`",
     "worker": "kaggle"
   },
   "char_cazilia": {

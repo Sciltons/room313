@@ -1,0 +1,6 @@
+{
+ "vid_s07": {
+  "state": "error",
+  "error": "`mu` must be passed when `use_dynamic_shifting` is set to be `True`"
+ }
+}
