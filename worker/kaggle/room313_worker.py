@@ -89,8 +89,10 @@ def ltx():
     if _ltx is None:
         from diffusers import LTXImageToVideoPipeline
         log("LTX phase 2: transformer + vae ...")
-        _ltx = LTXImageToVideoPipeline.from_pretrained(LTX_ID, text_encoder=None, tokenizer=None, torch_dtype=torch.float16, low_cpu_mem_usage=True).to(DEV)
-        _ltx.vae.enable_tiling(); log("LTX ready")
+        from diffusers import LTXVideoTransformer3DModel, BitsAndBytesConfig as DBnB
+        tr = LTXVideoTransformer3DModel.from_pretrained(LTX_ID, subfolder="transformer", quantization_config=DBnB(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=torch.float16), torch_dtype=torch.float16, low_cpu_mem_usage=True)
+        _ltx = LTXImageToVideoPipeline.from_pretrained(LTX_ID, transformer=tr, text_encoder=None, tokenizer=None, torch_dtype=torch.float16, low_cpu_mem_usage=True)
+        _ltx.vae.to(DEV); _ltx.vae.enable_tiling(); log(f"LTX ready (13B nf4) vram={torch.cuda.memory_allocated()/1e9:.1f}GB")
     return _ltx
 
 def gen_video(j, out):
