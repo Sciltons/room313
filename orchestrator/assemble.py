@@ -100,8 +100,11 @@ def main():
 
     # ---------- 1) per-shot clips, exact duration, framed into 9:16 with captions
     clips=[]
+    import os
     for s in sb["shots"]:
         t0,t1=s["t"]; d=round(t1-t0,3); sid=s.get("reuse",s["id"]); src=gen/"animated_shots"/f"{sid}.mp4"; kf=gen/"keyframes"/f"{sid}.png"; out=work/f"{s['id']}.mp4"
+        if os.environ.get("REUSE_CLIPS") and out.exists() and abs(probe_dur(out)-d)<0.1:
+            clips.append(out); report["shots"][s["id"]]={"mode":"cached","target":d,"got":round(probe_dur(out),3)}; print(f"{s['id']} cached"); continue
         if src.exists():
             sd=probe_dur(src); mode="video"
             # fit: slow down up to 1.6x, otherwise loop; trim to d
@@ -137,11 +140,11 @@ def main():
         ins=[]; fc=[]; cur="0:v"
         for i,c in enumerate(caps):
             png=work/f"cap_{i:02d}.png"; caption_png(c["text"], c.get("style",""), fr, png, tag=False)
-            ins.extend(["-loop","1","-i",str(png)]); a,b=c["t"]
+            ins.extend(["-loop","1","-framerate","1","-i",str(png)]); a,b=c["t"]
             fc.append(f"[{i+1}:v]format=rgba,fade=t=in:st={a:.2f}:d=0.12:alpha=1,fade=t=out:st={max(a,b-0.12):.2f}:d=0.12:alpha=1[c{i}];[{cur}][c{i}]overlay=0:0:enable='between(t,{a:.2f},{b:.2f})'[v{i}]"); cur=f"v{i}"
         fc.append(f"[{cur}]format=yuv420p[vout]")
         vcap=work/"video_cap.mp4"
-        run(["ffmpeg","-y","-loglevel","error","-i",str(video),*ins,"-filter_complex",";".join(fc),"-map","[vout]","-t",str(total),"-r",str(FPS),"-c:v","libx264","-preset","veryfast","-crf","18",str(vcap)])
+        run(["ffmpeg","-y","-loglevel","error","-threads","0","-i",str(video),*ins,"-filter_complex",";".join(fc),"-map","[vout]","-t",str(total),"-r",str(FPS),"-c:v","libx264","-preset","ultrafast","-crf","20",str(vcap)])
         video=vcap; print(f"caption track: {len(caps)} phrases")
 
     # ---------- 3) audio: narration (untouched) + music beds + sfx, ducked under the voice
