@@ -27,11 +27,11 @@ def probe(rep):
     # try the Apps route: create a tiny GPU app and run it
     root = stash_root(); sp = f"{root}/room313"
     sh(["camber","stash","cp",str(ROOT/"worker"/"gpu"/"probe.sh"),f"{sp}/probe.sh"])
-    jc = [{"type":"Select","label":"System Size","name":"system_size","hidden":True,"description":"","options":[{"label":"GPU","value":"gpu","map_value":{"node_size":"XSMALL","num_nodes":1,"with_gpu":True}}],"default_value":"gpu"}]
-    spec = [{"type":"Stash File","label":"Work dir","name":"workdir","description":"stash folder containing probe.sh","required":True,"default_value":"","hidden":False,"disabled":False,"options":None,"placeholder":"","restrictions":None}]
+    jc = [{"type":"Select","label":"System Size","name":"system_size","hidden":True,"description":"","options":[{"label":"GPU","value":"gpu","mapValue":{"nodeSize":"XSMALL","numNodes":1,"withGpu":True},"map_value":{"node_size":"XSMALL","num_nodes":1,"with_gpu":True}}],"defaultValue":"gpu","default_value":"gpu"}]
+    spec = [{"type":"Stash File","label":"Work dir","name":"workdir","description":"stash folder containing probe.sh","required":True,"defaultValue":"","default_value":"","hidden":False,"disabled":False,"options":None,"placeholder":"","restrictions":None}]
     app = {"name":"room313-probe","title":"Room313 probe","description":"GPU/internet probe","content":"probe","version":"1.0.0",
-           "engine_type":"base","engineType":"base","command":"cd ${workdir} && bash probe.sh > probe_out.txt 2>&1; pwd >> probe_out.txt",
-           "spec":spec,"job_config":jc,"jobConfig":jc,"image_url":None,"imageUrl":None,"public":False}
+           "engineType":"base","command":"cd ${workdir} && bash probe.sh > probe_out.txt 2>&1; pwd >> probe_out.txt",
+           "spec":spec,"jobConfig":jc,"imageUrl":None,"public":False}
     (QR/"app.json").write_text(json.dumps(app)); sh(["camber","app","create","--file",str(QR/"app.json"),"--output","json"])
     sh(["camber","app","describe","room313-probe"])
     sh(["camber","app","run","room313-probe","--input",f"workdir={sp}/","--with-gpu","--node-size","xsmall","--output","json"])
