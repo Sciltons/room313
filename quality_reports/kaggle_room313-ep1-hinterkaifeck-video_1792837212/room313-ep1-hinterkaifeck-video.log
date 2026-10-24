@@ -1,0 +1,86 @@
+[{"stream_name":"stderr","time":0.702677715,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stdout","time":1.678552807,"data":"[    1.0s] stage=video jobs=1 pending=1 gpu=Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":1.678579362,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stderr","time":25.005352096,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":25.00537703,"data":"grpcio-tools 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":25.005382765,"data":"gradio 6.26.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":25.005387049,"data":"moviepy 1.0.3 requires decorator\u003c5.0,\u003e=4.0.2, but you have decorator 5.3.1 which is incompatible.\n"}
+,{"stream_name":"stderr","time":25.005391103,"data":"google-ai-generativelanguage 0.6.15 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,\u003c6.0.0dev,\u003e=3.20.2, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":25.005402116,"data":"ydf 0.15.0 requires protobuf\u003c7.0.0,\u003e=5.29.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":25.005405075,"data":"grpcio-status 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":49.959549098,"data":"[   49.3s] LTX phase 1: text encoder ...\n"}
+,{"stream_name":"stderr","time":50.640296094,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":138.356678372,"data":"\rFetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rFetching 4 files:  25%|██▌       | 1/4 [01:27\u003c04:21, 87.12s/it]\rFetching 4 files: 100%|██████████| 4/4 [01:27\u003c00:00, 21.78s/it]\n"}
+,{"stream_name":"stderr","time":175.718335109,"data":"\rLoading weights:   0%|          | 0/219 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/219 [00:01\u003c04:30,  1.24s/it]\rLoading weights:   3%|▎         | 7/219 [00:03\u003c01:41,  2.08it/s]\rLoading weights:   7%|▋         | 16/219 [00:05\u003c00:55,  3.69it/s]\rLoading weights:  11%|█▏        | 25/219 [00:05\u003c00:30,  6.45it/s]\rLoading weights:  19%|█▊        | 41/219 [00:05\u003c00:13, 13.61it/s]\rLoading weights:  23%|██▎       | 50/219 [00:05\u003c00:09, 18.32it/s]\rLoading weights:  27%|██▋       | 59/219 [00:05\u003c00:06, 23.78it/s]\rLoading weights:  30%|███       | 66/219 [00:05\u003c00:05, 28.48it/s]\rLoading weights:  33%|███▎      | 73/219 [00:05\u003c00:04, 32.37it/s]\rLoading weights:  37%|███▋      | 80/219 [00:06\u003c00:03, 36.64it/s]\rLoading weights:  42%|████▏     | 92/219 [00:06\u003c00:05, 22.02it/s]\rLoading weights:  44%|████▍     | 97/219 [00:09\u003c00:16,  7.27it/s]\rLoading weights:  48%|████▊     | 106/219 [00:11\u003c00:20,  5.59it/s]\rLoading weights:  53%|█████▎    | 115/219 [00:14\u003c00:21,  4.92it/s]\rLoading weights:  53%|█████▎    | 117/219 [00:14\u003c00:19,  5.16it/s]\rLoading weights:  57%|█████▋    | 124/219 [00:16\u003c00:22,  4.26it/s]\rLoading weights:  58%|█████▊    | 126/219 [00:16\u003c00:19,  4.67it/s]\rLoading weights:  61%|██████    | 133/219 [00:18\u003c00:21,  3.96it/s]\rLoading weights:  62%|██████▏   | 135/219 [00:19\u003c00:19,  4.40it/s]\rLoading weights:  65%|██████▍   | 142/219 [00:21\u003c00:19,  3.86it/s]\rLoading weights:  69%|██████▉   | 151/219 [00:22\u003c00:14,  4.81it/s]\rLoading weights:  73%|███████▎  | 160/219 [00:23\u003c00:10,  5.69it/s]\rLoading weights:  78%|███████▊  | 170/219 [00:24\u003c00:07,  6.69it/s]\rLoading weights:  81%|████████▏ | 178/219 [00:26\u003c00:06,  6.15it/s]\rLoading weights:  82%|████████▏ | 179/219 [00:26\u003c00:07,  5.21it/s]\rLoading weights:  85%|████████▌ | 187/219 [00:28\u003c00:06,  4.80it/s]\rLoading weights:  86%|████████▌ | 188/219 [00:29\u003c00:06,  4.59it/s]\rLoading weights:  89%|████████▉ | 196/219 [00:31\u003c00:05,  4.06it/s]\rLoading weights:  90%|████████▉ | 197/219 [00:31\u003c00:05,  4.09it/s]\rLoading weights:  94%|█████████▎| 205/219 [00:33\u003c00:03,  3.95it/s]\rLoading weights:  94%|█████████▍| 206/219 [00:33\u003c00:03,  4.03it/s]\rLoading weights:  98%|█████████▊| 214/219 [00:35\u003c00:01,  4.26it/s]\rLoading weights: 100%|██████████| 219/219 [00:37\u003c00:00,  4.06it/s]\rLoading weights: 100%|██████████| 219/219 [00:37\u003c00:00,  5.90it/s]\n"}
+,{"stream_name":"stdout","time":194.112829538,"data":"[  193.4s]   embeddings for 1 shots; text encoder freed\n"}
+,{"stream_name":"stdout","time":194.135412458,"data":"[  193.5s] [vid_s07] video variant=A ...\n"}
+,{"stream_name":"stdout","time":201.549106777,"data":"[  200.9s] LTX phase 2: transformer + vae ...\n"}
+,{"stream_name":"stderr","time":201.589635948,"data":"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.\n"}
+,{"stream_name":"stderr","time":201.589669193,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":240.787791531,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:23\u003c00:23, 23.27s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:39\u003c00:00, 18.90s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:39\u003c00:00, 19.56s/it]\n"}
+,{"stream_name":"stderr","time":243.789101009,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.76s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.29s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.36s/it]\n"}
+,{"stream_name":"stderr","time":243.827679061,"data":"/usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\n"}
+,{"stream_name":"stderr","time":243.82770326,"data":"  deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\n"}
+,{"stream_name":"stderr","time":254.892914118,"data":"\rFetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rFetching 4 files:  75%|███████▌  | 3/4 [00:00\u003c00:00, 11.11it/s]\rFetching 4 files: 100%|██████████| 4/4 [00:10\u003c00:00,  2.74s/it]\n"}
+,{"stream_name":"stderr","time":256.463014205,"data":"\rLoading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading pipeline components...:  33%|███▎      | 1/3 [00:01\u003c00:03,  1.56s/it]\rLoading pipeline components...: 100%|██████████| 3/3 [00:01\u003c00:00,  1.92it/s]\n"}
+,{"stream_name":"stdout","time":256.716678452,"data":"[  256.0s] LTX ready (13B nf4, compute=torch.float16) vram=2.0GB\n"}
+,{"stream_name":"stdout","time":257.704835166,"data":"[  257.0s] [vid_s07] ERROR Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values\n"}
+,{"stream_name":"stderr","time":257.70782699,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":257.708774811,"data":"  File \"/kaggle/src/script.py\", line 138, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":257.708788534,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":257.708793244,"data":"                                                       ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":257.708796743,"data":"  File \"/kaggle/src/script.py\", line 117, in gen_video\n"}
+,{"stream_name":"stderr","time":257.708801833,"data":"    vid = p(**kw).frames[0]\n"}
+,{"stream_name":"stderr","time":257.708808453,"data":"          ~^^^^^^\n"}
+,{"stream_name":"stderr","time":257.708810822,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n"}
+,{"stream_name":"stderr","time":257.708813224,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":257.708815515,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_image2video.py\", line 810, in __call__\n"}
+,{"stream_name":"stderr","time":257.708817971,"data":"    timesteps, num_inference_steps = retrieve_timesteps(\n"}
+,{"stream_name":"stderr","time":257.708820171,"data":"                                     ~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":257.708822414,"data":"        self.scheduler,\n"}
+,{"stream_name":"stderr","time":257.708824629,"data":"        ^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":257.708826798,"data":"    ...\u003c4 lines\u003e...\n"}
+,{"stream_name":"stderr","time":257.708829213,"data":"        mu=mu,\n"}
+,{"stream_name":"stderr","time":257.708831359,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":257.708833555,"data":"    )\n"}
+,{"stream_name":"stderr","time":257.708835697,"data":"    ^\n"}
+,{"stream_name":"stderr","time":257.708837956,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_image2video.py\", line 121, in retrieve_timesteps\n"}
+,{"stream_name":"stderr","time":257.708840401,"data":"    raise ValueError(\"Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values\")\n"}
+,{"stream_name":"stderr","time":257.708842802,"data":"ValueError: Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values\n"}
+,{"stream_name":"stdout","time":258.026501728,"data":"[  257.4s] [vid_s07] video variant=B ...\n"}
+,{"stream_name":"stdout","time":258.026534423,"data":"[  257.4s] LTX phase 2: transformer + vae ...\n"}
+,{"stream_name":"stderr","time":258.086808809,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files: 100%|██████████| 2/2 [00:00\u003c00:00, 1075.32it/s]\n"}
+,{"stream_name":"stderr","time":260.919151678,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.65s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.23s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.29s/it]\n"}
+,{"stream_name":"stderr","time":261.501671746,"data":"\rLoading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading pipeline components...:  33%|███▎      | 1/3 [00:00\u003c00:00,  2.06it/s]\rLoading pipeline components...: 100%|██████████| 3/3 [00:00\u003c00:00,  6.16it/s]\n"}
+,{"stream_name":"stdout","time":261.767472672,"data":"[  261.1s] LTX ready (13B nf4, compute=torch.bfloat16) vram=2.0GB\n"}
+,{"stream_name":"stdout","time":262.287415172,"data":"[  261.6s] [vid_s07] ERROR Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values\n"}
+,{"stream_name":"stderr","time":262.287913799,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":262.288738292,"data":"  File \"/kaggle/src/script.py\", line 138, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":262.288754635,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":262.288759389,"data":"                                                       ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":262.288767383,"data":"  File \"/kaggle/src/script.py\", line 117, in gen_video\n"}
+,{"stream_name":"stderr","time":262.288771292,"data":"    vid = p(**kw).frames[0]\n"}
+,{"stream_name":"stderr","time":262.288776094,"data":"          ~^^^^^^\n"}
+,{"stream_name":"stderr","time":262.288783351,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n"}
+,{"stream_name":"stderr","time":262.28878636,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":262.288788585,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_image2video.py\", line 810, in __call__\n"}
+,{"stream_name":"stderr","time":262.288791228,"data":"    timesteps, num_inference_steps = retrieve_timesteps(\n"}
+,{"stream_name":"stderr","time":262.288794078,"data":"                                     ~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":262.28880978,"data":"        self.scheduler,\n"}
+,{"stream_name":"stderr","time":262.288813673,"data":"        ^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":262.288817008,"data":"    ...\u003c4 lines\u003e...\n"}
+,{"stream_name":"stderr","time":262.288820964,"data":"        mu=mu,\n"}
+,{"stream_name":"stderr","time":262.288824626,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":262.288827819,"data":"    )\n"}
+,{"stream_name":"stderr","time":262.288830949,"data":"    ^\n"}
+,{"stream_name":"stderr","time":262.288834168,"data":"  File \"/usr/local/lib/python3.13/dist-packages/diffusers/pipelines/ltx/pipeline_ltx_image2video.py\", line 121, in retrieve_timesteps\n"}
+,{"stream_name":"stderr","time":262.288837966,"data":"    raise ValueError(\"Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values\")\n"}
+,{"stream_name":"stderr","time":262.288841487,"data":"ValueError: Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values\n"}
+,{"stream_name":"stdout","time":262.298105233,"data":"[  261.6s] done. ok=0 failed=2\n"}
+,{"stream_name":"stderr","time":268.293501379,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":268.293528483,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":268.53363809,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":268.533665222,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":269.294175712,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":270.178478653,"data":"[NbConvertApp] Writing 332094 bytes to __results__.html\n"}
+]
