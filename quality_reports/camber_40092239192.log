@@ -1,0 +1,203 @@
+$ camber version
+Camber 1.0.42 - 435f260
+
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber --help
+A command line interface for interacting with the Camber platform.
+Documentation: https://docs.cambercloud.com
+
+Usage:
+  camber [command]
+
+Available Commands:
+  agent       Camber agent manager
+  app         Camber application manager
+  chat        Chat with a Camber AI agent
+  engine      Camber engine manager
+  help        Help about any command
+  job         Camber job manager
+  login       Login to Camber platform via WebUI
+  me          Get user profile information
+  pod         Manage agent pod worker runs
+  stash       List, Remove, Copy files in Stash
+  tag         Camber tag manager
+  team        Manage teams
+  update      Update Camber CLI to latest version
+  version     Display the version of Camber CLI
+
+Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+  -h, --help             help for camber
+
+Use "camber [command] --help" for more information about a command.
+
+$ camber job --help
+Create, fetch status, and fetch logs for jobs.
+
+Usage:
+  camber job [command]
+
+Available Commands:
+  create      Create job resources.
+  get         Get job status.
+  list        List jobs.
+  logs        View job logs
+
+Flags:
+  -h, --help   help for job
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber job [command] --help" for more information about a command.
+
+$ camber job create --help
+Create job resources.
+
+Usage:
+  camber job create [flags]
+
+Flags:
+      --cmd string      command for the job (required)
+      --engine string   Type for the job (required): base, mpi, mesa, athena, nextflow, gromacs, lammps, openfoam (default "base")
+      --gpu             Whether to use GPU (default: false)
+  -h, --help            help for create
+      --num-nodes int   Number of nodes to use (default: 1) (default 1)
+      --path string     Input stash path for the job (e.g., stash://project/) (required)
+      --size string     Node size for the job (required): xxsmall, xsmall, small, medium, large (default "xxsmall")
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber stash --help
+List, Remove, Copy files in private Stash, team Stash
+
+Usage:
+  camber stash [command]
+
+Available Commands:
+  cp          Copy Stash
+  ls          List Stash
+  mkdir       Create directory in Stash
+  presign-url Get a presigned download URL for a Stash file
+  rm          Remove Stash
+  test        Test a path in Stash
+
+Flags:
+  -h, --help   help for stash
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber stash [command] --help" for more information about a command.
+
+$ camber engine --help
+List available engines
+
+Usage:
+  camber engine [command]
+
+Available Commands:
+  list        List all engines
+
+Flags:
+  -h, --help   help for engine
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber engine [command] --help" for more information about a command.
+
+$ camber engine list
+Engine              Description
+------              -----------
+base                Base computing environment, include sklearn, pytorch, pandas, matplotlib, pytorch, MPI and more
+mpi                 Message passing interface, popular framework for distributed physics simulations, using OpenMPI.
+mesa                Popular 1-D astrophysical stellar structure code.
+athena              Runs AthenaK, the GPU-enabled astrophysical radiation magnetohydrodynamics code.
+nextflow            Runs containerized workflow flows for genomics data analysis.
+gromacs             Widely used molecular dynamics simulation package, especially relevant for biological setting.
+lammps              Molecular dynamical simulator for condensed matter physics.
+openfoam            General purpose open-source computational fluid dynamics (CFD) simulation package.
+
+$ camber node --help
+unknown command "node" for "camber"
+
+Did you mean this?
+	pod
+
+
+Error: unknown command "node" for "camber"
+
+Did you mean this?
+	pod
+
+Run 'camber --help' for usage.
+
+$ camber stash cp /home/runner/work/room313/room313/worker/gpu/probe.sh stash://room313/probe.sh
+Perform copying /home/runner/work/room313/room313/worker/gpu/probe.sh to stash://room313/probe.sh
+API error: code=13, message=Failed to validate stash copying: stash copying format not valid
+
+Error: API error: code=13, message=Failed to validate stash copying: stash copying format not valid
+Usage:
+  camber stash cp [flags]
+
+Flags:
+      --exclude stringArray   exclude local paths matching a pattern when recursively uploading a folder to Stash; can be repeated
+  -h, --help                  help for cp
+  -r, --recursive             copy directory recursively
+      --use-gitignore         apply .gitignore patterns when recursively uploading a local folder to Stash
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+$ camber stash upload /home/runner/work/room313/room313/worker/gpu/probe.sh room313/
+List, Remove, Copy files in private Stash, team Stash
+
+Usage:
+  camber stash [command]
+
+Available Commands:
+  cp          Copy Stash
+  ls          List Stash
+  mkdir       Create directory in Stash
+  presign-url Get a presigned download URL for a Stash file
+  rm          Remove Stash
+  test        Test a path in Stash
+
+Flags:
+  -h, --help   help for stash
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber stash [command] --help" for more information about a command.
+
+$ camber job create --engine mpi --size SMALL --cmd bash probe.sh --path room313 --gpu
+invalid node size for GPU: small. Must be one of: [xsmall medium]
+
+Error: invalid node size for GPU: small. Must be one of: [xsmall medium]
+Usage:
+  camber job create [flags]
+
+Flags:
+      --cmd string      command for the job (required)
+      --engine string   Type for the job (required): base, mpi, mesa, athena, nextflow, gromacs, lammps, openfoam (default "base")
+      --gpu             Whether to use GPU (default: false)
+  -h, --help            help for create
+      --num-nodes int   Number of nodes to use (default: 1) (default 1)
+      --path string     Input stash path for the job (e.g., stash://project/) (required)
+      --size string     Node size for the job (required): xxsmall, xsmall, small, medium, large (default "xxsmall")
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+probe report -> /home/runner/work/room313/room313/quality_reports/camber_probe_1792843416
