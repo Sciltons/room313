@@ -96,7 +96,77 @@
         "hatch_creak",
         "drop_pulse"
       ],
-      "music": "drop"
+      "music": "drop",
+      "fx": [
+        {
+          "type": "flicker",
+          "at": [
+            375,
+            215
+          ],
+          "radius": 260,
+          "color": [
+            255,
+            60,
+            30
+          ],
+          "strength": 1.2
+        },
+        {
+          "type": "glint",
+          "boxes": [
+            [
+              466,
+              150,
+              26,
+              20
+            ],
+            [
+              514,
+              150,
+              26,
+              20
+            ]
+          ],
+          "strength": 1.0
+        },
+        {
+          "type": "blink",
+          "boxes": [
+            [
+              462,
+              146,
+              34,
+              28
+            ],
+            [
+              510,
+              146,
+              34,
+              28
+            ]
+          ],
+          "times": [
+            1.1,
+            2.9
+          ],
+          "dur": 0.14
+        },
+        {
+          "type": "pulse",
+          "color": [
+            255,
+            0,
+            0
+          ],
+          "hz": 1.4,
+          "strength": 0.6
+        },
+        {
+          "type": "pushin",
+          "zoom": 0.08
+        }
+      ]
     },
     {
       "id": "s04",

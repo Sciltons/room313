@@ -24,6 +24,61 @@ CAP_HTML = """<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>
 #cap{top:%dpx;color:%s;font-size:%dpx;line-height:1.4;padding:0 30px;text-shadow:0 3px 0 #000,0 0 22px rgba(0,0,0,.95)}
 #stamp{top:%dpx;color:#b5121f;font-size:104px} #stamp span{display:inline-block;padding:0 40px 10px;border:8px solid #b5121f;border-radius:8px;transform:rotate(-6deg)}
 </style></head><body><div id="tag" class="t"><span>غُرفة ٣١٣</span></div><div id="cap" class="t">%s</div>%s</body></html>"""
+# ---------- procedural FX (ffmpeg blend with time expressions). Storyboard: "fx": [{"type": ..., ...}], boxes in keyframe px (1024x576)
+def _radial(w, h, cx, cy, r, color, feather=1.0):
+    from PIL import Image
+    import numpy as np
+    yy, xx = np.mgrid[0:h, 0:w]; d = np.sqrt((xx-cx)**2 + (yy-cy)**2) / max(r, 1)
+    a = np.clip(1 - d, 0, 1) ** (1.6 * feather); img = np.zeros((h, w, 3), np.uint8)
+    for i, c in enumerate(color): img[..., i] = (a * c).astype(np.uint8)
+    return Image.fromarray(img)
+def _box(w, h, x0, y0, bw, bh, color=(255,255,255)):
+    from PIL import Image, ImageDraw
+    im = Image.new("RGB", (w, h), (0,0,0)); ImageDraw.Draw(im).rectangle([x0, y0, x0+bw, y0+bh], fill=color); return im
+def fx_chain(shot, fr, d, work):
+    """returns (extra ffmpeg inputs, filter snippet turning [sh] into [shfx])"""
+    inputs, chain, cur, n = [], [], "sh", [1]   # input index 0 = clip, 1 = caption, then fx images
+    sx, sy = fr["w"]/1024, fr["h"]/576; W, H = fr["w"], fr["h"]
+    def add_img(im, tag):
+        pth = work/f"{shot['id']}_fx_{tag}.png"; im.save(pth); inputs.extend(["-loop","1","-t",str(d),"-i",str(pth)]); n[0] += 1; return n[0]
+    for k, fx in enumerate(shot.get("fx", [])):
+        t = fx["type"]; st = fx.get("strength", 1.0)
+        if t == "flicker":        # warm/red light flicker around a point: A + glow*k(T)
+            cx, cy, r = fx["at"][0]*sx, fx["at"][1]*sy, fx.get("radius", 220)*sx; col = fx.get("color", [255,140,40])
+            i = add_img(_radial(W, H, cx, cy, r, col), f"flicker{k}")
+            expr = f"min(255,A+B*{0.35*st:.3f}*(0.5+0.5*sin(29*T)*sin(7.3*T+1)+0.3*sin(53*T)))"
+            chain.append(f"[{i}:v]format=rgb24[fx{k}];[{cur}][fx{k}]blend=all_expr='{expr}'[sh{k}]"); cur = f"sh{k}"
+        elif t == "pulse":        # whole-frame color pulse (e.g. red)
+            col = fx.get("color", [255,0,0]); i = add_img(_box(W, H, 0, 0, W, H, tuple(col)), f"pulse{k}"); f = fx.get("hz", 1.2)
+            expr = f"min(255,A+B*{0.25*st:.3f}*(0.5+0.5*sin(2*PI*{f}*T)))"
+            chain.append(f"[{i}:v]format=rgb24[fx{k}];[{cur}][fx{k}]blend=all_expr='{expr}'[sh{k}]"); cur = f"sh{k}"
+        elif t == "blink":        # darken boxes (eyes) briefly at given times
+            im = _box(W, H, 0, 0, 1, 1)
+            from PIL import ImageDraw
+            dr = ImageDraw.Draw(im)
+            for b in fx["boxes"]: dr.rectangle([b[0]*sx, b[1]*sy, (b[0]+b[2])*sx, (b[1]+b[3])*sy], fill=(255,255,255))
+            i = add_img(im, f"blink{k}"); times = fx.get("times", [d*0.45]); dur = fx.get("dur", 0.14)
+            gate = "+".join(f"between(T,{tm:.2f},{tm+dur:.2f})" for tm in times)
+            chain.append(f"[{i}:v]format=rgb24[fx{k}];[{cur}][fx{k}]blend=all_expr='A*(1-B/255*{min(1,st):.2f}*({gate}))'[sh{k}]"); cur = f"sh{k}"
+        elif t == "glint":        # bright spots (eyes) that glow and pulse
+            im = _box(W, H, 0, 0, 1, 1)
+            from PIL import Image
+            import numpy as np
+            arr = np.zeros((H, W, 3), np.float32)
+            for b in fx["boxes"]:
+                g = np.asarray(_radial(W, H, (b[0]+b[2]/2)*sx, (b[1]+b[3]/2)*sy, max(b[2], b[3])*sx*1.2, fx.get("color", [255,200,90]))).astype(np.float32); arr = np.maximum(arr, g)
+            i = add_img(Image.fromarray(arr.astype(np.uint8)), f"glint{k}")
+            chain.append(f"[{i}:v]format=rgb24[fx{k}];[{cur}][fx{k}]blend=all_expr='min(255,A+B*{0.9*st:.2f}*(0.55+0.45*sin(5.1*T)*sin(1.7*T)))'[sh{k}]"); cur = f"sh{k}"
+        elif t == "pushin":       # slow zoom (works on video clips too)
+            z = fx.get("zoom", 0.10)
+            nf = int(d*30)
+            chain.append(f"[{cur}]zoompan=z='1+{z}*on/{nf}':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps=30[sh{k}]"); cur = f"sh{k}"
+        elif t == "shake":
+            amp = fx.get("amp", 6)
+            chain.append(f"[{cur}]scale=iw*1.04:ih*1.04,crop=w={W}:h={H}:x='(iw-ow)/2+{amp}*sin(47*t)*sin(13*t)':y='(ih-oh)/2+{amp}*sin(31*t)'[sh{k}]"); cur = f"sh{k}"
+    chain.append(f"[{cur}]null[shfx]")
+    return inputs, ";".join(chain)
+
 _pw=None
 def caption_png(text, style, fr, out):
     global _pw
@@ -63,11 +118,12 @@ def main():
             raise SystemExit(f"missing shot {s['id']} (no video, no keyframe). Run generation first.")
         style=s.get("caption_style",""); capfile=work/f"{s['id']}_cap.png"; caption_png(s.get("caption",""), style, fr, capfile)
         flash = f",drawbox=x=0:y=0:w=iw:h=ih:color=0xff2a2a@0.5:t=fill:enable='lt(t,0.12)'" if style=="red" else ""
-        vf=(f"[0:v]{vf_fit},scale={fr['w']}:{fr['h']}:force_original_aspect_ratio=increase,crop={fr['w']}:{fr['h']},fps={FPS},format=rgba[sh];"
-            f"color=c=black:s={W}x{H}:r={FPS}:d={d}[bg];[bg][sh]overlay={fr['x']}:{fr['y']}:shortest=1[base];"
+        fx_in, fx_f = fx_chain(s, fr, d, work)
+        vf=(f"[0:v]{vf_fit},scale={fr['w']}:{fr['h']}:force_original_aspect_ratio=increase,crop={fr['w']}:{fr['h']},fps={FPS},format=rgb24[sh];{fx_f};[shfx]format=rgba[shr];"
+            f"color=c=black:s={W}x{H}:r={FPS}:d={d}[bg];[bg][shr]overlay={fr['x']}:{fr['y']}:shortest=1[base];"
             f"[1:v]format=rgba,fade=t=in:st=0:d=0.25:alpha=1[cap];[base][cap]overlay=0:0:shortest=1{flash},"
             f"vignette=PI/4,noise=alls=12:allf=t+u,fade=t=in:st=0:d=0.08:color=black,fade=t=out:st={max(0,d-0.08)}:d=0.08:color=black,format=yuv420p[v]")
-        run(["ffmpeg","-y","-loglevel","error",*inp,"-loop","1","-t",str(d),"-i",str(capfile),"-filter_complex",vf,"-map","[v]","-an","-t",str(d),"-r",str(FPS),"-c:v","libx264","-preset","veryfast","-crf","18",str(out)])
+        run(["ffmpeg","-y","-loglevel","error",*inp,"-loop","1","-t",str(d),"-i",str(capfile),*fx_in,"-filter_complex",vf,"-map","[v]","-an","-t",str(d),"-r",str(FPS),"-c:v","libx264","-preset","veryfast","-crf","18",str(out)])
         got=probe_dur(out); clips.append(out); report["shots"][s["id"]]={"mode":mode,"target":d,"got":round(got,3)}
         print(f"{s['id']} {mode:18s} {d:5.2f}s -> {got:5.2f}s")
 
