@@ -65,7 +65,8 @@ def gen_image(j, out):
     out.parent.mkdir(parents=True, exist_ok=True); im.save(out); return {"model": "FLUX.1-schnell nf4", "seed": a.get("seed")}
 
 # ---------------------------------------------------------------- LTX-Video image->video (Lightricks 2B distilled), two-phase to fit Kaggle RAM/VRAM
-LTX_ID = "Lightricks/LTX-Video-0.9.7-distilled"; LTX_W, LTX_H, LTX_FPS, LTX_MAXS = 768, 416, 24, 3.0
+LTX_ID = "Lightricks/LTX-Video"; LTX_W, LTX_H, LTX_FPS, LTX_MAXS = 768, 416, 24, 3.0   # 2B model (0.9.7-distilled is 13B: does not fit a T4)
+LTX_STEPS, LTX_CFG = 40, 3.0
 _ltx = None; _emb = {}
 def ltx_encode_all(video_jobs):
     """phase 1: T5-XXL alone on the GPU -> prompt embeddings for every shot, then free it."""
@@ -103,7 +104,7 @@ def gen_video(j, out):
     (pe, pm), (ne, nm) = _emb[j["id"]]
     g = torch.Generator("cpu").manual_seed(int(a.get("seed_ui", 42))); torch.cuda.empty_cache()
     vid = p(image=img, prompt_embeds=pe.to(DEV), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV), negative_prompt_attention_mask=nm.to(DEV),
-            width=LTX_W, height=LTX_H, num_frames=frames, num_inference_steps=8, guidance_scale=1.0, generator=g, decode_timestep=0.05, decode_noise_scale=0.025).frames[0]
+            width=LTX_W, height=LTX_H, num_frames=frames, num_inference_steps=LTX_STEPS, guidance_scale=LTX_CFG, generator=g, decode_timestep=0.03, decode_noise_scale=0.025).frames[0]
     out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=LTX_FPS); return {"model": LTX_ID, "frames": frames, "fps": LTX_FPS, "size": [LTX_W, LTX_H]}
 
 # ---------------------------------------------------------------- run
