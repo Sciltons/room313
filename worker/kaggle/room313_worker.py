@@ -66,7 +66,7 @@ def gen_image(j, out):
 
 # ---------------------------------------------------------------- LTX-Video image->video (Lightricks 2B distilled), two-phase to fit Kaggle RAM/VRAM
 LTX_ID = "Lightricks/LTX-Video"; LTX_W, LTX_H, LTX_FPS, LTX_MAXS = 768, 416, 24, 3.0   # 2B model (0.9.7-distilled is 13B: does not fit a T4)
-LTX_STEPS, LTX_CFG = 40, 3.0
+LTX_STEPS, LTX_CFG = 50, 4.0
 _ltx = None; _emb = {}
 def ltx_encode_all(video_jobs):
     """phase 1: T5-XXL alone on the GPU -> prompt embeddings for every shot, then free it."""

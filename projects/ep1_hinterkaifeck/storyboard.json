@@ -15,7 +15,7 @@
   "style": {
     "positive": "2D anime illustration, cel-shaded with clean ink outlines and painted shading, hand-painted anime background art in the style of Makoto Shinkai and Attack on Titan, 1922 rural Bavaria in deep winter, muted cold palette of grey-blue and brown, single warm oil-lamp light or blood-red accent light, heavy shadows, cinematic 16:9 composition, highly detailed, no text, no watermark",
     "negative": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
-    "motion_default": "subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker"
+    "motion_default": "clear visible motion, cinematic camera movement, animated 2D style"
   },
   "characters": {
     "andreas": {
@@ -57,7 +57,7 @@
       "chars": [],
       "caption": "عيلة كاملة اتقتلت في المزرعة…",
       "image": "wide establishing shot at night, {farm_night}, a single line of footprints in the snow coming from the forest to the front door, snow falling",
-      "motion": "snow falling gently, slow push-in toward the glowing window, moonlit clouds drifting",
+      "motion": "heavy snow falling across the whole frame, wind blowing snowflakes sideways, the camera slowly pushes in toward the glowing window, clouds drifting past the moon",
       "sfx": [
         "wind_valley"
       ],
@@ -90,7 +90,7 @@
       "caption": "واحد من البيت.",
       "caption_style": "red",
       "image": "{hallway}, the oil lamp glowing blood red, the attic hatch open a crack with pure black darkness behind it and two faint eyes barely visible in the gap, red light bleeding across the wooden ceiling, horror",
-      "motion": "red lamp light flickering violently, the hatch creaking open a little more, eyes glinting in the dark",
+      "motion": "the oil lantern swings and its flame flickers violently, red light pulsing and flashing across the wooden walls, the two eyes in the dark hatch blink and glint, the hatch creaks open wider, dust falling",
       "sfx": [
         "impact_sub",
         "hatch_creak",

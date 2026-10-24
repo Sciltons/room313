@@ -482,7 +482,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "snow falling gently, slow push-in toward the glowing window, moonlit clouds drifting, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "heavy snow falling across the whole frame, wind blowing snowflakes sideways, the camera slowly pushes in toward the glowing window, clouds drifting past the moon, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s01.png",
      "mode": "image-to-video",
@@ -511,7 +511,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "oil lamp swaying slightly, dust floating, very slow push-in toward the hatch, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "oil lamp swaying slightly, dust floating, very slow push-in toward the hatch, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s02.png",
      "mode": "image-to-video",
@@ -540,7 +540,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "red lamp light flickering violently, the hatch creaking open a little more, eyes glinting in the dark, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "the oil lantern swings and its flame flickers violently, red light pulsing and flashing across the wooden walls, the two eyes in the dark hatch blink and glint, the hatch creaks open wider, dust falling, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s03.png",
      "mode": "image-to-video",
@@ -569,7 +569,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "slow aerial drift forward over the forest, mist moving, snow falling, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "slow aerial drift forward over the forest, mist moving, snow falling, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s04.png",
      "mode": "image-to-video",
@@ -598,7 +598,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "very slow dolly forward along the road, snow drifting across the ground, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "very slow dolly forward along the road, snow drifting across the ground, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s05.png",
      "mode": "image-to-video",
@@ -627,7 +627,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "camera settles slowly, snow falling, light flicker, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "camera settles slowly, snow falling, light flicker, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s06.png",
      "mode": "image-to-video",
@@ -658,7 +658,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "he slowly lifts his eyes toward the camera, lamp flame flickering, breathing, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "he slowly lifts his eyes toward the camera, lamp flame flickering, breathing, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s07.png",
      "mode": "image-to-video",
@@ -687,7 +687,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "she turns her head slightly toward the camera, steam rising from the pot, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "she turns her head slightly toward the camera, steam rising from the pot, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s08.png",
      "mode": "image-to-video",
@@ -716,7 +716,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "she gently rocks the child, looks out of the window, snow falling outside, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "she gently rocks the child, looks out of the window, snow falling outside, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s09.png",
      "mode": "image-to-video",
@@ -745,7 +745,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "the girl looks up slowly, hugs the doll tighter, the lamp flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "the girl looks up slowly, hugs the doll tighter, the lamp flickers, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s10.png",
      "mode": "image-to-video",
@@ -774,7 +774,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "she rummages through the drawer, candle flame trembling, shadows moving on the wall, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "she rummages through the drawer, candle flame trembling, shadows moving on the wall, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s11.png",
      "mode": "image-to-video",
@@ -803,7 +803,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "the old iron key slips off the nail and drops out of the frame, leaving the nail empty, candlelight flickering, dust, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "the old iron key slips off the nail and drops out of the frame, leaving the nail empty, candlelight flickering, dust, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s12.png",
      "mode": "image-to-video",
@@ -832,7 +832,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "he turns the newspaper slowly, frowns, the lamp flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "he turns the newspaper slowly, frowns, the lamp flickers, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s13.png",
      "mode": "image-to-video",
@@ -861,7 +861,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "his eyes slowly move across the ceiling, dust drifts down, candle flame flickers, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "his eyes slowly move across the ceiling, dust drifts down, candle flame flickers, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s14.png",
      "mode": "image-to-video",
@@ -890,7 +890,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "he climbs one rung, raises the lamp, light sweeping across the attic beams, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "he climbs one rung, raises the lamp, light sweeping across the attic beams, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s15.png",
      "mode": "image-to-video",
@@ -919,7 +919,7 @@
     "api_name": "/image_to_video",
     "api_hint": "video",
     "args": {
-     "prompt": "lantern light slowly sweeping over the hay hollow, dust in the beam, held still, subtle natural motion, slow cinematic camera, consistent character, no morphing, no flicker",
+     "prompt": "lantern light slowly sweeping over the hay hollow, dust in the beam, held still, clear visible motion, cinematic camera movement, animated 2D style",
      "negative_prompt": "photorealistic, photo, realistic, 3D render, CGI, octane, unreal engine, plastic skin, blurry, deformed hands, extra fingers, extra limbs, text, watermark, logo, modern clothing",
      "input_image_filepath": "asset:keyframes/s16.png",
      "mode": "image-to-video",
