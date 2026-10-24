@@ -218,9 +218,9 @@
         896,
         512
       ],
-      "gen_s": 55.2
+      "gen_s": 72.3
     },
-    "elapsed": 999.8,
+    "elapsed": 1661.1,
     "worker": "camber-L4"
   },
   "vid_s01": {
@@ -235,9 +235,9 @@
         896,
         512
       ],
-      "gen_s": 70.0
+      "gen_s": 75.3
     },
-    "elapsed": 919.0,
+    "elapsed": 1537.4,
     "worker": "camber-L4"
   },
   "vid_s07_A": {
@@ -455,9 +455,9 @@
         896,
         512
       ],
-      "gen_s": 25.5
+      "gen_s": 51.2
     },
-    "elapsed": 944.5,
+    "elapsed": 1588.7,
     "worker": "camber-L4"
   },
   "vid_s04": {
