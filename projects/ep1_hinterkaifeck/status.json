@@ -13,7 +13,7 @@
   },
   "vid_s07": {
     "state": "error",
-    "error": "Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values",
+    "error": "LTXImageToVideoPipeline.__call__() got an unexpected keyword argument 'sigmas'",
     "worker": "kaggle"
   },
   "char_cazilia": {

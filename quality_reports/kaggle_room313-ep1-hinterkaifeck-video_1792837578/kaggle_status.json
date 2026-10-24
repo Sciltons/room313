@@ -1,0 +1,6 @@
+{
+ "vid_s07": {
+  "state": "error",
+  "error": "LTXImageToVideoPipeline.__call__() got an unexpected keyword argument 'sigmas'"
+ }
+}

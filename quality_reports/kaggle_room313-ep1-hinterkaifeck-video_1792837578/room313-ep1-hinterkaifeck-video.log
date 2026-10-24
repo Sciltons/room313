@@ -1,0 +1,62 @@
+[{"stream_name":"stderr","time":0.805563523,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stdout","time":1.864762522,"data":"[    1.1s] stage=video jobs=1 pending=1 gpu=Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":1.864793108,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stderr","time":27.347054557,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":27.347074176,"data":"grpcio-tools 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":27.347077764,"data":"gradio 6.26.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":27.347080693,"data":"moviepy 1.0.3 requires decorator\u003c5.0,\u003e=4.0.2, but you have decorator 5.3.1 which is incompatible.\n"}
+,{"stream_name":"stderr","time":27.34710197,"data":"google-ai-generativelanguage 0.6.15 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,\u003c6.0.0dev,\u003e=3.20.2, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":27.347108933,"data":"ydf 0.15.0 requires protobuf\u003c7.0.0,\u003e=5.29.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":27.347113219,"data":"grpcio-status 1.71.2 requires protobuf\u003c6.0dev,\u003e=5.26.1, but you have protobuf 7.36.2 which is incompatible.\n"}
+,{"stream_name":"stdout","time":57.29818273,"data":"[   56.5s] LTX phase 1: text encoder ...\n"}
+,{"stream_name":"stderr","time":57.394183236,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":145.07955279,"data":"\rFetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rFetching 4 files:  25%|██▌       | 1/4 [01:26\u003c04:19, 86.65s/it]\rFetching 4 files: 100%|██████████| 4/4 [01:26\u003c00:00, 21.66s/it]\n"}
+,{"stream_name":"stderr","time":181.671325207,"data":"\rLoading weights:   0%|          | 0/219 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/219 [00:01\u003c04:06,  1.13s/it]\rLoading weights:   3%|▎         | 7/219 [00:03\u003c01:42,  2.06it/s]\rLoading weights:   7%|▋         | 16/219 [00:05\u003c01:04,  3.14it/s]\rLoading weights:  11%|█▏        | 25/219 [00:06\u003c00:36,  5.34it/s]\rLoading weights:  16%|█▌        | 34/219 [00:06\u003c00:22,  8.25it/s]\rLoading weights:  23%|██▎       | 50/219 [00:06\u003c00:10, 15.84it/s]\rLoading weights:  26%|██▌       | 57/219 [00:06\u003c00:09, 17.64it/s]\rLoading weights:  28%|██▊       | 62/219 [00:07\u003c00:08, 17.49it/s]\rLoading weights:  36%|███▌      | 79/219 [00:07\u003c00:04, 29.58it/s]\rLoading weights:  40%|████      | 88/219 [00:07\u003c00:03, 35.91it/s]\rLoading weights:  43%|████▎     | 95/219 [00:08\u003c00:06, 17.91it/s]\rLoading weights:  46%|████▌     | 100/219 [00:10\u003c00:16,  7.33it/s]\rLoading weights:  48%|████▊     | 106/219 [00:13\u003c00:22,  5.06it/s]\rLoading weights:  53%|█████▎    | 115/219 [00:15\u003c00:22,  4.65it/s]\rLoading weights:  53%|█████▎    | 117/219 [00:15\u003c00:20,  4.98it/s]\rLoading weights:  57%|█████▋    | 124/219 [00:17\u003c00:22,  4.14it/s]\rLoading weights:  61%|██████    | 133/219 [00:19\u003c00:21,  4.05it/s]\rLoading weights:  65%|██████▍   | 142/219 [00:21\u003c00:16,  4.63it/s]\rLoading weights:  69%|██████▉   | 151/219 [00:21\u003c00:10,  6.41it/s]\rLoading weights:  78%|███████▊  | 170/219 [00:24\u003c00:07,  6.87it/s]\rLoading weights:  81%|████████▏ | 178/219 [00:25\u003c00:05,  7.04it/s]\rLoading weights:  84%|████████▍ | 184/219 [00:26\u003c00:04,  7.32it/s]\rLoading weights:  85%|████████▍ | 186/219 [00:26\u003c00:04,  7.02it/s]\rLoading weights:  85%|████████▌ | 187/219 [00:27\u003c00:07,  4.44it/s]\rLoading weights:  88%|████████▊ | 193/219 [00:28\u003c00:04,  6.27it/s]\rLoading weights:  89%|████████▉ | 195/219 [00:28\u003c00:03,  6.01it/s]\rLoading weights:  90%|████████▉ | 197/219 [00:30\u003c00:06,  3.18it/s]\rLoading weights:  94%|█████████▎| 205/219 [00:32\u003c00:04,  3.38it/s]\rLoading weights:  94%|█████████▍| 206/219 [00:33\u003c00:03,  3.40it/s]\rLoading weights:  98%|█████████▊| 214/219 [00:34\u003c00:01,  4.00it/s]\rLoading weights: 100%|██████████| 219/219 [00:36\u003c00:00,  3.73it/s]\rLoading weights: 100%|██████████| 219/219 [00:36\u003c00:00,  6.02it/s]\n"}
+,{"stream_name":"stdout","time":200.315032809,"data":"[  199.6s]   embeddings for 1 shots; text encoder freed\n"}
+,{"stream_name":"stdout","time":200.338199713,"data":"[  199.6s] [vid_s07] video variant=A ...\n"}
+,{"stream_name":"stdout","time":208.467889127,"data":"[  207.7s] LTX phase 2: transformer + vae ...\n"}
+,{"stream_name":"stderr","time":208.507116587,"data":"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.\n"}
+,{"stream_name":"stderr","time":208.507162423,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":249.468689491,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:31\u003c00:31, 31.78s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:40\u003c00:00, 18.44s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:40\u003c00:00, 20.44s/it]\n"}
+,{"stream_name":"stderr","time":252.618766514,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.86s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.35s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.43s/it]\n"}
+,{"stream_name":"stderr","time":252.666815791,"data":"/usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\n"}
+,{"stream_name":"stderr","time":252.666847874,"data":"  deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\n"}
+,{"stream_name":"stderr","time":268.380436381,"data":"\rFetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\rFetching 4 files: 100%|██████████| 4/4 [00:15\u003c00:00,  3.90s/it]\rFetching 4 files: 100%|██████████| 4/4 [00:15\u003c00:00,  3.90s/it]\n"}
+,{"stream_name":"stderr","time":270.168045276,"data":"\rLoading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading pipeline components...:  33%|███▎      | 1/3 [00:01\u003c00:02,  1.24s/it]\rLoading pipeline components...: 100%|██████████| 3/3 [00:01\u003c00:00,  1.91it/s]\rLoading pipeline components...: 100%|██████████| 3/3 [00:01\u003c00:00,  1.68it/s]\n"}
+,{"stream_name":"stdout","time":270.438087862,"data":"[  269.7s] LTX ready (13B nf4, compute=torch.float16) vram=2.0GB\n"}
+,{"stream_name":"stdout","time":270.718838929,"data":"[  270.0s] [vid_s07] ERROR LTXImageToVideoPipeline.__call__() got an unexpected keyword argument 'sigmas'\n"}
+,{"stream_name":"stderr","time":270.720468055,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":270.721170644,"data":"  File \"/kaggle/src/script.py\", line 138, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":270.721183652,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":270.721188664,"data":"                                                       ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":270.721192507,"data":"  File \"/kaggle/src/script.py\", line 117, in gen_video\n"}
+,{"stream_name":"stderr","time":270.721196804,"data":"    vid = p(**kw).frames[0]\n"}
+,{"stream_name":"stderr","time":270.721200718,"data":"          ~^^^^^^\n"}
+,{"stream_name":"stderr","time":270.721204714,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n"}
+,{"stream_name":"stderr","time":270.721208922,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":270.721213146,"data":"TypeError: LTXImageToVideoPipeline.__call__() got an unexpected keyword argument 'sigmas'\n"}
+,{"stream_name":"stdout","time":271.068507894,"data":"[  270.3s] [vid_s07] video variant=B ...\n"}
+,{"stream_name":"stdout","time":271.068548695,"data":"[  270.3s] LTX phase 2: transformer + vae ...\n"}
+,{"stream_name":"stderr","time":271.130964246,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files: 100%|██████████| 2/2 [00:00\u003c00:00, 988.76it/s]\n"}
+,{"stream_name":"stderr","time":274.105225573,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.72s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.27s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:02\u003c00:00,  1.34s/it]\n"}
+,{"stream_name":"stderr","time":274.672055404,"data":"\rLoading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading pipeline components...: 100%|██████████| 3/3 [00:00\u003c00:00,  6.30it/s]\rLoading pipeline components...: 100%|██████████| 3/3 [00:00\u003c00:00,  6.29it/s]\n"}
+,{"stream_name":"stdout","time":274.945982257,"data":"[  274.2s] LTX ready (13B nf4, compute=torch.bfloat16) vram=2.0GB\n"}
+,{"stream_name":"stdout","time":274.97301445,"data":"[  274.2s] [vid_s07] ERROR LTXImageToVideoPipeline.__call__() got an unexpected keyword argument 'sigmas'\n"}
+,{"stream_name":"stderr","time":274.973405855,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":274.973909451,"data":"  File \"/kaggle/src/script.py\", line 138, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":274.973916606,"data":"    m = gen_image(j, out) if j[\"type\"] == \"image\" else gen_video(j, out) if j[\"type\"] == \"video\" else None\n"}
+,{"stream_name":"stderr","time":274.973920317,"data":"                                                       ~~~~~~~~~^^^^^^^^\n"}
+,{"stream_name":"stderr","time":274.973931528,"data":"  File \"/kaggle/src/script.py\", line 117, in gen_video\n"}
+,{"stream_name":"stderr","time":274.973935679,"data":"    vid = p(**kw).frames[0]\n"}
+,{"stream_name":"stderr","time":274.973943482,"data":"          ~^^^^^^\n"}
+,{"stream_name":"stderr","time":274.973947458,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n"}
+,{"stream_name":"stderr","time":274.973950731,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":274.973964158,"data":"TypeError: LTXImageToVideoPipeline.__call__() got an unexpected keyword argument 'sigmas'\n"}
+,{"stream_name":"stdout","time":274.982152799,"data":"[  274.2s] done. ok=0 failed=2\n"}
+,{"stream_name":"stderr","time":281.722023821,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":281.722053257,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":282.01837556,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":282.018402763,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":282.793865214,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":283.822759849,"data":"[NbConvertApp] Writing 332382 bytes to __results__.html\n"}
+]
