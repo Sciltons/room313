@@ -24,20 +24,14 @@ def probe(rep):
     try:
         d = json.loads(out[out.index("{"):]); print("GROMACS command:", d.get("command")); print("GROMACS spec:", json.dumps(d.get("spec"), indent=1)[:3000]); print("GROMACS job_config:", json.dumps(d.get("job_config"))[:1500])
     except Exception as e: print("describe parse failed", e, out[:500])
-    # try the Apps route: create a tiny GPU app and run it
     root = stash_root(); sp = f"{root}/room313"
     sh(["camber","stash","cp",str(ROOT/"worker"/"gpu"/"probe.sh"),f"{sp}/probe.sh"])
-    jc = [{"type":"Select","label":"System Size","name":"system_size","hidden":True,"description":"","options":[{"label":"GPU","value":"gpu","mapValue":{"nodeSize":"XSMALL","numNodes":1,"withGpu":True},"map_value":{"node_size":"XSMALL","num_nodes":1,"with_gpu":True}}],"defaultValue":"gpu","default_value":"gpu"}]
-    spec = [{"type":"Stash File","label":"Work dir","name":"workdir","description":"stash folder containing probe.sh","required":True,"defaultValue":"","default_value":"","hidden":False,"disabled":False,"options":None,"placeholder":"","restrictions":None}]
-    app = {"name":"room313-probe","title":"Room313 probe","description":"GPU/internet probe","content":"probe","version":"1.0.0",
-           "engineType":"base","command":"cd ${workdir} && bash probe.sh > probe_out.txt 2>&1; pwd >> probe_out.txt",
-           "spec":spec,"jobConfig":jc,"imageUrl":None,"public":False}
-    (QR/"app.json").write_text(json.dumps(app)); sh(["camber","app","create","--file",str(QR/"app.json"),"--output","json"])
-    sh(["camber","app","describe","room313-probe"])
-    sh(["camber","app","run","room313-probe","--input",f"workdir={sp}/","--with-gpu","--node-size","xsmall","--output","json"])
-    sh(["camber","app","run","room313-probe","--input",f"workdir={sp}/","--output","json"])
-    sh(["camber","job","list"])
-    (QR/"app.json").unlink(missing_ok=True)
+    sh(["camber","agent","list"])
+    msg = f"Run this exact shell command on the compute node and do nothing else: cd {sp.replace(root+'/','~/')} 2>/dev/null || cd /stash/room313 2>/dev/null || cd $(find / -maxdepth 4 -type d -name room313 2>/dev/null | head -1); bash probe.sh > probe_out.txt 2>&1; tail -60 probe_out.txt. Reply with the full output of tail."
+    rc, out = sh(["camber","chat","-m",msg,"--output","json","--no-thinking"], timeout=1200); (QR/"chat_probe.json").write_text(out)
+    sh(["camber","stash","ls",sp])
+    rc, out = sh(["camber","stash","cp",f"{sp}/probe_out.txt",str(QR/"probe_out.txt")])
+    if (QR/"probe_out.txt").exists(): print("=== probe_out.txt ===\n" + (QR/"probe_out.txt").read_text()[:5000])
     if os.environ.get("PROBE_HELP_ONLY"): return
 
 def submit(cmd_str, engine, size, path, gpu=True, extra=()):
