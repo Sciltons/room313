@@ -1458,23 +1458,71 @@
     "worker": "camber-L4"
   },
   "vid_s38": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s38.png",
+    "state": "ok",
+    "out": "animated_shots/s38.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 32.8
+    },
+    "elapsed": 1506.3,
     "worker": "camber-L4"
   },
   "vid_s39": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s39.png",
+    "state": "ok",
+    "out": "animated_shots/s39.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 33.0
+    },
+    "elapsed": 1539.4,
     "worker": "camber-L4"
   },
   "vid_s40": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s40.png",
+    "state": "ok",
+    "out": "animated_shots/s40.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 33.3
+    },
+    "elapsed": 1572.8,
     "worker": "camber-L4"
   },
   "vid_s41": {
-    "state": "error",
-    "error": "keyframe missing: keyframes/s41.png",
+    "state": "ok",
+    "out": "animated_shots/s41.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 73,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 33.1
+    },
+    "elapsed": 1606.0,
     "worker": "camber-L4"
   },
   "vid_s42": {
