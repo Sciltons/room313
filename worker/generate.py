@@ -233,7 +233,7 @@ def main():
                         if j["type"] == "image" and is_quota_error(e):
                             log(f"[{j['id']}] Space quota hit -> local CPU fallback (LCM)")
                             args = inp.get("args", {})
-                            metrics = local_cpu_run({"kind": "lcm_image", "prompt": args.get("prompt", ""), "width": 768, "height": 432, "steps": 8}, out)
+                            metrics = local_cpu_run({"kind": "lcm_image", "prompt": args.get("prompt", ""), "width": 768, "height": 448, "steps": 8}, out)
                             metrics["fallback"] = "local_cpu_lcm"
                         else: raise
                 elif prov == "local_cpu": metrics = local_cpu_run(inp, out)
