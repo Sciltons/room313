@@ -54,7 +54,7 @@
   },
   "kf_s03": {
     "state": "error",
-    "error": "You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/black-forest-labs/FLUX.1-schnell.\n401 Client Error. (Request ID: Root=1-6adc661b-6717b9ff33b29fb20b967274;47a6e051-5a2a-4f6f-9364-b798d0d86b2c)\n\nCannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config",
+    "error": "You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/black-forest-labs/FLUX.1-schnell.\n403 Client Error. (Request ID: Root=1-6adc6975-29ef530f6f07882138130478;4f63a4ce-6069-482f-8d96-c23e11569db1)\n\nCannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config",
     "worker": "kaggle"
   },
   "kf_s04": {
@@ -125,7 +125,7 @@
   },
   "kf_s16": {
     "state": "error",
-    "error": "You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/black-forest-labs/FLUX.1-schnell.\n401 Client Error. (Request ID: Root=1-6adc661b-3a3c45bb2b5bf7292be0943c;8c124fcf-003b-4fac-a571-a2499aa74ab1)\n\nCannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config",
+    "error": "You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/black-forest-labs/FLUX.1-schnell.\n403 Client Error. (Request ID: Root=1-6adc6975-3987ccd15e0be4c41462ec03;bfc5ca77-da7f-43dc-b8d1-298e73ee64c9)\n\nCannot access gated repo for url https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/741f7c3ce8b383c54771c7003378a50191e9efe9/text_encoder_2/config",
     "worker": "kaggle"
   }
 }
