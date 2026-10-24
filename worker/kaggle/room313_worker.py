@@ -112,7 +112,7 @@ def gen_video(j, out):
     kw = dict(image=img, prompt_embeds=pe.to(DEV, dt), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV, dt), negative_prompt_attention_mask=nm.to(DEV),
               width=LTX_W, height=LTX_H, num_frames=frames, guidance_scale=LTX_CFG, generator=g, decode_timestep=0.05, decode_noise_scale=0.025)
     ts = CUR.get("timesteps")
-    if ts: kw["timesteps"] = ts
+    if ts: kw["sigmas"] = [t/1000 for t in ts]   # LTX i2v pipeline takes custom sigmas (0..1), not timesteps
     else: kw["num_inference_steps"] = LTX_STEPS
     vid = p(**kw).frames[0]
     out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=LTX_FPS); return {"model": LTX_ID, "frames": frames, "fps": LTX_FPS, "size": [LTX_W, LTX_H], "variant": CUR}
