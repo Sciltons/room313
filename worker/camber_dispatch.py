@@ -20,8 +20,21 @@ def stash_root():
     rc, out = sh(["camber","me"]); m = re.search(r"Stash:\s*(stash://\S+)", out)
     return (m.group(1) if m else "stash://").rstrip("/")
 def probe(rep):
-    for c in [["camber","version"],["camber","me"],["camber","app","describe","gromacs-protein-md","--output","json"],["camber","app","describe","satminer-cpu","--output","json"],["camber","app","run","satminer-cpu","--help"]]:
-        rc, out = sh(c); rep.append({"cmd": " ".join(c), "rc": rc, "out": out})
+    rc, out = subprocess.run(["camber","app","describe","gromacs-protein-md","--output","json"], capture_output=True, text=True, cwd=ROOT).returncode, subprocess.run(["camber","app","describe","gromacs-protein-md","--output","json"], capture_output=True, text=True, cwd=ROOT).stdout
+    try:
+        d = json.loads(out[out.index("{"):]); print("GROMACS command:", d.get("command")); print("GROMACS spec:", json.dumps(d.get("spec"), indent=1)[:3000]); print("GROMACS job_config:", json.dumps(d.get("job_config"))[:1500])
+    except Exception as e: print("describe parse failed", e, out[:500])
+    # try the Apps route: create a tiny GPU app and run it
+    root = stash_root(); sp = f"{root}/room313"
+    sh(["camber","stash","cp",str(ROOT/"worker"/"gpu"/"probe.sh"),f"{sp}/probe.sh"])
+    app = {"name":"room313-probe","title":"Room313 probe","description":"GPU/internet probe","content":"probe","version":"1.0.0","engine_type":"base",
+           "command":"bash probe.sh > probe_out.txt 2>&1; pwd >> probe_out.txt; ls -la >> probe_out.txt",
+           "spec":[],"job_config":[{"type":"Select","label":"System Size","name":"system_size","hidden":True,"description":"","options":[{"label":"GPU","value":"gpu","map_value":{"node_size":"XSMALL","num_nodes":1,"with_gpu":True}}],"default_value":"gpu"}]}
+    (QR/"app.json").write_text(json.dumps(app)); sh(["camber","app","create","--file",str(QR/"app.json"),"--output","json"])
+    sh(["camber","app","run","room313-probe","--with-gpu","--node-size","xsmall","--output","json"])
+    sh(["camber","app","run","room313-probe","--output","json"])
+    sh(["camber","job","list"])
+    (QR/"app.json").unlink(missing_ok=True)
     if os.environ.get("PROBE_HELP_ONLY"): return
 
 def submit(cmd_str, engine, size, path, gpu=True, extra=()):
