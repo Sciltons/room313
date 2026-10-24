@@ -9,6 +9,7 @@ on:
       only:    {description: "comma-separated job ids (optional)", required: false, default: ""}
       engine:  {description: "camber engine type", required: false, default: "base"}
       size:    {description: "camber node size", required: false, default: "xsmall"}
+      help_only: {description: "probe: only print CLI help (no job)", required: false, default: ""}
 
 concurrency:
   group: "camber-${{ inputs.project }}"
@@ -35,6 +36,7 @@ jobs:
           CAMBER_API_KEY: ${{ secrets.CAMBER_API_KEY }}
           CAMBER_ENGINE: ${{ inputs.engine }}
           CAMBER_SIZE: ${{ inputs.size }}
+          PROBE_HELP_ONLY: ${{ inputs.help_only }}
         run: |
           set -o pipefail
           if [ "${{ inputs.mode }}" = "probe" ]; then python3 worker/camber_dispatch.py probe | tee run.log

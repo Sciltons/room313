@@ -20,8 +20,9 @@ def stash_root():
     rc, out = sh(["camber","me"]); m = re.search(r"Stash:\s*(stash://\S+)", out)
     return (m.group(1) if m else "stash://").rstrip("/")
 def probe(rep):
-    for c in [["camber","version"],["camber","me"],["camber","job","get","--help"],["camber","job","logs","--help"],["camber","job","list","--help"],["camber","stash","cp","--help"]]:
+    for c in [["camber","version"],["camber","me"],["camber","pod","--help"],["camber","agent","--help"],["camber","app","--help"],["camber","chat","--help"],["camber","app","list"],["camber","agent","list"],["camber","pod","list"]]:
         rc, out = sh(c); rep.append({"cmd": " ".join(c), "rc": rc, "out": out})
+    if os.environ.get("PROBE_HELP_ONLY"): return
 
 def submit(cmd_str, engine, size, path, gpu=True, extra=()):
     c = ["camber","job","create","--engine",engine,"--size",size,"--cmd",cmd_str,"--path",path] + (["--gpu"] if gpu else []) + list(extra)
@@ -48,6 +49,7 @@ def main():
     ts = int(time.time()); outdir = QR / f"camber_{a.mode}_{ts}"; outdir.mkdir(parents=True, exist_ok=True); rep = []
     if a.mode == "probe":
         probe(rep)
+        if os.environ.get("PROBE_HELP_ONLY"): (outdir/"probe_report.json").write_text(json.dumps(rep, indent=1)); return 0
         # tiny GPU + internet test job via stash
         root = stash_root(); sp = f"{root}/{a.stash_path}"; test = ROOT / "worker" / "gpu" / "probe.sh"
         sh(["camber","stash","mkdir",sp]); rc, out = sh(["camber","stash","cp",str(test),f"{sp}/probe.sh"]); rep.append({"cmd":"stash cp probe.sh","rc":rc,"out":out})
