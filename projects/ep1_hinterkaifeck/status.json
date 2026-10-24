@@ -877,7 +877,7 @@
       "model": "FLUX.1-schnell int8",
       "seed": 313
     },
-    "elapsed": 624.9,
+    "elapsed": 128.6,
     "worker": "camber-L4"
   },
   "kf_s24": {
@@ -967,7 +967,7 @@
       "model": "FLUX.1-schnell int8",
       "seed": 412
     },
-    "elapsed": 680.3,
+    "elapsed": 134.6,
     "worker": "camber-L4"
   },
   "kf_s33": {
