@@ -1,0 +1,20 @@
+{
+ "kf_s03": {
+  "state": "ok",
+  "out": "keyframes/s03.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 412
+  },
+  "elapsed": 397.8
+ },
+ "kf_s16": {
+  "state": "ok",
+  "out": "keyframes/s16.png",
+  "metrics": {
+   "model": "FLUX.1-schnell nf4",
+   "seed": 412
+  },
+  "elapsed": 421.6
+ }
+}
