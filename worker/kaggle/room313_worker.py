@@ -64,18 +64,32 @@ def gen_image(j, out):
     if im.getextrema() == ((0, 0), (0, 0), (0, 0)): raise RuntimeError("black image (fp16 overflow?)")
     out.parent.mkdir(parents=True, exist_ok=True); im.save(out); return {"model": "FLUX.1-schnell nf4", "seed": a.get("seed")}
 
-# ---------------------------------------------------------------- LTX-Video image->video (Lightricks, 2B, fp16)
-_ltx = None
+# ---------------------------------------------------------------- LTX-Video image->video (Lightricks 2B distilled), two-phase to fit Kaggle RAM/VRAM
+LTX_ID = "Lightricks/LTX-Video-0.9.7-distilled"; LTX_W, LTX_H, LTX_FPS, LTX_MAXS = 768, 416, 24, 3.0
+_ltx = None; _emb = {}
+def ltx_encode_all(video_jobs):
+    """phase 1: T5-XXL alone on the GPU -> prompt embeddings for every shot, then free it."""
+    import gc
+    from transformers import T5EncoderModel, T5TokenizerFast
+    log("LTX phase 1: text encoder ...")
+    tok = T5TokenizerFast.from_pretrained(LTX_ID, subfolder="tokenizer")
+    enc = T5EncoderModel.from_pretrained(LTX_ID, subfolder="text_encoder", torch_dtype=torch.float16, low_cpu_mem_usage=True).to(DEV).eval()
+    def embed(text):
+        t = tok(text, padding="max_length", max_length=128, truncation=True, add_special_tokens=True, return_tensors="pt")
+        with torch.no_grad(): e = enc(t.input_ids.to(DEV), attention_mask=t.attention_mask.to(DEV)).last_hidden_state
+        m = t.attention_mask.to(DEV)
+        return (e * m.unsqueeze(-1).to(e.dtype)).cpu(), m.cpu()
+    for j in video_jobs:
+        a = j["input"]["args"]; _emb[j["id"]] = (embed(a["prompt"]), embed(a.get("negative_prompt", "")))
+    del enc; gc.collect(); torch.cuda.empty_cache(); log(f"  embeddings for {len(_emb)} shots; text encoder freed")
+
 def ltx():
     global _ltx
     if _ltx is None:
         from diffusers import LTXImageToVideoPipeline
-        from transformers import T5EncoderModel, BitsAndBytesConfig as TBnB
-        log("loading LTX-Video ...")
-        lid = "Lightricks/LTX-Video-0.9.7-distilled"; dt = torch.float16
-        _ltx = LTXImageToVideoPipeline.from_pretrained(lid, torch_dtype=dt, low_cpu_mem_usage=True)   # fp16 everything; cpu-offload keeps T5 off the GPU during denoising
-        _ltx.enable_model_cpu_offload(); _ltx.vae.enable_tiling(); _ltx.vae.enable_slicing()
-        log("LTX ready")
+        log("LTX phase 2: transformer + vae ...")
+        _ltx = LTXImageToVideoPipeline.from_pretrained(LTX_ID, text_encoder=None, tokenizer=None, torch_dtype=torch.float16, low_cpu_mem_usage=True).to(DEV)
+        _ltx.vae.enable_tiling(); log("LTX ready")
     return _ltx
 
 def gen_video(j, out):
@@ -84,16 +98,20 @@ def gen_video(j, out):
     img_rel = a["input_image_filepath"].replace("asset:", "")
     src = GEN / img_rel if (GEN / img_rel).exists() else prev_gen / img_rel
     if not src.exists(): raise FileNotFoundError(f"keyframe missing: {img_rel}")
-    W, H = 768, 416   # T4 (15 GB) budget; assemble.py rescales into the 1080x608 frame
-    img = Image.open(src).convert("RGB").resize((W, H))
-    secs = min(3.0, float(a.get("duration_ui", 2))); fps = 24; frames = int(secs * fps); frames = (frames // 8) * 8 + 1   # <=73 frames on T4
-    g = torch.Generator("cpu").manual_seed(int(a.get("seed_ui", 42)))
-    torch.cuda.empty_cache()
-    vid = p(image=img, prompt=a["prompt"], negative_prompt=a.get("negative_prompt", ""), width=W, height=H, num_frames=frames, num_inference_steps=8, guidance_scale=1.0, generator=g, decode_timestep=0.05, decode_noise_scale=0.025).frames[0]
-    out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=fps); return {"model": "LTX-Video-0.9.7-distilled", "frames": frames, "fps": fps}
+    img = Image.open(src).convert("RGB").resize((LTX_W, LTX_H))
+    secs = min(LTX_MAXS, float(a.get("duration_ui", 2))); frames = (int(secs * LTX_FPS) // 8) * 8 + 1
+    (pe, pm), (ne, nm) = _emb[j["id"]]
+    g = torch.Generator("cpu").manual_seed(int(a.get("seed_ui", 42))); torch.cuda.empty_cache()
+    vid = p(image=img, prompt_embeds=pe.to(DEV), prompt_attention_mask=pm.to(DEV), negative_prompt_embeds=ne.to(DEV), negative_prompt_attention_mask=nm.to(DEV),
+            width=LTX_W, height=LTX_H, num_frames=frames, num_inference_steps=8, guidance_scale=1.0, generator=g, decode_timestep=0.05, decode_noise_scale=0.025).frames[0]
+    out.parent.mkdir(parents=True, exist_ok=True); export_to_video(vid, str(out), fps=LTX_FPS); return {"model": LTX_ID, "frames": frames, "fps": LTX_FPS, "size": [LTX_W, LTX_H]}
 
 # ---------------------------------------------------------------- run
 fails = 0
+vj = [j for j in pending if j["type"] == "video"]
+if vj:
+    try: ltx_encode_all(vj)
+    except Exception as e: log("LTX phase 1 failed:", e); traceback.print_exc()
 for j in pending:
     out = GEN / j["out"]
     try:
