@@ -95,6 +95,7 @@ def ltx():
         cdt = torch.bfloat16 if CUR.get("compute") == "bf16" else torch.float16
         tr = LTXVideoTransformer3DModel.from_pretrained(LTX_ID, subfolder="transformer", quantization_config=DBnB(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype=cdt), torch_dtype=cdt, low_cpu_mem_usage=True)
         _ltx = LTXConditionPipeline.from_pretrained(LTX_ID, transformer=tr, text_encoder=None, tokenizer=None, torch_dtype=cdt, low_cpu_mem_usage=True)
+        _ltx.scheduler.register_to_config(use_dynamic_shifting=False, shift=1.0)   # explicit distilled timesteps, no shifting
         _ltx.vae.to(DEV); _ltx.vae.enable_tiling(); log(f"LTX ready (13B nf4, compute={cdt}) vram={torch.cuda.memory_allocated()/1e9:.1f}GB")
     return _ltx
 
