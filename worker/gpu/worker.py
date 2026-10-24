@@ -27,9 +27,13 @@ _flux = None
 def flux():
     global _flux
     if _flux is None:
-        from diffusers import FluxPipeline
+        from diffusers import FluxPipeline, FluxTransformer2DModel
         mid = os.environ.get("FLUX_REPO") or "YuCollection/FLUX.1-schnell-Diffusers"   # unmodified Apache-2.0 mirror (official repo is gated)
-        log(f"loading {mid} bf16 ..."); _flux = FluxPipeline.from_pretrained(mid, torch_dtype=BF); _flux.enable_model_cpu_offload(); log("FLUX ready")
+        log(f"loading {mid} (fp8 storage / bf16 compute) ...")
+        tr = FluxTransformer2DModel.from_pretrained(mid, subfolder="transformer", torch_dtype=BF)
+        tr.enable_layerwise_casting(storage_dtype=torch.float8_e4m3fn, compute_dtype=BF)   # 12B params -> ~12 GB, fits a 22 GB L4
+        _flux = FluxPipeline.from_pretrained(mid, transformer=tr, torch_dtype=BF); _flux.enable_model_cpu_offload(); _flux.vae.enable_tiling()
+        log(f"FLUX ready vram={torch.cuda.memory_allocated()/1e9:.1f}GB")
     return _flux
 def gen_image(j, out):
     a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
@@ -85,6 +89,8 @@ fails = 0; _enc_done = False
 for j in pending:
     if j["type"] == "video" and not _enc_done:
         _enc_done = True
+        img_ok = sum(1 for k,v in STATUS.items() if v["state"]=="ok" and not k.startswith("vid_")); img_fail = sum(1 for k,v in STATUS.items() if v["state"]!="ok" and not k.startswith("vid_"))
+        if img_fail and not img_ok: log("ABORT: all image jobs failed, skipping videos"); fails += 1; break
         if _flux is not None: _flux = None; gc.collect(); torch.cuda.empty_cache()   # free FLUX before LTX (module-level name)
         try: ltx_encode_all(vj)
         except Exception as e: log("LTX phase 1 failed:", e); traceback.print_exc()
