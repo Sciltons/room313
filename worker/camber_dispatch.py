@@ -92,6 +92,7 @@ def main():
     shutil.copytree(ROOT/"worker"/"gpu", pkg/"gpu"); shutil.copy(proj/"manifest.json", pkg/"manifest.json")
     gen = proj/"generated"
     if gen.exists(): shutil.copytree(gen, pkg/"generated", ignore=shutil.ignore_patterns("*.mp4", "*.wav", "*.mp3"))   # keyframes only (i2v inputs)
+    (pkg/"done.txt").write_text("\n".join(str(f.relative_to(gen)) for f in gen.rglob("*") if f.is_file()))   # everything already in the repo counts as done
     (pkg/"job.json").write_text(json.dumps({"project": a.project, "stage": a.stage, "only": [x for x in a.only.split(",") if x]}))
     tar = outdir/"pkg.tar.gz"
     with tarfile.open(tar, "w:gz") as t: t.add(pkg, arcname="pkg")

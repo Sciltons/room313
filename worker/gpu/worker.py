@@ -18,7 +18,10 @@ stage, only = JOB.get("stage","video"), set(JOB.get("only", []))
 def in_stage(j): return stage == "all" or j["type"] == stage or j.get("stage") == stage or stage in j.get("tags", []) or (stage == "images" and j["type"] == "image")
 jobs = [j for j in MAN["jobs"] if in_stage(j) and (not only or j["id"] in only) and j.get("provider") == "hf_space"]
 import shutil
-pending = [j for j in jobs if j["id"] in only or not ((PREV/j["out"]).exists() or (ASSETS/j["out"]).exists())]
+DONE = set((PKG/"done.txt").read_text().split("\n")) if (PKG/"done.txt").exists() else set()
+PHASE = os.environ.get("PHASE", "all")   # images | videos | all  (run.sh runs two separate processes so host RAM is fully released between them)
+jobs = [j for j in jobs if PHASE == "all" or (PHASE == "images" and j["type"] == "image") or (PHASE == "videos" and j["type"] == "video")]
+pending = [j for j in jobs if j["id"] in only or not ((PREV/j["out"]).exists() or (ASSETS/j["out"]).exists() or j["out"] in DONE)]
 for j in jobs:   # resume: assets from an earlier (failed) run on the stash count as done and are re-exported
     if (ASSETS/j["out"]).exists() and not (OUT/j["out"]).exists(): (OUT/j["out"]).parent.mkdir(parents=True, exist_ok=True); shutil.copy(ASSETS/j["out"], OUT/j["out"])
 import torch

@@ -26,6 +26,8 @@ PY
 }
 smoke || { echo "smoke failed -> removing brotli and retrying"; pip uninstall -y -q brotli brotlicffi 2>/dev/null; smoke; } || { echo "RUN_FAILED smoke"; tar czf out.tar.gz out; exit 1; }
 export ASSETS_DIR="$(cd .. && pwd)/assets"; mkdir -p "$ASSETS_DIR"
-python3 gpu/worker.py 2>&1 | tee out/worker.log; rc=${PIPESTATUS[0]}
+PHASE=images python3 gpu/worker.py 2>&1 | tee out/worker.log; rc=${PIPESTATUS[0]}
+cp -f out/gpu_status.json out/gpu_status_images.json 2>/dev/null
+PHASE=videos python3 gpu/worker.py 2>&1 | tee -a out/worker.log; rc2=${PIPESTATUS[0]}; [ "$rc" = "0" ] && rc=$rc2
 tar czf out.tar.gz out && ls -la out.tar.gz
 [ "$rc" = "0" ] && echo "RUN_DONE" || echo "RUN_FAILED rc=$rc"
