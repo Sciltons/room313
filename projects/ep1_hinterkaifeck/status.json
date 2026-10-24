@@ -362,9 +362,10 @@
     "out": "audio/sfx/impact_sub.mp3"
   },
   "sfx_hatch_creak": {
-    "state": "error",
-    "error": "no freesound result",
-    "attempt": 3
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/hatch_creak.mp3"
   },
   "sfx_drop_pulse": {
     "state": "ok",
@@ -385,9 +386,10 @@
     "out": "audio/sfx/chair_creak.mp3"
   },
   "sfx_pot_simmer": {
-    "state": "error",
-    "error": "no freesound result",
-    "attempt": 3
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/pot_simmer.mp3"
   },
   "sfx_drawer_wood": {
     "state": "ok",
@@ -420,9 +422,10 @@
     "out": "audio/sfx/ladder_creak.mp3"
   },
   "sfx_lamp_creak": {
-    "state": "error",
-    "error": "no freesound result",
-    "attempt": 3
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/lamp_creak.mp3"
   },
   "sfx_attic_silence_ring": {
     "state": "ok",
@@ -431,8 +434,9 @@
     "out": "audio/sfx/attic_silence_ring.mp3"
   },
   "sfx_key_drop": {
-    "state": "error",
-    "error": "no freesound result",
-    "attempt": 3
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "audio/sfx/key_drop.mp3"
   }
 }

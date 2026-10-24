@@ -1,0 +1,14 @@
+project=ep1_hinterkaifeck jobs=4 done=0 pending=4 est=$0.00 spent=$0.00 cap=$0.00 dry_run=False
+  - sfx_hatch_creak              audio  freesound-cc0                            ~$0.000 -> audio/sfx/hatch_creak.mp3
+  - sfx_pot_simmer               audio  freesound-cc0                            ~$0.000 -> audio/sfx/pot_simmer.mp3
+  - sfx_lamp_creak               audio  freesound-cc0                            ~$0.000 -> audio/sfx/lamp_creak.mp3
+  - sfx_key_drop                 audio  freesound-cc0                            ~$0.000 -> audio/sfx/key_drop.mp3
+[sfx_hatch_creak] attempt 1 model=freesound-cc0
+[sfx_hatch_creak] OK
+[sfx_pot_simmer] attempt 1 model=freesound-cc0
+[sfx_pot_simmer] OK
+[sfx_lamp_creak] attempt 1 model=freesound-cc0
+[sfx_lamp_creak] OK
+[sfx_key_drop] attempt 1 model=freesound-cc0
+[sfx_key_drop] OK
+done. failures=0 spent=$0.00

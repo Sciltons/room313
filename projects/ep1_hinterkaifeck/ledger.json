@@ -886,6 +886,58 @@
         "license": "http://creativecommons.org/publicdomain/zero/1.0/",
         "by": "SpliceSound"
       }
+    },
+    {
+      "job": "sfx_hatch_creak",
+      "usd": 0.0,
+      "ts": 1792849412.2793856,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 700705,
+        "name": "Metal Door Squeaking 8 (Medium)",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "MathewHenry"
+      }
+    },
+    {
+      "job": "sfx_pot_simmer",
+      "usd": 0.0,
+      "ts": 1792849415.3969994,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 862443,
+        "name": "Hot Water Spilling out while Boiling Eggs",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "bassimat"
+      }
+    },
+    {
+      "job": "sfx_lamp_creak",
+      "usd": 0.0,
+      "ts": 1792849416.7431936,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 700705,
+        "name": "Metal Door Squeaking 8 (Medium)",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "MathewHenry"
+      }
+    },
+    {
+      "job": "sfx_key_drop",
+      "usd": 0.0,
+      "ts": 1792849418.5229065,
+      "model": "freesound-cc0",
+      "attempt": 1,
+      "metrics": {
+        "freesound_id": 432913,
+        "name": "key_drop.wav",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "by": "Kyanite_"
+      }
     }
   ]
 }
