@@ -27,22 +27,38 @@ if not pending: save(); sys.exit(0)
 from PIL import Image
 DEV = "cuda"; BF = torch.bfloat16
 
-# ---------------------------------------------------------------- FLUX.1-schnell bf16 (fits 24 GB with cpu offload of T5)
-_flux = None
+# ---------------------------------------------------------------- FLUX.1-schnell: two-phase (T5 prompt embeddings first, then int8 transformer) to fit a 22 GB L4
+FLUX_ID = os.environ.get("FLUX_REPO") or "YuCollection/FLUX.1-schnell-Diffusers"   # unmodified Apache-2.0 mirror (official repo is gated)
+MODELS = ASSETS.parent/"models"; MODELS.mkdir(parents=True, exist_ok=True)
+_flux = None; _femb = {}
+def flux_encode_all(image_jobs):
+    from diffusers import FluxPipeline
+    log("FLUX phase 1: text encoders ...")
+    p = FluxPipeline.from_pretrained(FLUX_ID, transformer=None, vae=None, torch_dtype=BF).to(DEV)
+    for j in image_jobs:
+        pr = j["input"]["args"]["prompt"]
+        with torch.no_grad(): pe, pool, _ = p.encode_prompt(prompt=pr, prompt_2=None, device=DEV, max_sequence_length=512)
+        _femb[j["id"]] = (pe.cpu(), pool.cpu())
+    del p; gc.collect(); torch.cuda.empty_cache(); log(f"  {len(_femb)} image prompt embeddings; encoders freed")
 def flux():
     global _flux
     if _flux is None:
         from diffusers import FluxPipeline, FluxTransformer2DModel, BitsAndBytesConfig as DBnB
-        mid = os.environ.get("FLUX_REPO") or "YuCollection/FLUX.1-schnell-Diffusers"   # unmodified Apache-2.0 mirror (official repo is gated)
-        log(f"loading {mid} (transformer int8 on GPU, shard by shard: low host RAM) ...")
-        tr = FluxTransformer2DModel.from_pretrained(mid, subfolder="transformer", quantization_config=DBnB(load_in_8bit=True), torch_dtype=BF, low_cpu_mem_usage=True)   # ~12 GB VRAM, RAM peak ~1 shard
-        _flux = FluxPipeline.from_pretrained(mid, transformer=tr, torch_dtype=BF, low_cpu_mem_usage=True); _flux.enable_model_cpu_offload(); _flux.vae.enable_tiling()
-        log(f"FLUX ready vram={torch.cuda.memory_allocated()/1e9:.1f}GB")
+        q = MODELS/"flux_schnell_int8"
+        if (q/"config.json").exists():
+            log("FLUX phase 2: loading cached int8 transformer ..."); tr = FluxTransformer2DModel.from_pretrained(q, torch_dtype=BF, low_cpu_mem_usage=True)
+        else:
+            log("FLUX phase 2: quantizing transformer to int8 (first time, ~8 min) ...")
+            tr = FluxTransformer2DModel.from_pretrained(FLUX_ID, subfolder="transformer", quantization_config=DBnB(load_in_8bit=True), torch_dtype=BF, low_cpu_mem_usage=True)
+            try: tr.save_pretrained(q); log("  cached int8 transformer to stash")
+            except Exception as e: log("  cache save failed:", e)
+        _flux = FluxPipeline.from_pretrained(FLUX_ID, transformer=tr, text_encoder=None, text_encoder_2=None, torch_dtype=BF, low_cpu_mem_usage=True)
+        _flux.vae.to(DEV); _flux.vae.enable_tiling(); log(f"FLUX ready vram={torch.cuda.memory_allocated()/1e9:.1f}GB")
     return _flux
 def gen_image(j, out):
-    a = j["input"]["args"]; p = flux(); g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
-    im = p(prompt=a["prompt"], width=int(a.get("width",1024)), height=int(a.get("height",576)), num_inference_steps=int(a.get("num_inference_steps",4)), guidance_scale=0.0, generator=g, max_sequence_length=256).images[0]
-    out.parent.mkdir(parents=True, exist_ok=True); im.save(out); return {"model": "FLUX.1-schnell bf16", "seed": a.get("seed")}
+    a = j["input"]["args"]; p = flux(); pe, pool = _femb[j["id"]]; g = torch.Generator("cpu").manual_seed(int(a.get("seed", 0)))
+    im = p(prompt_embeds=pe.to(DEV, BF), pooled_prompt_embeds=pool.to(DEV, BF), width=int(a.get("width",1024)), height=int(a.get("height",576)), num_inference_steps=int(a.get("num_inference_steps",4)), guidance_scale=0.0, generator=g).images[0]
+    out.parent.mkdir(parents=True, exist_ok=True); im.save(out); return {"model": "FLUX.1-schnell int8", "seed": a.get("seed")}
 
 # ---------------------------------------------------------------- LTX-Video 0.9.7 13B distilled (bf16 weights ~26 GB -> fp8 storage via layerwise casting, bf16 compute)
 LTX_ID = "Lightricks/LTX-Video-0.9.7-distilled"; LTX_W, LTX_H, LTX_FPS, LTX_MAXS = 896, 512, 24, 3.0
@@ -89,8 +105,12 @@ def gen_video(j, out):
 # order: images first (first result within ~1 min), then text encoding, then videos
 vj = [j for j in pending if j["type"] == "video"]
 pending = [j for j in pending if j["type"] != "video"] + vj
-fails = 0; _enc_done = False
+fails = 0; _enc_done = False; _fenc_done = False
 for j in pending:
+    if j["type"] == "image" and not _fenc_done:
+        _fenc_done = True
+        try: flux_encode_all([x for x in pending if x["type"] == "image"])
+        except Exception as e: log("FLUX phase 1 failed:", e); traceback.print_exc()
     if j["type"] == "video" and not _enc_done:
         _enc_done = True
         img_ok = sum(1 for k,v in STATUS.items() if v["state"]=="ok" and not k.startswith("vid_")); img_fail = sum(1 for k,v in STATUS.items() if v["state"]!="ok" and not k.startswith("vid_"))
