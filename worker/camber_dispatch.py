@@ -107,7 +107,7 @@ def main():
     rc, out = sh(["camber","stash","cp",f"{sp}/pkg/out.tar.gz",str(outdir/"out.tar.gz")])
     o = outdir/"out.tar.gz"; n = 0
     if o.exists():
-        with tarfile.open(o) as t: t.extractall(outdir/"out")
+        with tarfile.open(o) as t: t.extractall(outdir)   # archive root is out/
         for f in (outdir/"out"/"generated").rglob("*"):
             if f.is_file(): d = gen/f.relative_to(outdir/"out"/"generated"); d.parent.mkdir(parents=True, exist_ok=True); shutil.copy(f, d); n += 1
         stp = proj/"status.json"; status = json.loads(stp.read_text()) if stp.exists() else {}
