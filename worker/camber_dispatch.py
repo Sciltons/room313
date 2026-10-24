@@ -27,12 +27,15 @@ def probe(rep):
     # try the Apps route: create a tiny GPU app and run it
     root = stash_root(); sp = f"{root}/room313"
     sh(["camber","stash","cp",str(ROOT/"worker"/"gpu"/"probe.sh"),f"{sp}/probe.sh"])
-    app = {"name":"room313-probe","title":"Room313 probe","description":"GPU/internet probe","content":"probe","version":"1.0.0","engine_type":"base",
-           "command":"bash probe.sh > probe_out.txt 2>&1; pwd >> probe_out.txt; ls -la >> probe_out.txt",
-           "spec":[],"job_config":[{"type":"Select","label":"System Size","name":"system_size","hidden":True,"description":"","options":[{"label":"GPU","value":"gpu","map_value":{"node_size":"XSMALL","num_nodes":1,"with_gpu":True}}],"default_value":"gpu"}]}
+    jc = [{"type":"Select","label":"System Size","name":"system_size","hidden":True,"description":"","options":[{"label":"GPU","value":"gpu","map_value":{"node_size":"XSMALL","num_nodes":1,"with_gpu":True}}],"default_value":"gpu"}]
+    spec = [{"type":"Stash File","label":"Work dir","name":"workdir","description":"stash folder containing probe.sh","required":True,"default_value":"","hidden":False,"disabled":False,"options":None,"placeholder":"","restrictions":None}]
+    app = {"name":"room313-probe","title":"Room313 probe","description":"GPU/internet probe","content":"probe","version":"1.0.0",
+           "engine_type":"base","engineType":"base","command":"cd ${workdir} && bash probe.sh > probe_out.txt 2>&1; pwd >> probe_out.txt",
+           "spec":spec,"job_config":jc,"jobConfig":jc,"image_url":None,"imageUrl":None,"public":False}
     (QR/"app.json").write_text(json.dumps(app)); sh(["camber","app","create","--file",str(QR/"app.json"),"--output","json"])
-    sh(["camber","app","run","room313-probe","--with-gpu","--node-size","xsmall","--output","json"])
-    sh(["camber","app","run","room313-probe","--output","json"])
+    sh(["camber","app","describe","room313-probe"])
+    sh(["camber","app","run","room313-probe","--input",f"workdir={sp}/","--with-gpu","--node-size","xsmall","--output","json"])
+    sh(["camber","app","run","room313-probe","--input",f"workdir={sp}/","--output","json"])
     sh(["camber","job","list"])
     (QR/"app.json").unlink(missing_ok=True)
     if os.environ.get("PROBE_HELP_ONLY"): return
