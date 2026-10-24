@@ -12,9 +12,21 @@
     "out": "keyframes/s07.png"
   },
   "vid_s07": {
-    "state": "error",
-    "error": "`mu` must be passed when `use_dynamic_shifting` is set to be `True`",
-    "worker": "kaggle"
+    "state": "ok",
+    "out": "animated_shots/s07.mp4",
+    "metrics": {
+      "model": "Lightricks/LTX-Video-0.9.7-distilled",
+      "pipeline": "LTXConditionPipeline",
+      "frames": 49,
+      "fps": 24,
+      "size": [
+        896,
+        512
+      ],
+      "gen_s": 33.5
+    },
+    "elapsed": 739.1,
+    "worker": "camber-L4"
   },
   "char_cazilia": {
     "state": "ok",
