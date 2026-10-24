@@ -55,6 +55,39 @@
         "space": "Lightricks/ltx-video-distilled",
         "api_name": "/image_to_video"
       }
+    },
+    {
+      "job": "char_cazilia",
+      "usd": 0.0,
+      "ts": 1792797550.535133,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "space": "black-forest-labs/FLUX.1-schnell",
+        "api_name": "/infer"
+      }
+    },
+    {
+      "job": "char_viktoria",
+      "usd": 0.0,
+      "ts": 1792797553.0565143,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "space": "black-forest-labs/FLUX.1-schnell",
+        "api_name": "/infer"
+      }
+    },
+    {
+      "job": "char_girl",
+      "usd": 0.0,
+      "ts": 1792797555.5880873,
+      "model": "FLUX.1-schnell@space",
+      "attempt": 1,
+      "metrics": {
+        "space": "black-forest-labs/FLUX.1-schnell",
+        "api_name": "/infer"
+      }
     }
   ]
 }

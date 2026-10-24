@@ -1,0 +1,66 @@
+project=ep1_hinterkaifeck jobs=21 done=2 pending=19 est=$0.00 spent=$0.00 cap=$0.00 dry_run=False
+  - char_cazilia                 image  FLUX.1-schnell@space                     ~$0.000 -> characters/cazilia.png
+  - char_viktoria                image  FLUX.1-schnell@space                     ~$0.000 -> characters/viktoria.png
+  - char_girl                    image  FLUX.1-schnell@space                     ~$0.000 -> characters/girl.png
+  - char_maria                   image  FLUX.1-schnell@space                     ~$0.000 -> characters/maria.png
+  - kf_s01                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s01.png
+  - kf_s02                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s02.png
+  - kf_s03                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s03.png
+  - kf_s04                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s04.png
+  - kf_s05                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s05.png
+  - kf_s06                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s06.png
+  - kf_s08                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s08.png
+  - kf_s09                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s09.png
+  - kf_s10                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s10.png
+  - kf_s11                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s11.png
+  - kf_s12                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s12.png
+  - kf_s13                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s13.png
+  - kf_s14                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s14.png
+  - kf_s15                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s15.png
+  - kf_s16                       image  FLUX.1-schnell@space                     ~$0.000 -> keyframes/s16.png
+[char_cazilia] attempt 1 model=FLUX.1-schnell@space
+[char_cazilia] OK
+[char_viktoria] attempt 1 model=FLUX.1-schnell@space
+[char_viktoria] OK
+[char_girl] attempt 1 model=FLUX.1-schnell@space
+[char_girl] OK
+[char_maria] attempt 1 model=FLUX.1-schnell@space
+[char_maria] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[char_maria] attempt 2 model=FLUX.1-schnell@space
+[char_maria] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[char_maria] attempt 3 model=FLUX.1-schnell@space
+[char_maria] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s01] attempt 1 model=FLUX.1-schnell@space
+[kf_s01] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s01] attempt 2 model=FLUX.1-schnell@space
+[kf_s01] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s01] attempt 3 model=FLUX.1-schnell@space
+[kf_s01] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s02] attempt 1 model=FLUX.1-schnell@space
+[kf_s02] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s02] attempt 2 model=FLUX.1-schnell@space
+[kf_s02] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s02] attempt 3 model=FLUX.1-schnell@space
+[kf_s02] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s03] attempt 1 model=FLUX.1-schnell@space
+[kf_s03] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s03] attempt 2 model=FLUX.1-schnell@space
+[kf_s03] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s03] attempt 3 model=FLUX.1-schnell@space
+[kf_s03] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s04] attempt 1 model=FLUX.1-schnell@space
+[kf_s04] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s04] attempt 2 model=FLUX.1-schnell@space
+[kf_s04] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s04] attempt 3 model=FLUX.1-schnell@space
+[kf_s04] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s05] attempt 1 model=FLUX.1-schnell@space
+[kf_s05] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s05] attempt 2 model=FLUX.1-schnell@space
+[kf_s05] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s05] attempt 3 model=FLUX.1-schnell@space
+[kf_s05] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s06] attempt 1 model=FLUX.1-schnell@space
+[kf_s06] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU
+[kf_s06] attempt 2 model=FLUX.1-schnell@space
+[kf_s06] ERROR (quota/GPU limit): You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU

@@ -15,5 +15,53 @@
     "state": "error",
     "error": "[Errno 2] No such file or directory: 'ffprobe'",
     "attempt": 3
+  },
+  "char_cazilia": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "characters/cazilia.png"
+  },
+  "char_viktoria": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "characters/viktoria.png"
+  },
+  "char_girl": {
+    "state": "ok",
+    "qc": "ok",
+    "attempt": 1,
+    "out": "characters/girl.png"
+  },
+  "char_maria": {
+    "state": "quota",
+    "error": "You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU",
+    "attempt": 3
+  },
+  "kf_s01": {
+    "state": "quota",
+    "error": "You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU",
+    "attempt": 3
+  },
+  "kf_s02": {
+    "state": "quota",
+    "error": "You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU",
+    "attempt": 3
+  },
+  "kf_s03": {
+    "state": "quota",
+    "error": "You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU",
+    "attempt": 3
+  },
+  "kf_s04": {
+    "state": "quota",
+    "error": "You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU",
+    "attempt": 3
+  },
+  "kf_s05": {
+    "state": "quota",
+    "error": "You have exceeded your free ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Subscribe to Hugging Face PRO to get 40 min of ZeroGPU quota a day - https://huggingface.co/subscribe/pro?from=ZeroGPU",
+    "attempt": 3
   }
 }
