@@ -157,7 +157,7 @@ def main():
             p=next(iter((gen/"audio"/"sfx").glob(f"{sid}.*")),None)
             if not p: report["audio"][f"sfx_{sid}"]="missing"; continue
             i=add(p); at=s["t"][0]+0.05*j; d=s["t"][1]-s["t"][0]
-            fc.append(f"[{i}:a]aformat=sample_rates=48000:channel_layouts=stereo,atrim=0:{d+1.5},afade=t=out:st={d},d=1.5,volume=0.7,adelay={int(at*1000)}|{int(at*1000)},apad=whole_dur={total}[s{n}]"); sfxs.append(f"[s{n}]"); n+=1
+            fc.append(f"[{i}:a]aformat=sample_rates=48000:channel_layouts=stereo,atrim=0:{d+1.5},afade=t=out:st={d}:d=1.5,volume=0.7,adelay={int(at*1000)}|{int(at*1000)},apad=whole_dur={total}[s{n}]"); sfxs.append(f"[s{n}]"); n+=1
     bedlist=beds+sfxs
     if bedlist:
         fc.append(f"{''.join(bedlist)}amix=inputs={len(bedlist)}:normalize=0[bedraw];[voice]asplit[vA][vB];[bedraw][vB]sidechaincompress=threshold=-30dB:ratio=3:attack=15:release=250[bed];[vA][bed]amix=inputs=2:normalize=0,alimiter=limit=0.97,loudnorm=I=-14:TP=-1.2:LRA=10[a]")
