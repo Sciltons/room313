@@ -1081,13 +1081,23 @@
     "worker": "camber-L4"
   },
   "kf_s45": {
-    "state": "error",
-    "error": "CUDA out of memory. Tried to allocate 74.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 21.12 MiB is free. Including non-PyTorch memory, this process has 22.01 GiB memory in use. Of the allocated memory 21.51 GiB is allocated by PyTorch, and 274.47 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segmen",
+    "state": "ok",
+    "out": "keyframes/s45.png",
+    "metrics": {
+      "model": "FLUX.1-schnell int8",
+      "seed": 412
+    },
+    "elapsed": 754.8,
     "worker": "camber-L4"
   },
   "kf_s46": {
-    "state": "error",
-    "error": "CUDA out of memory. Tried to allocate 74.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 21.12 MiB is free. Including non-PyTorch memory, this process has 22.01 GiB memory in use. Of the allocated memory 21.51 GiB is allocated by PyTorch, and 274.47 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segmen",
+    "state": "ok",
+    "out": "keyframes/s46.png",
+    "metrics": {
+      "model": "FLUX.1-schnell int8",
+      "seed": 412
+    },
+    "elapsed": 761.1,
     "worker": "camber-L4"
   },
   "vid_s17": {
