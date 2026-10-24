@@ -60,7 +60,7 @@ def wait(job_id, poll=30, timeout_min=360):
     return "TIMEOUT"
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("mode", choices=["probe","run","collect"]); ap.add_argument("--project"); ap.add_argument("--stage", default="video"); ap.add_argument("--only", default="")
+    ap = argparse.ArgumentParser(); ap.add_argument("mode", choices=["probe","run","collect","stash"]); ap.add_argument("--project"); ap.add_argument("--stage", default="video"); ap.add_argument("--only", default="")
     ap.add_argument("--engine", default=os.environ.get("CAMBER_ENGINE") or "base"); ap.add_argument("--size", default=os.environ.get("CAMBER_SIZE") or "xsmall"); ap.add_argument("--stash-path", default=os.environ.get("CAMBER_STASH") or "room313")
     a = ap.parse_args()
     if not os.environ.get("CAMBER_API_KEY"): raise SystemExit("CAMBER_API_KEY missing")
@@ -78,6 +78,12 @@ def main():
             rc, out = sh(["camber","job","logs",jid]); (outdir/f"job_{jid}.log").write_text(out); rep.append({"cmd":"job logs","out":out[:6000]})
             rc, out = sh(["camber","stash","ls",sp]); rep.append({"cmd":"stash ls after","out":out})
         (outdir/"probe_report.json").write_text(json.dumps(rep, indent=1)); print("probe report ->", outdir); return 0
+    if a.mode == "stash":   # STASH_CMDS="ls <path>;rm -r <path>" (relative to stash root)
+        root = stash_root()
+        for c in [x.strip() for x in os.environ.get("STASH_CMDS","").split(";") if x.strip()]:
+            parts = c.split(); parts = [f"{root}/{x}" if not x.startswith("stash://") and (x == "." or "/" in x or x.startswith(".")) and not x.startswith("-") else x for x in parts]
+            sh(["camber","stash",*parts])
+        return 0
     if a.mode == "collect":
         root = stash_root(); sp = f"{root}/{a.stash_path}"; proj = ROOT/"projects"/a.project; gen = proj/"generated"
         return collect(sp, outdir, proj, gen, "collect")

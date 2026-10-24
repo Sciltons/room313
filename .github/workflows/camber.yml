@@ -3,7 +3,8 @@ name: camber-gpu
 on:
   workflow_dispatch:
     inputs:
-      mode:    {description: "probe | run | collect", required: true, default: "probe"}
+      mode:    {description: "probe | run | collect | stash", required: true, default: "probe"}
+      stash_cmds: {description: "stash mode: commands separated by ;", required: false, default: ""}
       project: {description: "projects/<name>", required: false, default: "ep1_hinterkaifeck"}
       stage:   {description: "video | image | character | all", required: false, default: "video"}
       only:    {description: "comma-separated job ids (optional)", required: false, default: ""}
@@ -37,9 +38,11 @@ jobs:
           CAMBER_ENGINE: ${{ inputs.engine }}
           CAMBER_SIZE: ${{ inputs.size }}
           PROBE_HELP_ONLY: ${{ inputs.help_only }}
+          STASH_CMDS: ${{ inputs.stash_cmds }}
         run: |
           set -o pipefail
           if [ "${{ inputs.mode }}" = "probe" ]; then python3 worker/camber_dispatch.py probe | tee run.log
+          elif [ "${{ inputs.mode }}" = "stash" ]; then python3 worker/camber_dispatch.py stash | tee run.log
           elif [ "${{ inputs.mode }}" = "collect" ]; then python3 worker/camber_dispatch.py collect --project "${{ inputs.project }}" | tee run.log
           else python3 worker/camber_dispatch.py run --project "${{ inputs.project }}" --stage "${{ inputs.stage }}" --only "${{ inputs.only }}" | tee run.log; fi
           echo "exit=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
