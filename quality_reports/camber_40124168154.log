@@ -1,0 +1,34 @@
+$ camber me
+======================User Information======================
+Email:               scilton19@gmail.com
+Username:            ahmedali41329174
+Stash:               stash://ahmedali41329174/
+Currently Selected Team:  ahmeddefaultteam25018776
+
+============================================================
+
+$ camber stash ls stash://ahmedali41329174/.
+empty
+
+$ camber stash ls stash://ahmedali41329174/.local
+Name                Type                Size
+----                ----                ----
+share               directory
+
+$ camber stash ls stash://ahmedali41329174/.local/lib
+empty
+
+$ camber stash ls stash://ahmedali41329174/.cache
+Name                Type                Size
+----                ----                ----
+huggingface         directory
+
+$ camber stash ls room313
+Name                Type                Size
+----                ----                ----
+pkg.tar.gz          file                9.8MB
+probe.sh            file                1.1KB
+probe_out.txt       file                1.4KB
+run.log             file                0B
+pkg                 directory
+
