@@ -1,0 +1,51 @@
+name: camber-gpu
+# GitHub Student Pack -> Camber (single L4 24GB, 5 GPU h/month, $0). Secret: CAMBER_API_KEY.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:    {description: "probe | run", required: true, default: "probe"}
+      project: {description: "projects/<name>", required: false, default: "ep1_hinterkaifeck"}
+      stage:   {description: "video | image | character | all", required: false, default: "video"}
+      only:    {description: "comma-separated job ids (optional)", required: false, default: ""}
+      engine:  {description: "camber engine type", required: false, default: "mpi"}
+      size:    {description: "camber node size", required: false, default: "SMALL"}
+
+concurrency:
+  group: "camber-${{ inputs.project }}"
+  cancel-in-progress: false
+
+jobs:
+  camber:
+    runs-on: ubuntu-latest
+    timeout-minutes: 420
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Install Camber CLI
+        run: |
+          curl -sL https://cli.cambercloud.com/install-v2.sh | bash 2>&1 | tail -5
+          for d in "$HOME/.camber/bin" "$HOME/.local/bin" "$HOME/bin" "/usr/local/bin"; do [ -x "$d/camber" ] && echo "$d" >> $GITHUB_PATH; done
+          ls -la "$HOME/.camber/bin" 2>/dev/null || true; which camber || find / -name camber -type f 2>/dev/null | head
+      - name: Dispatch
+        id: c
+        env:
+          CAMBER_API_KEY: ${{ secrets.CAMBER_API_KEY }}
+          CAMBER_ENGINE: ${{ inputs.engine }}
+          CAMBER_SIZE: ${{ inputs.size }}
+        run: |
+          set -o pipefail
+          if [ "${{ inputs.mode }}" = "probe" ]; then python3 worker/camber_dispatch.py probe | tee run.log
+          else python3 worker/camber_dispatch.py run --project "${{ inputs.project }}" --stage "${{ inputs.stage }}" --only "${{ inputs.only }}" | tee run.log; fi
+          echo "exit=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
+      - name: Commit results
+        if: always()
+        run: |
+          mkdir -p quality_reports; cp run.log quality_reports/camber_${{ github.run_id }}.log 2>/dev/null || true
+          git config user.name "studio-worker"; git config user.email "studio-worker@users.noreply.github.com"
+          git add -A projects/${{ inputs.project }}/generated projects/${{ inputs.project }}/status.json quality_reports 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "camber ${{ inputs.mode }}: ${{ inputs.project }} ${{ inputs.stage }} [skip ci]" && git pull --rebase && git push)
+      - name: Result
+        run: test "${{ steps.c.outputs.exit }}" = "0"
