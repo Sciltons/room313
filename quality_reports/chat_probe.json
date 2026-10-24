@@ -1,0 +1,27 @@
+--agent is required (also set via AGENT_TAG env var)
+
+Error: --agent is required (also set via AGENT_TAG env var)
+Usage:
+  camber chat [flags]
+  camber chat [command]
+
+Available Commands:
+  status      Check the status/result of an async chat run
+
+Flags:
+  -a, --agent string             Agent tag (e.g. @nova.snowflake; also set via AGENT_TAG env var)
+      --async                    Submit the chat and return immediately with a conversation id and link; poll 'camber chat status' for the result
+      --cid string               Same as --conversation-id
+  -c, --conversation-id string   Optional UUID of an existing chat session to continue
+      --effort string            Reasoning effort for this chat: low, medium, or high; defaults to the model's default
+  -h, --help                     help for chat
+  -m, --message string           Message to send to the agent
+      --model string             Model to use for this chat. Available: bedrock:claude-sonnet-4-6 (default), bedrock:claude-opus-4-6-v1, bedrock:claude-opus-4-8, bedrock:claude-sonnet-5, bedrock:claude-opus-5
+      --no-thinking              Disable extended thinking for this chat (only supported by some models)
+  -o, --output string            Use "json" for non-streaming output: one JSON line with result and output_stash_files
+      --stop                     With --async: stop the conversation's current run and start a new message (requires --conversation-id)
+
+Global Flags:
+      --api-key string   API key for authentication (also set via CAMBER_API_KEY env var)
+
+Use "camber chat [command] --help" for more information about a command.
